@@ -1,10 +1,7 @@
 {
 	"author": "HotAndCold",
 	"name": "Hidden Grotto",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "A theme for obsidian based on Pokemon designs",
-	"screenshot": "grotto-screenshot.png",
 	"repo": "HotAndCold245/Hidden-Grotto-Theme",
+	"screenshot": "grotto-screenshot.png",
 	"modes": ["dark", "light"]
 }
