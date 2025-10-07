@@ -2,8 +2,8 @@
 A theme for the Obsidian app
 # Introduction
 This theme takes inspiration from Pokemon typing and design. There is a separate plugin called the **Hidden Grotto Theming Tool** which allows you to choose a *primary* and *secondary* color type, much like how Pokemon can have a combination of 2 types from a selection of 18. Each type is associated with a different color and affects different parts of the theme. Ignoring the plugin, the theme's base color palette is taken from the Pokemon [[Clobbopus]]. 
-%% Image of the theme goes here %%**
-![[Screenshot 2025-10-06 165639.png]]
+
+<img width="2559" height="1140" alt="Screenshot 2025-10-06 165639" src="https://github.com/user-attachments/assets/80c57f3f-7782-404a-b5ac-bd1194d3c837" />
 
 
 ## Modified Features
@@ -15,22 +15,22 @@ The mobile toolbar no longer scrolls horizontally. It will now create vertical r
 }
 ```
 Here, `--grotto-toolbar-rows` is the number of rows you want to keep visible. The plugin also allows to easily adjust the number of rows as well as the background accent of the toolbar. 
-%% Image of the mobile toolbar goes here %%
-![[Screenshot_2025-10-06-17-00-18-32_51606159b24eff83e24a54116878fe3e.jpg]]
+
+![Screenshot_2025-10-06-17-00-18-32_51606159b24eff83e24a54116878fe3e](https://github.com/user-attachments/assets/993f8482-400f-478d-a9a7-ff920101cdb3)
 
 ###### Mobile View Actions
 The view actions - extra options and reading view buttons at the top right of the screen have been moved to the bottom for easy reach. The reading view button is hidden behind the command palette button but is visible when the on-screen keyboard is active while typing. The editable file path is also hidden to increase space. 
 
 ###### Calendar Plugin Support
 Calendar plugin is styled. 
-%% Image of the calendar plugin %%
-![[Screenshot 2025-10-06 170655.png]]
+
+<img width="539" height="463" alt="Screenshot 2025-10-06 170655" src="https://github.com/user-attachments/assets/b5a00bc5-bc2d-4c95-8278-21285e494247" />
 
 
 # The Plugin
 %% Link to the plugin goes here %%
 Details about the plugin are discussed here as they are more relevant in the context of the theme. The theme can be used without the plugin but will lack customizability beyond what snippets can provide. The primary purpose of the plugin is to switch color types and access presets. 
-![[Screenshot 2025-10-07 131913.png]]
+<img width="1275" height="1299" alt="Screenshot 2025-10-07 131913" src="https://github.com/user-attachments/assets/65d61839-0f59-4082-970a-392e9eba8169" />
 
 ## Color Typing
 The plugin allows the user to select a primary and secondary color for the theme. This is similar to how Pokemon can have upto 2 types. The primary and secondary colors will affect different parts of the theme where primary will affect the major portions such as text-color, container-backgrounds, etc. while secondary will affect subtexts, icon colors, bold/italic color, etc. Any combination of the 18 available types will work. 
@@ -47,7 +47,8 @@ There are other settings pertaining to text and table customization as well as s
 
 ## Ribbon Icon/Palette Command
 There are two commands associated with the plugin to cycle through the primary and secondary color types. The dragon type icon is for the primary color and the flying type icon is for the secondary color. 
-![[Screenshot 2025-10-07 134607.png]]
+
+<img width="66" height="93" alt="Screenshot 2025-10-07 134607" src="https://github.com/user-attachments/assets/4948350c-2ec6-4416-921f-a1a2178eb498" />
 
 # Conclusion
 I'm probably missing some minor details. I will add them later if they exist. The font used alongside the theme is called Quicksand. 
