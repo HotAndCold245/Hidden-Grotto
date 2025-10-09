@@ -1047,6 +1047,12 @@ input[type="color"]::-webkit-color-swatch {
 .menu-item:hover {
     background-color: var(--grotto-navfile-color-hover);
 }
+.is-mobile.theme-light .menu-item-title {
+    color: var(--grotto-5);
+}
+.is-mobile.theme-light .menu-item-icon .svg-icon {
+    color: var(--grotto-5);
+}
 .menu-item-title {
     color: var(--grotto-navfile-color);
 }
@@ -1427,3 +1433,4 @@ body.secondary-type-fairy {
     --grotto-8: hsl(316, 82%, 75%); /* Secondary Type */
     --grotto-9: hsl(316, 82%, 87%); /* Secondary Type */
 }
+
