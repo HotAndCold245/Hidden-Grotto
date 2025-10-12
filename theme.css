@@ -152,6 +152,7 @@ body {
     --graph-node-tag: var(--grotto-accent-1);
     --slider-track-background: var(--grotto-accent-1);
     --icon-color-hover: var(--grotto-accent-1);
+    --nav-item-color-hover: var(--grotto-sidebar-text-color);
 }
 
 /* Tags */
@@ -1188,4 +1189,5 @@ body.secondary-type-fairy {
     --accent-l: 75%;
     --grotto-accent-1: hsl(316, 82%, 75%); 
 }
+
 
