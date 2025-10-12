@@ -617,7 +617,7 @@ input.prompt-input:focus-visible,
     border: 1px solid var(--grotto-accent-1);
 }
 #calendar-container .month {
-    color: var(--text-normal);
+    color: var(--background-primary);
 }
 #calendar-container .year {
     color: var(--grotto-accent-1);
@@ -1188,3 +1188,4 @@ body.secondary-type-fairy {
     --accent-l: 75%;
     --grotto-accent-1: hsl(316, 82%, 75%); 
 }
+
