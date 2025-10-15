@@ -1,6 +1,3 @@
-#ObsidianCustomization #Themes #YepTheseAreTags #Pokemon 
-The following is a description of the Hidden Grotto theme, designed for use in Obsidian. 
-
 # Introduction
 This theme is primarily designed for personal use. Since I have been using it for a while, I decided to make it available for others to use. The base color palette was inspired by the Pokemon, Clobbopus. It's not my favourite or anything. The colours just work well together. There are additional color options accessible through the Hidden Grotto Controls plugin (may or may not be available on the plugin store at the time of writing this; accessible through github [here](https://github.com/HotAndCold245/Hidden-Grotto-Controls) . 
 
