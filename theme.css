@@ -9,6 +9,7 @@ body.preset-poltchageist {
     --grotto-night-0: hsl(60, 10%, 8%);
     --grotto-night-1: hsl(60, 10%, 12%);
     --grotto-night-2: hsl(60, 10%, 24%);
+    --grotto-night-3: hsl(60, 10%, 32%);
     --grotto-accent-1: hsl(114, 30%, 50%);
 }
 
@@ -22,6 +23,7 @@ body.preset-volcarona {
     --grotto-night-0: hsl(194, 60%, 18%);
     --grotto-night-1: hsl(194, 60%, 24%);
     --grotto-night-2: hsl(194, 60%, 32%);
+    --grotto-night-3: hsl(194, 60%, 44%);
     --grotto-accent-1: hsl(27, 85%, 52%);
 }
 
@@ -35,6 +37,7 @@ body.preset-darkrai {
     --grotto-night-0: hsl(0, 0%, 14%);
     --grotto-night-1: hsl(0, 0%, 19%);
     --grotto-night-2: hsl(0, 0%, 25%);
+    --grotto-night-3: hsl(0, 0%, 40%);
     --grotto-accent-1: hsl(5, 79%, 53%);
 }
 
@@ -1266,3 +1269,4 @@ hr {
 .mobile-tab-switcher-menu-button.tappable {
     color: var(--grotto-sidebar-text-color);
 }
+
