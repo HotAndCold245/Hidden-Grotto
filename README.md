@@ -21,7 +21,7 @@ The theme supports both light and dark mode.
 ![IMG_4](https://github.com/user-attachments/assets/cde83bac-71ca-4398-841d-4db82d77a3b3)
 
 # Mobile Toolbar and Navbar
-The mobile toolbar and navbar appearance has been changed. The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room. 
+The mobile toolbar and navbar appearance has been changed. The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room. The "New Tab" has been hidden since the tab switcher already does the same thing with one extra click. 
 
 ### Toolbar
 
@@ -29,7 +29,7 @@ The mobile toolbar and navbar appearance has been changed. The view actions (rea
 
 ### Navbar
 
-![IMG_6](https://github.com/user-attachments/assets/ba12fff5-981d-4ee4-b70c-df7f791e7ed9)
+![IMG_6](https://github.com/user-attachments/assets/24d6dc55-688b-4706-911c-f0caa11ede85)
 
 The maximum toolbar height (number of rows visible) can be adjusted using the plugin. Alternatively, `--grotto-toolbar-rows` controls it. It takes number of rows as input. If there are more tools than a row can hold while maximum height is set to 1, then the toolbar can be swiped up to access the rest of the tools. This is a change from the default behaviour of swiping to the left because it let's you see more of the tools at once. 
 
