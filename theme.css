@@ -1065,7 +1065,7 @@ input[type='datetime-local'] {
     border-right: 1px solid var(--text-normal);
 }
 
-/* Changes for V 1.1.0 */
+/* Changes for V 1.0.4 */
 
 .checkbox-container {
     box-shadow: none;
@@ -1098,3 +1098,4 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 .view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
     display: none;
 }
+
