@@ -1099,3 +1099,16 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     display: none;
 }
 
+/* Changes for V1.0.5 */
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    border-color: var(--background-secondary);
+}
+
+#calendar-container th {
+    min-width: 0px;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+    color: var(--grotto-accent-1);
+}
