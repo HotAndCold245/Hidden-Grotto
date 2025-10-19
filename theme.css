@@ -1,11 +1,50 @@
 /* Presets */
+/* Unova */
+body.preset-unova {
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(0, 0%, 87%);
+    --grotto-day-2: hsl(0, 0%, 70%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 24%);
+    --grotto-accent-1: hsl(0, 0%, 60%);
+}
+
+/* Steelix */
+body.preset-steelix {
+    --accent-h: 180;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(0, 0%, 80%);
+    --grotto-day-2: hsl(0, 0%, 70%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 24%);
+    --grotto-accent-1: hsl(180, 20%, 60%);
+}
+
+/*Aegislash */
+body.preset-aegislash {
+    --accent-h: 260;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 50%, 90%);
+    --grotto-day-2: hsl(40, 50%, 70%);
+    --grotto-night-0: hsl(260, 10%, 12%);
+    --grotto-night-1: hsl(260, 10%, 18%);
+    --grotto-night-2: hsl(260, 10%, 24%);
+    --grotto-accent-1: hsl(260, 20%, 60%);
+}
+
 /* Poltchageist */
 body.preset-poltchageist {
     --accent-h: 114;
     --accent-s: 30%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(30, 14%, 80%);
-    --grotto-day-2: hsl(30, 14%, 70%);
+    --grotto-day-1: hsl(30, 14%, 82%);
+    --grotto-day-2: hsl(30, 14%, 76%);
     --grotto-night-0: hsl(60, 10%, 10%);
     --grotto-night-1: hsl(60, 10%, 12%);
     --grotto-night-2: hsl(60, 5%, 24%);
@@ -51,10 +90,12 @@ body, body.preset-clobbopus {
     --grotto-accent-1: hsl(16, 82%, 58%);
 }
 .theme-light {
+    --color-accent: var(--grotto-accent-1);
+    --interactive-accent: var(--color-accent);
     --background-primary: var(--grotto-day-1);
-    --background-primary-alt: var(--grotto-day-1);
+    --background-primary-alt: var(--background-primary);
     --background-secondary: var(--grotto-night-1);
-    --background-secondary-alt: var(--grotto-night-1);
+    --background-secondary-alt: var(--background-secondary);
     --text-normal: var(--grotto-night-1);
     --text-muted: var(--grotto-night-2);
     --text-faint: var(--grotto-night-2);
@@ -65,10 +106,12 @@ body, body.preset-clobbopus {
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
 }
 .theme-dark, .is-mobile.theme-dark {
+    --color-accent: var(--grotto-accent-1);
+    --interactive-accent: var(--color-accent);
     --background-primary: var(--grotto-night-1);
-    --background-primary-alt: var(--grotto-night-1);
+    --background-primary-alt: var(--background-primary);
     --background-secondary: var(--grotto-night-0);
-    --background-secondary-alt: var(--grotto-night-0);
+    --background-secondary-alt: var(--background-secondary);
     --text-normal: var(--grotto-day-1);
     --text-muted: var(--grotto-day-2);
     --text-faint: var(--grotto-day-2);
@@ -79,26 +122,27 @@ body, body.preset-clobbopus {
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
 }
 body {
+    --toggle-border-width: 2px;
     --background-modifier-border: var(--text-faint);
     --grotto-tag-pointer-events: none;                          /* Plugin check*/
     --grotto-image-border-color: transparent;                   /* Plugin */
     --tag-radius: 0px;
     --tag-padding-x: 0.4em;
     --tag-padding-y: 0.2em;
-    --scrollbar-bg: var(--grotto-accent-1);
-    --scrollbar-thumb-bg: var(--grotto-accent-1);
-    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
+    --scrollbar-bg: var(--color-accent);
+    --scrollbar-thumb-bg: var(--color-accent);
+    --scrollbar-active-thumb-bg: var(--color-accent);
     --scrollbar-border-width: 0px;
     --scrollbar-radius: 0px;
     --scrollbar-width: 8px;
     --blockquote-border-thickness: 2px;
-    --blockquote-border-color: var(--grotto-accent-1);          /* Plugin check*/
+    --blockquote-border-color: var(--color-accent);          /* Plugin check*/
     --blockquote-background-color: transparent;                 /* Plugin check*/
     --embed-max-height: 4000px;                                 /* Plugin check*/
     --p-spacing: 4px;
     --checkbox-marker-color: transparent;
-    --checkbox-color: var(--grotto-accent-1);
-    --checkbox-color-hover: var(--grotto-accent-1);
+    --checkbox-color: var(--color-accent);
+    --checkbox-color-hover: var(--color-accent);
     font-weight: 400;                                           /* Plugin check*/
     --table-background: var(--background-primary);              /* Plugin check*/
     --table-border-width: 1px;
@@ -114,8 +158,6 @@ body {
     --grotto-toolbar-background-color: var(--text-normal);      /* Plugin */
     --grotto-toolbar-rows: 2;                                   /* Plugin check*/
     --grotto-calendar-pointer-events: auto;                     /* Plugin */
-    --graph-line: var(--text-faint);
-    --graph-node-tag: var(--grotto-accent-1);
     --vault-profile-color: var(--grotto-sidebar-text-color);
     --border-width: 0px;
     --divider-width: 0px;
@@ -139,19 +181,19 @@ body {
     --tab-radius-active: 0px;
     --list-bullet-radius: 0px;
     --grotto-system-status-color: var(--background-primary);    /* Plugin check*/
-    --graph-node-tag: var(--grotto-accent-1);
+    --graph-node-tag: var(--color-accent);
     --list-marker-color: var(--text-normal);
     --list-marker-color-hover: var(--text-faint);
     --list-marker-color-collapsed: var(--text-muted);
     --graph-text: var(--text-faint);
-    --graph-line: var(--grotto-night-2);
+    --graph-line: var(--grotto-item-hover);
     --graph-node: var(--grotto-night-0);
-    --graph-node-attachment: var(--grotto-item-hover);
+    --graph-node-attachment: var(--grotto-night-2);
     --graph-node-unresolved: var(--grotto-day-2);
-    --graph-node-focused: var(--grotto-accent-1);
-    --graph-node-tag: var(--grotto-accent-1);
-    --slider-track-background: var(--grotto-accent-1);
-    --icon-color-hover: var(--grotto-accent-1);
+    --graph-node-focused: var(--color-accent);
+    --graph-node-tag: var(--color-accent);
+    --slider-track-background: var(--color-accent);
+    --icon-color-hover: var(--color-accent);
     --nav-item-color-hover: var(--grotto-sidebar-text-color);
     --grotto-callout-icon: none;
     --grotto-callout-background-color: var(--background-primary);
@@ -171,24 +213,24 @@ a.tag, a.tag:hover,
 /* Text Formatting */
 .cm-strong, strong {
     font-weight: 800;
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .cm-em, em {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .markdown-source-view.mod-cm6 .cm-underline, 
 .markdown-rendered .internal-link, 
 .cm-s-obsidian span.cm-hmd-internal-link {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .markdown-source-view.mod-cm6 .cm-underline:hover, 
 .markdown-rendered .internal-link:hover, 
 .cm-s-obsidian span.cm-hmd-internal-link:hover {
     opacity: 0.8;
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .cm-comment {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
     opacity: 0.5;
 }
 
@@ -204,7 +246,7 @@ img {
 /* Notice */
 .notice, .is-phone .notice {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     border: 1px solid var(--text-normal);
     border-radius: 0px;
     box-shadow: none;
@@ -243,7 +285,7 @@ select,
 .combobox-button, 
 .dropdown {
     color: var(--text-normal);
-    background-color: var(--background-primary);
+    background-color: var(--color-accent);
     border: 1px solid var(--text-normal);
     border-radius: 0px;
     box-shadow: none;
@@ -255,7 +297,8 @@ select:hover,
 select:focus, 
 .combobox-button:focus, 
 .dropdown:focus {
-    background-color: var(--grotto-item-hover);
+    background-color: var(--color-accent);
+    opacity: 0.9;
     box-shadow: none;
 }
 .dropdown option {
@@ -270,7 +313,7 @@ select:focus,
 button:not(.clickable-icon), 
 button.mod-cta {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     border: 1px solid var(--text-normal);
     border-radius: 0px;
     box-shadow: none;
@@ -279,8 +322,8 @@ button:not(.clickable-icon):hover,
 button.mod-cta:hover, 
 button:not(.clickable-icon).mobile-tap {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    filter: brightness(120%);
+    background-color: var(--color-accent);
+    opacity: 0.86;
     border: 1px solid var(--text-normal);
     border-radius: 0px;
     box-shadow: none;
@@ -306,7 +349,7 @@ button:not(.clickable-icon).mobile-tap {
 .markdown-source-view.mod-cm6 .edit-block-button, 
 .markdown-source-view.mod-cm6 .code-block-flair {
     color: var(--background-primary);
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     border: 1px solid var(--text-normal);
     border-radius: 0px;
 }
@@ -314,8 +357,8 @@ button:not(.clickable-icon).mobile-tap {
 .markdown-source-view.mod-cm6 .edit-block-button:hover, 
 .markdown-source-view.mod-cm6 .code-block-flair:hover {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    --background-modifier-hover: var(--grotto-accent-1);
+    background-color: var(--color-accent);
+    --background-modifier-hover: var(--color-accent);
 }
 
 /* Callout */
@@ -378,13 +421,13 @@ input[type=checkbox]:checked, input[type=checkbox]:checked:hover {
 }
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     border: 1px solid var(--text-normal);
 }
 .markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2 {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-    border-left: 1px solid var(--grotto-accent-1);
+    background-color: var(--color-accent);
+    border-left: 1px solid var(--color-accent);
 }
 .markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
     color: var(--background-primary);
@@ -399,7 +442,7 @@ input[type=checkbox]:checked, input[type=checkbox]:checked:hover {
     border: 1px solid transparent;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--grotto-accent-1);
+    text-decoration-color: var(--color-accent);
 }
 .markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
     color: var(--text-normal);
@@ -463,16 +506,16 @@ th, .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
 }
 .canvas-group-label {
     color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     border-radius: 0px;
 }
 .canvas-edges path.canvas-display-path {
-    stroke: var(--grotto-accent-1);
+    stroke: var(--color-accent);
     stroke-width: 1px;
 }
 .canvas-edges polygon.canvas-path-end {
-    stroke: var(--grotto-accent-1);
-    fill: var(--grotto-accent-1);
+    stroke: var(--color-accent);
+    fill: var(--color-accent);
 }
 
 /* Mobile NavBar */
@@ -490,7 +533,7 @@ th, .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
     display: none;
 }
 .mobile-navbar-actions .clickable-icon.mobile-tap {
-    --icon-color: var(--grotto-accent-1);
+    --icon-color: var(--color-accent);
     opacity: 1;
 }
 /* Multi-Row Toolbar */
@@ -501,7 +544,7 @@ th, .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
     overflow-y: auto;
     margin: 0px 12px 0px 12px;
     padding: 0px;
-    height: calc(0px + (var(--grotto-toolbar-rows) * 34px));
+    height: calc(var(--grotto-toolbar-rows) * 32px);
 }
 .mobile-toolbar::-webkit-scrollbar {
     width: 0 !important;
@@ -552,7 +595,7 @@ input.prompt-input:focus-visible,
     color: var(--text-faint);
 }
 .search-input-clear-button:hover, .search-input-clear-button:active {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .prompt-instructions {
     color: var(--text-normal);
@@ -578,7 +621,7 @@ input.prompt-input:focus-visible,
     color: var(--background-primary);
 }
 .status-bar-item.mod-clickable:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 
 /* Viewer Header */
@@ -611,7 +654,7 @@ input.prompt-input:focus-visible,
     border: 1px solid var(--grotto-navbar-icon-color);
 }
 .is-mobile .view-header .view-action.mobile-tap {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
     background-color: var(--grotto-navbar-background-color);
     opacity: 1;
 }
@@ -632,22 +675,22 @@ input.prompt-input:focus-visible,
     
 }
 #calendar-container .today {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 #calendar-container .month {
     color: var(--grotto-sidebar-text-color);
 }
 #calendar-container .year {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 #calendar-container {
-    --color-arrow: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-accent-1);
+    --color-arrow: var(--color-accent);
+    border: 1px solid var(--color-accent);
     width: 100%;
     --interactive-hover: var(--grotto-night-2);
 }
 #calendar-container th.svelte-pcimu8 {
-    background-color: var(--grotto-accent-1);
+    background-color: var(--color-accent);
     color: var(--grotto-sidebar-text-color);
 }
 #calendar-container .title {
@@ -662,7 +705,7 @@ input.prompt-input:focus-visible,
     border: 1px solid var(--text-normal);
 }
 .community-item:hover {
-    border: 1px solid var(--grotto-accent-1);
+    border: 1px solid var(--color-accent);
 }
 
 /* Graph Controls */
@@ -690,8 +733,25 @@ input.prompt-input:focus-visible,
     color: var(--grotto-sidebar-text-color);
     border: 1px solid transparent;
 }
+.nav-file-title:hover, 
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover,  
+body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap, 
+body:not(.is-grabbing) .nav-folder-title:hover {
+    color: var(--color-accent);
+}
+.nav-file-title.is-active, 
+.nav-folder-title.is-active {
+    color: var(--grotto-sidebar-text-color);
+    background-color: var(--color-accent);
+    border: 1px solid var(--grotto-sidebar-text-color);
+}
+body:not(.is-grabbing) .nav-file-title.is-active:hover {
+    color: var(--grotto-sidebar-text-color);
+    background-color: var(--color-accent);
+    border: 1px solid var(--grotto-sidebar-text-color);
+}
 .clickable-icon.nav-action-button.mobile-tap, .clickable-icon.nav-action-button:hover {
-    color: var(--grotto-accent-1)
+    color: var(--color-accent)
 }
 .nav-file-tag {
     color: var(--background-secondary);
@@ -699,40 +759,27 @@ input.prompt-input:focus-visible,
     border-radius: 0px;
 }
 .clickable-icon.nav-action-button.is-active {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .side-dock-settings .side-dock-ribbon-action:hover, 
 .side-dock-actions .side-dock-ribbon-action:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
     background-color: transparent;
 }
 .workspace-drawer-vault-actions .clickable-icon {
     color: var(--grotto-sidebar-text-color);
 }
 .workspace-drawer-vault-actions .clickable-icon:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
-.nav-file-title.is-active, 
-.nav-folder-title.is-active {
-    color: var(--grotto-sidebar-text-color);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-sidebar-text-color);
-}
-body:not(.is-grabbing) .nav-file-title.is-active:hover, 
-body:not(.is-grabbing)  .nav-folder-title:hover, 
-body:not(.is-grabbing) .tree-item-self.is-clickable:hover, 
-body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap {
-    color: var(--grotto-sidebar-text-color);
-    background-color: var(--grotto-night-2);
-    border: 1px solid var(--grotto-sidebar-text-color);
-}
+
 .is-mobile .workspace-drawer-header {
     background-color: var(--background-secondary);
     --text-normal: var(--grotto-sidebar-text-color);
     --text-muted: var(--grotto-sidebar-text-color);
 }
 .sidebar-toggle-button {
-    --icon-color: var(--grotto-accent-1);
+    --icon-color: var(--color-accent);
     background-color: var(--background-secondary);
     --icon-color-hover: var(--grotto-sidebar-text-color);
     height: var(--header-height);
@@ -741,7 +788,7 @@ body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top 
     --tab-container-background: var(--background-secondary);
 }
 .search-row .clickable-icon {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 
 /* Rename Bar Customization */
@@ -793,7 +840,7 @@ body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top 
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, 
 
 .workspace-tab-header-inner .workspace-tab-header-inner-icon:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title, 
 .workspace-tab-header.is-active .workspace-tab-header-inner-title {
@@ -811,14 +858,19 @@ body.is-focused .sidebar-toggle-button, body.is-focused .workspace-tabs.mod-top 
 }
 body:not(.is-phone) .horizontal-tab-nav-item:hover, 
 body:not(.is-phone) .vertical-tab-nav-item:hover {
-    background-color: var(--grotto-night-2);
-    border: 1px solid var(--grotto-sidebar-text-color);
+    color: var(--color-accent);
+    border: 1px solid transparent;
 }
 body:not(.is-phone) .horizontal-tab-nav-item.is-active, 
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-    background-color: var(--grotto-accent-1);
+    color: var(--grotto-sidebar-text-color);
+    background-color: var(--color-accent);
     border: 1px solid var(--grotto-sidebar-text-color);
 }
+
+
+
+
 .setting-item {
     border-width: 0px;
 }
@@ -980,7 +1032,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon, .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 
 .modal-sidebar {
@@ -1009,10 +1061,10 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .modal-close-button:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .mod-community-modal .modal-sidebar button.clickable-icon:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
 }
 .community-modal-info {
     border: 1px solid var(--text-normal);
@@ -1034,11 +1086,12 @@ input[type="color"]::-webkit-color-swatch {
 .is-phone .modal.mod-settings .vertical-tab-content, 
 .is-phone .modal-sidebar, 
 .is-phone .community-modal-info {
-    border: 0px solid red;
+    border: 0px solid transparent;
 }
 
 hr {
     border-color: var(--text-normal);
+    border-width: 1px;
 }
 
 .mobile-tab-switcher-menu-button.tappable {
@@ -1070,8 +1123,13 @@ input[type='datetime-local'] {
 .checkbox-container {
     box-shadow: none;
     background-color: var(--grotto-item-hover);
+    border: 0px solid var(--text-normal);
 }
-
+.checkbox-container:after {
+    border: 1px solid var(--grotto-night-1);
+    top: -0.5px;
+    background-color: var(--grotto-day-1);
+}
 /* Older Version Compatibility */
 
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
@@ -1110,5 +1168,24 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     min-width: 0px;
 }
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
-    color: var(--grotto-accent-1);
+    color: var(--color-accent);
+}
+
+.modal-container.mod-dim .modal {
+    box-shadow: none;
+    border: 1px solid var(--text-normal);
+}
+
+input[type='range']::-webkit-slider-thumb, input[type='range']::-webkit-slider-thumb:hover, 
+input[type='range']::-webkit-slider-thumb:active {
+    box-shadow: none;
+    border: 1px solid var(--text-normal);
+    background-color: var(--background-primary);
+}
+input[type='range'] {
+    border-radius: 0px;
+}
+
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
+    color: var(--color-accent);
 }
