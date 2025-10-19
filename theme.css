@@ -46,7 +46,7 @@ body.preset-poltchageist {
     --grotto-day-1: hsl(30, 14%, 82%);
     --grotto-day-2: hsl(30, 14%, 76%);
     --grotto-night-0: hsl(60, 10%, 10%);
-    --grotto-night-1: hsl(60, 10%, 12%);
+    --grotto-night-1: hsl(60, 10%, 14%);
     --grotto-night-2: hsl(60, 5%, 24%);
     --grotto-accent-1: hsl(114, 30%, 50%);
 }
@@ -1189,3 +1189,44 @@ input[type='range'] {
 .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
     color: var(--color-accent);
 }
+
+/* Style Settings Support */
+.style-settings-empty {
+    background-color: var(--background-primary);
+}
+
+/* @settings
+
+name: Hidden Grotto
+id: hidden-grotto-style
+collapsed: false
+settings:
+    -
+        id: color-palettes
+        title: Color Presets
+        type: class-select
+        allowEmpty: false
+        default: preset-clobbopus
+        options:
+            -
+                label: Aegislash
+                value: preset-aegislash
+            -
+                label: Clobbopus
+                value: preset-clobbopus
+            -
+                label: Darkrai
+                value: preset-darkrai
+            -
+                label: Poltchageist
+                value: preset-poltchageist
+            -
+                label: Steelix
+                value: preset-steelix
+            -
+                label: Unova
+                value: preset-unova
+            -
+                label: Volcarona
+                value: preset-volcarona
+*/
