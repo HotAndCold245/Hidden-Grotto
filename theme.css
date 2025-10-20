@@ -1,9 +1,48 @@
 /* Presets */
+/* Noivern */
+.preset-noivern {
+  --accent-h: 160;
+  --accent-s: 40%;
+  --accent-l: 50%;
+  --grotto-day-1: hsl(40, 10%, 90%);
+  --grotto-day-2: hsl(40, 10%, 80%);
+  --grotto-night-0: hsl(225, 10%, 12%);
+  --grotto-night-1: hsl(288, 26%, 40%);
+  --grotto-night-2: hsl(288, 26%, 60%);
+  --grotto-accent-1: hsl(160, 40%, 50%);
+}
+
+/* Zygarde */
+.preset-zygarde {
+  --accent-h: 225;
+  --accent-s: 0%;
+  --accent-l: 20%;
+  --grotto-day-1: hsl(40, 10%, 90%);
+  --grotto-day-2: hsl(40, 10%, 80%);
+  --grotto-night-0: hsl(225, 0%, 12%);
+  --grotto-night-1: hsl(80, 40%, 45%);
+  --grotto-night-2: hsl(80, 40%, 64%);
+  --grotto-accent-1: hsl(225, 0%, 20%);
+}
+
+/* Yveltal */
+.preset-yveltal {
+  --accent-h: 225;
+  --accent-s: 10%;
+  --accent-l: 70%;
+  --grotto-day-1: hsl(40, 10%, 90%);
+  --grotto-day-2: hsl(40, 10%, 80%);
+  --grotto-night-0: hsl(225, 0%, 16%);
+  --grotto-night-1: hsl(5, 60%, 53%);
+  --grotto-night-2: hsl(5, 60%, 60%);
+  --grotto-accent-1: hsl(225, 10%, 70%);
+}
+
 /* Xerneas */
 .preset-xerneas {
-  --accent-h: 225;
-  --accent-s: 30%;
-  --accent-l: 60%;
+  --accent-h: 40;
+  --accent-s: 60%;
+  --accent-l: 70%;
   --grotto-day-1: hsl(40, 40%, 90%);
   --grotto-day-2: hsl(40, 40%, 80%);
   --grotto-night-0: hsl(225, 0%, 16%);
@@ -84,10 +123,10 @@ body.preset-darkrai {
     --accent-l: 53%;
     --grotto-day-1: hsl(212, 0%, 90%);
     --grotto-day-2: hsl(212, 0%, 80%);
-    --grotto-night-0: hsl(0, 0%, 14%);
-    --grotto-night-1: hsl(0, 0%, 19%);
-    --grotto-night-2: hsl(0, 0%, 25%);
-    --grotto-accent-1: hsl(5, 79%, 53%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 32%);
+    --grotto-accent-1: hsl(5, 60%, 53%);
 }
 
 /* Clobbopus*/
@@ -1232,6 +1271,9 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
+                label: Noivern
+                value: preset-noivern
+            -
                 label: Poltchageist
                 value: preset-poltchageist
             -
@@ -1243,5 +1285,15 @@ settings:
             -
                 label: Volcarona
                 value: preset-volcarona
+            -
+                label: Xerneas
+                value: preset-xerneas
+            -
+                label: Yveltal
+                value: preset-yveltal
+            -
+                label: Zygarde
+                value: preset-zygarde
 */
+
 
