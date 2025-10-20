@@ -1,4 +1,17 @@
 /* Presets */
+/* Xerneas */
+.preset-xerneas {
+  --accent-h: 225;
+  --accent-s: 30%;
+  --accent-l: 60%;
+  --grotto-day-1: hsl(40, 40%, 90%);
+  --grotto-day-2: hsl(40, 40%, 80%);
+  --grotto-night-0: hsl(225, 0%, 16%);
+  --grotto-night-1: hsl(225, 40%, 40%);
+  --grotto-night-2: hsl(225, 40%, 60%);
+  --grotto-accent-1: hsl(40, 60%, 70%);
+}
+
 /* Unova */
 body.preset-unova {
     --accent-h: 0;
@@ -94,7 +107,7 @@ body, body.preset-clobbopus {
     --interactive-accent: var(--color-accent);
     --background-primary: var(--grotto-day-1);
     --background-primary-alt: var(--background-primary);
-    --background-secondary: var(--grotto-night-1);
+    --background-secondary: var(--grotto-night-0);
     --background-secondary-alt: var(--background-secondary);
     --text-normal: var(--grotto-night-1);
     --text-muted: var(--grotto-night-2);
@@ -124,6 +137,7 @@ body, body.preset-clobbopus {
 body {
     --toggle-border-width: 2px;
     --background-modifier-border: var(--text-faint);
+    --background-modifier-border-focus: var(--text-normal);
     --grotto-tag-pointer-events: none;                          /* Plugin check*/
     --grotto-image-border-color: transparent;                   /* Plugin */
     --tag-radius: 0px;
@@ -1230,3 +1244,4 @@ settings:
                 label: Volcarona
                 value: preset-volcarona
 */
+
