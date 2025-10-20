@@ -48,8 +48,6 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 # Feedback
 Please submit an issue on the repository if there are any...issues. 
 
-# Changelog V1.0.5
-- Minor changes to hovering items in the sidebar and settings
-- Added limited Style Setting support (Presets)
-- Updated the README
-
+# Changelog
+##### V1.0.6
+- Added 4 new presets
