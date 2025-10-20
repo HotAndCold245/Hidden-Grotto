@@ -334,7 +334,11 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
 }
 
 /* Dropdown */
-select, 
+select, select:hover, select:focus {
+    color: var(--text-normal);
+    background-color: var(--grotto-sidebar-text-color);
+}
+
 .combobox-button, 
 .dropdown {
     color: var(--text-normal);
@@ -343,11 +347,10 @@ select,
     border-radius: 0px;
     box-shadow: none;
 }
-select:hover, 
+
 .combobox-button:hover, 
 .dropdown:hover, 
-.dropdown.mobile-tap, 
-select:focus, 
+.dropdown.mobile-tap,  
 .combobox-button:focus, 
 .dropdown:focus {
     background-color: var(--color-accent);
@@ -1295,5 +1298,6 @@ settings:
                 label: Zygarde
                 value: preset-zygarde
 */
+
 
 
