@@ -7,8 +7,8 @@
   --grotto-day-1: hsl(40, 10%, 90%);
   --grotto-day-2: hsl(40, 10%, 80%);
   --grotto-night-0: hsl(225, 10%, 12%);
-  --grotto-night-1: hsl(288, 26%, 40%);
-  --grotto-night-2: hsl(288, 26%, 60%);
+  --grotto-night-1: hsl(288, 26%, 34%);
+  --grotto-night-2: hsl(288, 26%, 42%);
   --grotto-accent-1: hsl(160, 40%, 50%);
 }
 
@@ -1302,6 +1302,7 @@ settings:
                 label: Zygarde
                 value: preset-zygarde
 */
+
 
 
 
