@@ -1232,6 +1232,10 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
     border: 1px solid var(--text-normal);
 }
 
+.is-phone .modal-container.mod-dim .modal {
+  border: 0px solid transparent;
+}
+
 input[type='range']::-webkit-slider-thumb, input[type='range']::-webkit-slider-thumb:hover, 
 input[type='range']::-webkit-slider-thumb:active {
     box-shadow: none;
@@ -1298,6 +1302,7 @@ settings:
                 label: Zygarde
                 value: preset-zygarde
 */
+
 
 
 
