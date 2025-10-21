@@ -49,6 +49,9 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
+##### V1.0.9
+- Fixed some of the color palettes
+- Added 4 new presets - Gardevoir, Dawn, Rivals, Ursaluna
 ##### V1.0.8
 - Added 1 new preset - Wattrel
 ##### V1.0.7
