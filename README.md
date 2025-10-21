@@ -49,6 +49,8 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
+##### V1.0.8
+- Added 1 new preset - Wattrel
 ##### V1.0.7
 - Added 2 new presets - Noivern, Zygarde
 ##### V1.0.6
