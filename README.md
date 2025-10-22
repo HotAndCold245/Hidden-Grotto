@@ -41,6 +41,7 @@ This theme is primarily designed for personal use. The base color palette is ins
     --grotto-night-1: hsl(); /*Controls the background color in dark mode*/
     --grotto-night-2: hsl(); /*Controls the hover color for certain menus in dark mode*/
     --grotto-accent-1: hsl(); /*Accent color*/
+	--grotto-accent-2: hsla(); /*Accent hover*/
 }
  ```
 Self-defined presets will automatically appear in the Hidden Grotto Controls plugin menu after restarting the app. #Note : These will not appear in Style Settings menu since they are not added to the main theme.css. 
@@ -49,6 +50,8 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
+##### V1.0.10
+- Full Style Settings support
 ##### V1.0.9
 - Fixed some of the color palettes
 - Added 4 new presets - Gardevoir, Dawn, Rivals, Ursaluna
