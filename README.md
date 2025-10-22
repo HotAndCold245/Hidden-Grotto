@@ -50,7 +50,7 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
-##### V1.0.10
+##### V1.1.0
 - Full Style Settings support
 ##### V1.0.9
 - Fixed some of the color palettes
