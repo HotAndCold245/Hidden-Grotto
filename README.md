@@ -48,33 +48,3 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 
 # Feedback
 Please submit an issue on the repository or try the discord server.
-
-# Changelog
-##### V1.1.0
-- Full Style Settings support
-##### V1.0.9
-- Fixed some of the color palettes
-- Added 4 new presets - Gardevoir, Dawn, Rivals, Ursaluna
-##### V1.0.8
-- Added 1 new preset - Wattrel
-##### V1.0.7
-- Added 2 new presets - Noivern, Zygarde
-##### V1.0.6
-- Added 2 new presets - Xerneas, Yveltal
-- Fixed selection container background color
-##### V1.0.5
-- Added limited Style Settings support (Presets)
-- Added 3 new presets - Aegislash, Steelix, Unova
-- Fixed divider color inconsistency
-- Overhauled the README
-##### V1.0.4
-- Added compatibility with older versions of Obsidian
-- Improved appearance of mobile toolbar
-##### V1.0.3
-- Added 1 new preset - Poltchageist
-- Fixed community menu background and icon colors
-##### V1.0.2
-- Added 2 new presets - Darkrai, Volcarona
-- Improved consistency between PC and mobile appearance
-##### V1.0.1
-- Improved consistency between light and dark modes
