@@ -50,6 +50,8 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
+##### V1.1.3
+- Fixed search result title visibility
 ##### V1.1.2
 - Fixed default behaviour of table cells - Now set to wrap around
 - Fixed default behaviour of embed titles - Now set to be visible
