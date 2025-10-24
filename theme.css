@@ -393,7 +393,7 @@ body {
     --grotto-callout-icon: none;/*Plugin*/
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: var(--background-primary);
-    --grotto-embed-title: none;/*Plugin*/
+    --grotto-embed-title: block;/*Plugin*/
     --embed-max-height: 4000px;/*Plugin*/
     --grotto-header-1-color: var(--text-normal);
     --grotto-header-2-color: var(--background-primary);
@@ -432,7 +432,7 @@ body {
     --table-header-background-hover: var(--table-background);
     --table-text-color: var(--text-normal);
     --table-add-button-border-color: var(--table-border-color);
-    --grotto-table-cell-width: max-content;/*Plugin*/
+    --grotto-table-cell-width: fit-content;/*Plugin*/
     --grotto-table-border-style: separate;/*Plugin*/
     --grotto-quick-action-color: var(--text-normal);
     --grotto-quick-action-background-color: var(--grotto-accent-1);
@@ -859,7 +859,7 @@ th,
     color: var(--text-normal);
     width: var(--grotto-table-cell-width);
     --caret-color: currentColor;
-    min-width: 40px;
+    min-width: 4px;
 }
 
 .markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle,
@@ -1887,3 +1887,4 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
