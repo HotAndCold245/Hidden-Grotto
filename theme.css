@@ -1683,7 +1683,7 @@ input[type='range'] {
 .tree-item-self:hover .tree-item-flair {
     color: var(--grotto-accent-1);
 }
-.setting-item-name {
+.search-params .setting-item-name {
     color: var(--grotto-sidebar-color);
 }
 
@@ -1907,6 +1907,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
