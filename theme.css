@@ -1763,7 +1763,7 @@ settings:
         id: grotto-table-border-style
         title: Table Border Style
         type: variable-select
-        default: collapse
+        default: separate
         options:
             -
                 label: Collapsed
@@ -1887,4 +1887,5 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
