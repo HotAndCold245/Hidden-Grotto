@@ -15,7 +15,7 @@
     --grotto-night-1: hsl(40, 70%, 50%);
     --grotto-night-2: hsl(40, 70%, 60%);
     --grotto-accent-1: hsl(40, 70%, 50%);
-    --grotto-accent-2: hsla(40, 70%, 50%, 0.9);
+    --grotto-accent-2: hsl(40, 70%, 56%);
     --grotto-sidebar-color: hsl(0, 0%, 18%);
     --text-normal: hsl(0, 0%, 18%);
     --text-muted: hsl(0, 0%, 24%);
@@ -31,7 +31,7 @@
     --grotto-night-1: hsl(196, 60%, 30%);
     --grotto-night-2: hsl(196, 60%, 50%);
     --grotto-accent-1: hsl(0, 30%, 50%);
-    --grotto-accent-2: hsla(0, 30%, 50%, 0.9);
+    --grotto-accent-2: hsl(0, 30%, 56%);
 }
 
 /* Dawn */
@@ -47,7 +47,7 @@
     --grotto-night-1: hsl(200, 30%, 30%);
     --grotto-night-2: hsl(200, 20%, 60%);
     --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsla(0, 40%, 60%, 0.9);
+    --grotto-accent-2: hsl(0, 40%, 64%);
 }
 .theme-dark.preset-dawn, 
 .is-mobile.theme-dark.preset-dawn {
@@ -57,7 +57,7 @@
     --grotto-night-1: hsl(0, 40%, 50%);
     --grotto-night-2: hsl(200, 30%, 50%);
     --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsla(0, 40%, 60%, 0.9);
+    --grotto-accent-2: hsl(0, 40%, 64%);
 }
 
 /* Gardevoir */
@@ -71,7 +71,7 @@
     --grotto-night-1: hsl(120, 30%, 68%);
     --grotto-night-2: hsl(120, 30%, 74%);
     --grotto-accent-1: hsl(0, 40%, 50%);
-    --grotto-accent-2: hsla(0, 40%, 50%, 0.9);
+    --grotto-accent-2: hsl(0, 40%, 56%);
 }
 .theme-dark.preset-gardevoir, 
 .is-mobile.theme-dark.preset-gardevoir, 
@@ -89,12 +89,13 @@
     --accent-l: 50%;
     --grotto-day-1: hsl(20, 10%, 80%);
     --grotto-day-2: hsl(20, 10%, 70%);
-    --grotto-night-0: hsl(20, 40%, 20%);
-    --grotto-night-1: hsl(20, 40%, 28%);
-    --grotto-night-2: hsl(20, 40%, 40%);
-    --grotto-accent-1: hsl(47, 56%, 50%);
-    --grotto-accent-2: hsla(47, 56%, 50%, 0.9);
+    --grotto-night-0: hsl(20, 40%, 14%);
+    --grotto-night-1: hsl(20, 40%, 20%);
+    --grotto-night-2: hsl(20, 40%, 32%);
+    --grotto-accent-1: hsl(47, 56%, 40%);
+    --grotto-accent-2: hsl(47, 56%, 46%);
     --grotto-active-file-color: var(--background-secondary);
+    --grotto-header-1-color: var(--grotto-night-1);
 }
 .theme-dark.preset-ursaluna, 
 .is-mobile.theme-dark.preset-ursaluna {
@@ -114,10 +115,11 @@
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-accent-1: hsl(47, 56%, 50%);
-    --grotto-accent-2: hsla(47, 56%, 50%, 0.9);
+    --grotto-accent-2: hsl(47, 56%, 56%);
     --grotto-header-1-color: var(--background-secondary);
     --grotto-header-2-color: var(--background-primary);
     --grotto-active-file-color: var(--background-secondary);
+    --grotto-suggestion-hover-color: var(--background-primary);
 }
 .theme-dark.preset-wattrel, 
 .is-mobile.theme-dark.preset-wattrel {
@@ -137,7 +139,7 @@
     --grotto-night-1: hsl(288, 26%, 32%);
     --grotto-night-2: hsl(288, 26%, 40%);
     --grotto-accent-1: hsl(160, 40%, 50%);
-    --grotto-accent-2: hsla(160, 40%, 50%, 0.9);
+    --grotto-accent-2: hsl(160, 40%, 56%);
 }
 
 /* Zygarde */
@@ -151,7 +153,8 @@
     --grotto-night-1: hsl(80, 40%, 45%);
     --grotto-night-2: hsl(80, 40%, 64%);
     --grotto-accent-1: hsl(225, 0%, 20%);
-    --grotto-accent-2: hsla(225, 0%, 20%, 0.9);
+    --grotto-accent-2: hsl(225, 0%, 26%);
+    --grotto-item-hover-color: var(--grotto-night-2);
 }
 
 /* Yveltal */
@@ -165,7 +168,7 @@
     --grotto-night-1: hsl(5, 60%, 53%);
     --grotto-night-2: hsl(5, 60%, 60%);
     --grotto-accent-1: hsl(225, 10%, 65%);
-    --grotto-accent-2: hsla(225, 10%, 65%, 0.9);
+    --grotto-accent-2: hsl(225, 10%, 72%);
     --grotto-header-1-color: var(--grotto-day-1);
     --grotto-header-2-color: var(--grotto-accent-1);
 }
@@ -188,9 +191,10 @@
     --grotto-night-1: hsl(225, 40%, 40%);
     --grotto-night-2: hsl(225, 40%, 60%);
     --grotto-accent-1: hsl(225, 0%, 24%);
-    --grotto-accent-2: hsla(225, 0%, 24%, 0.9);
+    --grotto-accent-2: hsl(225, 0%, 30%);
     --grotto-header-1-color: var(--grotto-day-1);
     --grotto-header-2-color: var(--grotto-accent-1);
+    --grotto-item-hover-color: var(--grotto-night-2);
 }
 
 .theme-light.preset-xerneas {
@@ -209,7 +213,7 @@ body.preset-unova {
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-accent-1: hsl(0, 0%, 60%);
-    --grotto-accent-2: hsla(0, 0%, 60%, 0.9);
+    --grotto-accent-2: hsl(0, 0%, 64%);
 }
 
 /* Steelix */
@@ -223,7 +227,7 @@ body.preset-steelix {
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-accent-1: hsl(180, 20%, 60%);
-    --grotto-accent-2: hsla(180, 20%, 60%, 0.9);
+    --grotto-accent-2: hsl(180, 20%, 64%);
 }
 
 /*Aegislash */
@@ -237,7 +241,7 @@ body.preset-aegislash {
     --grotto-night-1: hsl(260, 10%, 18%);
     --grotto-night-2: hsl(260, 10%, 32%);
     --grotto-accent-1: hsl(260, 20%, 60%);
-    --grotto-accent-2: hsla(260, 20%, 60%, 0.9);
+    --grotto-accent-2: hsl(260, 20%, 64%);
 }
 
 /* Poltchageist */
@@ -251,7 +255,7 @@ body.preset-poltchageist {
     --grotto-night-1: hsl(60, 10%, 14%);
     --grotto-night-2: hsl(60, 5%, 24%);
     --grotto-accent-1: hsl(114, 30%, 50%);
-    --grotto-accent-2: hsla(114, 30%, 50%, 0.9);
+    --grotto-accent-2: hsl(114, 30%, 56%);
 }
 
 /* Volcarona */
@@ -265,7 +269,7 @@ body.preset-volcarona {
     --grotto-night-1: hsl(194, 60%, 24%);
     --grotto-night-2: hsl(194, 60%, 32%);
     --grotto-accent-1: hsl(27, 85%, 52%);
-    --grotto-accent-2: hsla(27, 85%, 52%, 0.9);
+    --grotto-accent-2: hsl(27, 85%, 60%);
 }
 
 /* Darkrai */
@@ -279,7 +283,7 @@ body.preset-darkrai {
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 32%);
     --grotto-accent-1: hsl(5, 60%, 53%);
-    --grotto-accent-2: hsla(5, 60%, 53%, 0.9);
+    --grotto-accent-2: hsl(5, 60%, 60%);
 }
 
 /* Clobbopus*/
@@ -294,7 +298,7 @@ body.preset-clobbopus {
     --grotto-night-1: hsl(240, 18%, 25%);
     --grotto-night-2: hsl(240, 18%, 45%);
     --grotto-accent-1: hsl(16, 82%, 58%);
-    --grotto-accent-2: hsla(16, 82%, 58%, 0.9);
+    --grotto-accent-2: hsl(16, 82%, 64%);
 }
 
 /* Common Variables */
@@ -321,8 +325,9 @@ body {
     --border-width: 0px;
     --divider-width: 0px;
     --toggle-border-width: 2px;
-    font-weight: 400;/*Plugin*/
-    --file-line-width: 100%;/*Plugin*/
+    --grotto-font-weight: 400;
+    font-weight: var(--grotto-font-weight);/*Plugin*/
+    --file-line-width: 700px;/*Plugin*/
 }
 
 .theme-light {
@@ -458,6 +463,7 @@ body {
     --nav-item-color-hover: var(--grotto-sidebar-color);
     --grotto-icon-hover: var(--grotto-accent-1);
     --grotto-active-file-color: var(--grotto-sidebar-color);
+    --grotto-item-hover-color: var(--grotto-accent-1);
 }
 
 /* Tags */
@@ -1105,7 +1111,7 @@ input.prompt-input:focus-visible,
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
 body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
 body:not(.is-grabbing) .nav-folder-title:hover {
-    color: var(--grotto-accent-1);
+    color: var(--grotto-item-hover-color);
 }
 
 .nav-file-title.is-active,
@@ -1205,6 +1211,7 @@ body.is-focused .workspace-tabs.mod-top {
 /* Titlebar */
 .titlebar-button {
     height: var(--header-height);
+    color: var(--grotto-sidebar-color);
     background-color: var(--background-secondary);
 }
 
@@ -1251,7 +1258,7 @@ body.is-focused .workspace-tabs.mod-top {
 }
 body:not(.is-phone) .horizontal-tab-nav-item:hover,
 body:not(.is-phone) .vertical-tab-nav-item:hover {
-    color: var(--grotto-accent-1);
+    color: var(--grotto-item-hover-color);
     border: 1px solid transparent;
 }
 
@@ -1666,8 +1673,7 @@ input[type='range'] {
 }
 
 /* @settings
-
-name: Hidden Grotto
+name: Color Controls
 id: hidden-grotto-style
 collapsed: false
 settings:
@@ -1726,4 +1732,158 @@ settings:
             -
                 label: Zygarde
                 value: preset-zygarde
+*/
+/* @settings
+name: Text Controls
+id: grotto-text-controls
+collapsed: false
+settings:
+    -
+        id: grotto-font-weight
+        title: Font Weight
+        description: Adjust the font weight
+        type: variable-number-slider
+        default: 400
+        min: 200
+        max: 800
+        step: 100
+    -
+        id: file-line-width
+        title: File Line Width
+        description: Adjust the width of the viewable lines of text
+        type: variable-text
+        default: 700px
+*/
+/* @settings
+name: Table Controls
+id: grotto-table-controls
+collapsed: false
+settings:
+    -
+        id: grotto-table-border-style
+        title: Table Border Style
+        type: variable-select
+        default: collapse
+        options:
+            -
+                label: Collapsed
+                value: collapse
+            -
+                label: Separate
+                value: separate
+    -
+        id: table-background
+        title: Table Background Color
+        type: variable-select
+        default: var(--background-primary)
+        options:
+            -
+                label: Normal
+                value: var(--background-primary)
+            -
+                label: Accented
+                value: var(--grotto-accent-1)
+    -
+        id: grotto-table-cell-width
+        title: Table Cell Width
+        type: variable-select
+        default: fit-content
+        options:
+            -
+                label: Normal
+                value: fit-content
+            -
+                label: Maximized
+                value: max-content
+*/
+/* @settings
+name: Blockquote Controls
+id: grotto-quote-controls
+collapsed: false
+settings:
+    -
+        id: blockquote-border-color
+        title: Blockquote Border Color
+        type: variable-select
+        default: var(--text-normal)
+        options:
+            -
+                label: Normal
+                value: var(--text-normal)
+            -
+                label: Accent
+                value: var(--color-accent)
+    -
+        id: blockquote-background-color
+        title: Blockquote Background Color
+        type: variable-select
+        default: var(--background-primary)
+        options:
+            -
+                label: Normal
+                value: var(--background-primary)
+            -
+                label: Accent
+                value: var(--color-accent)
+    -
+        id: grotto-callout-background-color
+        title: Callout Background Color
+        type: variable-select
+        default: var(--background-primary)
+        options:
+            -
+                label: Normal
+                value: var(--background-primary)
+            -
+                label: Accent
+                value: var(--color-accent)
+    -
+        id: grotto-callout-icon
+        title: Callout Icon
+        type: variable-select
+        default: none
+        options:
+            -
+                label: Enabled
+                value: block
+            -
+                label: Disabled
+                value: none
+*/
+/* @settings
+name: Embed Controls
+id: grotto-embed-controls
+collapsed: false
+settings:
+    -
+        id: embed-max-height
+        title: Embed Max Height
+        type: variable-text
+        default: 4000px
+*/
+/* @settings
+name: Mobile Controls
+id: grotto-mobile-controls
+collapsed: false
+settings:
+    -
+        id: grotto-toolbar-rows
+        title: Mobile Toolbar Height
+        type: variable-number-slider
+        default: 2
+        max: 4
+        min: 0
+        step: 1
+    -
+        id: system-status-background
+        title: System Status Bar Color
+        type: variable-select
+        default: var(--background-primary)
+        options:
+            -
+                label: Normal
+                value: var(--background-primary)
+            -
+                label: Accent
+                value: var(--color-accent)
 */
