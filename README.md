@@ -50,6 +50,10 @@ Self-defined presets will automatically appear in the Hidden Grotto Controls plu
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
+##### V1.1.7
+- Fixed properties view
+- Fixed graph view
+- New preset - Scolipede
 ##### V1.1.3
 - Fixed search result title visibility
 ##### V1.1.2
