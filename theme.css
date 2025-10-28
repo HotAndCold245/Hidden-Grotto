@@ -1,4 +1,41 @@
 /* Presets */
+/* Metagross */
+.preset-metagross {
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 20%;
+    --grotto-day-1: hsl(180, 20%, 84%);
+    --grotto-day-2: hsl(180, 20%, 72%);
+    --grotto-night-0: hsl(208, 40%, 32%);
+    --grotto-night-1: hsl(208, 40%, 44%);
+    --grotto-night-2: hsl(208, 20%, 60%);
+    --grotto-accent-1: hsl(0, 0%, 20%);
+    --grotto-accent-2: hsl(0, 0%, 28%);
+    --grotto-button-color: var(--grotto-day-1);
+    --grotto-selection-color: var(--grotto-day-1);
+    --grotto-dropdown-color: var(--grotto-day-1);
+    --grotto-header-color-1: var(--background-primary);
+    --grotto-calendar-background-color: var(--grotto-day-1);
+    --grotto-suggestion-color-hover : var(--grotto-day-1);
+}
+/* Revavroom */
+.preset-revavroom {
+    --accent-h: 48;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(262, 0%, 80%);
+    --grotto-day-2: hsl(262, 0%, 64%);
+    --grotto-night-0: hsl(262, 25%, 14%);
+    --grotto-night-1: hsl(262, 25%, 20%);
+    --grotto-night-2: hsl(262, 25%, 40%);
+    --grotto-accent-1: hsl(48, 50%, 50%);
+    --grotto-accent-2: hsl(48, 50%, 64%);
+    --grotto-sidebar-active-color: var(--grotto-night-1);
+    --grotto-button-color: var(--grotto-night-1);
+    --grotto-selection-color: var(--grotto-night-1);
+    --grotto-dropdown-color: var(--grotto-night-1);
+    --grotto-suggestion-color-hover: var(--grotto-night-1);
+}
 /* Scolipede */
 .preset-scolipede {
     --accent-h: 340;
@@ -12,6 +49,7 @@
     --grotto-accent-1: hsl(340, 50%, 40%);
     --grotto-accent-2: hsl(340, 50%, 52%);
     --grotto-header-color-1: var(--background-primary);
+    --grotto-suggestion-color-hover: var(--grotto-day-1);
 }
 /* Ursaluna */
 .preset-ursaluna {
@@ -25,12 +63,10 @@
     --grotto-night-2: hsl(20, 40%, 32%);
     --grotto-accent-1: hsl(47, 56%, 40%);
     --grotto-accent-2: hsl(47, 56%, 46%);
-}
-.theme-dark.preset-ursaluna,
-.is-mobile.theme-dark.preset-ursaluna {
-    --grotto-button-color: var(--background-primary);
-    --grotto-selection-color: var(--background-primary);
-    --grotto-dropdown-color: var(--background-primary);
+    --grotto-button-color: var(--grotto-night-1);
+    --grotto-dropdown-color: var(--grotto-night-1);
+    --grotto-sidebar-active-color: var(--grotto-night-1);
+    --grotto-suggestion-color-hover: var(--grotto-night-1);
 }
 /* Wattrel */
 .preset-wattrel {
@@ -55,7 +91,6 @@
     --grotto-selection-color: var(--background-primary);
     --grotto-dropdown-color: var(--background-primary);
 }
-
 /* Zygarde */
 .preset-zygarde {
     --accent-h: 225;
@@ -71,6 +106,7 @@
     --grotto-sidebar-color-hover: var(--grotto-night-1);
     --grotto-sidebar-active-background-color: var(--grotto-night-1);
     --grotto-calendar-color: var(--grotto-night-1);
+    --grotto-calendar-border-color: var(--grotto-night-1);
     --grotto-calendar-color-hover: var(--grotto-night-2);
 }
 /* Cheren */
@@ -92,9 +128,10 @@
     --grotto-night-2: hsl(196, 60%, 60%);
     --grotto-accent-1: hsl(0, 30%, 50%);
     --grotto-accent-2: hsl(0, 30%, 56%);
-    --text-normal: hsl(200, 10%, 14%);
-    --text-muted: hsl(200, 10%, 24%);
-    --text-faint: hsl(200, 10%, 32%);
+    --text-normal: hsl(196, 60%, 14%);
+    --text-muted: hsl(196, 60%, 24%);
+    --text-faint: hsl(196, 60%, 50%);
+    --grotto-toggle-color: var(--text-normal);
 }
 .theme-dark.preset-cheren,
 .is-mobile.theme-dark.preset-cheren {
@@ -108,6 +145,7 @@
     --grotto-night-2: hsl(196, 60%, 50%);
     --grotto-accent-1: hsl(0, 30%, 50%);
     --grotto-accent-2: hsl(0, 30%, 56%);
+    --grotto-toggle-color: var(--grotto-night-0);
 }
 /* Dawn */
 .preset-dawn {
@@ -116,12 +154,13 @@
     --accent-l: 60%;
     --grotto-calendar-color: var(--grotto-day-1);
     --grotto-calendar-color-hover: var(--grotto-accent-2);
+    --grotto-calendar-border-color: var(--grotto-night-1);
 }
 .theme-light.preset-dawn {
     --grotto-day-1: hsl(0, 20%, 90%);
     --grotto-day-2: hsl(0, 20%, 80%);
     --grotto-night-0: hsl(0, 40%, 50%);
-    --grotto-night-1: hsl(200, 30%, 30%);
+    --grotto-night-1: hsl(200, 30%, 20%);
     --grotto-night-2: hsl(200, 20%, 60%);
     --grotto-accent-1: hsl(0, 40%, 60%);
     --grotto-accent-2: hsl(0, 40%, 64%);
@@ -235,6 +274,10 @@ body.preset-steelix {
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-accent-1: hsl(180, 20%, 60%);
     --grotto-accent-2: hsl(180, 20%, 64%);
+    --grotto-button-color: var(--grotto-night-1);
+    --grotto-dropdown-color: var(--grotto-night-1);
+    --grotto-sidebar-active-color: var(--grotto-night-1);
+    --grotto-suggestion-color-hover: var(--grotto-night-1);
 }
 /* Unova */
 body.preset-unova {
@@ -248,6 +291,10 @@ body.preset-unova {
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-accent-1: hsl(0, 0%, 60%);
     --grotto-accent-2: hsl(0, 0%, 64%);
+    --grotto-button-color: var(--grotto-night-1);
+    --grotto-dropdown-color: var(--grotto-night-1);
+    --grotto-sidebar-active-color: var(--grotto-night-1);
+    --grotto-suggestion-color-hover: var(--grotto-night-1);
 }
 /* Clobbopus */
 body, 
@@ -294,40 +341,12 @@ body.preset-clobbopus {
     --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
 }
-/* Existing Variables */
+/* General Variables */
 body {
-    --tag-radius: 0px;
-    --tag-padding-x: 0.4em;
-    --tag-padding-y: 0.2em;
-    --blockquote-color: var(--text-normal);
-    --blockquote-border-thickness: 2px;
-    --blockquote-border-color: var(--text-normal);/*Plugin*/
-    --blockquote-background-color: transparent;/*Plugin*/
-    --embed-max-height: 4000px;/*Plugin*/
     --background-modifier-hover: transparent;
-    --list-bullet-radius: 0px;
     --p-spacing: 0px;
-    --table-background: var(--background-primary);/*Plugin*/
-    --table-border-width: 1px;
-    --table-border-color: var(--text-normal);
-    --table-header-background-hover: var(--table-background);
-    --table-text-color: var(--text-normal);
-    --table-add-button-border-color: var(--table-border-color);
-    --icon-xs-stroke-width: 1px;
-    --icon-s-stroke-width: 1px;
-    --icon-m-stroke-width: 1px;
-    --icon-l-stroke-width: 1px;
-    --icon-xl-stroke-width: 1px;
-    --input-radius: 0px;
-    --radius-s: 0px;
-    --radius-m: 0px;
-    --radius-l: 0px;
-    --radius-xl: 0px;
     --tab-curve: 0px;
     --nav-indentation-guide-width: 0px;
-    --metadata-property-radius: 0px;
-    --metadata-property-radius-hover: 0px;
-    --metadata-property-radius-focus: 0px;
     --tab-outline-width: 0px;
     --tab-radius-active: 0px;
     --border-width: 0px;
@@ -335,32 +354,30 @@ body {
     --toggle-border-width: 2px;
     --file-line-width: 700px;/*Plugin*/
     font-weight: var(--grotto-font-weight);
-    --checkbox-marker-color: transparent;
-    --scrollbar-width: 12px;
-    --scrollbar-radius: 0px;
-    --scrollbar-bg: var(--grotto-accent-1);
-    --scrollbar-thumb-bg: var(--grotto-accent-1);
-    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
-    --list-marker-color: var(--text-normal);
-    --list-marker-color-hover: var(--text-faint);
-    --list-marker-color-collapsed: var(--text-muted);
-    --icon-color-hover: var(--grotto-accent-1);
     --background-modifier-border: var(--text-faint);
     --background-modifier-border-focus: var(--text-normal);
     --vault-profile-color: var(--grotto-sidebar-color);
     --nav-item-color-hover: var(--grotto-sidebar-color);
-    --bases-table-row-border-width: 0px;
 }
-/* New variables */
+/* Variables */
 body {
     /* Tags */
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-background-color: var(--text-normal);
     --grotto-tag-pointer-events: none;/*Plugin*/
+    --tag-radius: 0px;
+    --tag-padding-x: 0.4em;
+    --tag-padding-y: 0.2em;
     /* Text */
-    --grotto-text-accent: var(--grotto-accent-1);/*Plugin*/
-    --grotto-text-accent-hover: var(--grotto-accent-2);/*Plugin*/
+    --grotto-bold-color: var(--grotto-accent-1);/*Plugin*/
+    --grotto-italic-color: var(--grotto-accent-1);/*Plugin*/
+    --grotto-strikethrough-color: var(--text-normal);
+    --grotto-link-color: var(--grotto-accent-1);
+    --grotto-link-color-hover: var(--grotto-accent-2);/*Plugin*/
+    --grotto-comment-color: var(--grotto-accent-1);
     --grotto-font-weight: 400;/*Plugin*/
+    --grotto-bold-font-weight: 800;
+    --grotto-italic-font-weight: 400;
     /* Headers */
     --grotto-header-color-1: var(--text-normal);
     --grotto-header-color-2: var(--background-primary);
@@ -371,17 +388,34 @@ body {
     --grotto-header-background-color-1: var(--grotto-accent-1);
     --grotto-header-background-color-2: var(--text-normal);
     --grotto-header-background-color-3: var(--grotto-accent-1);
-    --grotto-header-background-color-4: var(--grotto-accent-1);
+    --grotto-header-background-color-4: transparent;
     --grotto-header-background-color-5: var(--grotto-accent-1);
     --grotto-header-background-color-6: transparent;
+    --grotto-header-radius: 0px;
+    --grotto-header-size: 1.5em;
+    /* Blockquotes */
+    --blockquote-color: var(--text-normal);
+    --blockquote-border-thickness: 2px;
+    --blockquote-border-color: var(--text-normal);/*Plugin*/
+    --blockquote-background-color: transparent;/*Plugin*/
     /* Callouts */
     --grotto-callout-color: var(--text-normal);
     --grotto-callout-background-color: var(--background-primary);/*Plugin*/
     --grotto-callout-icon: none;/*Plugin*/
+    --grotto-callout-border-radius: 0px;
     /* Embeds */
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: var(--background-primary);
     --grotto-embed-title: block;/*Plugin*/
+    --embed-max-height: 4000px;/*Plugin*/
+    /* Lists */
+    --list-bullet-radius: 0px;
+    --list-marker-color: var(--text-normal);
+    --list-marker-color-hover: var(--text-faint);
+    --list-marker-color-collapsed: var(--text-muted);
+    --grotto-checkbox-border-color: var(--text-normal);
+    --grotto-checkbox-radius: 0px;
+    --checkbox-marker-color: transparent;
     /* Icon */
     --grotto-icon-hover: var(--grotto-accent-1);
     /* Status Bar */
@@ -390,6 +424,9 @@ body {
     /* Notice */
     --grotto-notice-color: var(--text-normal);
     --grotto-notice-background-color: var(--grotto-accent-1);
+    --grotto-notice-progress-bar-color: var(--grotto-accent-1);
+    --grotto-notice-progress-bar-background-color: var(--background-primary);
+    --grotto-notice-radius: 0px;
     /* Suggestions */
     --grotto-suggestion-color: var(--text-normal);
     --grotto-suggestion-color-hover: var(--text-normal);
@@ -397,6 +434,25 @@ body {
     /* Tables */
     --grotto-table-cell-width: fit-content;/*Plugin*/
     --grotto-table-border-style: separate;/*Plugin*/
+    --table-background: var(--background-primary);/*Plugin*/
+    --table-border-width: 1px;
+    --table-border-color: var(--text-normal);
+    --table-header-background-hover: var(--table-background);
+    --table-text-color: var(--text-normal);
+    --table-add-button-border-color: var(--table-border-color);
+    /* Icons */
+    --icon-xs-stroke-width: 1px;
+    --icon-s-stroke-width: 1px;
+    --icon-m-stroke-width: 1px;
+    --icon-l-stroke-width: 1px;
+    --icon-xl-stroke-width: 1px;
+    --icon-color-hover: var(--grotto-accent-1);
+    /* Radius */
+    --input-radius: 0px;
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --radius-xl: 0px;
     /* Mobile Specific */
     --grotto-system-status-color: var(--background-primary);
     /* Mobile Toolbar */
@@ -405,14 +461,16 @@ body {
     --grotto-toolbar-background-color: var(--text-normal);/*Plugin*/
     /* Buttons */
     --grotto-button-color: var(--text-normal);
+    --grotto-button-border-color: var(--text-normal);
     --grotto-button-background-color: var(--grotto-accent-1);
     --grotto-button-background-color-hover: var(--grotto-accent-2);
     /* Dropdowns */
     --grotto-dropdown-color: var(--text-normal);
+    --grotto-dropdown-border-color: var(--text-normal);
     --grotto-dropdown-background-color: var(--grotto-accent-1);
     --grotto-dropdown-background-color-hover: var(--grotto-accent-2);
     /* Checkbox Container */
-    --grotto-toggle-color: var(--text-normal);
+    --grotto-toggle-color: var(--grotto-night-0);
     --grotto-toggle-background-color: var(--grotto-item-color-hover);
     /* Mobile Navbar */
     --grotto-navbar-color: var(--background-primary);
@@ -430,6 +488,7 @@ body {
     --grotto-calendar-pointer-events: auto;
     --grotto-calendar-color: var(--grotto-accent-1);
     --grotto-calendar-color-hover: var(--grotto-night-2);
+    --grotto-calendar-background-color: var(--background-secondary);
     --grotto-calendar-border-color: var(--grotto-accent-1);
     /* Selection */
     --grotto-selection-color: var(--text-normal);
@@ -446,6 +505,23 @@ body {
     --grotto-menu-color: var(--text-normal);
     --grotto-menu-background-color: var(--background-primary);
     --grotto-menu-active-background-color: var(--grotto-accent-1);
+    /* Bases */
+    --bases-table-row-border-width: 0px;
+    /* Scrollbars */
+    --scrollbar-width: 12px;
+    --scrollbar-radius: 0px;
+    --scrollbar-bg: var(--grotto-accent-1);
+    --scrollbar-thumb-bg: var(--grotto-accent-1);
+    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
+    /* Properties */
+    --metadata-property-radius: 0px;
+    --metadata-property-radius-hover: 0px;
+    --metadata-property-radius-focus: 0px;
+    /* Command Prompt */
+    --grotto-prompt-color: var(--text-normal);
+    --grotto-prompt-color-hover: var(--background-primary);
+    --grotto-prompt-background-color: var(--background-primary);
+    --grotto-prompt-background-color-hover: var(--text-normal);
 }
 /* Tags */
 a.tag, 
@@ -453,27 +529,33 @@ a.tag:hover,
 .cm-hashtag, 
 .cm-hashtag:hover, 
 .cm-s-obsidian span.cm-quote.cm-hashtag {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
+    color: var(--grotto-tag-color);
+    background-color: var(--grotto-tag-background-color);
     pointer-events: var(--grotto-tag-pointer-events);
     caret-color: currentColor;
-    line-height: 2em;
+    line-height: 2.4em;
     font-size: 0.8em;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 /* Bold */
 strong, 
 .cm-strong {
-    color: var(--grotto-text-accent);
-    font-weight: 800;
+    color: var(--grotto-bold-color);
+    font-weight: var(--grotto-bold-font-weight);
     caret-color: currentColor;
 }
 /* Italic */
 em, 
 .cm-em {
-    color: var(--grotto-text-accent);
-    font-weight: inherit;
+    color: var(--grotto-italic-color);
+    font-weight: var(--grotto-italic-font-weight);
     caret-color: currentColor;
+}
+del, 
+.cm-strikethrough {
+  color: var(--grotto-strikethrough-color);
+  caret-color: currentColor;
+  opacity: 0.4;
 }
 /* Link */
 .cm-underline, 
@@ -482,18 +564,18 @@ em,
 .cm-s-obsidian span.cm-hmd-internal-link, 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline, 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline {
-    color: var(--grotto-text-accent);
+    color: var(--grotto-link-color);
 }
 .markdown-source-view.mod-cm6 .cm-underline:hover, 
 .markdown-rendered .internal-link:hover, 
-.external-link:hover,  
+.external-link:hover, 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover, 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: var(--grotto-text-accent-hover);
+    color: var(--grotto-link-color-hover);
 }
 /* Comment */
 .cm-comment {
-    color: var(--grotto-text-accent);
+    color: var(--grotto-comment-color);
     opacity: 0.8;
 }
 /* Embedded Image */
@@ -510,13 +592,13 @@ img {
 .markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4, 
 .markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5, 
 .markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
-    font-size: 1.5em;
+    font-size: var(--grotto-header-size);
     letter-spacing: 0px;
     line-height: 1.5em;
     width: fit-content;
     caret-color: currentColor;
     font-weight: inherit;
-    border-radius: 0px;
+    border-radius: var(--grotto-header-radius);
     padding: 0px 8px;
 }
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
@@ -531,15 +613,17 @@ img {
 }
 .markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
     color: var(--grotto-header-color-3);
-    background-color: transparent;
-    border: 2px solid var(--grotto-header-background-color-3);
+    background-color: var(--grotto-header-background-color-3);
+    border: 1px solid var(--grotto-header-color-3);
+    border-width: 2px;
     padding: 0px 7px;
+    outline: 2px solid var(--background-primary);
+    outline-offset: -4px;
 }
 .markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4 {
     color: var(--grotto-header-color-4);
-    background-color: transparent;
-    border: 1px solid var(--grotto-header-background-color-4);
-    border-width: 0px 2px 0px 2px;
+    background-color: var(--grotto-header-background-color-4);
+    border: 2px solid var(--grotto-header-color-4);
     padding: 0px 7px;
 }
 .markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5 {
@@ -567,15 +651,15 @@ img {
     color: var(--grotto-callout-color);
     background-color: var(--grotto-callout-background-color);
     border: 1px solid var(--grotto-callout-color);
-    border-radius: 0px;
+    border-radius: var(--grotto-callout-border-radius);
     padding: 8px 16px;
 }
 .callout-title {
     color: var(--grotto-callout-color);
     border-bottom: 1px solid var(--grotto-callout-color);
-    border-radius: 0px;
+    border-radius: var(--grotto-callout-border-radius);
     gap: 0px;
-    font-size: 1.6em;
+    font-size: var(--grotto-header-size);
 }
 .callout-content p {
     margin: 4px;
@@ -628,8 +712,8 @@ input[type=checkbox],
 input[type=checkbox]:hover,
 input[type=checkbox]:checked,
 input[type=checkbox]:checked:hover {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+    border: 1px solid var(--grotto-checkbox-border-color);
+    border-radius: var(--grotto-checkbox-radius);
 }
 /* Status Bar */
 .status-bar {
@@ -651,7 +735,7 @@ input[type=checkbox]:checked:hover {
     color: var(--grotto-notice-color);
     background-color: var(--grotto-notice-background-color);
     border: 1px solid var(--grotto-notice-color);
-    border-radius: 0px;
+    border-radius: var(--grotto-notice-radius);
     box-shadow: none;
 }
 .notice progress[value]::-webkit-progress-bar,
@@ -659,9 +743,10 @@ input[type=checkbox]:checked:hover {
 .markdown-rendered progress[value]::-webkit-progress-bar,
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar, 
 .theme-light .notice progress[value]::-webkit-progress-bar {
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
+    background-color: var(--grotto-notice-progress-bar-background-color);
+    border: 1px solid var(--grotto-notice-color);
+    --interactive-accent: var(--grotto-notice-progress-bar-color);
+    border-radius: var(--grotto-notice-radius);
     box-shadow: none;
 }
 /* Tooltip */
@@ -669,7 +754,7 @@ input[type=checkbox]:checked:hover {
     color: var(--grotto-notice-color);
     background-color: var(--grotto-notice-background-color);
     border: 1px solid var(--grotto-notice-color);
-    border-radius: 0px;
+    border-radius: var(--grotto-notice-radius);
     box-shadow: none;
 }
 /* Suggestion Container */
@@ -866,7 +951,7 @@ button:not(.clickable-icon),
 button.mod-cta {
     color: var(--grotto-button-color);
     background-color: var(--grotto-button-background-color);
-    border: 1px solid var(--grotto-button-color);
+    border: 1px solid var(--grotto-button-border-color);
     border-radius: 0px;
     box-shadow: none;
 }
@@ -875,7 +960,7 @@ button.mod-cta:hover,
 button:not(.clickable-icon).mobile-tap {
     color: var(--grotto-button-color);
     background-color: var(--grotto-button-background-color-hover);
-    border: 1px solid var(--grotto-button-color);
+    border: 1px solid var(--grotto-button-border-color);
     border-radius: 0px;
     box-shadow: none;
 }
@@ -885,7 +970,7 @@ button:not(.clickable-icon).mobile-tap {
 .bases-query-container .filter-group .filter-group-header .conjunction.dropdown {
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
     border-radius: 0px;
     box-shadow: none;
 }
@@ -895,13 +980,14 @@ button:not(.clickable-icon).mobile-tap {
 .dropdown.mobile-tap,
 .dropdown:focus, 
 .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
+    color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color-hover);
     box-shadow: none;
 }
 .dropdown option {
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
     border-radius: 0px;
     box-shadow: none;
 }
@@ -912,7 +998,7 @@ button:not(.clickable-icon).mobile-tap {
     box-shadow: none;
 }
 .checkbox-container:after {
-    border: 1px solid var(--grotto-night-1);
+    border: 1px solid var(--grotto-toggle-color);
     top: -0.5px;
     background-color: var(--grotto-day-1);
 }
@@ -1063,7 +1149,7 @@ input.metadata-property-key-input:hover,
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
 body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
 body:not(.is-grabbing) .nav-folder-title:hover {
-    color: var(--grotto-accent-1);
+    color: var(--grotto-sidebar-color-hover);
 }
 .tree-item-self.is-clickable:hover {
     color: var(--grotto-sidebar-color);
@@ -1077,7 +1163,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active.mobile-tap {
     color: var(--grotto-sidebar-active-color);
     background-color: var(--grotto-sidebar-color-hover);
-    border: 1px solid var(--grotto-sidebar-active-color);
+    border: 1px solid var(--grotto-sidebar-color);
 }
 .workspace-split.mod-left-split .workspace-tabs .workspace-leaf .view-content, 
 .workspace-split.mod-right-split .workspace-tabs .workspace-leaf .view-content {
@@ -1087,7 +1173,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 body:not(.is-grabbing) .nav-file-title.is-active:hover {
     color: var(--grotto-sidebar-active-color);
     background-color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid var(--grotto-sidebar-active-color);
+    border: 1px solid var(--grotto-sidebar-color);
 }
 .clickable-icon.nav-action-button.mobile-tap,
 .clickable-icon.nav-action-button:hover, 
@@ -1158,16 +1244,7 @@ body.is-focused .workspace-tabs.mod-top {
 .query-toolbar-menu .filter-property-select {
     max-width: 100%;
 }
-.metadata-property-value {
-    border-right: 1px solid var(--text-normal);
-}
-.metadata-property-icon {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
-    height: 100%;
-    padding: 4px;
-}
+
 .tree-item-self:hover .tree-item-flair {
     color: var(--grotto-accent-1);
 }
@@ -1230,7 +1307,7 @@ body.is-focused .workspace-tabs.mod-top {
     color: var(--text-normal);
 }
 #calendar-container .today {
-    color: var(--grotto-sidebar-background-color);
+    color: var(--grotto-calendar-background-color);
     background-color: var(--grotto-calendar-color);
 }
 #calendar-container .month {
@@ -1247,7 +1324,7 @@ body.is-focused .workspace-tabs.mod-top {
 }
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-border-color);
-    color: var(--grotto-sidebar-background-color);
+    color: var(--grotto-calendar-background-color);
     min-width: 0px;
 }
 /* Menus */
@@ -1374,13 +1451,6 @@ body:not(.is-phone) .menu-item-title {
 .workspace-drawer-ribbon {
     background-color: var(--background-secondary);
 }
-/* Scrollbar */
-body.styled-scrollbars ::-webkit-scrollbar-thumb {
-    border: 1px solid var(--text-normal);
-}
-body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
-    border: 1px solid var(--text-normal);
-}
 /* Horizontal Rule */
 hr {
     border-color: var(--text-normal);
@@ -1416,7 +1486,7 @@ body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
 body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     color: var(--grotto-sidebar-active-color);
     background-color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid var(--grotto-sidebar-active-color);
+    border: 1px solid var(--grotto-sidebar-color);
 }
 .setting-item {
     border-width: 0px;
@@ -1524,9 +1594,9 @@ select:focus {
 .theme-dark.is-mobile .prompt,
 .theme-light.is-mobile .prompt,
 .prompt {
-    border: 1px solid var(--text-normal);
+    border: 1px solid var(--grotto-prompt-color);
     border-radius: 0px;
-    background-color: var(--background-primary);
+    background-color: var(--grotto-prompt-background-color);
 }
 input.prompt-input:hover,
 input.prompt-input:focus,
@@ -1534,13 +1604,13 @@ input.prompt-input:focus-visible,
 .theme-dark.is-mobile .prompt input.prompt-input,
 .theme-light.is-mobile .prompt input.prompt-input,
 .prompt input.prompt-input {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
+    color: var(--grotto-prompt-color-hover);
+    background-color: var(--grotto-prompt-background-color-hover);
     caret-color: currentColor;
 }
 .prompt-results .suggestion-hotkey {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
+    color: var(--grotto-prompt-color-hover);
+    background-color: var(--grotto-prompt-background-color-hover);
     border-radius: 0px;
 }
 .search-input-clear-button {
@@ -1551,7 +1621,7 @@ input.prompt-input:focus-visible,
     color: var(--grotto-accent-1);
 }
 .prompt-instructions {
-    color: var(--text-normal);
+    color: var(--grotto-prompt-background-color-hover);
 }
 .is-mobile .prompt {
     border-radius: 0px;
@@ -1589,6 +1659,30 @@ input.metadata-property-key-input:hover,
 .metadata-property-value .multi-select-container {
     background-color: transparent;
     border-width: 1px 0px 1px 1px;
+    padding: 4px;
+}
+.is-phone input.metadata-property-key-input, 
+.is-phone input.metadata-property-key-input:hover, 
+.is-phone .metadata-property-value .multi-select-container {
+    background-color: transparent;
+    border-width: 1px 0px 0px 1px;
+    padding: 4px;
+}
+.metadata-property-value {
+    border-right: 1px solid var(--text-normal);
+}
+.metadata-property-icon {
+    color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    border-width: 1px 0px 1px 1px;
+    height: 100%;
+    padding: 4px;
+}
+.is-phone .metadata-property-icon {
+    color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    border-width: 1px 0px 0px 1px;
+    height: 100%;
     padding: 4px;
 }
 .metadata-property-value {
@@ -1657,14 +1751,23 @@ settings:
                 label: Gardevoir
                 value: preset-gardevoir
             -
+                label: Metagross
+                value: preset-metagross
+            -
                 label: Noivern
                 value: preset-noivern
             -
                 label: Poltchageist
                 value: preset-poltchageist
             -
+                label: Revavroom
+                value: preset-revavroom
+            -
                 label: Rivals
                 value: preset-rivals
+            -
+                label: Scolipede
+                value: preset-scolipede
             -
                 label: Steelix
                 value: preset-steelix
