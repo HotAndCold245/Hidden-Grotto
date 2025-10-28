@@ -1,12 +1,11 @@
 # Introduction
 This theme is primarily designed for personal use. The base color palette is inspired by the Pokemon, Clobbopus. 
 
-#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is available in the theme's repository. 
 ![IMG_1](https://github.com/user-attachments/assets/5b480b0e-8515-418a-995a-c764ff6edb7d)
-
+#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is available in the theme's repository. 
 # Features
 - Supports both **light** and **dark** mode
-- Additional colour palettes
+- 16 Additional colour palettes
 	- Available through the Style Settings plugin.
 	- Also through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -29,7 +28,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![IMG_5](https://github.com/user-attachments/assets/5935bd50-73eb-4543-bab0-d88d646ea786)
 
 # The Plugin
- The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin developed for use with this theme allows for more customization. Color palettes can be easily swapped between using a dedicated ribbon/toolbar/command prompt button. You can also create your own presets using the following format.
+ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin developed for use with this theme allows for more customization. Color palettes can be easily swapped between using a dedicated ribbon/toolbar/command prompt button. You can also create your own presets using the following format. 
  ```
 .preset-yourpresetname {
     --accent-h: ;
@@ -41,25 +40,17 @@ This theme is primarily designed for personal use. The base color palette is ins
     --grotto-night-1: hsl(); /*Controls the background color in dark mode*/
     --grotto-night-2: hsl(); /*Controls the hover color for certain menus in dark mode*/
     --grotto-accent-1: hsl(); /*Accent color*/
-    --grotto-accent-2: hsla(); /*Accent hover*/
+    --grotto-accent-2: hsl(); /*Accent hover*/
 }
  ```
+There are more variables to control minor things that can be found in the css file.
+
 Self-defined presets will automatically appear in the Hidden Grotto Controls plugin menu after restarting the app. #Note : These will not appear in Style Settings menu since they are not added to the main theme.css. 
 
 # Feedback
 Please submit an issue on the repository or try the discord server.
 
 # Changelog
-##### V1.1.7
-- Fixed properties view
-- Fixed graph view
-- New preset - Scolipede
-##### V1.1.3
-- Fixed search result title visibility
-##### V1.1.2
-- Fixed default behaviour of table cells - Now set to wrap around
-- Fixed default behaviour of embed titles - Now set to be visible
-##### V1.1.1
-- Fixed readable line width controls
-##### V1.1.0
-- Added Style Settings support
+##### V1.2.0
+- New preset - Metagross, Revavroom
+- Fixed properties view on mobile
