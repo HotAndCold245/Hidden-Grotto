@@ -136,8 +136,8 @@ body {
     --list-indent-editing: 0.8rem;
     --list-indent-source: 0;
     --list-bullet-radius: 0rem;
-    --list-bullet-size: 0.3rem;
-    --list-spacing: 0rem;
+    --list-bullet-size: 0.4rem;
+    --list-spacing: 0.08rem;
     /*Blockquotes*/
     --blockquote-border-thickness: 2px;
     --blockquote-color: var(--text-normal);
@@ -2470,6 +2470,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
