@@ -5,7 +5,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is available in the theme's repository. 
 # Features
 - Supports both **light** and **dark** mode
-- 17 Additional colour palettes
+- 19 Additional colour palettes
 	- Available through the Style Settings plugin.
 	- Also through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -19,11 +19,8 @@ This theme is primarily designed for personal use. The base color palette is ins
 - Mobile toolbar
 	- The maximum toolbar height (number of rows visible) can be adjusted by setting `--grotto-toolbar-rows` to the number of rows. If there are more tools than a row can hold while maximum height is set to 1, then the toolbar can be swiped up to access the rest of the tools. This is a change from the default behaviour of swiping to the left because it let's you see more of the tools at once. #Note : Setting the height to more rows than necessary to hold the active number of tools will cause the mobile toolbar to move further up than intended. 
 - Mobile navbar
-	- The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room. 
+	- The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room.
 # Screenshots
-![IMG_2](https://github.com/user-attachments/assets/52056adc-e39f-4b01-8764-f0f7388be70e)
-![IMG_3](https://github.com/user-attachments/assets/ed458c15-75f8-4459-b4d5-2aaacf782252)
-![IMG_4](https://github.com/user-attachments/assets/00b3d483-f37d-4233-8abb-ad518b037148)
 ![IMG_5](https://github.com/user-attachments/assets/5935bd50-73eb-4543-bab0-d88d646ea786)
 
 # The Plugin
@@ -47,7 +44,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 There are more variables to control minor things that can be found in the css file.
 
 Self-defined presets will automatically appear in the Hidden Grotto Controls plugin menu after restarting the app. 
-#Note : These will not appear in Style Settings menu since they are not added to the main theme.css. In order to make them appear in the settings, you can add the following section to your snippet and update the name of the preset. 
+#Note : These will not appear in Style Settings menu since they are not added to the main theme.css. In order to make them appear in the settings, you can add the following section to your snippet and update the `hoenn` parts to the name of your preset.
 ```
 /* @settings
 name: Personal Presets
@@ -68,10 +65,10 @@ settings:
 ```
 
 # Feedback
-Please submit an issue on the repository or try the official Obsidian discord server. 
+If there are any issues, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev channel. 
 
 # Changelog
-##### V1.2.3
+##### V1.2.4
 - Changed tab header appearance
-- Added presets - Alola, Calyrex, Lucario, Meloetta, Skeledirge
+- Added presets - Absol, Alola, Calyrex, Lucario, Meloetta, Skeledirge, Zacian
 - Removed presets - Rivals, Gardevoir, Wattrel, Zygarde
