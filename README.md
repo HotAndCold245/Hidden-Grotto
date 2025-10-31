@@ -71,7 +71,7 @@ settings:
 Please submit an issue on the repository or try the official Obsidian discord server. 
 
 # Changelog
-##### V1.2.1
+##### V1.2.2
 - Changed tab header appearance
 - Added presets - Alola, Calyrex, Lucario, Meloetta, Skeledirge
 - Removed presets - Rivals, Gardevoir, Wattrel, Zygarde
