@@ -1318,7 +1318,7 @@ input[type='range']::-webkit-slider-thumb:active {
 /*Scrollbars*/
 .is-android {
   --scrollbar-border-width: 2px;
-  --scrollbar-width: 5px;
+  --scrollbar-width: 8px;
   --scrollbar-radius: 0;
 }
 /*Mobile Quick Actions*/
@@ -1326,6 +1326,7 @@ input[type='range']::-webkit-slider-thumb:active {
 .pull-down-action, 
 .pull-out-action {
     color: var(--grotto-pull-color);
+    background-color: var(--background-primary);
     border: 1px solid var(--grotto-pull-border-color);
     border-radius: var(--grotto-pull-radius);
     padding: 8px;
@@ -1567,6 +1568,20 @@ input[type=search]:hover {
     caret-color: currentColor;
     border-radius: 0px;
 }
+.global-search-input-container.search-input-container input, 
+.global-search-input-container.search-input-container input:hover {
+    color: var(--grotto-day-1);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--grotto-day-1);
+    caret-color: currentColor;
+}
+.search-result-file-match {
+    background-color: var(--grotto-background-tertiary);
+}
+.search-result-file-matched-text {
+    color: var(--text-normal);
+    background-color: var(--grotto-accent-1);
+}
 input[type='date'], 
 input[type='date']:hover, 
 input[type='datetime-local'], 
@@ -1773,15 +1788,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     display: none;
 }
 /* Rename Bar Customization */
-.tree-item-self.is-being-renamed:focus-within {
+.tree-item-self.is-being-renamed:focus-within, 
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed{
     color: var(--background-secondary);
-    background-color: var(--grotto-settings-color);
+    background-color: var(--grotto-day-1);
     border-radius: 0px;
     caret-color: currentColor;
-}
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
-    color: var(--background-secondary);
-    background-color: var(--grotto-settings-color);
 }
 /* Multiselect Pills */
 .multi-select-pill, 
@@ -1802,7 +1814,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     right: 0px;
     width: 100%
 }
-.metadata-property-key {
+body:not(.is-phone).metadata-property-key {
     border-bottom: none;
 }
 input.metadata-property-key-input, 
@@ -2461,3 +2473,4 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
