@@ -1,302 +1,5 @@
-/* Presets */
-/* Metagross */
-.preset-metagross {
-    --accent-h: 0;
-    --accent-s: 0%;
-    --accent-l: 20%;
-    --grotto-day-1: hsl(180, 20%, 84%);
-    --grotto-day-2: hsl(180, 20%, 72%);
-    --grotto-night-0: hsl(208, 40%, 32%);
-    --grotto-night-1: hsl(208, 40%, 44%);
-    --grotto-night-2: hsl(208, 20%, 60%);
-    --grotto-accent-1: hsl(0, 0%, 20%);
-    --grotto-accent-2: hsl(0, 0%, 28%);
-    --grotto-button-color: var(--grotto-day-1);
-    --grotto-selection-color: var(--grotto-day-1);
-    --grotto-dropdown-color: var(--grotto-day-1);
-    --grotto-header-color-1: var(--background-primary);
-    --grotto-calendar-background-color: var(--grotto-day-1);
-    --grotto-suggestion-color-hover : var(--grotto-day-1);
-}
-/* Revavroom */
-.preset-revavroom {
-    --accent-h: 48;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(262, 0%, 80%);
-    --grotto-day-2: hsl(262, 0%, 64%);
-    --grotto-night-0: hsl(262, 25%, 14%);
-    --grotto-night-1: hsl(262, 25%, 20%);
-    --grotto-night-2: hsl(262, 25%, 40%);
-    --grotto-accent-1: hsl(48, 50%, 50%);
-    --grotto-accent-2: hsl(48, 50%, 64%);
-    --grotto-sidebar-active-color: var(--grotto-night-1);
-    --grotto-button-color: var(--grotto-night-1);
-    --grotto-selection-color: var(--grotto-night-1);
-    --grotto-dropdown-color: var(--grotto-night-1);
-    --grotto-suggestion-color-hover: var(--grotto-night-1);
-}
-/* Scolipede */
-.preset-scolipede {
-    --accent-h: 340;
-    --accent-s: 50%;
-    --accent-l: 40%;
-    --grotto-day-1: hsl(240, 50%, 84%);
-    --grotto-day-2: hsl(240, 30%, 72%);
-    --grotto-night-0: hsl(340, 10%, 12%);
-    --grotto-night-1: hsl(340, 10%, 18%);
-    --grotto-night-2: hsl(340, 10%, 24%);
-    --grotto-accent-1: hsl(340, 50%, 40%);
-    --grotto-accent-2: hsl(340, 50%, 52%);
-    --grotto-header-color-1: var(--background-primary);
-    --grotto-suggestion-color-hover: var(--grotto-day-1);
-}
-/* Ursaluna */
-.preset-ursaluna {
-    --accent-h: 47;
-    --accent-s: 56%;
-    --accent-l: 40%;
-    --grotto-day-1: hsl(20, 10%, 80%);
-    --grotto-day-2: hsl(20, 10%, 70%);
-    --grotto-night-0: hsl(20, 40%, 14%);
-    --grotto-night-1: hsl(20, 40%, 20%);
-    --grotto-night-2: hsl(20, 40%, 32%);
-    --grotto-accent-1: hsl(47, 56%, 40%);
-    --grotto-accent-2: hsl(47, 56%, 46%);
-    --grotto-button-color: var(--grotto-night-1);
-    --grotto-dropdown-color: var(--grotto-night-1);
-    --grotto-sidebar-active-color: var(--grotto-night-1);
-    --grotto-suggestion-color-hover: var(--grotto-night-1);
-}
-/* Wattrel */
-.preset-wattrel {
-    --accent-h: 47;
-    --accent-s: 56%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(200, 10%, 60%);
-    --grotto-day-2: hsl(200, 10%, 50%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 24%);
-    --grotto-accent-1: hsl(47, 56%, 50%);
-    --grotto-accent-2: hsl(47, 56%, 56%);
-    --grotto-header-color-1: var(--background-secondary);
-    --grotto-header-color-2: var(--background-primary);
-    --grotto-suggestion-color-hover : var(--background-secondary);
-    --grotto-sidebar-active-color: var(--background-secondary);
-}
-.theme-dark.preset-wattrel,
-.is-mobile.theme-dark.preset-wattrel {
-    --grotto-button-color: var(--background-primary);
-    --grotto-selection-color: var(--background-primary);
-    --grotto-dropdown-color: var(--background-primary);
-}
-/* Zygarde */
-.preset-zygarde {
-    --accent-h: 225;
-    --accent-s: 0%;
-    --accent-l: 20%;
-    --grotto-day-1: hsl(40, 10%, 90%);
-    --grotto-day-2: hsl(40, 10%, 80%);
-    --grotto-night-0: hsl(225, 0%, 12%);
-    --grotto-night-1: hsl(80, 40%, 45%);
-    --grotto-night-2: hsl(80, 40%, 64%);
-    --grotto-accent-1: hsl(225, 0%, 20%);
-    --grotto-accent-2: hsl(225, 0%, 26%);
-    --grotto-sidebar-color-hover: var(--grotto-night-1);
-    --grotto-sidebar-active-background-color: var(--grotto-night-1);
-    --grotto-calendar-color: var(--grotto-night-1);
-    --grotto-calendar-border-color: var(--grotto-night-1);
-    --grotto-calendar-color-hover: var(--grotto-night-2);
-}
-/* Cheren */
-.preset-cheren {
-    --accent-h: 40;
-    --accent-s: 70%;
-    --accent-l: 50%;
-    --grotto-calendar-color: var(--text-normal);
-    --grotto-calendar-color-hover: var(--grotto-accent-2);
-}
-.theme-light.preset-cheren {
-    --accent-h: 40;
-    --accent-s: 70%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 20%, 90%);
-    --grotto-day-2: hsl(0, 20%, 80%);
-    --grotto-night-0: hsl(196, 60%, 30%);
-    --grotto-night-1: hsl(196, 60%, 50%);
-    --grotto-night-2: hsl(196, 60%, 60%);
-    --grotto-accent-1: hsl(0, 30%, 50%);
-    --grotto-accent-2: hsl(0, 30%, 56%);
-    --text-normal: hsl(196, 60%, 14%);
-    --text-muted: hsl(196, 60%, 24%);
-    --text-faint: hsl(196, 60%, 50%);
-    --grotto-toggle-color: var(--text-normal);
-}
-.theme-dark.preset-cheren,
-.is-mobile.theme-dark.preset-cheren {
-    --accent-h: 0;
-    --accent-s: 30%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 20%, 90%);
-    --grotto-day-2: hsl(0, 20%, 80%);
-    --grotto-night-0: hsl(200, 10%, 14%);
-    --grotto-night-1: hsl(196, 60%, 30%);
-    --grotto-night-2: hsl(196, 60%, 50%);
-    --grotto-accent-1: hsl(0, 30%, 50%);
-    --grotto-accent-2: hsl(0, 30%, 56%);
-    --grotto-toggle-color: var(--grotto-night-0);
-}
-/* Dawn */
-.preset-dawn {
-    --accent-h: 0;
-    --accent-s: 40%;
-    --accent-l: 60%;
-    --grotto-calendar-color: var(--grotto-day-1);
-    --grotto-calendar-color-hover: var(--grotto-accent-2);
-    --grotto-calendar-border-color: var(--grotto-night-1);
-}
-.theme-light.preset-dawn {
-    --grotto-day-1: hsl(0, 20%, 90%);
-    --grotto-day-2: hsl(0, 20%, 80%);
-    --grotto-night-0: hsl(0, 40%, 50%);
-    --grotto-night-1: hsl(200, 30%, 20%);
-    --grotto-night-2: hsl(200, 20%, 60%);
-    --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsl(0, 40%, 64%);
-    --grotto-sidebar-color-hover: var(--grotto-night-1);
-}
-.theme-dark.preset-dawn,
-.is-mobile.theme-dark.preset-dawn {
-    --grotto-day-1: hsl(0, 20%, 90%);
-    --grotto-day-2: hsl(0, 20%, 80%);
-    --grotto-night-0: hsl(200, 30%, 20%);
-    --grotto-night-1: hsl(0, 40%, 50%);
-    --grotto-night-2: hsl(200, 30%, 50%);
-    --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsl(0, 40%, 64%);
-}
-/* Gardevoir */
-.preset-gardevoir {
-    --accent-h: 0;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(120, 30%, 90%);
-    --grotto-day-2: hsl(120, 30%, 80%);
-    --grotto-night-0: hsl(120, 30%, 60%);
-    --grotto-night-1: hsl(120, 30%, 68%);
-    --grotto-night-2: hsl(120, 30%, 74%);
-    --grotto-accent-1: hsl(0, 40%, 50%);
-    --grotto-accent-2: hsl(0, 40%, 56%);
-}
-.theme-dark.preset-gardevoir,
-.is-mobile.theme-dark.preset-gardevoir,
-.theme-light.preset-gardevoir {
-    --text-normal: hsl(0, 0%, 18%);
-    --text-muted: hsl(0, 0%, 24%);
-    --text-faint: hsl(0, 0%, 40%);
-    --grotto-sidebar-color: hsl(0, 0%, 18%);
-}
-/* Noivern */
-.preset-noivern {
-    --accent-h: 160;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(40, 10%, 90%);
-    --grotto-day-2: hsl(40, 10%, 80%);
-    --grotto-night-0: hsl(225, 10%, 12%);
-    --grotto-night-1: hsl(288, 26%, 32%);
-    --grotto-night-2: hsl(288, 26%, 40%);
-    --grotto-accent-1: hsl(160, 40%, 50%);
-    --grotto-accent-2: hsl(160, 40%, 56%);
-}
-/* Darkrai */
-body.preset-darkrai {
-    --accent-h: 5;
-    --accent-s: 79%;
-    --accent-l: 53%;
-    --grotto-day-1: hsl(212, 0%, 90%);
-    --grotto-day-2: hsl(212, 0%, 80%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 32%);
-    --grotto-accent-1: hsl(5, 60%, 53%);
-    --grotto-accent-2: hsl(5, 60%, 60%);
-}
-/* Volcarona */
-body.preset-volcarona {
-    --accent-h: 27;
-    --accent-s: 85%;
-    --accent-l: 52%;
-    --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(187, 45%, 71%);
-    --grotto-night-0: hsl(194, 60%, 18%);
-    --grotto-night-1: hsl(194, 60%, 24%);
-    --grotto-night-2: hsl(194, 60%, 32%);
-    --grotto-accent-1: hsl(27, 85%, 52%);
-    --grotto-accent-2: hsl(27, 85%, 60%);
-}
-/* Poltchageist */
-body.preset-poltchageist {
-    --accent-h: 114;
-    --accent-s: 30%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(30, 14%, 82%);
-    --grotto-day-2: hsl(30, 14%, 76%);
-    --grotto-night-0: hsl(60, 10%, 10%);
-    --grotto-night-1: hsl(60, 10%, 14%);
-    --grotto-night-2: hsl(60, 5%, 24%);
-    --grotto-accent-1: hsl(114, 30%, 50%);
-    --grotto-accent-2: hsl(114, 30%, 56%);
-}
-/*Aegislash */
-body.preset-aegislash {
-    --accent-h: 260;
-    --accent-s: 20%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(40, 50%, 90%);
-    --grotto-day-2: hsl(40, 50%, 70%);
-    --grotto-night-0: hsl(260, 10%, 12%);
-    --grotto-night-1: hsl(260, 10%, 18%);
-    --grotto-night-2: hsl(260, 10%, 32%);
-    --grotto-accent-1: hsl(260, 20%, 60%);
-    --grotto-accent-2: hsl(260, 20%, 64%);
-}
-/* Steelix */
-body.preset-steelix {
-    --accent-h: 180;
-    --accent-s: 20%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(0, 0%, 80%);
-    --grotto-day-2: hsl(0, 0%, 70%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 24%);
-    --grotto-accent-1: hsl(180, 20%, 60%);
-    --grotto-accent-2: hsl(180, 20%, 64%);
-    --grotto-button-color: var(--grotto-night-1);
-    --grotto-dropdown-color: var(--grotto-night-1);
-    --grotto-sidebar-active-color: var(--grotto-night-1);
-    --grotto-suggestion-color-hover: var(--grotto-night-1);
-}
-/* Unova */
-body.preset-unova {
-    --accent-h: 0;
-    --accent-s: 0%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 70%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 24%);
-    --grotto-accent-1: hsl(0, 0%, 60%);
-    --grotto-accent-2: hsl(0, 0%, 64%);
-    --grotto-button-color: var(--grotto-night-1);
-    --grotto-dropdown-color: var(--grotto-night-1);
-    --grotto-sidebar-active-color: var(--grotto-night-1);
-    --grotto-suggestion-color-hover: var(--grotto-night-1);
-}
-/* Clobbopus */
+/* V1.3.0*/
+/*Clobbopus*/
 body, 
 body.preset-clobbopus {
     --accent-h: 16;
@@ -304,226 +7,386 @@ body.preset-clobbopus {
     --accent-l: 58%;
     --grotto-day-1: hsl(33, 33%, 87%);
     --grotto-day-2: hsl(33, 33%, 78%);
+    --grotto-day-3: hsl(33, 33%, 68%);
     --grotto-night-0: hsl(240, 18%, 20%);
     --grotto-night-1: hsl(240, 18%, 25%);
     --grotto-night-2: hsl(240, 18%, 45%);
+    --grotto-night-3: hsl(240, 18%, 52%);
     --grotto-accent-1: hsl(16, 82%, 58%);
-    --grotto-accent-2: hsl(16, 82%, 64%);
+    --grotto-accent-2: hsl(16, 82%, 62%);
 }
 .theme-light {
     --color-accent: var(--grotto-accent-1);
-    --interactive-accent: var(--grotto-accent-1);
     --background-primary: var(--grotto-day-1);
-    --background-secondary: var(--grotto-night-0);
     --background-primary-alt: var(--background-primary);
+    --background-secondary: var(--grotto-night-1);
     --background-secondary-alt: var(--background-secondary);
     --text-normal: var(--grotto-night-1);
     --text-muted: var(--grotto-night-2);
-    --text-faint: var(--grotto-night-2);
-    --code-background: var(--grotto-day-2);
-    --grotto-item-color-hover: var(--grotto-day-2);
+    --text-faint: var(--grotto-night-3);
+    --grotto-background-tertiary: var(--grotto-day-2);
+    --interactive-normal: var(--text-normal);
+    --interactive-hover: var(--text-faint);
+    --text-accent: var(--grotto-accent-1);
+    --background-modifier-box-shadow: none;
     --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
+    --input-shadow: none;
+    --input-shadow-hover: none;
+    --shadow-s: none;
+    --shadow-l: none;
+    --pdf-shadow: none;
+    --pdf-thumbnail-shadow: none;
 }
-.theme-dark,
+.theme-dark, 
 .is-mobile.theme-dark {
     --color-accent: var(--grotto-accent-1);
-    --interactive-accent: var(--grotto-accent-1);
     --background-primary: var(--grotto-night-1);
-    --background-secondary: var(--grotto-night-0);
     --background-primary-alt: var(--background-primary);
+    --background-secondary: var(--grotto-night-0);
     --background-secondary-alt: var(--background-secondary);
     --text-normal: var(--grotto-day-1);
     --text-muted: var(--grotto-day-2);
-    --text-faint: var(--grotto-day-2);
-    --code-background: var(--grotto-night-2);
-    --grotto-item-color-hover: var(--grotto-night-2);
+    --text-faint: var(--grotto-day-3);
+    --grotto-background-tertiary: var(--grotto-night-2);
+    --interactive-normal: var(--text-normal);
+    --interactive-hover: var(--text-faint);
+    --text-accent: var(--grotto-accent-1);
+    --background-modifier-box-shadow: none;
     --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
+    --input-shadow: none;
+    --input-shadow-hover: none;
+    --shadow-s: none;
+    --shadow-l: none;
+    --pdf-shadow: none;
+    --pdf-thumbnail-shadow: none;
 }
-/* General Variables */
 body {
-    --background-modifier-hover: transparent;
-    --p-spacing: 0px;
-    --tab-curve: 0px;
-    --nav-indentation-guide-width: 0px;
-    --tab-outline-width: 0px;
-    --tab-radius-active: 0px;
-    --border-width: 0px;
-    --divider-width: 0px;
-    --toggle-border-width: 2px;
-    --file-line-width: 700px;/*Plugin*/
-    font-weight: var(--grotto-font-weight);
-    --background-modifier-border: var(--text-faint);
-    --background-modifier-border-focus: var(--text-normal);
-    --vault-profile-color: var(--grotto-sidebar-color);
-    --nav-item-color-hover: var(--grotto-sidebar-color);
-}
-/* Variables */
-body {
-    /* Tags */
+    /*Tags*/
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-background-color: var(--text-normal);
-    --grotto-tag-pointer-events: none;/*Plugin*/
-    --tag-radius: 0px;
-    --tag-padding-x: 0.4em;
-    --tag-padding-y: 0.2em;
-    /* Text */
-    --grotto-bold-color: var(--grotto-accent-1);/*Plugin*/
-    --grotto-italic-color: var(--grotto-accent-1);/*Plugin*/
-    --grotto-strikethrough-color: var(--text-normal);
-    --grotto-link-color: var(--grotto-accent-1);
-    --grotto-link-color-hover: var(--grotto-accent-2);/*Plugin*/
-    --grotto-comment-color: var(--grotto-accent-1);
+    --grotto-tag-pointer-events: none;
+    --grotto-tag-size: 0.8rem;
+    --grotto-tag-radius: 0rem;
+    --tag-radius: var(--grotto-tag-radius);
+    --tag-size: var(--grotto-tag-size);
+    --tag-padding-x: 0.4rem;
+    --tag-padding-y: 0.2rem;
+    /*Text*/
     --grotto-font-weight: 400;/*Plugin*/
+    font-weight: var(--grotto-font-weight);
+    --text-error: hsl(0, 50%, 50%);
+    --file-line-width: 700px;/*Plugin*/
+    /*Bold*/
+    --grotto-bold-color: var(--grotto-accent-1);
     --grotto-bold-font-weight: 800;
+    /*Italic*/
+    --grotto-italic-color: var(--grotto-accent-1);
     --grotto-italic-font-weight: 400;
-    /* Headers */
+    /*Strikethrough*/
+    --grotto-strikethrough-color: var(--text-normal);
+    /*Comment*/
+    --grotto-comment-color: var(--grotto-accent-1);
+    /*Links*/
+    --grotto-link-color: var(--grotto-accent-1);
+    --grotto-link-color-hover: var(--grotto-accent-2);
+    --grotto-link-weight: 400;
+    --link-external-color: var(--grotto-link-color);
+    --link-external-color-hover: var(--grotto-link-color-hover);
+    /*Headers*/
+    --grotto-header-size: 1.5rem;
+    --grotto-header-line-height: 2rem;
+    --grotto-header-font-weight: 400;
+    --grotto-header-radius: 0rem;
     --grotto-header-color-1: var(--text-normal);
-    --grotto-header-color-2: var(--background-primary);
-    --grotto-header-color-3: var(--text-normal);
-    --grotto-header-color-4: var(--text-normal);
-    --grotto-header-color-5: var(--text-normal);
-    --grotto-header-color-6: var(--text-normal);
     --grotto-header-background-color-1: var(--grotto-accent-1);
-    --grotto-header-background-color-2: var(--text-normal);
-    --grotto-header-background-color-3: var(--grotto-accent-1);
+    --grotto-header-border-color-1: var(--text-normal);
+    --grotto-header-color-2: var(--text-normal);
+    --grotto-header-background-color-2: var(--grotto-accent-1);
+    --grotto-header-border-color-2: var(--text-normal);
+    --grotto-header-color-3: var(--background-primary);
+    --grotto-header-background-color-3: var(--text-normal);
+    --grotto-header-border-color-3: var(--text-normal);
+    --grotto-header-color-4: var(--text-normal);
     --grotto-header-background-color-4: transparent;
-    --grotto-header-background-color-5: var(--grotto-accent-1);
+    --grotto-header-border-color-4: var(--text-normal);
+    --grotto-header-color-5: var(--text-normal);
+    --grotto-header-background-color-5: transparent;
+    --grotto-header-border-color-5: var(--grotto-accent-1);
+    --grotto-header-color-6: var(--text-normal);
     --grotto-header-background-color-6: transparent;
-    --grotto-header-radius: 0px;
-    --grotto-header-size: 1.5em;
-    /* Blockquotes */
-    --blockquote-color: var(--text-normal);
+    --grotto-header-border-color-6: transparent;
+    /*Buttons*/
+    --grotto-button-color: var(--text-normal);
+    --grotto-button-background-color: var(--grotto-accent-1);
+    --grotto-button-background-color-hover: var(--grotto-accent-2);
+    --grotto-button-border-color: var(--text-normal);
+    --grotto-button-radius: 0rem;
+    --grotto-button-error-color: hsl(0, 50%, 50%);
+    --grotto-button-error-background: hsl(0, 0%, 16%);
+    --grotto-button-error-background-hover: hsl(0, 0%, 20%);
+    /*Checkboxes*/
+    --grotto-checkbox-border-color: var(--text-normal);
+    --grotto-checkbox-radius: 0rem;
+    --checkbox-marker-color: transparent;
+    /*Lists*/
+    --list-marker-color: var(--text-normal);
+    --list-indent: calc(var(--indent-unit) * var(--indent-size));
+    --list-indent-editing: 0.8rem;
+    --list-indent-source: 0;
+    --list-bullet-radius: 0rem;
+    --list-bullet-size: 0.3rem;
+    --list-spacing: 0rem;
+    /*Blockquotes*/
     --blockquote-border-thickness: 2px;
-    --blockquote-border-color: var(--text-normal);/*Plugin*/
-    --blockquote-background-color: transparent;/*Plugin*/
-    /* Callouts */
-    --grotto-callout-color: var(--text-normal);
+    --blockquote-color: var(--text-normal);
+    --blockquote-border-color: var(--text-normal);
+    --blockquote-background-color: var(--background-primary);
+    /*Callouts*/
+    --grotto-callout-color: var(--text-normal);/*Plugin*/
     --grotto-callout-background-color: var(--background-primary);/*Plugin*/
+    --grotto-callout-border-color: var(--text-normal);/*Plugin*/
+    --grotto-callout-padding: 8px 16px;
+    --grotto-callout-radius: 0rem;
     --grotto-callout-icon: none;/*Plugin*/
-    --grotto-callout-border-radius: 0px;
-    /* Embeds */
+    --grotto-title-size: 1.5rem;
+    --callout-default: var(--grotto-callout-color);
+    /*Embeds*/
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: var(--background-primary);
-    --grotto-embed-title: block;/*Plugin*/
-    --embed-max-height: 4000px;/*Plugin*/
-    /* Lists */
-    --list-bullet-radius: 0px;
-    --list-marker-color: var(--text-normal);
-    --list-marker-color-hover: var(--text-faint);
-    --list-marker-color-collapsed: var(--text-muted);
-    --grotto-checkbox-border-color: var(--text-normal);
-    --grotto-checkbox-radius: 0px;
-    --checkbox-marker-color: transparent;
-    /* Icon */
-    --grotto-icon-hover: var(--grotto-accent-1);
-    /* Status Bar */
-    --grotto-statusbar-color: var(--grotto-day-1);
-    --grotto-statusbar-background-color: var(--background-secondary);
-    /* Notice */
-    --grotto-notice-color: var(--text-normal);
-    --grotto-notice-background-color: var(--grotto-accent-1);
-    --grotto-notice-progress-bar-color: var(--grotto-accent-1);
-    --grotto-notice-progress-bar-background-color: var(--background-primary);
-    --grotto-notice-radius: 0px;
-    /* Suggestions */
-    --grotto-suggestion-color: var(--text-normal);
-    --grotto-suggestion-color-hover: var(--text-normal);
-    --grotto-suggestion-background-color: var(--background-primary);
-    /* Tables */
+    --grotto-embed-title: block;
+    --grotto-embed-link-color: var(--text-normal);
+    --grotto-embed-link-color-hover: var(--grotto-accent-1);
+    --grotto-embed-link-background-color: var(--grotto-background-tertiary);
+    --grotto-embed-radius: 0rem;
+    --embed-max-height: 4000px;
+    --embed-padding: 8px 16px;
+    /*Codes*/
+    --grotto-code-color: var(--text-normal);
+    --grotto-code-color-hover: var(--grotto-accent-1);
+    --grotto-code-background-color: var(--grotto-background-tertiary);
+    --grotto-code-border-color: var(--text-normal);
+    --grotto-code-radius: 0rem;
+    --grotto-code-weight: 800;
+    --code-radius: var(--grotto-code-radius);
+    /*Status Bar*/
+    --grotto-sidebar-color: var(--background-primary);
+    --grotto-sidebar-background-color: var(--text-normal);
+    --grotto-sidebar-border-color: var(--background-primary);
+    --grotto-sidebar-radius: 0rem;
+    /*Toggles*/
+    --grotto-toggle-color: var(--grotto-day-1);
+    --grotto-toggle-handle-border-color: var(--grotto-night-0);
+    --grotto-toggle-background-color: var(--grotto-day-2);
+    --grotto-toggle-background-color-hover: var(--grotto-day-3);
+    --grotto-toggle-enabled-background-color: var(--grotto-accent-1);
+    --grotto-toggle-enabled-background-color-hover: var(--grotto-accent-2);
+    /*Tooltips*/
+    --grotto-tooltip-color: var(--text-normal);
+    --grotto-tooltip-background-color: var(--grotto-accent-1);
+    --grotto-tooltip-border-color: var(--text-normal);
+    --grotto-tooltip-radius: 0rem;
+    /*Tables*/
     --grotto-table-cell-width: fit-content;/*Plugin*/
     --grotto-table-border-style: separate;/*Plugin*/
-    --table-background: var(--background-primary);/*Plugin*/
+    --table-background: transparent;/*Plugin*/
     --table-border-width: 1px;
     --table-border-color: var(--text-normal);
     --table-header-background-hover: var(--table-background);
     --table-text-color: var(--text-normal);
     --table-add-button-border-color: var(--table-border-color);
-    /* Icons */
-    --icon-xs-stroke-width: 1px;
-    --icon-s-stroke-width: 1px;
-    --icon-m-stroke-width: 1px;
-    --icon-l-stroke-width: 1px;
-    --icon-xl-stroke-width: 1px;
-    --icon-color-hover: var(--grotto-accent-1);
-    /* Radius */
-    --input-radius: 0px;
-    --radius-s: 0px;
-    --radius-m: 0px;
-    --radius-l: 0px;
-    --radius-xl: 0px;
-    /* Mobile Specific */
-    --grotto-system-status-color: var(--background-primary);
-    /* Mobile Toolbar */
-    --grotto-toolbar-rows: 2;/*Plugin check*/
-    --grotto-toolbar-color: var(--background-primary);/*Plugin*/
-    --grotto-toolbar-background-color: var(--text-normal);/*Plugin*/
-    /* Buttons */
-    --grotto-button-color: var(--text-normal);
-    --grotto-button-border-color: var(--text-normal);
-    --grotto-button-background-color: var(--grotto-accent-1);
-    --grotto-button-background-color-hover: var(--grotto-accent-2);
-    /* Dropdowns */
-    --grotto-dropdown-color: var(--text-normal);
-    --grotto-dropdown-border-color: var(--text-normal);
-    --grotto-dropdown-background-color: var(--grotto-accent-1);
-    --grotto-dropdown-background-color-hover: var(--grotto-accent-2);
-    /* Checkbox Container */
-    --grotto-toggle-color: var(--grotto-night-0);
-    --grotto-toggle-background-color: var(--grotto-item-color-hover);
-    /* Mobile Navbar */
-    --grotto-navbar-color: var(--background-primary);
-    --grotto-navbar-background-color: var(--text-normal);
-    /* Mobile Quick Action */
-    --grotto-quick-action-color: var(--text-normal);
-    --grotto-quick-action-background-color: var(--grotto-accent-1);
-    /* Sidebar */
-    --grotto-sidebar-color: var(--grotto-day-1);
-    --grotto-sidebar-active-color: var(--grotto-day-1);
-    --grotto-sidebar-color-hover: var(--grotto-accent-1);
-    --grotto-sidebar-background-color: var(--background-secondary);
-    --grotto-sidebar-active-background-color: var(--grotto-accent-1);
-    /* Calendar Plugin */
+    --grotto-table-color: var(--text-normal);
+    /*Progress Bars*/
+    --grotto-progress-color: var(--grotto-accent-1);
+    --grotto-progress-border-color: var(--background-primary);
+    --grotto-progress-background-color: var(--background-primary);
+    --grotto-progress-radius: 0rem;
+    /*Canvas*/
+    --grotto-canvas-color: var(--text-normal);
+    --grotto-canvas-path-color: var(--grotto-accent-1);
+    --grotto-canvas-background-color: var(--grotto-accent-1);
+    --grotto-canvas-controls-background-color: var(--background-primary);
+    --grotto-canvas-controls-border-color: var(--text-normal);
+    --grotto-canvas-controls-radius: 0rem;
+    /*Calendar Plugin*/
     --grotto-calendar-pointer-events: auto;
-    --grotto-calendar-color: var(--grotto-accent-1);
-    --grotto-calendar-color-hover: var(--grotto-night-2);
+    --grotto-calendar-color: var(--grotto-day-1);
+    --grotto-calendar-color-hover: var(--grotto-accent-1);
     --grotto-calendar-background-color: var(--background-secondary);
+    --grotto-calendar-today-background-color: var(--grotto-accent-1);
     --grotto-calendar-border-color: var(--grotto-accent-1);
-    /* Selection */
-    --grotto-selection-color: var(--text-normal);
-    --grotto-selection-background-color: var(--background-primary);
-    /* Graph */
-    --graph-text: var(--grotto-night-2);
-    --graph-line: var(--text-faint);
-    --graph-node: var(--grotto-night-2);
-    --graph-node-attachment: var(--text-faint);
-    --graph-node-unresolved: var(--grotto-day-2);
-    --graph-node-focused: var(--grotto-accent-1);
-    --graph-node-tag: var(--grotto-accent-1);
-    /* Menus */
-    --grotto-menu-color: var(--text-normal);
-    --grotto-menu-background-color: var(--background-primary);
-    --grotto-menu-active-background-color: var(--grotto-accent-1);
-    /* Bases */
+    --grotto-calendar-year-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-color: var(--grotto-night-0);
+    --grotto-calendar-dayofweek-background-color: var(--grotto-calendar-border-color);
+    /*Bases*/
+    --grotto-text-icon-color: var(--text-normal);
+    --grotto-text-icon-color-hover: var(--text-normal);
+    --grotto-text-icon-background-color: var(--grotto-accent-1);
+    --grotto-text-icon-border-color-hover: var(--text-normal);
+    --grotto-text-icon-radius: 0rem;
+    --grotto-bases-cards-color: var(--text-normal);
+    --grotto-bases-cards-color-hover: var(--text-normal);
+    --grotto-bases-cards-border-color: var(--text-normal);
+    --grotto-bases-cards-background-color: var(--background-primary);
+    --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
+    --grotto-bases-radius: 0rem;
     --bases-table-row-border-width: 0px;
-    /* Scrollbars */
-    --scrollbar-width: 12px;
-    --scrollbar-radius: 0px;
-    --scrollbar-bg: var(--grotto-accent-1);
-    --scrollbar-thumb-bg: var(--grotto-accent-1);
-    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
-    /* Properties */
-    --metadata-property-radius: 0px;
-    --metadata-property-radius-hover: 0px;
-    --metadata-property-radius-focus: 0px;
+    --bases-table-column-border-width: 0px;
+    --bases-header-border-width: 1px;
+    --bases-table-border-color: var(--text-normal);
+    --bases-cards-shadow: none;
+    --bases-cards-shadow-hover: none;
+    --bases-table-cell-shadow-active: none;
+    --grotto-bases-cards-label-color: var(--text-normal);
+    --grotto-bases-cards-label-color-hover: var(--text-normal);
+    /*Notices*/
+    --grotto-notice-color: var(--text-normal);
+    --grotto-notice-background-color: var(--grotto-accent-1);
+    --grotto-notice-border-color: var(--text-normal);
+    --grotto-notice-radius: 0rem;
+    /*Graphs*/
+    --grotto-graph-controls-background-color: var(--background-primary);
+    --grotto-graph-controls-border-color: var(--text-normal);
+    --grotto-graph-controls-radius: 0rem;
+    --graph-text: var(--grotto-accent-1);
+    --graph-line: var(--text-faint);
+    --graph-node: var(--grotto-accent-1);
+    --graph-node-tag: var(--grotto-night-3);
+    --graph-node-attachment: var(--grotto-day-3);
+    /*Suggestions*/
+    --grotto-suggestion-color: var(--text-normal);
+    --grotto-suggestion-color-hover: var(--text-normal);
+    --grotto-suggestion-border-color: var(--text-normal);
+    --grotto-suggestion-background-color: var(--background-primary);
+    --grotto-suggestion-background-color-hover: var(--grotto-accent-1);
+    --grotto-suggestion-radius: 0rem;
     /* Command Prompt */
     --grotto-prompt-color: var(--text-normal);
     --grotto-prompt-color-hover: var(--background-primary);
     --grotto-prompt-background-color: var(--background-primary);
     --grotto-prompt-background-color-hover: var(--text-normal);
+    /*Title Bar*/
+    --grotto-titlebar-color: var(--grotto-day-1);
+    --grotto-titlebar-background-color: var(--background-secondary);
+    --grotto-titlebar-background-color-hover: var(--grotto-accent-1);
+    --tab-curve: 0px;
+    --tab-outline-width: 0px;
+    --tab-radius-active: 0px;
+    /*Clickable Icons*/
+    --grotto-icon-color: var(--text-normal);
+    --grotto-icon-color-hover: var(--grotto-accent-1);
+    --icon-xs-stroke-width: 1.25px;
+    --icon-s-stroke-width: 1.25px;
+    --icon-m-stroke-width: 1.25px;
+    --icon-l-stroke-width: 1.25px;
+    --icon-xl-stroke-width: 1.25px;
+    --icon-color-focused: var(--grotto-accent-1);
+    --icon-color-hover: var(--grotto-accent-1);
+    --icon-opacity: 1;
+    /*Paragraphs*/
+    --p-spacing: 0rem;
+    /*Dropdowns*/
+    --grotto-dropdown-color: var(--text-normal);
+    --grotto-dropdown-background-color: var(--grotto-accent-1);
+    --grotto-dropdown-background-color-hover: var(--grotto-accent-2);
+    --grotto-dropdown-border-color: var(--text-normal);
+    --grotto-dropdown-radius: 0rem;
+    /*Sliders*/
+    --grotto-slider-border-color: var(--grotto-night-0);
+    --grotto-slider-background-color: var(--grotto-day-1);
+    /*Scrollbars*/
+    --scrollbar-width: 12px;
+    --scrollbar-radius: 0px;
+    --scrollbar-bg: var(--grotto-accent-1);
+    --scrollbar-thumb-bg: var(--grotto-accent-1);
+    --scrollbar-active-thumb-bg: var(--grotto-accent-1);
+    --scrollbar-border-width: 3px;
+    /*Mobile Quick Actions*/
+    --grotto-pull-color: var(--text-normal);
+    --grotto-pull-border-color: var(--text-normal);
+    --grotto-pull-background-color: var(--grotto-accent-1);
+    --grotto-pull-radius: 0rem;
+    /*Mobile Navigation Bar*/
+    --grotto-navbar-color: var(--background-primary);
+    --grotto-navbar-background-color: var(--text-normal);
+    --grotto-navbar-border-color: var(--background-primary);
+    --grotto-navbar-radius: 0rem;
+    --grotto-navbar-new-tab: none;
+    /*Mobile Tab Switcher*/
+    --grotto-tab-switcher-color: var(--grotto-day-1);
+    --tab-switcher-menubar-background: var(--background-secondary);
+    --tab-switcher-background: var(--background-secondary);
+    --tab-switcher-preview-radius: 0rem;
+    --tab-switcher-preview-background-shadow: none;
+    --tab-switcher-preview-shadow: none;
+    /*Mobile Toolbar*/
+    --grotto-toolbar-rows: 2;
+    --grotto-toolbar-color: var(--background-primary);
+    --grotto-toolbar-background-color: var(--text-normal);
+    --grotto-toolbar-border-color: var(--background-primary);
+    --grotto-toolbar-radius: 0rem;
+    /*System Status*/
+    --grotto-system-status-color: var(--background-primary);
+    /*Radius*/
+    --input-radius: 0px;
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --radius-xl: 0px;
+    /*Selection*/
+    --grotto-selection-color: var(--text-normal);
+    --grotto-selection-background-color: var(--background-primary);
+    /*Navigate Files*/
+    --grotto-nav-tag-color: var(--grotto-night-0);
+    --grotto-nav-tag-background-color: var(--grotto-day-1);
+    --grotto-nav-radius: 0rem;
+    --grotto-nav-title-color: var(--grotto-day-1);
+    --grotto-nav-title-color-hover: var(--grotto-accent-1);
+    --grotto-nav-title-color-active: var(--grotto-day-1);
+    --grotto-nav-title-background-color-active: var(--grotto-accent-1);
+    --grotto-nav-title-border-color: var(--grotto-day-1);
+    --divider-width: 0px;
+    --border-width: 0px;
+    --nav-indentation-guide-width: 0px;
+    --vault-profile-color: var(--grotto-nav-title-color);
+    /*Menus*/
+    --grotto-menu-color: var(--text-normal);
+    --grotto-menu-color-active: var(--text-normal);
+    --grotto-menu-background-color: var(--background-primary);
+    --grotto-menu-background-color-active: var(--grotto-accent-1);
+    --grotto-menu-border-color: var(--text-normal);
+    /*Miscellaneous*/
+    --background-modifier-hover: transparent;
+    --background-modifier-border: var(--text-faint);
+    --background-modifier-border-focus: var(--text-normal);
+    --tab-text-color-focused: var(--grotto-day-1);
+    --tab-text-color: var(--grotto-day-1);
+    /*Search Suggestions*/
+    --grotto-search-suggestion-color: var(--grotto-day-1);
+    --grotto-search-suggestion-background-color: var(--background-secondary);
+    --grotto-search-suggestion-background-color-hover: var(--grotto-accent-1);
+    --grotto-search-suggestion-border-color: var(--grotto-day-1);
+    --grotto-search-suggestion-icon-color: var(--grotto-night-2);
+    --grotto-search-suggestion-icon-color-hover: var(--grotto-accent-1);
+    /*Settings*/
+    --grotto-settings-color: var(--grotto-day-1);
+    --grotto-settings-color-hover: var(--grotto-accent-1);
+    --grotto-settings-color-active: var(--grotto-day-1);
+    --grotto-settings-border-color: var(--grotto-day-1);
+    --grotto-settings-background-color: var(--grotto-night-0);
+    --grotto-settings-background-color-hover: var(--grotto-night-0);
+    --grotto-settings-background-color-active: var(--grotto-accent-1);
+    /*Modals*/
+    --grotto-modal-border-color: var(--grotto-day-1);
+    /*Properties*/
+    --metadata-property-radius: 0px;
+    --metadata-property-radius-hover: 0px;
+    --metadata-property-radius-focus: 0px;
+    --metadata-property-box-shadow-hover: none;
+    --metadata-property-box-shadow-focus: none;
 }
-/* Tags */
+/*Tags*/
 a.tag, 
 a.tag:hover, 
 .cm-hashtag, 
@@ -532,60 +395,60 @@ a.tag:hover,
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
     pointer-events: var(--grotto-tag-pointer-events);
+    line-height: 2rem;
     caret-color: currentColor;
-    line-height: 2.4em;
-    font-size: 0.8em;
     vertical-align: middle;
 }
-/* Bold */
+/*Bold*/
 strong, 
 .cm-strong {
     color: var(--grotto-bold-color);
     font-weight: var(--grotto-bold-font-weight);
     caret-color: currentColor;
 }
-/* Italic */
+/*Italic*/
 em, 
 .cm-em {
     color: var(--grotto-italic-color);
     font-weight: var(--grotto-italic-font-weight);
     caret-color: currentColor;
 }
+/*Strikethrough*/
 del, 
 .cm-strikethrough {
   color: var(--grotto-strikethrough-color);
   caret-color: currentColor;
   opacity: 0.4;
 }
-/* Link */
-.cm-underline, 
-.internal-link, 
-.external-link, 
-.cm-s-obsidian span.cm-hmd-internal-link, 
-.markdown-source-view.mod-cm6 .cm-link .cm-underline, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline {
-    color: var(--grotto-link-color);
-}
-.markdown-source-view.mod-cm6 .cm-underline:hover, 
-.markdown-rendered .internal-link:hover, 
-.external-link:hover, 
-.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover, 
-.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: var(--grotto-link-color-hover);
-}
-/* Comment */
+/*Comment*/
 .cm-comment {
     color: var(--grotto-comment-color);
     opacity: 0.8;
 }
-/* Embedded Image */
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: auto;
+/*Links*/
+a, 
+.external-link, 
+.cm-s-obsidian span.cm-hmd-internal-link, 
+.metadata-property-value .internal-link, 
+.markdown-rendered .internal-link, 
+.markdown-source-view.mod-cm6 .cm-link .cm-underline, 
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+    color: var(--grotto-link-color);
+    font-weight: var(--grotto-link-weight);
 }
-/* Headers */
+a:hover, 
+a.mobile-tap, 
+.external-link:hover, 
+.external-link.mobile-tap,
+.cm-s-obsidian span.cm-hmd-internal-link:hover, 
+.metadata-property-value .internal-link:hover, 
+.markdown-rendered .internal-link:hover, 
+.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover, 
+.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+    color: var(--grotto-link-color-hover);
+    opacity: 1;
+}
+/*Headers*/
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1,
 .markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2,
 .markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3, 
@@ -594,120 +457,89 @@ img {
 .markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
     font-size: var(--grotto-header-size);
     letter-spacing: 0px;
-    line-height: 1.5em;
+    line-height: var(--grotto-header-line-height);
     width: fit-content;
     caret-color: currentColor;
-    font-weight: inherit;
+    font-weight: var(--grotto-header-font-weight);
     border-radius: var(--grotto-header-radius);
     padding: 0px 8px;
 }
-.markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
+.HyperMD-header-1, .markdown-rendered h1, .cm-s-obsidian .cm-line.HyperMD-header-1 {
     color: var(--grotto-header-color-1);
     background-color: var(--grotto-header-background-color-1);
-    border: 1px solid var(--grotto-header-color-1);
-}
-.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2 {
-    color: var(--grotto-header-color-2);
-    background-color: var(--grotto-header-background-color-2);
-    border: 1px solid transparent;
-}
-.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
-    color: var(--grotto-header-color-3);
-    background-color: var(--grotto-header-background-color-3);
-    border: 1px solid var(--grotto-header-color-3);
-    border-width: 2px;
+    border: 2px solid var(--grotto-header-border-color-1);
     padding: 0px 7px;
     outline: 2px solid var(--background-primary);
     outline-offset: -4px;
 }
+.markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2 {
+    color: var(--grotto-header-color-2);
+    background-color: var(--grotto-header-background-color-2);
+    border: 2px solid var(--grotto-header-border-color-2);
+    padding: 0px 7px;
+}
+.markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3 {
+    color: var(--grotto-header-color-3);
+    background-color: var(--grotto-header-background-color-3);
+    border: 2px solid var(--grotto-header-border-color-3);
+    padding: 0px 7px;
+}
 .markdown-rendered h4, .HyperMD-header-4, .cm-s-obsidian .cm-line.HyperMD-header-4 {
     color: var(--grotto-header-color-4);
     background-color: var(--grotto-header-background-color-4);
-    border: 2px solid var(--grotto-header-color-4);
+    border: 2px solid var(--grotto-header-border-color-4);
     padding: 0px 7px;
 }
 .markdown-rendered h5, .HyperMD-header-5, .cm-s-obsidian .cm-line.HyperMD-header-5 {
     color: var(--grotto-header-color-5);
-    background-color: transparent;
+    background-color: var(--grotto-header-background-color-5);
     border: 1px solid transparent;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--grotto-header-background-color-5);
+    text-decoration-color: var(--grotto-header-border-color-5);
 }
 .markdown-rendered h6, .HyperMD-header-6, .cm-s-obsidian .cm-line.HyperMD-header-6 {
     color: var(--grotto-header-color-6);
-    background-color: transparent;
-    border: 1px solid var(--grotto-header-background-color-6);
+    background-color: var(--grotto-header-background-color-6);
+    border: 1px solid var(--grotto-header-border-color-6);
 }
-
-/* Blockquote */
-.HyperMD-quote, 
-.markdown-rendered blockquote {
-    padding: 0px 8px;
-    caret-color: currentColor;
+/*Embedded Image*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: auto;
 }
-/* Callout */
-.callout {
-    color: var(--grotto-callout-color);
-    background-color: var(--grotto-callout-background-color);
-    border: 1px solid var(--grotto-callout-color);
-    border-radius: var(--grotto-callout-border-radius);
-    padding: 8px 16px;
+button.mod-cta, 
+button:not(.clickable-icon) {
+  color: var(--grotto-button-color);
+  background-color: var(--grotto-button-background-color);
+  border: 1px solid var(--grotto-button-border-color);
+  border-radius: var(--grotto-button-radius);
+  box-shadow: none;
 }
-.callout-title {
-    color: var(--grotto-callout-color);
-    border-bottom: 1px solid var(--grotto-callout-color);
-    border-radius: var(--grotto-callout-border-radius);
-    gap: 0px;
-    font-size: var(--grotto-header-size);
+button.mod-cta:hover, 
+button:not(.clickable-icon):hover, 
+button.mod-cta.mobile-tap, 
+button:not(.clickable-icon).mobile-tap {
+  color: var(--grotto-button-color);
+  background-color: var(--grotto-button-background-color-hover);
+  border: 1px solid var(--grotto-button-border-color);
+  border-radius: var(--grotto-button-radius);
+  box-shadow: none;
 }
-.callout-content p {
-    margin: 4px;
+button.mod-destructive, 
+button.mod-warning, 
+.is-mobile button.mod-warning {
+  color: var(--grotto-button-error-color);
+  background-color: var(--grotto-button-error-background);
 }
-.callout-icon .svg-icon {
-    display: var(--grotto-callout-icon);
+button.mod-destructive:hover, 
+button.mod-warning:hover {
+  color: var(--grotto-button-error-color);
+  background-color: var(--grotto-button-error-background-hover);
 }
-/* Embeds */
-.markdown-embed {
-    border: 1px solid var(--grotto-embed-color);
-    background-color: var(--grotto-embed-background-color);
-    border-radius: 0px;
-    --embed-padding: 8px 16px;
-}
-.embed-title {
-    display: var(--grotto-embed-title);
-}
-.markdown-embed-link, 
-.file-embed-link, 
-.markdown-source-view.mod-cm6 .edit-block-button,
-.markdown-source-view.mod-cm6 .code-block-flair,
-.markdown-rendered button.copy-code-button {
-    color: var(--grotto-embed-color);
-    background-color: var(--grotto-embed-background-color);
-    border: 1px solid var(--grotto-embed-color);
-    border-radius: 0px;
-    opacity: 1;
-}
-.markdown-embed-link:hover, 
-.file-embed-link:hover, 
-.markdown-source-view.mod-cm6 .edit-block-button:hover,
-.markdown-source-view.mod-cm6 .code-block-flair:hover,
-.markdown-rendered button.copy-code-button:hover {
-    color: var(--grotto-icon-hover);
-    background-color: var(--grotto-embed-background-color);
-}
-/* Code */
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
-.markdown-rendered pre,
-.markdown-rendered code,
-.cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
-    color: var(--text-normal);
-    background-color: var(--code-background);
-    border-radius: 0px;
-    caret-color: currentColor;
-}
-/* Checkbox */
+/*Checkboxes*/
 input[type=checkbox],
 input[type=checkbox]:hover,
 input[type=checkbox]:checked,
@@ -715,73 +547,166 @@ input[type=checkbox]:checked:hover {
     border: 1px solid var(--grotto-checkbox-border-color);
     border-radius: var(--grotto-checkbox-radius);
 }
-/* Status Bar */
-.status-bar {
-    color: var(--grotto-statusbar-color);
-    background-color: var(--grotto-statusbar-background-color);
-    border: 1px solid var(--grotto-statusbar-color);
+/*Lists*/
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  white-space: pre;
+  padding-inline-end: 0.3rem;
+}
+/*Color Swatch*/
+.is-mobile input[type="color"] {
+    width: 44px;
+    height: 44px;
+}
+input[type="color"]::-webkit-color-swatch {
+    box-shadow: 0px 0px 0px 1px var(--text-normal);
+}
+input[type="color"]::-webkit-color-swatch:hover {
+    box-shadow: 0px 0px 0px 1px var(--text-normal);
+    opacity: 0.9;
+}
+/*Blockquotes*/
+.cm-s-obsidian span.cm-quote, 
+.markdown-rendered blockquote {
+    caret-color: currentColor;
+}
+.markdown-rendered blockquote {
+    padding: 0px 8px;
+}
+/*Callout*/
+.callout, 
+.callout:hover {
+    color: var(--grotto-callout-color);
+    background-color: var(--grotto-callout-background-color);
+    border: 1px solid var(--grotto-callout-border-color);
+    border-radius: var(--grotto-callout-radius);
+    padding: var(--grotto-callout-padding);
+}
+.callout-title {
+    color: var(--grotto-callout-color);
+    border-bottom: 1px solid var(--grotto-callout-border-color);
+    font-size: var(--grotto-title-size);
+    line-height: 2rem;
+    gap: 2px;
+}
+.callout-icon .svg-icon {
+    display: var(--grotto-callout-icon);
+}
+.callout-content p {
+    margin: 4px;
+}
+/*Embeds*/
+.markdown-embed {
+    border: 1px solid var(--grotto-embed-color);
+    background-color: var(--grotto-embed-background-color);
+    border-radius: var(--grotto-embed-radius);
+}
+.embed-title {
+    display: var(--grotto-embed-title);
+    border-bottom: 1px solid var(--grotto-embed-color);
+    font-size: var(--grotto-title-size);
+}
+.markdown-embed-link, 
+.file-embed-link, 
+.markdown-source-view.mod-cm6 .edit-block-button {
+    color: var(--grotto-embed-link-color);
+    background-color: var(--grotto-embed-link-background-color);
+    border: 1px solid var(--grotto-embed-link-color);
     border-radius: 0px;
-    border-width: 1px 0px 0px 1px;
+    opacity: 1;
+}
+.markdown-embed-link:hover, 
+.file-embed-link:hover, 
+.markdown-source-view.mod-cm6 .edit-block-button:hover {
+    color: var(--grotto-embed-link-color-hover);
+    background-color: var(--grotto-embed-link-background-color);
+    border: 1px solid var(--grotto-embed-link-color);
+    border-radius: 0px;
+    opacity: 1;
+    --background-modifier-hover: var(--grotto-embed-link-background-color);
+}
+/*Codes*/
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock, 
+.markdown-rendered code, 
+.cm-s-obsidian span.cm-inline-code, 
+.markdown-rendered pre, 
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+    color: var(--grotto-code-color);
+    background-color: var(--grotto-code-background-color);
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    font-weight: var(--grotto-code-weight);
+    vertical-align: middle;
+    caret-color: currentColor;
+}
+.markdown-source-view.mod-cm6 .code-block-flair,
+.markdown-rendered button.copy-code-button {
+    color: var(--grotto-code-color);
+    background-color: var(--grotto-code-background-color);
+    border: 0px solid var(--grotto-code-border-color);
+    padding: 0.2rem 0.4rem;
+}
+.markdown-source-view.mod-cm6 .code-block-flair:hover, 
+.markdown-rendered button.copy-code-button:hover  {
+    color: var(--grotto-code-color-hover);
+    background-color: var(--grotto-code-background-color);
+    border: 0px solid var(--grotto-code-border-color);
+}
+/*Status Bar*/
+.status-bar {
+    color: var(--grotto-sidebar-color);
+    background-color: var(--grotto-sidebar-background-color);
+    border: 1px solid var(--grotto-sidebar-border-color);
+    border-radius: var(--grotto-sidebar-radius);
+    bottom: 4px;
+    right: 4px;
 }
 .status-bar-item {
     color: var(--grotto-statusbar-color);
 }
-.status-bar-item.mod-clickable:hover {
-    color: var(--grotto-accent-1);
+/*Toggles*/
+.checkbox-container, 
+.checkbox-container:focus-within {
+    background-color: var(--grotto-toggle-background-color);
 }
-/* Notice */
-.notice, 
-.is-phone .notice {
-    color: var(--grotto-notice-color);
-    background-color: var(--grotto-notice-background-color);
-    border: 1px solid var(--grotto-notice-color);
-    border-radius: var(--grotto-notice-radius);
-    box-shadow: none;
+.checkbox-container:hover {
+    background-color: var(--grotto-toggle-background-color-hover);
 }
-.notice progress[value]::-webkit-progress-bar,
-.markdown-preview-view progress[value]::-webkit-progress-bar,
-.markdown-rendered progress[value]::-webkit-progress-bar,
-.markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar, 
-.theme-light .notice progress[value]::-webkit-progress-bar {
-    background-color: var(--grotto-notice-progress-bar-background-color);
-    border: 1px solid var(--grotto-notice-color);
-    --interactive-accent: var(--grotto-notice-progress-bar-color);
-    border-radius: var(--grotto-notice-radius);
-    box-shadow: none;
+.checkbox-container.is-enabled {
+    background-color: var(--grotto-toggle-enabled-background-color);
 }
-/* Tooltip */
+.checkbox-container.is-enabled:hover {
+    background-color: var(--grotto-toggle-enabled-background-color-hover);
+}
+.checkbox-container:before, 
+.checkbox-container:after {
+    background-color: var(--grotto-toggle-color);
+    box-shadow: 0px 0px 0px 1px var(--grotto-toggle-handle-border-color);
+}
+/*Tooltip*/
 .tooltip {
-    color: var(--grotto-notice-color);
-    background-color: var(--grotto-notice-background-color);
-    border: 1px solid var(--grotto-notice-color);
-    border-radius: var(--grotto-notice-radius);
-    box-shadow: none;
+    color: var(--grotto-tooltip-color);
+    background-color: var(--grotto-tooltip-background-color);
+    border: 1px solid var(--grotto-tooltip-border-color);
+    border-radius: var(--grotto-tooltip-radius);
 }
-/* Suggestion Container */
-.suggestion-container {
-    background-color: var(--grotto-suggestion-background-color);
-    border: 1px solid var(--grotto-suggestion-color);
-    border-radius: 0px;
-    box-shadow: none;
+.tooltip .tooltip-arrow {
+    border-bottom: 5px solid var(--grotto-tooltip-border-color);
+    border-radius: 0rem;
 }
-/* Suggestion Items */
-.suggestion-item,
-.is-mobile .suggestion-item {
-    color: var(--grotto-suggestion-color);
-    background-color: var(--grotto-suggestion-background-color);
-    border: 1px solid transparent;
-    border-radius: 0px;
+.tooltip.mod-right .tooltip-arrow {
+    border-right: 5px solid var(--grotto-tooltip-border-color);
+    border-radius: 0rem;
 }
-.suggestion-item.is-selected,
-.suggestion-item.mobile-tap {
-    color: var(--grotto-suggestion-color-hover);
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-suggestion-color);
+.tooltip.mod-left .tooltip-arrow {
+    border-left: 5px solid var(--grotto-tooltip-border-color);
+    border-radius: 0rem;
 }
-.suggestion-flair .svg-icon {
-    color: var(--grotto-suggestion-color);
+.tooltip.mod-top .tooltip-arrow {
+    border-top: 5px solid var(--grotto-tooltip-border-color);
+    border-radius: 0rem;
 }
-/* Table */
+/*Tables*/
 .markdown-preview-view td,
 .markdown-preview-view th {
     white-space: nowrap !important;
@@ -789,509 +714,89 @@ input[type=checkbox]:checked:hover {
 th, 
 .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper, 
 .markdown-source-view.mod-cm6 .cm-table-widget .cm-line {
-    color: var(--text-normal);
+    color: var(--grotto-table-color);
     width: var(--grotto-table-cell-width);
     --caret-color: currentColor;
     min-width: 4px;
 }
 .markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle,
 .markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
+    color: var(--grotto-table-color);
+    border: 1px solid var(--table-border-color);
     border-radius: 0px;
 }
 :is(th, td):has(> .table-cell-wrapper > .cm-s-obsidian) {
-    border: 1px solid var(--text-normal);
+    outline: 2px solid var(--table-border-color);
+    outline-offset: -4px;
 }
 .markdown-rendered table {
     border-collapse: var(--grotto-table-border-style, collapse);
 }
+/*Dragging*/
+.drag-ghost {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    box-shadow: none;
+}
+/*Progress Bars*/
+.notice progress[value]::-webkit-progress-bar,
+.markdown-preview-view progress[value]::-webkit-progress-bar,
+.markdown-rendered progress[value]::-webkit-progress-bar,
+.markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar, 
+.theme-light .notice progress[value]::-webkit-progress-bar {
+    background-color: var(--grotto-progress-background-color);
+    border: 1px solid var(--grotto-progress-border-color);
+    border-radius: var(--grotto-progress-radius);
+    box-shadow: none;
+}
+.notice progress[value]::-webkit-progress-value,
+.markdown-preview-view progress[value]::-webkit-progress-value,
+.markdown-rendered progress[value]::-webkit-progress-value,
+.markdown-source-view.is-live-preview progress[value]::-webkit-progress-value {
+  background-color: var(--grotto-progress-color);
+}
+.progress-bar-indicator {
+    background-color: var(--grotto-progress-background-color);
+    border: 1px solid var(--grotto-progress-border-color);
+    border-radius: var(--grotto-progress-radius);
+}
 /* Canvas */
 .canvas-control-group {
-    border-radius: 0px;
+    border-radius: var(--grotto-canvas-controls-radius);
     box-shadow: none;
-    border: 1px solid var(--text-normal);
+    border: 1px solid var(--grotto-canvas-controls-border-color);
 }
 .canvas-control-item {
-    background-color: var(--text-normal);
-    color: var(--background-primary);
+    background-color: var(--grotto-canvas-controls-background-color);
+    color: var(--grotto-canvas-color);
     border: 0px solid transparent;
 }
 .canvas-control-item:hover {
     color: var(--grotto-accent-1);
-    background-color: var(--text-normal);
+    background-color: var(--grotto-canvas-controls-background-color);
 }
 .canvas-node-container {
-    border: 1px solid var(--text-normal);
+    border: 1px solid var(--grotto-canvas-controls-border-color);
     border-radius: 0px;
 }
 .canvas-group-label {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
+    color: var(--grotto-canvas-color);
+    background-color: var(--grotto-canvas-background-color);
     border-radius: 0px;
 }
 .canvas-edges path.canvas-display-path {
-    stroke: var(--grotto-accent-1);
+    stroke: var(--grotto-canvas-path-color);
     stroke-width: 1px;
 }
 .canvas-edges polygon.canvas-path-end {
-    stroke: var(--grotto-accent-1);
-    fill: var(--grotto-accent-1);
+    stroke: var(--grotto-canvas-path-color);
+    fill: var(--grotto-canvas-path-color);
 }
-/* Graph Controls */
-.graph-controls-button {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border-radius: 0px;
-    opacity: 1;
-}
-.graph-controls-button:hover {
-    color: var(--grotto-accent-1);
-    background-color: var(--text-normal);
-    opacity: 1;
-}
-.graph-controls:not(.is-close) {
-    border: 1px solid var(--text-normal);
-    border-radius: 0px;
-    box-shadow: none;
-}
-/* Bases */
-.is-phone .bases-toolbar-menu-container input[type=search],
-.is-phone .combobox .search-input-container input[type=search] {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-}
-.metadata-property-value .metadata-input-text,
-.metadata-property-value .metadata-input-number {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-}
-.formula-editor {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-}
-.is-phone .bases-query-container .filter-expression,
-.bases-query-container .filter-expression {
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-}
-.bases-cards-item {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
-}
-.bases-cards-cover {
-    border-bottom: 1px solid var(--text-normal);
-}
-.bases-toolbar-menu-item {
-    border: 1px solid transparent;
-}
-.bases-toolbar-menu-item:hover {
-    background-color: var(--grotto-accent-2);
-    border: 1px solid var(--text-normal);
-}
-/* Mobile Specific */
-.is-phone {
-    --border-width: 0px;
-}
-.is-mobile {
-    --icon-l-stroke-width: 1px;
-    --caret-color: currentColor;
-    --checkbox-size: 16px;
-    --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
-    --file-margins: 0px 18px 0px 26px;
-    --mobile-sidebar-radius: 0px;
-    --mobile-sidebar-width: 80vw;
-    --system-status-background: var(--grotto-system-status-color);
-    --mobile-sidebar-background: var(--background-secondary);
-    --background-modifier-form-field: transparent;
-}
-/* Mobile Color Swatch */
-.is-mobile input[type="color"] {
-    width: 44px;
-    height: 44px;
-}
-input[type="color"]::-webkit-color-swatch {
-    border: 1px solid var(--text-normal);
-}
-/* Multi-Row Toolbar */
-.mobile-toolbar {
-    border-radius: 0px;
-    position: sticky;
-    width: auto;
-    overflow-y: auto;
-    margin: 0px 12px 0px 12px;
-    padding: 0px;
-    height: calc(var(--grotto-toolbar-rows) * 32px);
-}
-.mobile-toolbar::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-}
-.mobile-toolbar-options-container {
-    height: auto;
-    padding: 8px 0px;
-    border: 0px solid var(--grotto-toolbar-color);
-    border-radius: 0px;
-    background-color: var(--grotto-toolbar-background-color);
-}
-.mobile-toolbar-options-list {
-    flex-flow: wrap;
-    padding: 0px;
-    gap: 8px 4px;
-    justify-content: center;
-}
-.mobile-toolbar-option {
-    color: var(--grotto-toolbar-color);
-}
-.mobile-toolbar-spacer {
-    display: none;
-}
-/* Buttons */
-button:not(.clickable-icon),
-button.mod-cta {
-    color: var(--grotto-button-color);
-    background-color: var(--grotto-button-background-color);
-    border: 1px solid var(--grotto-button-border-color);
-    border-radius: 0px;
-    box-shadow: none;
-}
-button:not(.clickable-icon):hover,
-button.mod-cta:hover,
-button:not(.clickable-icon).mobile-tap {
-    color: var(--grotto-button-color);
-    background-color: var(--grotto-button-background-color-hover);
-    border: 1px solid var(--grotto-button-border-color);
-    border-radius: 0px;
-    box-shadow: none;
-}
-/* Dropdowns */
-.combobox-button,
-.dropdown, 
-.bases-query-container .filter-group .filter-group-header .conjunction.dropdown {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
-    border-radius: 0px;
-    box-shadow: none;
-}
-.combobox-button:hover,
-.combobox-button:focus,
-.dropdown:hover,
-.dropdown.mobile-tap,
-.dropdown:focus, 
-.bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color-hover);
-    box-shadow: none;
-}
-.dropdown option {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
-    border-radius: 0px;
-    box-shadow: none;
-}
-/* Checkbox Container */
-.checkbox-container {
-    background-color: var(--grotto-toggle-background-color);
-    border: 0px solid var(--grotto-toggle-color);
-    box-shadow: none;
-}
-.checkbox-container:after {
-    border: 1px solid var(--grotto-toggle-color);
-    top: -0.5px;
-    background-color: var(--grotto-day-1);
-}
-/* Input Types */
-input[type=number],
-input[type=number]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=text],
-input[type=text]:hover {
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.prompt input[type=text],
-.prompt input[type=text]:hover {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=search],
-input[type=search]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.search-suggest-info-text {
-    color: var(--grotto-sidebar-color);
-    opacity: 0.9;
-}
-.suggestion-container.mod-property-key .suggestion-item {
-    background-color: var(--grotto-accent-1);
-    color: var(--text-normal);
-}
-.search-input-container input {
-    border: 1px solid var(--text-normal);
-}
-.search-suggest-item.suggestion-item {
-    color: var(--grotto-sidebar-color);
-    background-color: transparent;
-}
-.search-suggest-item.suggestion-item:hover {
-    background-color: var(--grotto-night-2);
-}
-input[type='date'], 
-input[type='date']:hover, 
-input[type='datetime-local'], 
-input[type='datetime-local']:hover, 
-input[type='email'],
-input[type='email']:hover,
-input[type='password'], 
-input[type='password']:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type='range'] {
-    border-radius: 0px;
-    background-color: var(--grotto-accent-1);
-}
-input[type='range']::-webkit-slider-thumb,
-input[type='range']::-webkit-slider-thumb:hover,
-input[type='range']::-webkit-slider-thumb:active {
-    box-shadow: none;
-    border: 1px solid var(--background-secondary);
-    background-color: var(--grotto-day-1);
-}
-input.metadata-input-text:hover,
-textarea.webviewer-adblock-lists {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-}
-.workspace-split.mod-left-split .workspace-tabs .workspace-leaf .view-content, .workspace-split.mod-right-split .workspace-tabs .workspace-leaf .view-content {
-    --text-normal: var(--grotto-sidebar-color);
-}
-input.metadata-property-key-input, 
-input.metadata-property-key-input:hover, 
-.metadata-property-value .metadata-input-number, 
-.metadata-property-value .metadata-input-number:hover, 
-.metadata-property-value .metadata-input-text, 
-.metadata-property-value .metadata-input-text:hover {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
-    height: 100%;
-}
-/* Mobile NavBar */
-.mobile-navbar {
-    border-radius: 0px;
-    background-color: var(--grotto-navbar-background-color);
-    padding: 0px;
-}
-.mobile-navbar-actions {
-    --icon-color: var(--grotto-navbar-color);
-    border-top: 1px solid var(--grotto-navbar-color);
-    padding: 4px;
-}
-.mobile-navbar-action-new-tab {
-    display: none;
-}
-.mobile-navbar-actions .clickable-icon.mobile-tap {
-    --icon-color: var(--grotto-accent-1);
-    opacity: 1;
-}
-.mobile-navbar-tabs-action {
-    border: 1px solid var(--grotto-navbar-color);
-}
-/* Mobile Quick Action */
-.pull-down-action,
-.pull-out-action {
-    color: var(--grotto-sidebar-color);
-    border: 1px solid var(--grotto-quick-action-color);
-    border-radius: 0px;
-    padding: 8px;
-    width: fit-content;
-}
-.pull-down-action.mod-activated,
-.pull-out-action.mod-activated {
-    color: var(--grotto-quick-action-color);
-    background-color: var(--grotto-quick-action-background-color);
-}
-/* Sidebar */
-.nav-file-title,
-.nav-folder-title,
-.tree-item-self.is-clickable,
-.clickable-icon.nav-action-button,
-.side-dock-settings .side-dock-ribbon-action,
-.side-dock-actions .side-dock-ribbon-action {
-    color: var(--grotto-sidebar-color);
-    border: 1px solid transparent;
-}
-.nav-file-title:hover, 
-.tree-item-self.is-clickable.mobile-tap,
-body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
-body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
-body:not(.is-grabbing) .nav-folder-title:hover {
-    color: var(--grotto-sidebar-color-hover);
-}
-.tree-item-self.is-clickable:hover {
-    color: var(--grotto-sidebar-color);
-}
-.nav-file-title.is-active,
-.nav-folder-title.is-active {
-    color: var(--grotto-sidebar-active-color);
-    background-color: var(--grotto-sidebar-color-hover);
-    border: 1px solid var(--grotto-sidebar-color);
-}
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.mobile-tap {
-    color: var(--grotto-sidebar-active-color);
-    background-color: var(--grotto-sidebar-color-hover);
-    border: 1px solid var(--grotto-sidebar-color);
-}
-.workspace-split.mod-left-split .workspace-tabs .workspace-leaf .view-content, 
-.workspace-split.mod-right-split .workspace-tabs .workspace-leaf .view-content {
-    color: var(--grotto-sidebar-color);
-    background-color: var(--background-secondary);
-}
-body:not(.is-grabbing) .nav-file-title.is-active:hover {
-    color: var(--grotto-sidebar-active-color);
-    background-color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid var(--grotto-sidebar-color);
-}
-.clickable-icon.nav-action-button.mobile-tap,
-.clickable-icon.nav-action-button:hover, 
-.clickable-icon.nav-action-button.is-active {
-    color: var(--grotto-sidebar-color-hover)
-}
-.nav-file-tag {
-    color: var(--grotto-sidebar-background-color);
-    background-color: var(--grotto-sidebar-color);
-    border-radius: 0px;
-}
-.side-dock-settings .side-dock-ribbon-action:hover,
-.side-dock-actions .side-dock-ribbon-action:hover {
-    color: var(--grotto-sidebar-color-hover);
-}
-.workspace-drawer-vault-actions .clickable-icon {
-    color: var(--grotto-sidebar-color);
-}
-.workspace-drawer-vault-actions .clickable-icon:hover {
-    color: var(--grotto-sidebar-color-hover);
-}
-.sidebar-toggle-button {
-    --icon-color: var(--grotto-sidebar-color-hover);
-    background-color: var(--background-secondary);
-    --icon-color-hover: var(--grotto-sidebar-color);
-    height: var(--header-height);
-}
-body.is-focused .sidebar-toggle-button,
-body.is-focused .workspace-tabs.mod-top {
-    --tab-container-background: var(--background-secondary);
-}
-.is-mobile .workspace-drawer-header {
-    background-color: var(--background-secondary);
-    --text-normal: var(--grotto-sidebar-color);
-    --text-muted: var(--grotto-sidebar-color);
-}
-.search-row .clickable-icon:hover {
-    color: var(--grotto-sidebar-color-hover);
-}
-.search-params .setting-item-name {
-    color: var(--grotto-sidebar-color);
-}
-.search-result:not(.is-collapsed) .search-result-file-title {
-    color: var(--grotto-sidebar-color);
-}
-.search-results-info .dropdown {
-    color: var(--grotto-sidebar-color);
-    border: 1px solid var(--text-faint);
-}
-.search-results-info .dropdown:hover {
-    background-color: var(--grotto-night-1);
-}
-.search-result-file-match-destination-file {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
-}
-.search-result-file-match-destination-file:hover {
-    box-shadow: none;
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
-}
-.vertical-tab-content {
-    border: 1px solid var(--grotto-sidebar-color);
-    border-width: 0px 0px 0px 0px;
-}
-.query-toolbar-menu .bases-sort-property,
-.query-toolbar-menu .filter-property-select {
-    max-width: 100%;
-}
-
-.tree-item-self:hover .tree-item-flair {
-    color: var(--grotto-accent-1);
-}
-.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
-.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
-    border-color: var(--background-secondary);
-}
-.workspace-leaf-resize-handle {
-    border-color: var(--grotto-night-1);
-    --divider-width: 1px;
-}
-/* Mobile Tab Switcher */
-.mobile-tab-title {
-    color: var(--grotto-sidebar-color);
-}
-.mobile-tab-switcher-menu-button.tappable {
-    color: var(--grotto-sidebar-color);
-}
-.mobile-tab-preview-empty, 
-.mobile-tab-preview {
-    border: 1px solid var(--text-normal);
-}
-.mobile-tab.is-active .mobile-tab-preview-empty, 
-.mobile-tab.is-active .mobile-tab-preview-embed {
-    border: 0px solid var(--text-normal);
-}
-/* Community Item */
-.community-item {
-    border: 1px solid var(--text-normal);
-}
-.community-item:hover {
-    border: 1px solid var(--grotto-accent-1);
-}
-/* Rename Bar Customization */
-.tree-item-self.is-being-renamed:focus-within {
-    color: var(--background-secondary);
-    background-color: var(--grotto-sidebar-color);
-    border-radius: 0px;
-    caret-color: currentColor;
-}
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
-    color: var(--background-secondary);
-    background-color: var(--grotto-sidebar-color);
-}
-/* Calendar Plugin */
+/*Calendar Plugin*/
 #calendar-container {
     --color-arrow: var(--grotto-calendar-color);
+    background-color: var(--grotto-calendar-background-color);
     border: 1px solid var(--grotto-calendar-border-color);
     width: 100%;
     --interactive-hover: var(--grotto-calendar-color-hover);
@@ -1299,298 +804,265 @@ body.is-focused .workspace-tabs.mod-top {
 #calendar-container .day {
     pointer-events: var(--grotto-calendar-pointer-events);
     padding: 6px 0px 0px 0px;
-    color: var(--grotto-sidebar-color);
+    color: var(--grotto-calendar-color);
     border: 0px solid transparent;
     border-radius: 0px;
 }
 #calendar-container .day.active {
-    color: var(--text-normal);
+    color: var(--grotto-calendar-color);
 }
 #calendar-container .today {
     color: var(--grotto-calendar-background-color);
-    background-color: var(--grotto-calendar-color);
+    background-color: var(--grotto-calendar-today-background-color);
 }
 #calendar-container .month {
-    color: var(--grotto-sidebar-color);
-}
-#calendar-container .year {
     color: var(--grotto-calendar-color);
 }
+#calendar-container .year {
+    color: var(--grotto-calendar-year-color);
+}
 #calendar-container .title {
-    padding-left: 12px;
+    padding-left: 16px;
 }
 #calendar-container .reset-button {
-    color: var(--grotto-sidebar-color);
+    color: var(--grotto-calendar-year-color);
+    padding: 4px;
 }
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-border-color);
-    color: var(--grotto-calendar-background-color);
+    color: var(--grotto-calendar-dayofweek-color);
     min-width: 0px;
 }
-/* Menus */
-body:not(.is-phone) .menu {
-    border: 0px solid var(--grotto-menu-color);
+/*Bases*/
+.bases-header {
+    background-color: var(--grotto-background-tertiary);
+}
+.text-icon-button, .text-button-icon, 
+.text-icon-button.has-active-menu .text-button-icon {
+    color: var(--grotto-text-icon-color);
+    border: 1px solid transparent;
+    border-radius: var(--grotto-text-icon-radius);
+}
+
+.text-icon-button.is-active:active, 
+.text-icon-button.is-active.has-active-menu, 
+.text-icon-button.is-active, 
+.text-icon-button.mobile-tap, 
+.text-icon-button.has-active-menu, 
+.text-icon-button:hover, 
+.text-icon-button.is-active:hover {
+    color: var(--grotto-text-icon-color-hover);
+    background-color:var(--grotto-text-icon-background-color);
+    border: 1px solid var(--grotto-text-icon-border-color-hover);
+}
+.text-icon-button.is-active.has-active-menu .text-button-icon, 
+.text-icon-button.is-active .text-button-icon, 
+.text-icon-button.is-active:active .text-button-icon, 
+.text-icon-button.is-active:hover .text-button-icon, 
+.text-icon-button:hover .text-button-icon, 
+.text-icon-button.mobile-tap, 
+.text-icon-button.mobile-tap .text-button-icon {
+    color: var(--grotto-text-icon-color-hover);
+}
+.bases-table-header {
+    border: 1px solid var(--bases-table-border-color);
+    border-width: 0px 1px 1px 1px;
+}
+.bases-table-header:hover {
+    background-color: var(--grotto-background-tertiary);
+}
+.bases-cards-item {
     box-shadow: none;
+    color: var(--grotto-bases-cards-color);
+    background-color: var(--grotto-background-tertiary);
+    border: 1px solid var(--grotto-bases-cards-border-color);
+    border-radius: var(--grotto-bases-radius);
 }
-body:not(.is-phone) .menu-scroll {
-    background-color: var(--grotto-menu-background-color);
-    border: 1px solid var(--grotto-menu-color);
-    padding: 8px;
+.bases-cards-item:hover {
+    box-shadow: none;
+    color: var(--grotto-bases-cards-color-hover);
+    background-color: var(--grotto-bases-cards-background-color-hover);
+    --grotto-bases-cards-label-color: var(--grotto-bases-cards-color-hover);
 }
-body:not(.is-phone) .menu-item-icon, 
-body:not(.is-phone) .menu-item-title {
-    color: var(--grotto-menu-color);
-    background-color: var(--grotto-menu-background-color);
+.bases-cards-group {
+    background-color: var(--background-primary);
 }
-.menu-item.tappable {
-    border: 1px solid transparent;
+.bases-cards-cover {
+    background-color: var(--background-primary);
+    border-bottom: 1px solid var(--grotto-bases-cards-border-color);
 }
-.menu-item.selected .menu-item-icon, 
-.menu-item.selected .menu-item-title {
-    background-color: var(--grotto-menu-active-background-color);
-}
-.menu-item.selected:not(.is-label):not(.is-disabled) {
-    background-color: var(--grotto-menu-active-background-color);
-    border: 1px solid var(--grotto-menu-color);
-}
-/* Phone Menus */
-.is-phone .menu {
-    background-color: var(--grotto-menu-background-color);
-    border-top: 1px solid var(--grotto-menu-color);
-}
-.is-phone .menu-scroll {
-    background-color: var(--grotto-menu-background-color);
-    border-width: 0px;
-    padding: 8px;
-}
-.is-phone .menu-group .menu-item {
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-group .menu-item:not(:last-child) {
-    background-color: var(--grotto-menu-background-color);
-    border: 1px solid transparent;
-}
-.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
-.is-phone .menu-item .menu-item-icon:not(.is-label), 
-.is-phone .menu-item .menu-item-title:not(.is-label) {
-    color: var(--grotto-menu-color);
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-item.tappable.mobile-tap {
-    --grotto-menu-color: var(--grotto-menu-active-background-color);
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled) {
-    color: var(--text-error);
-}
-.menu-item.is-disabled .menu-item-icon:not(.is-label), 
-.menu-item.is-disabled .menu-item-title:not(.is-label) {
-    color: var(--grotto-menu-color);
-}
-.menu-item.is-disabled {
-    background-color: var(--grotto-menu-background-color);
-}
-.menu-item.is-disabled.selected {
-    background-color: var(--grotto-menu-active-background-color);
-}
-/* Titlebar */
-.titlebar-button {
-    height: var(--header-height);
-    color: var(--grotto-sidebar-color);
-    background-color: var(--background-secondary);
-}
-.titlebar-button:hover {
+.bases-sort-container .bases-sort-property-container {
+    border-radius: var(--grotto-bases-radius);
+    box-shadow: none;
+    border: 1px solid var(--grotto-bases-cards-border-color);
     background-color: var(--grotto-accent-1);
 }
-.workspace-ribbon.mod-left.is-collapsed {
-    background-color: var(--background-secondary);
-}
-.workspace-tab-header-inner-title, 
-.workspace-tab-header-inner .workspace-tab-header-inner-icon {
-    color: var(--grotto-sidebar-color);
-}
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.workspace-tab-header-inner .workspace-tab-header-inner-icon:hover {
-    color: var(--grotto-accent-1);
-}
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.workspace-tab-header.is-active .workspace-tab-header-inner-title {
-    color: var(--text-normal);
-}
-.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
-    color: var(--grotto-accent-1);
-}
-.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-    color: var(--grotto-accent-1);
-}
-.mod-right-split .markdown-preview-view, .mod-left-split .markdown-preview-view, .mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, .mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
-    --text-normal: var(--background-secondary);
-    --caret-color: var(--grotto-accent-1);
-}
-.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
-    color: var(--grotto-accent-1);
-}
-.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container,
-.workspace-drawer-active-tab-content .view-content,
-.workspace-drawer .nav-header {
-    background-color: var(--background-secondary);
-}
-.workspace-drawer-active-tab-header {
-    --text-normal: var(--background-secondary);
-    background-color: var(--grotto-sidebar-color);
-}
-.workspace-drawer-active-tab-header.tappable.mobile-tap {
-    --text-normal: var(--background-secondary);
-    background-color: var(--grotto-sidebar-color);
-    opacity: 0.9;
-}
-.workspace-drawer-ribbon {
-    background-color: var(--background-secondary);
-}
-/* Horizontal Rule */
-hr {
-    border-color: var(--text-normal);
-    border-width: 1px;
-}
-.menu-separator {
-    border-bottom: 0px solid var(--text-normal);
-}
-/* Settings */
-.vertical-tab-nav-item {
-    color: var(--grotto-sidebar-color);
-    border: 1px solid transparent;
-}
-.is-phone .vertical-tab-nav-item {
-    color: var(--text-normal);
-    border: 1px solid transparent;
-}
-.is-phone .vertical-tab-nav-item.mobile-tap {
-    color: var(--grotto-accent-1);
-}
-body:not(.is-phone) .horizontal-tab-nav-item:hover,
-body:not(.is-phone) .vertical-tab-nav-item:hover {
-    color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid transparent;
-}
-body:not(.is-phone) .horizontal-tab-nav-item.is-active,
-body:not(.is-phone) .vertical-tab-nav-item.is-active {
-    color: var(--grotto-sidebar-active-color);
-    background-color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid var(--grotto-sidebar-color);
-}
-body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
-body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
-    color: var(--grotto-sidebar-active-color);
-    background-color: var(--grotto-sidebar-active-background-color);
-    border: 1px solid var(--grotto-sidebar-color);
-}
-.setting-item {
-    border-width: 0px;
-}
-.is-phone .setting-item {
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-.is-phone .setting-item-heading {
-    margin-top: 0px;
-}
-/* Modal */
-.is-phone .modal-container.mod-dim .modal {
-    border: 0px solid transparent;
-}
-.modal-container.mod-dim .modal {
+.bases-sort-container .bases-sort-property-container:focus-within {
+    border-radius: var(--grotto-bases-radius);
     box-shadow: none;
-    border: 1px solid var(--text-normal);
-}
-.is-phone .modal.mod-settings .modal-title,
-.is-phone .modal.mod-settings .vertical-tab-header {
+    border: 1px solid var(--grotto-bases-cards-border-color);
     background-color: var(--background-primary);
 }
-.is-phone .modal.mod-settings .vertical-tab-header,
-.is-phone .modal.mod-settings .vertical-tab-content,
-.is-phone .modal-sidebar,
-.is-phone .community-modal-info {
-    border: 0px solid transparent;
+.combobox-button.bases-sort-property, 
+.combobox-button.bases-sort-direction {
+    border: none;
 }
-.modal-setting-nav-bar {
+.bases-sort-container .bases-sort-property-container .bases-sort-direction {
+    border-left: 1px solid var(--grotto-dropdown-border-color);
+}
+.base-toolbar-sort-item .combobox-button.has-focus, .base-toolbar-sort-item .combobox-button:focus, .base-toolbar-sort-item .combobox-button:hover {
+    background-color: var(--grotto-dropdown-background-color-hover);
+}
+.bases-query-container .filter-row .combobox-button {
     border: 1px solid var(--text-normal);
-    border-width: 1px 1px 0px 0px;
+    border-radius: var(--grotto-bases-radius);
 }
-.community-modal-info {
+.bases-query-container .filter-expression .filter-row-actions {
+    --grotto-icon-color: var(--text-normal);
+    background-color: var(--background-primary);
     border: 1px solid var(--text-normal);
-    border-width: 0px 1px 1px 0px;
+    border-width: 0px 1px 0px 0px;
 }
-.mod-community-modal .modal-sidebar button.clickable-icon:hover {
-    color: var(--grotto-accent-1);
+.bases-query-container .filter-lhs-container {
+    border: 1px solid var(--text-normal);
+    border-width: 1px 0px 1px 0px;
 }
-.modal-close-button:hover {
-    color: var(--grotto-accent-1);
+.bases-query-container .filter-row .combobox-button.has-focus {
+    background-color: var(--grotto-accent-1);
 }
-.modal.mod-settings .vertical-tab-header {
-    border-inline-end: 0px solid transparent;
-    border: 1px solid var(--grotto-sidebar-color);
+.bases-query-container .filter-row .filter-operator {
+    border: 1px solid var(--text-normal);
+    border-width: 1px 0px 1px 1px;
+}
+.filter-statement .metadata-property-value .metadata-input-text, 
+.filter-statement .metadata-property-value .metadata-input-text:hover, 
+.filter-statement .metadata-property-value .metadata-input-text:focus-within, 
+.filter-statement .metadata-property-value .multi-select-container, 
+.filter-statement .metadata-property-value .multi-select-container:hover, 
+.filter-statement .metadata-property-value .multi-select-container:focus-within, 
+.bases-query-container .filter-rhs-container .metadata-input-longtext {
+    background-color: var(--background-primary);
     border-width: 0px;
+    height: 100%;
 }
-.modal-sidebar {
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
-}
-.modal-sidebar {
-    border: 1px solid var(--text-normal)
-}
-/* View Header */
-.is-mobile .view-actions {
-    position: fixed;
-    display: flex;
-    width: fit-content;
-    overflow: hidden;
-    bottom: 12px;
-    right: 12px;
-    border-radius: 0px;
-    background-color: transparent;
-    padding: 1px 6px 1px 6px;
-    gap: 8px;
-}
-.is-mobile .view-header .clickable-icon {
-    color: var(--grotto-navbar-color);
-    border: 0px solid var(--grotto-navbar-background-color);
-    border-radius: 0px;
-}
-.is-mobile .view-header {
-    height: 0px;
-}
-.is-mobile .view-header-title-container,
-.is-mobile .view-header-left {
-    display: none;
-}
-.is-mobile .view-header .view-action {
-    color: var(--grotto-navbar-color);
-    background-color: var(--grotto-navbar-background-color);
-    border: 1px solid var(--grotto-navbar-color);
-}
-.is-mobile .view-header .view-action.mobile-tap {
+.query-toolbar-menu .query-toolbar-section-header:hover {
     color: var(--grotto-accent-1);
-    background-color: var(--grotto-navbar-background-color);
-    opacity: 1;
 }
-.is-mobile .view-header .view-action[aria-label="More options"] {
-    --icon-stroke: 1.75px;
+.query-toolbar .bases-toolbar-result-count .text-icon-button.is-active {
+    color: var(--grotto-text-icon-color-hover);
 }
-.view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
-    display: none;
+.combobox-button .combobox-button-icon {
+    color: var(--grotto-text-icon-color-hover);
 }
-/* Selection */
-select,
-select:hover,
-select:focus {
-    color: var(--grotto-selection-color);
-    background-color: var(--grotto-selection-background-color);
+.bases-query-container .filter-group .filter-group-header .conjunction.dropdown {
+    background-color: var(--grotto-dropdown-background-color);
 }
-/* Command Prompt */
+.query-toolbar .query-toolbar-item.mod-views .text-icon-button {
+    color: var(--grotto-text-icon-color);
+}
+.query-toolbar .query-toolbar-item.mod-views .text-icon-button:hover {
+  color: var(--grotto-text-icon-color-hover);
+}
+.bases-cards-line input[type='datetime-local'],.bases-cards-line input[type='datetime-local']:hover {
+    background-color: inherit;
+    border: none;
+}
+.bases-cards-label {
+    color: var(--grotto-bases-cards-label-color);
+}
+.base-toolbar-sort-item {
+    background-color: var(--background-primary);
+    --grotto-icon-color: var(--text-normal);
+}
+.text-icon-button.has-active-menu .text-button-icon, .text-icon-button:hover .text-button-icon {
+    color: var(--grotto-text-icon-color-active);
+}
+.formula-editor .cm-content {
+    caret-color: currentColor;
+    background-color: var(--grotto-background-tertiary);
+    border: 1px solid var(--text-normal);
+}
+.bases-toolbar-menu-container .search-input-container input[type=search] {
+    border: 1px solid var(--text-normal);
+}
+.is-phone .bases-toolbar-menu-container input[type=search], 
+.is-phone .combobox .search-input-container input[type=search] {
+    background-color: var(--grotto-menu-background-color);
+    border: 1px solid var(--text-normal);
+}
+.is-phone .bases-query-container .filter-lhs-container {
+    background-color: var(--grotto-menu-background-color);
+    width: 100%;
+    border: none;
+}
+.is-phone .bases-query-container .filter-group .filter-row .filter-operator {
+    border: 1px solid var(--text-normal);
+}
+.is-phone .filter-statement .metadata-property-value .metadata-input-text, 
+.is-phone .filter-statement .metadata-property-value .metadata-input-text:focus-within {
+    border: 1px solid var(--text-normal);
+}
+.is-phone .bases-query-container .filter-expression .filter-row-actions {
+    border: none;
+}
+.is-phone .bases-sort-container .bases-sort-property-container .bases-sort-direction {
+    width: 40%;
+}
+/*Notice*/
+.notice, 
+.is-phone .notice {
+    color: var(--grotto-notice-color);
+    background-color: var(--grotto-notice-background-color);
+    border: 1px solid var(--grotto-notice-border-color);
+    border-radius: var(--grotto-notice-radius);
+    box-shadow: none;
+}
+/*Graphs*/
+.graph-view.color-line {
+  color: var(--graph-line);
+  opacity: 0.4;
+}
+.graph-controls, 
+.graph-controls:not(.is-close), 
+.graph-controls.is-close {
+    color: var(--text-normal);
+    background-color: var(--grotto-graph-controls-background-color);
+    border: 1px solid var(--grotto-graph-controls-border-color);
+    border-radius: var(--grotto-graph-controls-radius);
+    box-shadow: none;
+}
+.workspace-split:not(.mod-root) .graph-controls.is-close {
+    color: var(--grotto-day-1);
+    background-color: var(--background-secondary);
+    border-color: var(--grotto-day-1);
+    --grotto-icon-color: var(--grotto-day-1);
+}
+/*Suggestions*/
+.suggestion-container, 
+.is-mobile .suggestion-container {
+    background-color: var(--grotto-suggestion-background-color);
+    border: 1px solid var(--grotto-suggestion-border-color);
+    border-radius: var(--grotto-suggestion-radius);
+    box-shadow: none;
+}
+.suggestion-item, 
+.is-mobile .suggestion-item {
+    color: var(--grotto-suggestion-color);
+    background-color: var(--grotto-suggestion-background-color);
+    border: 1px solid transparent;
+    border-radius: var(--grotto-suggestion-radius);
+}
+.suggestion-item.is-selected,
+.suggestion-item.mobile-tap {
+    color: var(--grotto-suggestion-color-hover);
+    background-color: var(--grotto-suggestion-background-color-hover);
+    border: 1px solid var(--grotto-suggestion-border-color);
+    border-radius: var(--grotto-suggestion-radius);
+}
+.suggestion-flair .svg-icon {
+    color: var(--grotto-suggestion-color);
+}
+/*Command Prompt*/
 .theme-dark.is-mobile .prompt,
 .theme-light.is-mobile .prompt,
 .prompt {
@@ -1635,6 +1107,682 @@ input.prompt-input:focus-visible,
 .tree-item-self {
     border-radius: 0px;
 }
+/*Mobile Drawer Header*/
+.is-phone .workspace-drawer-header, 
+.is-phone .workspace-drawer-header-info, 
+.is-mobile .workspace-drawer-header-name-text {
+    --grotto-icon-color: var(--grotto-day-1);
+    color: var(--grotto-day-1);
+    background-color: var(--background-secondary);
+}
+.is-phone .workspace-drawer-active-tab-header {
+    background-color: var(--grotto-day-1);
+}
+.is-phone .workspace-drawer-active-tab-header.mobile-tap {
+    background-color: var(--grotto-day-2);
+}
+.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
+.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    --divider-width: 0px;
+}
+.is-phone .workspace-drawer-active-tab-icon, 
+.is-phone .workspace-drawer-active-tab-title, 
+.is-phone .clickable-icon.workspace-drawer-active-tab-chevron {
+    color: var(--grotto-night-0);
+}
+.mod-right-split .markdown-preview-view, 
+.mod-left-split .markdown-preview-view, 
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+}
+.workspace-drawer-active-tab-container {
+    --text-normal: var(--grotto-day-1);
+}
+.is-phone .workspace-drawer-active-tab-container input.metadata-property-key-input, 
+.is-phone .workspace-drawer-active-tab-container input.metadata-property-key-input:hover, 
+.is-phone .workspace-drawer-active-tab-container .metadata-property-value .multi-select-container, 
+.is-phone .workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill, 
+.is-phone .workspace-drawer-active-tab-container .metadata-property-icon {
+    border-width: 1px 0px 1px 1px !important;
+}
+
+.workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill {
+    background-color: var(--grotto-day-1);
+    color: var(--background-secondary);
+}
+/*Title Bar*/
+.titlebar-button {
+    height: var(--header-height);
+    color: var(--grotto-titlebar-color);
+    background-color: var(--background-secondary);
+}
+.titlebar-button:hover {
+    background-color: var(--grotto-titlebar-background-color-hover);
+}
+.workspace-tab-header-inner-title {
+    color: var(--text-normal);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.workspace-tab-header-inner .workspace-tab-header-inner-icon:hover,
+.workspace-tab-header-inner .workspace-tab-header-inner-icon.tappable {
+    color: var(--grotto-accent-1);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--text-normal);
+}
+.mod-active .workspace-tab-header.is-active {
+    border: 2px solid var(--background-secondary);
+    border-width: 1px 0 0 0;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace .mod-root .workspace-tab-header-inner::after {
+    background-color: transparent;
+}
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container,
+.workspace-drawer-active-tab-content .view-content,
+.workspace-drawer .nav-header {
+    background-color: var(--background-secondary);
+}
+.workspace-drawer-active-tab-header {
+    background-color: var(--grotto-nav-title-color);
+    color: var(--background-secondary);
+}
+.workspace-drawer-active-tab-header.tappable.mobile-tap {
+    opacity: 0.9;
+}
+.workspace-leaf-resize-handle {
+    border-color: var(--grotto-accent-1);
+    --divider-width: 1px;
+}
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    border-color: var(--background-secondary);
+}
+.sidebar-toggle-button.mod-right .clickable-icon,
+.sidebar-toggle-button.mod-left .clickable-icon {
+    color: var(--grotto-nav-title-color);
+}
+.sidebar-toggle-button.mod-right .clickable-icon:hover,
+.sidebar-toggle-button.mod-left .clickable-icon:hover {
+    color: var(--grotto-nav-title-color-hover);
+}
+.workspace-ribbon.mod-left.is-collapsed {
+    background-color: var(--background-secondary);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
+    color: var(--grotto-nav-title-color);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:hover {
+    color: var(--grotto-accent-1);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace .mod-root .workspace-tab-header {
+    padding: 0px;
+}
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
+    background-color: var(--grotto-background-tertiary);
+    padding-top: 4px;
+    border-top: 8px solid var(--background-secondary);
+    border-bottom: 1px solid var(--background-secondary);
+    border-left: 1px solid var(--background-secondary);
+    border-right: 1px solid var(--background-secondary);
+    width: 300px;
+}
+.workspace-tab-header-inner .workspace-tab-header-inner-icon, 
+.workspace-tab-header-tab-list .clickable-icon, 
+.workspace-tab-header-new-tab .clickable-icon {
+    color: var(--grotto-day-1);
+}
+/*Clickable Icons*/
+.clickable-icon, 
+.is-mobile .clickable-icon {
+    color: var(--grotto-icon-color);
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 0px;
+}
+.clickable-icon:hover, 
+.clickable-icon.has-active-menu, 
+.clickable-icon:active, 
+.clickable-icon.is-active, 
+.clickable-icon.is-active:hover, 
+.clickable-icon.mobile-tap, 
+.status-bar-item.plugin-editor-status:hover, 
+.status-bar-item.plugin-sync:hover, 
+.clickable-icon.nav-action-button.mobile-tap,
+.clickable-icon.nav-action-button:hover, 
+.clickable-icon.nav-action-button.is-active {
+    color: var(--grotto-icon-color-hover);
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 0px;
+}
+/*Paragraphs*/
+.markdown-rendered p {
+    padding: 0px 0rem;
+}
+/*Dropdowns*/
+select,
+.combobox-button,
+.dropdown {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: none;
+}
+.combobox-button:hover,
+.combobox-button:focus,
+.dropdown:hover,
+.dropdown.mobile-tap,
+.dropdown:focus, 
+.bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color-hover);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: none;
+}
+.dropdown option {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: none;
+}
+/*Sliders*/
+input[type='range'] {
+    border-radius: 0px;
+    background-color: var(--grotto-accent-1);
+}
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+    background-color: var(--grotto-slider-background-color);
+    border: 1px solid var(--grotto-slider-border-color);
+    box-shadow: none;
+}
+/*Scrollbars*/
+.is-android {
+  --scrollbar-border-width: 2px;
+  --scrollbar-width: 5px;
+  --scrollbar-radius: 0;
+}
+/*Mobile Quick Actions*/
+.pull-action, 
+.pull-down-action, 
+.pull-out-action {
+    color: var(--grotto-pull-color);
+    border: 1px solid var(--grotto-pull-border-color);
+    border-radius: var(--grotto-pull-radius);
+    padding: 8px;
+    width: fit-content;
+}
+.pull-action.mod-activated, 
+.pull-down-action.mod-activated, 
+.pull-out-action.mod-activated {
+    color: var(--grotto-pull-color);
+    background-color: var(--grotto-pull-background-color);
+}
+/*Mobile Navigation Bar*/
+.mobile-navbar {
+    --grotto-icon-color: var(--grotto-navbar-color);
+    border-top: 1px solid var(--grotto-navbar-border-color);
+    background-color: var(--grotto-navbar-background-color);
+    border-radius: var(--grotto-navbar-radius) var(--grotto-navbar-radius) 0rem 0rem;
+    padding: 0px;
+}
+.mobile-navbar-action-new-tab {
+    display: var(--grotto-navbar-new-tab);
+}
+/*Mobile Tab Switcher*/
+.mobile-tab-title {
+    color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-switcher-menu-button.tappable {
+    color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-switcher-menubar {
+    --grotto-icon-color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-preview-empty, 
+.mobile-tab-preview {
+    border: 1px solid var(--grotto-tab-switcher-color);
+}
+.mobile-tab.is-active .mobile-tab-preview-empty, 
+.mobile-tab.is-active .mobile-tab-preview-embed {
+    border: 0px solid var(--grotto-tab-switcher-color);
+}
+/*Mobile Toolbar*/
+.mobile-toolbar {
+    border-radius: 0px;
+    position: sticky;
+    width: auto;
+    overflow-y: auto;
+    margin: 0px 12px 0px 12px;
+    padding: 0px;
+    height: calc(var(--grotto-toolbar-rows) * 32px);
+}
+.mobile-toolbar::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+.mobile-toolbar-options-container {
+    background-color: var(--grotto-toolbar-background-color);
+    border: 0px solid var(--grotto-toolbar-border-color);
+    height: auto;
+    padding: 8px 0px;
+    border-radius: var(--grotto-toolbar-radius);
+}
+.mobile-toolbar-options-list {
+    flex-flow: wrap;
+    padding: 0px;
+    gap: 8px 4px;
+    justify-content: center;
+}
+.mobile-toolbar-option {
+    color: var(--grotto-toolbar-color);
+}
+.mobile-toolbar-spacer {
+    display: none;
+}
+/*Mobile Specific*/
+.is-phone {
+    --border-width: 0px;
+}
+.is-mobile {
+    --icon-l-stroke-width: 1px;
+    --caret-color: currentColor;
+    --checkbox-size: 16px;
+    --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
+    --file-margins: 0px 18px 0px 26px;
+    --mobile-sidebar-radius: 0px;
+    --mobile-sidebar-width: 80vw;
+    --system-status-background: var(--grotto-system-status-color);
+    --mobile-sidebar-background: var(--background-secondary);
+    --background-modifier-form-field: transparent;
+}
+/*Selection*/
+select,
+select:hover,
+select:focus {
+    color: var(--grotto-selection-color);
+    background-color: var(--grotto-selection-background-color);
+}
+/*Navigate Files*/
+.nav-file-tag {
+    color: var(--grotto-nav-tag-color);
+    background-color: var(--grotto-nav-tag-background-color);
+    border-radius: var(--grotto-nav-radius);
+}
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self.is-clickable,
+.clickable-icon.nav-action-button,
+.side-dock-settings .side-dock-ribbon-action,
+.side-dock-actions .side-dock-ribbon-action {
+    color: var(--grotto-nav-title-color);
+    border: 1px solid transparent;
+}
+.nav-file-title:hover, 
+.tree-item-self.is-clickable.mobile-tap,
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
+body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
+body:not(.is-grabbing) .nav-folder-title:hover, 
+.side-dock-settings .side-dock-ribbon-action:hover,
+.side-dock-actions .side-dock-ribbon-action:hover {
+    color: var(--grotto-nav-title-color-hover);
+    background-color: transparent;
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active, 
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.mobile-tap, 
+body:not(.is-grabbing) .nav-file-title.is-active:hover {
+    color: var(--grotto-nav-title-color-active);
+    background-color: var(--grotto-nav-title-background-color-active);
+    border: 1px solid var(--grotto-nav-title-border-color);
+}
+/*Menus*/
+body:not(.is-phone) .menu {
+    border: 0px solid var(--grotto-menu-border-color);
+    box-shadow: none;
+}
+body:not(.is-phone) .menu-scroll {
+    background-color: var(--grotto-menu-background-color);
+    border: 1px solid var(--grotto-menu-border-color);
+    padding: 8px;
+}
+body:not(.is-phone) .menu-item-icon, 
+body:not(.is-phone) .menu-item-title {
+    color: var(--grotto-menu-color);
+    background-color: var(--grotto-menu-background-color);
+}
+.menu-item.tappable {
+    border: 1px solid transparent;
+}
+.menu-item.selected .menu-item-icon, 
+.menu-item.selected .menu-item-title {
+    color: var(--grotto-menu-color-active);
+    background-color: var(--grotto-menu-background-color-active);
+}
+.menu-item.selected:not(.is-label):not(.is-disabled) {
+    background-color: var(--grotto-menu-background-color-active);
+    border: 1px solid var(--grotto-menu-border-color);
+}
+.menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.menu-item.is-warning .menu-item-title:not(.is-disabled) {
+    color: var(--text-error);
+}
+/*Phone Menus*/
+.is-phone .menu {
+    background-color: var(--grotto-menu-background-color);
+    border-top: 1px solid var(--grotto-menu-border-color);
+}
+.is-phone .menu-scroll {
+    background-color: var(--grotto-menu-background-color);
+    border-width: 0px;
+    padding: 8px;
+}
+.is-phone .menu-group .menu-item {
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-group .menu-item:not(:last-child) {
+    background-color: var(--grotto-menu-background-color);
+    border: 1px solid transparent;
+}
+.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
+.is-phone .menu-item .menu-item-icon:not(.is-label), 
+.is-phone .menu-item .menu-item-title:not(.is-label) {
+    color: var(--grotto-menu-color);
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-item.tappable.mobile-tap {
+    --grotto-menu-color: var(--grotto-menu-background-color-active);
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.is-phone .menu-item.is-warning .menu-item-title:not(.is-disabled) {
+    color: var(--text-error);
+}
+.menu-item.is-disabled .menu-item-icon:not(.is-label), 
+.menu-item.is-disabled .menu-item-title:not(.is-label) {
+    color: var(--grotto-menu-color);
+}
+.menu-item.is-disabled {
+    background-color: var(--grotto-menu-background-color);
+}
+.menu-item.is-disabled.selected {
+    background-color: var(--grotto-menu-background-color-active);
+}
+.menu-separator {
+    border-bottom: 0px solid var(--grotto-menu-border-color);
+}
+hr {
+    border-color: var(--text-normal);
+    border-width: 1px;
+}
+/*Inputs*/
+input[type=number],
+input[type=number]:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input[type=text],
+input[type=text]:hover {
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+.prompt input[type=text],
+.prompt input[type=text]:hover {
+    color: var(--background-primary);
+    background-color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input[type=search],
+input[type=search]:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input[type='date'], 
+input[type='date']:hover, 
+input[type='datetime-local'], 
+input[type='datetime-local']:hover, 
+input[type='email'],
+input[type='email']:hover,
+input[type='password'], 
+input[type='password']:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input.metadata-input-text:hover,
+textarea.webviewer-adblock-lists {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+}
+/*Search Suggestion*/
+.suggestion-container.mod-property-key .suggestion-item {
+    background-color: var(--grotto-accent-1);
+    color: var(--text-normal);
+}
+.search-input-container input {
+    border: 1px solid var(--text-normal);
+}
+.search-suggest-info-text {
+    color: var(--grotto-search-suggestion-color);
+    background-color: transparent;
+    opacity: 0.9;
+}
+.search-suggest-item.suggestion-item {
+    color: var(--grotto-search-suggestion-color);
+    background-color: var(--grotto-search-suggestion-background-color);
+    border: 1px solid transparent;
+}
+.search-suggest-item.suggestion-item:hover {
+    background-color: var(--grotto-search-suggestion-background-color-hover);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+}
+.search-params .setting-item-name {
+    color: var(--grotto-search-suggestion-color);
+}
+.search-row .clickable-icon {
+    color: var(--grotto-search-suggestion-icon-color);
+}
+.search-row .clickable-icon:hover {
+    color: var(--grotto-search-suggestion-icon-color-hover);
+}
+.search-result:not(.is-collapsed) .search-result-file-title {
+    color:var(--grotto-search-suggestion-color);
+}
+.clickable-icon.search-results-result-count {
+    color: var(--grotto-search-suggestion-icon-color);
+}
+.clickable-icon.search-results-result-count:hover {
+    color: var(--grotto-search-suggestion-icon-color-hover);
+}
+.search-results-info .dropdown {
+    color: var(--grotto-search-suggestion-color);
+    border: 1px solid var(--text-faint);
+}
+.search-results-info .dropdown:hover {
+    background-color: var(--grotto-night-1);
+}
+.tree-item-self:hover .tree-item-flair {
+    color: var(--grotto-accent-1);
+}
+/*Community Item*/
+.community-item {
+    border: 1px solid var(--text-normal);
+}
+.is-phone .community-item {
+    border: 1px solid transparent;
+    width: 96%;
+    justify-self: center;
+}
+.community-item:hover, 
+.community-item.mobile-tap {
+    border: 1px solid var(--grotto-accent-1);
+}
+/*Settings*/
+.vertical-tab-nav-item {
+    color: var(--grotto-settings-color);
+    border: 1px solid transparent;
+}
+.is-phone .vertical-tab-nav-item {
+    color: var(--text-normal);
+    border: 1px solid transparent;
+}
+.is-phone .vertical-tab-nav-item.mobile-tap {
+    color: var(--grotto-accent-1);
+}
+body:not(.is-phone) .horizontal-tab-nav-item:hover,
+body:not(.is-phone) .vertical-tab-nav-item:hover {
+    color: var(--grotto-settings-background-color-active);
+    border: 1px solid transparent;
+}
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--grotto-settings-color-active);
+    background-color: var(--grotto-settings-background-color-active);
+    border: 1px solid var(--grotto-settings-border-color);
+}
+body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
+body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
+    color: var(--grotto-settings-color-active);
+    background-color: var(--grotto-settings-background-color-active);
+    border: 1px solid var(--grotto-settings-border-color);
+}
+.setting-item {
+    border-width: 0px;
+}
+.is-phone .setting-item {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.is-phone .setting-item-heading {
+    margin-top: 0px;
+}
+/*Modals*/
+.is-phone .modal-container.mod-dim .modal {
+    border: 0px solid transparent;
+}
+.modal-container.mod-dim .modal {
+    box-shadow: none;
+    border: 1px solid var(--grotto-modal-border-color);
+}
+.is-phone .modal.mod-settings .modal-title,
+.is-phone .modal.mod-settings .vertical-tab-header {
+    background-color: var(--background-primary);
+}
+.is-phone .modal.mod-settings .vertical-tab-header,
+.is-phone .modal.mod-settings .vertical-tab-content,
+.is-phone .modal-sidebar,
+.is-phone .community-modal-info {
+    border: 0px solid transparent;
+}
+.modal-setting-nav-bar {
+    border: 1px solid var(--text-normal);
+    border-width: 1px 1px 0px 0px;
+}
+.community-modal-info {
+    border: 1px solid var(--text-normal);
+    border-width: 0px 1px 1px 0px;
+}
+.mod-community-modal .modal-sidebar button.clickable-icon:hover {
+    color: var(--grotto-accent-1);
+}
+.modal-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.modal.mod-settings .vertical-tab-header {
+    border-inline-end: 0px solid transparent;
+    border: 1px solid var(--grotto-settings-border-color);
+    border-width: 0px;
+}
+.modal-sidebar {
+    border: 1px solid var(--text-normal);
+    background-color: var(--background-primary);
+}
+/* View Header */
+.is-mobile .view-actions {
+    position: fixed;
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 1px 6px 1px 6px;
+    gap: 8px;
+}
+.is-mobile .view-header .clickable-icon {
+    color: var(--grotto-navbar-color);
+    border: 0px solid var(--grotto-navbar-background-color);
+    border-radius: 0px;
+}
+.is-mobile .view-header {
+    height: 0px;
+}
+.is-mobile .view-header-title-container,
+.is-mobile .view-header-left {
+    display: none;
+}
+.is-mobile .view-header .view-action {
+    color: var(--grotto-navbar-color);
+    background-color: var(--grotto-navbar-background-color);
+    border: 1px solid var(--grotto-navbar-border-color);
+}
+.is-mobile .view-header .view-action.mobile-tap {
+    color: var(--grotto-accent-1);
+    background-color: var(--grotto-navbar-background-color);
+    opacity: 1;
+}
+.is-mobile .view-header .view-action[aria-label="More options"] {
+    --icon-stroke: 1.75px;
+}
+.view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
+    display: none;
+}
+/* Rename Bar Customization */
+.tree-item-self.is-being-renamed:focus-within {
+    color: var(--background-secondary);
+    background-color: var(--grotto-settings-color);
+    border-radius: 0px;
+    caret-color: currentColor;
+}
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
+    color: var(--background-secondary);
+    background-color: var(--grotto-settings-color);
+}
 /* Multiselect Pills */
 .multi-select-pill, 
 .multi-select-pill:hover {
@@ -1653,6 +1801,9 @@ input.prompt-input:focus-visible,
     border-radius: 0px;
     right: 0px;
     width: 100%
+}
+.metadata-property-key {
+    border-bottom: none;
 }
 input.metadata-property-key-input, 
 input.metadata-property-key-input:hover, 
@@ -1702,26 +1853,385 @@ input.metadata-property-key-input:hover,
     color: var(--text-normal);
     caret-color: currentColor;
 }
-.clickable-icon.is-active {
-    color: var(--grotto-accent-1);
-    background-color: transparent;
-    opacity: 1;
-}
 .mod-file-rename .rename-textarea {
-    color: var(--grotto-sidebar-background-color);
-    background-color: var(--grotto-sidebar-color);
+    color: var(--grotto-settings-background-color);
+    background-color: var(--grotto-settings-color);
 }
-.graph-view.color-line {
-  color: var(--graph-line);
-  opacity: 0.2;
+input.metadata-property-key-input, 
+input.metadata-property-key-input:hover, 
+.metadata-property-value .metadata-input-number, 
+.metadata-property-value .metadata-input-number:hover, 
+.metadata-property-value .metadata-input-text, 
+.metadata-property-value .metadata-input-text:hover {
+    color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    border-width: 1px 0px 1px 1px;
+    height: 100%;
 }
-.graph-view.color-text {
-  color: var(--graph-text);
-  opacity: 0.5;
+.suggestion-container.mod-property-key {
+    background-color: var(--grotto-suggestion-background-color);
+}
+.suggestion-container.mod-property-key .suggestion-item {
+    background-color: var(--grotto-suggestion-background-color);
+    border: 1px solid transparent;
+}
+.suggestion-container.mod-property-key .suggestion-item:hover {
+    background-color: var(--grotto-suggestion-background-color-hover);
+    border: 1px solid var(--grotto-suggestion-border-color);
+}
+/*Presets*/
+/*Aegislash*/
+body.preset-aegislash {
+    --accent-h: 260;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 50%, 90%);
+    --grotto-day-2: hsl(40, 50%, 70%);
+    --grotto-day-3: hsl(40, 50%, 64%);
+    --grotto-night-0: hsl(260, 10%, 12%);
+    --grotto-night-1: hsl(260, 10%, 18%);
+    --grotto-night-2: hsl(260, 10%, 32%);
+    --grotto-night-3: hsl(260, 10%, 40%);
+    --grotto-accent-1: hsl(260, 20%, 60%);
+    --grotto-accent-2: hsl(260, 20%, 64%);
+}
+/*Alola*/
+.theme-light.preset-alola {
+    --accent-h: 48;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(0, 0%, 87%);
+    --grotto-day-2: hsl(0, 0%, 80%);
+    --grotto-day-3: hsl(0, 0%, 68%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 30%);
+    --grotto-night-3: hsl(0, 0%, 42%);
+    --grotto-accent-1: hsl(48, 60%, 50%);
+    --grotto-accent-2: hsl(48, 60%, 56%);
+}
+.theme-dark.preset-alola, 
+.is-mobile.theme-dark.preset-alola {
+    --accent-h: 48;
+    --accent-s: 40%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(0, 0%, 87%);
+    --grotto-day-2: hsl(0, 0%, 80%);
+    --grotto-day-3: hsl(0, 0%, 68%);
+    --grotto-night-0: hsl(260, 50%, 16%);
+    --grotto-night-1: hsl(260, 50%, 24%);
+    --grotto-night-2: hsl(260, 50%, 32%);
+    --grotto-night-3: hsl(260, 50%, 40%);
+    --grotto-accent-1: hsl(48, 40%, 50%);
+    --grotto-accent-2: hsl(48, 40%, 56%);
+}
+/*Calyrex*/
+.theme-light.preset-calyrex {
+    --accent-h: 210;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(160, 60%, 96%);
+    --grotto-day-2: hsl(160, 60%, 72%);
+    --grotto-day-3: hsl(160, 60%, 60%);
+    --grotto-night-0: hsl(210, 10%, 12%);
+    --grotto-night-1: hsl(210, 10%, 18%);
+    --grotto-night-2: hsl(210, 10%, 36%);
+    --grotto-night-3: hsl(210, 10%, 48%);
+    --grotto-accent-1: hsl(210, 20%, 60%);
+    --grotto-accent-2: hsl(210, 20%, 66%);
+}
+.theme-dark.preset-calyrex, 
+.is-mobile.theme-dark.preset-calyrex {
+    --accent-h: 260;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(160, 60%, 96%);
+    --grotto-day-2: hsl(160, 60%, 72%);
+    --grotto-day-3: hsl(160, 60%, 60%);
+    --grotto-night-0: hsl(260, 0%, 12%);
+    --grotto-night-1: hsl(260, 0%, 18%);
+    --grotto-night-2: hsl(260, 0%, 26%);
+    --grotto-night-3: hsl(260, 0%, 36%);
+    --grotto-accent-1: hsl(260, 50%, 50%);
+    --grotto-accent-2: hsl(260, 50%, 56%);
+}
+/* Cheren */
+.preset-cheren {
+    --accent-h: 0;
+    --accent-s: 30%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(0, 20%, 90%);
+    --grotto-day-2: hsl(0, 20%, 80%);
+    --grotto-day-3: hsl(0, 20%, 72%);
+    --grotto-night-0: hsl(200, 10%, 12%);
+    --grotto-night-1: hsl(200, 60%, 18%);
+    --grotto-night-2: hsl(196, 60%, 26%);
+    --grotto-night-3: hsl(196, 60%, 40%);
+    --grotto-accent-1: hsl(0, 30%, 50%);
+    --grotto-accent-2: hsl(0, 30%, 56%);
+}
+/* Darkrai */
+body.preset-darkrai {
+    --accent-h: 5;
+    --accent-s: 60%;
+    --accent-l: 52%;
+    --grotto-day-1: hsl(212, 0%, 90%);
+    --grotto-day-2: hsl(212, 0%, 80%);
+    --grotto-day-3: hsl(212, 0%, 72%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 32%);
+    --grotto-night-3: hsl(0, 0%, 40%);
+    --grotto-accent-1: hsl(5, 60%, 52%);
+    --grotto-accent-2: hsl(5, 60%, 60%);
+}
+/* Dawn */
+.theme-light.preset-dawn {
+    --accent-h: 0;
+    --accent-s: 40%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(0, 20%, 90%);
+    --grotto-day-2: hsl(0, 20%, 80%);
+    --grotto-day-3: hsl(0, 20%, 72%);
+    --grotto-night-0: hsl(0, 40%, 50%);
+    --grotto-night-1: hsl(200, 30%, 20%);
+    --grotto-night-2: hsl(200, 20%, 60%);
+    --grotto-night-3: hsl(200, 20%, 72%);
+    --grotto-accent-1: hsl(0, 40%, 60%);
+    --grotto-accent-2: hsl(0, 40%, 64%);
+    --grotto-calendar-dayofweek-color: var(--grotto-night-1);
+}
+.theme-dark.preset-dawn,
+.is-mobile.theme-dark.preset-dawn {
+    --grotto-day-1: hsl(0, 20%, 90%);
+    --grotto-day-2: hsl(0, 20%, 80%);
+    --grotto-day-3: hsl(0, 20%, 72%);
+    --grotto-night-0: hsl(200, 30%, 20%);
+    --grotto-night-1: hsl(0, 40%, 50%);
+    --grotto-night-2: hsl(200, 30%, 30%);
+    --grotto-night-3: hsl(200, 30%, 44%);
+    --grotto-accent-1: hsl(0, 40%, 60%);
+    --grotto-accent-2: hsl(0, 40%, 64%);
+    --grotto-link-color: var(--grotto-night-0);
+    --grotto-link-color-hover: var(--grotto-night-2);
+    --grotto-bold-color: var(--grotto-night-0);
+    --grotto-italic-color: var(--grotto-night-0);
+    --grotto-comment-color: var(--grotto-night-0);
+    --grotto-header-border-color-2: var(--grotto-night-0);
+    --grotto-header-border-color-5: var(--grotto-night-0);
+}
+/*Lucario*/
+body.preset-lucario {
+    --accent-h: 0;
+    --accent-s: 40%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 20%, 90%);
+    --grotto-day-2: hsl(40, 20%, 80%);
+    --grotto-day-3: hsl(40, 20%, 72%);
+    --grotto-night-0: hsl(200, 20%, 18%);
+    --grotto-night-1: hsl(200, 30%, 26%);
+    --grotto-night-2: hsl(200, 30%, 40%);
+    --grotto-night-3: hsl(200, 30%, 52%);
+    --grotto-accent-1: hsl(0, 40%, 60%);
+    --grotto-accent-2: hsl(0, 40%, 68%);
+}
+/*Meloetta*/
+.theme-light.preset-meloetta {
+    --accent-h: 160;
+    --accent-s: 40%;
+    --accent-l: 40%;
+    --grotto-day-1: hsl(120, 50%, 96%);
+    --grotto-day-2: hsl(120, 50%, 80%);
+    --grotto-day-3: hsl(120, 40%, 60%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40,6%, 32%);
+    --grotto-accent-1: hsl(160, 40%, 40%);
+    --grotto-accent-2: hsl(160, 40%, 48%);
+}
+.theme-dark.preset-meloetta, 
+.is-mobile.theme-dark.preset-meloetta {
+    --accent-h: 10;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(350, 40%, 90%);
+    --grotto-day-2: hsl(350, 40%, 72%);
+    --grotto-day-3: hsl(350, 40%, 60%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40,6%, 32%);
+    --grotto-accent-1: hsl(10, 50%, 50%);
+    --grotto-accent-2: hsl(10, 50%, 56%);
+}
+/*Noivern*/
+body.preset-noivern {
+    --accent-h: 160;
+    --accent-s: 40%;
+    --accent-l: 48%;
+    --grotto-day-1: hsl(40, 10%, 90%);
+    --grotto-day-2: hsl(40, 10%, 80%);
+    --grotto-day-3: hsl(40, 10%, 72%);
+    --grotto-night-0: hsl(225, 10%, 12%);
+    --grotto-night-1: hsl(288, 26%, 32%);
+    --grotto-night-2: hsl(288, 26%, 40%);
+    --grotto-night-3: hsl(288, 26%, 50%);
+    --grotto-accent-1: hsl(160, 40%, 48%);
+    --grotto-accent-2: hsl(160, 40%, 54%);
+}
+.theme-light.preset-noivern {
+    --text-normal: var(--grotto-night-0);
+    --text-muted: var(--grotto-night-1);
+    --text-faint: var(--grotto-night-2);
+}
+/*Poltchageist*/
+body.preset-poltchageist {
+    --accent-h: 114;
+    --accent-s: 30%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(30, 14%, 82%);
+    --grotto-day-2: hsl(30, 14%, 76%);
+    --grotto-day-3: hsl(30, 14%, 70%);
+    --grotto-night-0: hsl(60, 10%, 10%);
+    --grotto-night-1: hsl(60, 10%, 14%);
+    --grotto-night-2: hsl(60, 5%, 24%);
+    --grotto-night-3: hsl(60, 5%, 32%);
+    --grotto-accent-1: hsl(114, 30%, 50%);
+    --grotto-accent-2: hsl(114, 30%, 56%);
+}
+/*Revavroom*/
+.preset-revavroom {
+    --accent-h: 48;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(262, 0%, 80%);
+    --grotto-day-2: hsl(262, 0%, 64%);
+    --grotto-day-3: hsl(262, 0%, 54%);
+    --grotto-night-0: hsl(262, 25%, 14%);
+    --grotto-night-1: hsl(262, 25%, 20%);
+    --grotto-night-2: hsl(262, 25%, 40%);
+    --grotto-night-3: hsl(262, 25%, 52%);
+    --grotto-accent-1: hsl(48, 50%, 50%);
+    --grotto-accent-2: hsl(48, 50%, 56%);
+    --grotto-button-color: var(--grotto-night-1);
+    --grotto-button-border-color: var(--grotto-night-1);
+    --grotto-notice-color: var(--grotto-night-1);
+    --grotto-notice-border-color: var(--grotto-night-1);
+}
+/*Scolipede*/
+.preset-scolipede {
+    --accent-h: 340;
+    --accent-s: 50%;
+    --accent-l: 40%;
+    --grotto-day-1: hsl(240, 50%, 84%);
+    --grotto-day-2: hsl(240, 30%, 72%);
+    --grotto-day-3: hsl(240, 30%, 64%);
+    --grotto-night-0: hsl(340, 10%, 12%);
+    --grotto-night-1: hsl(340, 10%, 18%);
+    --grotto-night-2: hsl(340, 10%, 24%);
+    --grotto-night-3: hsl(340, 10%, 32%);
+    --grotto-accent-1: hsl(340, 50%, 40%);
+    --grotto-accent-2: hsl(340, 50%, 52%);
+}
+/*Skeledirge*/
+.preset-skeledirge {
+    --accent-h: 34;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(34, 20%, 84%);
+    --grotto-day-2: hsl(34, 20%, 72%);
+    --grotto-day-3: hsl(34, 20%, 64%);
+    --grotto-night-0: hsl(10, 10%, 16%);
+    --grotto-night-1: hsl(10, 60%, 40%);
+    --grotto-night-2: hsl(10, 60%, 56%);
+    --grotto-night-3: hsl(10, 60%, 64%);
+    --grotto-accent-1: hsl(34, 50%, 50%);
+    --grotto-accent-2: hsl(34, 50%, 56%);
+}
+.theme-light.preset-skeledirge {
+    --text-normal: var(--grotto-night-0);
+}
+/*Steelix*/
+body.preset-steelix {
+    --accent-h: 180;
+    --accent-s: 20%;
+    --accent-l: 56%;
+    --grotto-day-1: hsl(0, 0%, 80%);
+    --grotto-day-2: hsl(0, 0%, 70%);
+    --grotto-day-3: hsl(0, 0%, 60%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 24%);
+    --grotto-night-3: hsl(0, 0%, 32%);
+    --grotto-accent-1: hsl(180, 20%, 56%);
+    --grotto-accent-2: hsl(180, 20%, 64%);
+}
+/*Unova*/
+body.preset-unova {
+    --grotto-day-1: hsl(0, 0%, 87%);
+    --grotto-day-2: hsl(0, 0%, 80%);
+    --grotto-day-3: hsl(0, 0%, 68%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 24%);
+    --grotto-night-3: hsl(0, 0%, 32%);
+}
+.theme-light.preset-unova {
+    --accent-h: 24;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-accent-1: hsl(24, 60%, 50%);
+    --grotto-accent-2: hsl(24, 60%, 56%);
+}
+.theme-dark.preset-unova, 
+.is-mobile.theme-dark.preset-unova {
+    --accent-h: 200;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-accent-1: hsl(200, 60%, 50%);
+    --grotto-accent-2: hsl(200, 60%, 56%);
+}
+/* Ursaluna */
+.preset-ursaluna {
+    --accent-h: 47;
+    --accent-s: 20%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(20, 10%, 80%);
+    --grotto-day-2: hsl(20, 10%, 70%);
+    --grotto-day-3: hsl(20, 10%, 64%);
+    --grotto-night-0: hsl(20, 40%, 14%);
+    --grotto-night-1: hsl(20, 40%, 20%);
+    --grotto-night-2: hsl(20, 40%, 32%);
+    --grotto-night-3: hsl(20, 40%, 40%);
+    --grotto-accent-1: hsl(47, 20%, 50%);
+    --grotto-accent-2: hsl(47, 20%, 56%);
+}
+/*Volcarona*/
+body.preset-volcarona {
+    --accent-h: 27;
+    --accent-s: 85%;
+    --accent-l: 52%;
+    --grotto-day-1: hsl(0, 0%, 90%);
+    --grotto-day-2: hsl(187, 45%, 71%);
+    --grotto-day-3: hsl(187, 45%, 62%);
+    --grotto-night-0: hsl(194, 60%, 18%);
+    --grotto-night-1: hsl(194, 60%, 24%);
+    --grotto-night-2: hsl(194, 60%, 32%);
+    --grotto-night-3: hsl(194, 60%, 40%);
+    --grotto-accent-1: hsl(27, 85%, 52%);
+    --grotto-accent-2: hsl(27, 85%, 60%);
 }
 /* Style Settings Support */
 .style-settings-empty {
     background-color: var(--background-primary);
+}
+.style-settings-container, 
+.style-settings-heading {
+    padding: 0px;
+}
+.style-settings-heading[data-level="0"] {
+    margin-bottom: 16px;
 }
 /* @settings
 name: Color Controls
@@ -1739,8 +2249,14 @@ settings:
                 label: Aegislash
                 value: preset-aegislash
             -
-                label: Dawn
-                value: preset-dawn
+                label: Alola
+                value: preset-alola
+            -
+                label: Calyrex
+                value: preset-calyrex
+            -
+                label: Cheren
+                value: preset-cheren
             -
                 label: Clobbopus
                 value: preset-clobbopus
@@ -1748,11 +2264,14 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
-                label: Gardevoir
-                value: preset-gardevoir
+                label: Dawn
+                value: preset-dawn
             -
-                label: Metagross
-                value: preset-metagross
+                label: Lucario
+                value: preset-lucario
+            -
+                label: Meloetta
+                value: preset-meloetta
             -
                 label: Noivern
                 value: preset-noivern
@@ -1763,8 +2282,8 @@ settings:
                 label: Revavroom
                 value: preset-revavroom
             -
-                label: Rivals
-                value: preset-rivals
+                label: Skeledirge
+                value: preset-skeledirge
             -
                 label: Scolipede
                 value: preset-scolipede
@@ -1780,12 +2299,6 @@ settings:
             -
                 label: Volcarona
                 value: preset-volcarona
-            -
-                label: Wattrel
-                value: preset-wattrel
-            -
-                label: Zygarde
-                value: preset-zygarde
 */
 /* @settings
 name: Text Controls
@@ -1868,18 +2381,6 @@ settings:
                 label: Accent
                 value: var(--color-accent)
     -
-        id: blockquote-background-color
-        title: Blockquote Background Color
-        type: variable-select
-        default: var(--background-primary)
-        options:
-            -
-                label: Normal
-                value: var(--background-primary)
-            -
-                label: Accent
-                value: var(--color-accent)
-    -
         id: grotto-callout-background-color
         title: Callout Background Color
         type: variable-select
@@ -1914,6 +2415,25 @@ settings:
         title: Embed Max Height
         type: variable-text
         default: 4000px
+*/
+/* @settings
+name: Tag Controls
+id: grotto-tag-controls
+collapsed: false
+settings:
+    -
+        id: grotto-tag-pointer-events
+        title: Tag Interaction
+        description: Toggle tag search directly from clicking tags
+        type: variable-select
+        default: auto
+        options:
+            -
+                label: Enabled
+                value: auto
+            -
+                label: Disabled
+                value: none
 */
 /* @settings
 name: Mobile Controls
