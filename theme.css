@@ -1344,7 +1344,7 @@ input[type='range']::-webkit-slider-thumb:active {
     border-top: 1px solid var(--grotto-navbar-border-color);
     background-color: var(--grotto-navbar-background-color);
     border-radius: var(--grotto-navbar-radius) var(--grotto-navbar-radius) 0rem 0rem;
-    padding-bottom: 8px 0px;
+    padding: 4px 0px;
 }
 .mobile-navbar-action-new-tab {
     display: var(--grotto-navbar-new-tab);
@@ -2470,5 +2470,6 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
