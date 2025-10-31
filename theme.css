@@ -1705,6 +1705,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .is-phone .setting-item-heading {
     margin-top: 0px;
 }
+.is-phone .modal.mod-settings .vertical-tab-header, 
+.is-phone .modal.mod-settings .vertical-tab-content {
+    --scrollbar-width: 0px;
+}
 /*Modals*/
 .is-phone .modal-container.mod-dim .modal {
     border: 0px solid transparent;
@@ -2506,6 +2510,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
