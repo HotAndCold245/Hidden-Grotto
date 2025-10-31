@@ -68,7 +68,8 @@ settings:
 If there are any issues, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev channel. 
 
 # Changelog
-##### V1.2.4
+##### V1.2.5
+- Removed scrollbars from mobile settings tabs
 - Changed tab header appearance
 - Added presets - Absol, Alola, Calyrex, Lucario, Meloetta, Skeledirge, Zacian
 - Removed presets - Rivals, Gardevoir, Wattrel, Zygarde
