@@ -1889,6 +1889,21 @@ input.metadata-property-key-input:hover,
     border: 1px solid var(--grotto-suggestion-border-color);
 }
 /*Presets*/
+/*Absol*/
+body.preset-absol {
+    --accent-h: 200;
+    --accent-s: 10%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(0, 0%, 90%);
+    --grotto-day-2: hsl(0, 0%, 80%);
+    --grotto-day-3: hsl(0, 0%, 70%);
+    --grotto-night-0: hsl(200, 5%, 12%);
+    --grotto-night-1: hsl(200, 5%, 18%);
+    --grotto-night-2: hsl(200, 5%, 24%);
+    --grotto-night-3: hsl(200, 5%, 32%);
+    --grotto-accent-1: hsl(200, 10%, 50%);
+    --grotto-accent-2: hsl(200, 10%, 56%);
+}
 /*Aegislash*/
 body.preset-aegislash {
     --accent-h: 260;
@@ -2231,6 +2246,21 @@ body.preset-volcarona {
     --grotto-accent-1: hsl(27, 85%, 52%);
     --grotto-accent-2: hsl(27, 85%, 60%);
 }
+/*Zacian*/
+body.preset-zacian {
+    --accent-h: 5;
+    --accent-s: 60%;
+    --accent-l: 64%;
+    --grotto-day-1: hsl(30, 14%, 82%);
+    --grotto-day-2: hsl(30, 14%, 76%);
+    --grotto-day-3: hsl(30, 14%, 70%);
+    --grotto-night-0: hsl(200, 10%, 12%);
+    --grotto-night-1: hsl(200, 80%, 32%);
+    --grotto-night-2: hsl(200, 80%, 44%);
+    --grotto-night-3: hsl(200, 80%, 56%);
+    --grotto-accent-1: hsl(5, 60%, 64%);
+    --grotto-accent-2: hsl(5, 60%, 72%);
+}
 /* Style Settings Support */
 .style-settings-empty {
     background-color: var(--background-primary);
@@ -2254,6 +2284,9 @@ settings:
         allowEmpty: false
         default: preset-clobbopus
         options:
+            -
+                label: Absol
+                value: preset-absol
             -
                 label: Aegislash
                 value: preset-aegislash
@@ -2308,6 +2341,9 @@ settings:
             -
                 label: Volcarona
                 value: preset-volcarona
+            -
+                label: Zacian
+                value: preset-zacian
 */
 /* @settings
 name: Text Controls
@@ -2470,6 +2506,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
