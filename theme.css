@@ -1344,7 +1344,7 @@ input[type='range']::-webkit-slider-thumb:active {
     border-top: 1px solid var(--grotto-navbar-border-color);
     background-color: var(--grotto-navbar-background-color);
     border-radius: var(--grotto-navbar-radius) var(--grotto-navbar-radius) 0rem 0rem;
-    padding: 0px;
+    padding-bottom: 8px 0px;
 }
 .mobile-navbar-action-new-tab {
     display: var(--grotto-navbar-new-tab);
@@ -1788,8 +1788,9 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     display: none;
 }
 /* Rename Bar Customization */
+.tree-item-self.is-being-renamed, 
 .tree-item-self.is-being-renamed:focus-within, 
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed{
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
     color: var(--background-secondary);
     background-color: var(--grotto-day-1);
     border-radius: 0px;
@@ -1817,6 +1818,9 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 body:not(.is-phone).metadata-property-key {
     border-bottom: none;
 }
+.is-phone .metadata-property-key {
+    border-bottom: 1px solid var(--text-normal);
+}
 input.metadata-property-key-input, 
 input.metadata-property-key-input:hover, 
 .metadata-property-value .multi-select-container {
@@ -1830,9 +1834,6 @@ input.metadata-property-key-input:hover,
     background-color: transparent;
     border-width: 1px 0px 0px 1px;
     padding: 4px;
-}
-.metadata-property-value {
-    border-right: 1px solid var(--text-normal);
 }
 .metadata-property-icon {
     color: var(--text-normal);
@@ -1864,10 +1865,6 @@ input.metadata-property-key-input:hover,
 .metadata-properties .metadata-input-longtext {
     color: var(--text-normal);
     caret-color: currentColor;
-}
-.mod-file-rename .rename-textarea {
-    color: var(--grotto-settings-background-color);
-    background-color: var(--grotto-settings-color);
 }
 input.metadata-property-key-input, 
 input.metadata-property-key-input:hover, 
@@ -2473,4 +2470,5 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
