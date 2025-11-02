@@ -214,7 +214,7 @@ body {
     --grotto-calendar-color: var(--grotto-day-1);
     --grotto-calendar-color-hover: var(--grotto-accent-1);
     --grotto-calendar-background-color: var(--background-secondary);
-    --grotto-calendar-today-background-color: var(--grotto-accent-1);
+    --grotto-calendar-today-background-color: var(--grotto-day-1);
     --grotto-calendar-border-color: var(--grotto-accent-1);
     --grotto-calendar-year-color: var(--grotto-accent-1);
     --grotto-calendar-dayofweek-color: var(--grotto-night-0);
@@ -869,7 +869,7 @@ th,
     padding: 4px;
 }
 #calendar-container th.svelte-pcimu8 {
-    background-color: var(--grotto-calendar-border-color);
+    background-color: var(--grotto-calendar-dayofweek-background-color);
     color: var(--grotto-calendar-dayofweek-color);
     min-width: 0px;
 }
@@ -2561,6 +2561,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
