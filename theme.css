@@ -1864,7 +1864,7 @@ body:not(.is-phone).metadata-property-key {
     border-bottom: none;
 }
 .is-phone .metadata-property-key {
-    border-bottom: 1px solid var(--text-normal);
+    border-bottom: 0px solid var(--text-normal);
 }
 input.metadata-property-key-input, 
 input.metadata-property-key-input:hover, 
@@ -1877,7 +1877,7 @@ input.metadata-property-key-input:hover,
 .is-phone input.metadata-property-key-input:hover, 
 .is-phone .metadata-property-value .multi-select-container {
     background-color: transparent;
-    border-width: 1px 0px 0px 1px;
+    border-width: 1px 0px 1px 1px;
     padding: 4px;
 }
 .metadata-property-icon {
@@ -1890,7 +1890,7 @@ input.metadata-property-key-input:hover,
 .is-phone .metadata-property-icon {
     color: var(--text-normal);
     border: 1px solid var(--text-normal);
-    border-width: 1px 0px 0px 1px;
+    border-width: 1px 0px 1px 1px;
     height: 100%;
     padding: 4px;
 }
@@ -1921,6 +1921,16 @@ input.metadata-property-key-input:hover,
     border: 1px solid var(--text-normal);
     border-width: 1px 0px 1px 1px;
     height: 100%;
+}
+.metadata-property-key {
+    --metadata-divider-width: 0px;
+}
+.workspace-leaf-content[data-type='file-properties'] .view-content {
+    --text-normal: var(--grotto-day-1);
+    --background-modifier-border-focus: var(--grotto-day-1);
+    --grotto-tag-color: var(--grotto-night-0);
+    --grotto-tag-background-color: var(--grotto-day-1);
+    --grotto-text-icon-color: var(--grotto-day-1);
 }
 .suggestion-container.mod-property-key {
     background-color: var(--grotto-suggestion-background-color);
@@ -2551,6 +2561,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
