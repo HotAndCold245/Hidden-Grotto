@@ -68,7 +68,8 @@ settings:
 If there are any issues, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev channel. 
 
 # Changelog
-##### V1.2.6
+##### V1.2.7
+- Fixed properties view in right sidebar
 - Fixed tag and link visibility within headers
 - Removed scrollbars from mobile settings tabs
 - Changed tab header appearance
