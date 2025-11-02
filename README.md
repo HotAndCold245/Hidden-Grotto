@@ -2,7 +2,7 @@
 This theme is primarily designed for personal use. The base color palette is inspired by the Pokemon, Clobbopus. 
 
 ![IMG_1](https://github.com/user-attachments/assets/5b480b0e-8515-418a-995a-c764ff6edb7d)
-#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is available in the theme's repository. 
+#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
 # Features
 - Supports both **light** and **dark** mode
 - 19 Additional colour palettes
