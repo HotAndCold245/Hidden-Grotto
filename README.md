@@ -68,7 +68,8 @@ settings:
 If there are any issues, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev channel. 
 
 # Changelog
-##### V1.2.5
+##### V1.2.6
+- Fixed tag and link visibility within headers
 - Removed scrollbars from mobile settings tabs
 - Changed tab header appearance
 - Added presets - Absol, Alola, Calyrex, Lucario, Meloetta, Skeledirge, Zacian
