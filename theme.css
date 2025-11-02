@@ -1,4 +1,4 @@
-/* V1.3.0*/
+/* V1.2.6*/
 /*Clobbopus*/
 body, 
 body.preset-clobbopus {
@@ -171,10 +171,10 @@ body {
     --grotto-code-weight: 800;
     --code-radius: var(--grotto-code-radius);
     /*Status Bar*/
-    --grotto-sidebar-color: var(--background-primary);
-    --grotto-sidebar-background-color: var(--text-normal);
-    --grotto-sidebar-border-color: var(--background-primary);
-    --grotto-sidebar-radius: 0rem;
+    --grotto-statusbar-color: var(--background-primary);
+    --grotto-statusbar-background-color: var(--text-normal);
+    --grotto-statusbar-border-color: var(--background-primary);
+    --grotto-statusbar-radius: 0rem;
     /*Toggles*/
     --grotto-toggle-color: var(--grotto-day-1);
     --grotto-toggle-handle-border-color: var(--grotto-night-0);
@@ -399,6 +399,22 @@ a.tag:hover,
     caret-color: currentColor;
     vertical-align: middle;
 }
+/*Tags inside Headers*/
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
+.markdown-rendered h1 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
+.markdown-rendered h2 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
+.markdown-rendered h3 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
+.markdown-rendered h4 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
+.markdown-rendered h5 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag, 
+.markdown-rendered h6 a.tag {
+    font-size: 0.8rem !important;
+    vertical-align: top;
+}
 /*Bold*/
 strong, 
 .cm-strong {
@@ -447,6 +463,33 @@ a.mobile-tap,
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
     color: var(--grotto-link-color-hover);
     opacity: 1;
+}
+/*Links inside Headers*/
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-underline, 
+.markdown-rendered h1 .internal-link, 
+.cm-header.cm-header-1.cm-hmd-internal-link, 
+.cm-header.cm-header-1.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-underline, 
+.markdown-rendered h2 .internal-link, 
+.cm-header.cm-header-2.cm-hmd-internal-link, 
+.cm-header.cm-header-2.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-underline, 
+.markdown-rendered h3 .internal-link, 
+.cm-header.cm-header-3.cm-hmd-internal-link, 
+.cm-header.cm-header-3.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-underline, 
+.markdown-rendered h4 .internal-link, 
+.cm-header.cm-header-4.cm-hmd-internal-link, 
+.cm-header.cm-header-4.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-underline, 
+.markdown-rendered h5 .internal-link, 
+.cm-header.cm-header-5.cm-hmd-internal-link, 
+.cm-header.cm-header-5.cm-hmd-internal-link:hover, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-underline, 
+.markdown-rendered h6 .internal-link, 
+.cm-header.cm-header-6.cm-hmd-internal-link, 
+.cm-header.cm-header-6.cm-hmd-internal-link:hover {
+    color: inherit;
 }
 /*Headers*/
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1,
@@ -546,12 +589,6 @@ input[type=checkbox]:checked,
 input[type=checkbox]:checked:hover {
     border: 1px solid var(--grotto-checkbox-border-color);
     border-radius: var(--grotto-checkbox-radius);
-}
-/*Lists*/
-.markdown-source-view.mod-cm6 .cm-formatting-list-ul,
-.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
-  white-space: pre;
-  padding-inline-end: 0.3rem;
 }
 /*Color Swatch*/
 .is-mobile input[type="color"] {
@@ -654,15 +691,18 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 /*Status Bar*/
 .status-bar {
-    color: var(--grotto-sidebar-color);
-    background-color: var(--grotto-sidebar-background-color);
-    border: 1px solid var(--grotto-sidebar-border-color);
-    border-radius: var(--grotto-sidebar-radius);
+    color: var(--grotto-statusbar-color);
+    background-color: var(--grotto-statusbar-background-color);
+    border: 1px solid var(--grotto-statusbar-border-color);
+    border-radius: var(--grotto-statusbar-radius);
     bottom: 4px;
     right: 4px;
 }
 .status-bar-item {
-    color: var(--grotto-statusbar-color);
+    color: var(--grotto-statusbar-border-color);
+}
+.status-bar-item.mod-clickable:hover {
+    color: var(--grotto-accent-1);
 }
 /*Toggles*/
 .checkbox-container, 
@@ -1119,7 +1159,7 @@ input.prompt-input:focus-visible,
     background-color: var(--grotto-day-1);
 }
 .is-phone .workspace-drawer-active-tab-header.mobile-tap {
-    background-color: var(--grotto-day-2);
+    background-color: var(--grotto-day-1);
 }
 .is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
 .is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
@@ -1664,7 +1704,8 @@ textarea.webviewer-adblock-lists {
 }
 .community-item:hover, 
 .community-item.mobile-tap {
-    border: 1px solid var(--grotto-accent-1);
+    border: 1px solid var(--text-normal);
+    background-color: var(--grotto-accent-1);
 }
 /*Settings*/
 .vertical-tab-nav-item {
@@ -1906,7 +1947,7 @@ body.preset-absol {
     --grotto-night-2: hsl(200, 5%, 24%);
     --grotto-night-3: hsl(200, 5%, 32%);
     --grotto-accent-1: hsl(200, 10%, 50%);
-    --grotto-accent-2: hsl(200, 10%, 56%);
+    --grotto-accent-2: hsl(200, 10%, 54%);
 }
 /*Aegislash*/
 body.preset-aegislash {
@@ -1936,7 +1977,7 @@ body.preset-aegislash {
     --grotto-night-2: hsl(0, 0%, 30%);
     --grotto-night-3: hsl(0, 0%, 42%);
     --grotto-accent-1: hsl(48, 60%, 50%);
-    --grotto-accent-2: hsl(48, 60%, 56%);
+    --grotto-accent-2: hsl(48, 60%, 54%);
 }
 .theme-dark.preset-alola, 
 .is-mobile.theme-dark.preset-alola {
@@ -1951,7 +1992,7 @@ body.preset-aegislash {
     --grotto-night-2: hsl(260, 50%, 32%);
     --grotto-night-3: hsl(260, 50%, 40%);
     --grotto-accent-1: hsl(48, 40%, 50%);
-    --grotto-accent-2: hsl(48, 40%, 56%);
+    --grotto-accent-2: hsl(48, 40%, 54%);
 }
 /*Calyrex*/
 .theme-light.preset-calyrex {
@@ -1966,7 +2007,7 @@ body.preset-aegislash {
     --grotto-night-2: hsl(210, 10%, 36%);
     --grotto-night-3: hsl(210, 10%, 48%);
     --grotto-accent-1: hsl(210, 20%, 60%);
-    --grotto-accent-2: hsl(210, 20%, 66%);
+    --grotto-accent-2: hsl(210, 20%, 64%);
 }
 .theme-dark.preset-calyrex, 
 .is-mobile.theme-dark.preset-calyrex {
@@ -1981,7 +2022,7 @@ body.preset-aegislash {
     --grotto-night-2: hsl(260, 0%, 26%);
     --grotto-night-3: hsl(260, 0%, 36%);
     --grotto-accent-1: hsl(260, 50%, 50%);
-    --grotto-accent-2: hsl(260, 50%, 56%);
+    --grotto-accent-2: hsl(260, 50%, 54%);
 }
 /* Cheren */
 .preset-cheren {
@@ -1996,7 +2037,7 @@ body.preset-aegislash {
     --grotto-night-2: hsl(196, 60%, 26%);
     --grotto-night-3: hsl(196, 60%, 40%);
     --grotto-accent-1: hsl(0, 30%, 50%);
-    --grotto-accent-2: hsl(0, 30%, 56%);
+    --grotto-accent-2: hsl(0, 30%, 54%);
 }
 /* Darkrai */
 body.preset-darkrai {
@@ -2010,8 +2051,8 @@ body.preset-darkrai {
     --grotto-night-1: hsl(0, 0%, 18%);
     --grotto-night-2: hsl(0, 0%, 32%);
     --grotto-night-3: hsl(0, 0%, 40%);
-    --grotto-accent-1: hsl(5, 60%, 52%);
-    --grotto-accent-2: hsl(5, 60%, 60%);
+    --grotto-accent-1: hsl(5, 60%, 50%);
+    --grotto-accent-2: hsl(5, 60%, 54%);
 }
 /* Dawn */
 .theme-light.preset-dawn {
@@ -2083,9 +2124,9 @@ body.preset-lucario {
     --accent-h: 10;
     --accent-s: 50%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(350, 40%, 90%);
-    --grotto-day-2: hsl(350, 40%, 72%);
-    --grotto-day-3: hsl(350, 40%, 60%);
+    --grotto-day-1: hsl(10, 10%, 90%);
+    --grotto-day-2: hsl(10, 10%, 72%);
+    --grotto-day-3: hsl(10, 10%, 60%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
@@ -2097,7 +2138,7 @@ body.preset-lucario {
 body.preset-noivern {
     --accent-h: 160;
     --accent-s: 40%;
-    --accent-l: 48%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(40, 10%, 90%);
     --grotto-day-2: hsl(40, 10%, 80%);
     --grotto-day-3: hsl(40, 10%, 72%);
@@ -2105,7 +2146,7 @@ body.preset-noivern {
     --grotto-night-1: hsl(288, 26%, 32%);
     --grotto-night-2: hsl(288, 26%, 40%);
     --grotto-night-3: hsl(288, 26%, 50%);
-    --grotto-accent-1: hsl(160, 40%, 48%);
+    --grotto-accent-1: hsl(160, 40%, 50%);
     --grotto-accent-2: hsl(160, 40%, 54%);
 }
 .theme-light.preset-noivern {
@@ -2126,7 +2167,7 @@ body.preset-poltchageist {
     --grotto-night-2: hsl(60, 5%, 24%);
     --grotto-night-3: hsl(60, 5%, 32%);
     --grotto-accent-1: hsl(114, 30%, 50%);
-    --grotto-accent-2: hsl(114, 30%, 56%);
+    --grotto-accent-2: hsl(114, 30%, 54%);
 }
 /*Revavroom*/
 .preset-revavroom {
@@ -2141,7 +2182,7 @@ body.preset-poltchageist {
     --grotto-night-2: hsl(262, 25%, 40%);
     --grotto-night-3: hsl(262, 25%, 52%);
     --grotto-accent-1: hsl(48, 50%, 50%);
-    --grotto-accent-2: hsl(48, 50%, 56%);
+    --grotto-accent-2: hsl(48, 50%, 54%);
     --grotto-button-color: var(--grotto-night-1);
     --grotto-button-border-color: var(--grotto-night-1);
     --grotto-notice-color: var(--grotto-night-1);
@@ -2152,15 +2193,15 @@ body.preset-poltchageist {
     --accent-h: 340;
     --accent-s: 50%;
     --accent-l: 40%;
-    --grotto-day-1: hsl(240, 50%, 84%);
-    --grotto-day-2: hsl(240, 30%, 72%);
-    --grotto-day-3: hsl(240, 30%, 64%);
+    --grotto-day-1: hsl(240, 10%, 84%);
+    --grotto-day-2: hsl(240, 10%, 72%);
+    --grotto-day-3: hsl(240, 10%, 64%);
     --grotto-night-0: hsl(340, 10%, 12%);
     --grotto-night-1: hsl(340, 10%, 18%);
     --grotto-night-2: hsl(340, 10%, 24%);
     --grotto-night-3: hsl(340, 10%, 32%);
     --grotto-accent-1: hsl(340, 50%, 40%);
-    --grotto-accent-2: hsl(340, 50%, 52%);
+    --grotto-accent-2: hsl(340, 50%, 44%);
 }
 /*Skeledirge*/
 .preset-skeledirge {
@@ -2175,7 +2216,7 @@ body.preset-poltchageist {
     --grotto-night-2: hsl(10, 60%, 56%);
     --grotto-night-3: hsl(10, 60%, 64%);
     --grotto-accent-1: hsl(34, 50%, 50%);
-    --grotto-accent-2: hsl(34, 50%, 56%);
+    --grotto-accent-2: hsl(34, 50%, 54%);
 }
 .theme-light.preset-skeledirge {
     --text-normal: var(--grotto-night-0);
@@ -2210,7 +2251,7 @@ body.preset-unova {
     --accent-s: 60%;
     --accent-l: 50%;
     --grotto-accent-1: hsl(24, 60%, 50%);
-    --grotto-accent-2: hsl(24, 60%, 56%);
+    --grotto-accent-2: hsl(24, 60%, 54%);
 }
 .theme-dark.preset-unova, 
 .is-mobile.theme-dark.preset-unova {
@@ -2218,7 +2259,7 @@ body.preset-unova {
     --accent-s: 60%;
     --accent-l: 50%;
     --grotto-accent-1: hsl(200, 60%, 50%);
-    --grotto-accent-2: hsl(200, 60%, 56%);
+    --grotto-accent-2: hsl(200, 60%, 54%);
 }
 /* Ursaluna */
 .preset-ursaluna {
@@ -2233,13 +2274,13 @@ body.preset-unova {
     --grotto-night-2: hsl(20, 40%, 32%);
     --grotto-night-3: hsl(20, 40%, 40%);
     --grotto-accent-1: hsl(47, 20%, 50%);
-    --grotto-accent-2: hsl(47, 20%, 56%);
+    --grotto-accent-2: hsl(47, 20%, 54%);
 }
 /*Volcarona*/
 body.preset-volcarona {
     --accent-h: 27;
     --accent-s: 85%;
-    --accent-l: 52%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(0, 0%, 90%);
     --grotto-day-2: hsl(187, 45%, 71%);
     --grotto-day-3: hsl(187, 45%, 62%);
@@ -2247,8 +2288,8 @@ body.preset-volcarona {
     --grotto-night-1: hsl(194, 60%, 24%);
     --grotto-night-2: hsl(194, 60%, 32%);
     --grotto-night-3: hsl(194, 60%, 40%);
-    --grotto-accent-1: hsl(27, 85%, 52%);
-    --grotto-accent-2: hsl(27, 85%, 60%);
+    --grotto-accent-1: hsl(27, 85%, 50%);
+    --grotto-accent-2: hsl(27, 85%, 54%);
 }
 /*Zacian*/
 body.preset-zacian {
@@ -2263,7 +2304,7 @@ body.preset-zacian {
     --grotto-night-2: hsl(200, 80%, 44%);
     --grotto-night-3: hsl(200, 80%, 56%);
     --grotto-accent-1: hsl(5, 60%, 64%);
-    --grotto-accent-2: hsl(5, 60%, 72%);
+    --grotto-accent-2: hsl(5, 60%, 68%);
 }
 /* Style Settings Support */
 .style-settings-empty {
@@ -2510,6 +2551,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
