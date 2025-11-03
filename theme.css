@@ -2016,8 +2016,8 @@ body.preset-aegislash {
     --grotto-night-1: hsl(210, 10%, 18%);
     --grotto-night-2: hsl(210, 10%, 36%);
     --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(210, 20%, 60%);
-    --grotto-accent-2: hsl(210, 20%, 64%);
+    --grotto-accent-1: hsl(180, 20%, 60%);
+    --grotto-accent-2: hsl(180, 20%, 64%);
 }
 .theme-dark.preset-calyrex, 
 .is-mobile.theme-dark.preset-calyrex {
@@ -2066,19 +2066,18 @@ body.preset-darkrai {
 }
 /* Dawn */
 .theme-light.preset-dawn {
-    --accent-h: 0;
-    --accent-s: 40%;
-    --accent-l: 60%;
+    --accent-h: 200;
+    --accent-s: 30%;
+    --accent-l: 28%;
     --grotto-day-1: hsl(0, 20%, 90%);
     --grotto-day-2: hsl(0, 20%, 80%);
     --grotto-day-3: hsl(0, 20%, 72%);
     --grotto-night-0: hsl(0, 40%, 50%);
-    --grotto-night-1: hsl(200, 30%, 20%);
-    --grotto-night-2: hsl(200, 20%, 60%);
-    --grotto-night-3: hsl(200, 20%, 72%);
-    --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsl(0, 40%, 64%);
-    --grotto-calendar-dayofweek-color: var(--grotto-night-1);
+    --grotto-night-1: hsl(0, 40%, 54%);
+    --grotto-night-2: hsl(0, 40%, 60%);
+    --grotto-night-3: hsl(0, 40%, 72%);
+    --grotto-accent-1: hsl(200, 30%, 28%);
+    --grotto-accent-2: hsl(200, 30%, 32%);
 }
 .theme-dark.preset-dawn,
 .is-mobile.theme-dark.preset-dawn {
@@ -2120,8 +2119,8 @@ body.preset-lucario {
     --accent-s: 40%;
     --accent-l: 40%;
     --grotto-day-1: hsl(120, 50%, 96%);
-    --grotto-day-2: hsl(120, 50%, 80%);
-    --grotto-day-3: hsl(120, 40%, 60%);
+    --grotto-day-2: hsl(160, 50%, 80%);
+    --grotto-day-3: hsl(160, 40%, 60%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
@@ -2179,6 +2178,21 @@ body.preset-poltchageist {
     --grotto-accent-1: hsl(114, 30%, 50%);
     --grotto-accent-2: hsl(114, 30%, 54%);
 }
+/*Rayquaza*/
+body.preset-rayquaza {
+    --accent-h: 30;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 14%, 82%);
+    --grotto-day-2: hsl(40, 14%, 76%);
+    --grotto-day-3: hsl(40, 14%, 70%);
+    --grotto-night-0: hsl(160, 30%, 16%);
+    --grotto-night-1: hsl(160, 30%, 26%);
+    --grotto-night-2: hsl(160, 30%, 36%);
+    --grotto-night-3: hsl(160, 30%, 44%);
+    --grotto-accent-1: hsl(350, 50%, 50%);
+    --grotto-accent-2: hsl(350, 50%, 64%);
+}
 /*Revavroom*/
 .preset-revavroom {
     --accent-h: 48;
@@ -2194,9 +2208,14 @@ body.preset-poltchageist {
     --grotto-accent-1: hsl(48, 50%, 50%);
     --grotto-accent-2: hsl(48, 50%, 54%);
     --grotto-button-color: var(--grotto-night-1);
+    --grotto-dropdown-color: var(--grotto-night-1);
+    --grotto-suggestion-color-hover: var(--grotto-night-1);
     --grotto-button-border-color: var(--grotto-night-1);
     --grotto-notice-color: var(--grotto-night-1);
     --grotto-notice-border-color: var(--grotto-night-1);
+    --grotto-nav-title-color-active: var(--grotto-night-1);
+    --grotto-settings-color-active: var(--grotto-night-1);
+    --grotto-text-icon-color-hover: var(--grotto-night-1);
 }
 /*Scolipede*/
 .preset-scolipede {
@@ -2245,6 +2264,21 @@ body.preset-steelix {
     --grotto-night-3: hsl(0, 0%, 32%);
     --grotto-accent-1: hsl(180, 20%, 56%);
     --grotto-accent-2: hsl(180, 20%, 64%);
+}
+/*Swampert*/
+body.preset-swampert {
+    --accent-h: 30;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 14%, 82%);
+    --grotto-day-2: hsl(40, 14%, 76%);
+    --grotto-day-3: hsl(40, 14%, 70%);
+    --grotto-night-0: hsl(210, 20%, 20%);
+    --grotto-night-1: hsl(210, 30%, 30%);
+    --grotto-night-2: hsl(210, 30%, 36%);
+    --grotto-night-3: hsl(210, 30%, 44%);
+    --grotto-accent-1: hsl(30, 60%, 50%);
+    --grotto-accent-2: hsl(30, 60%, 64%);
 }
 /*Unova*/
 body.preset-unova {
@@ -2376,6 +2410,9 @@ settings:
                 label: Poltchageist
                 value: preset-poltchageist
             -
+                label: Rayquaza
+                value: preset-rayquaza
+            -
                 label: Revavroom
                 value: preset-revavroom
             -
@@ -2387,6 +2424,9 @@ settings:
             -
                 label: Steelix
                 value: preset-steelix
+            -
+                label: Swampert
+                value: preset-swampert
             -
                 label: Unova
                 value: preset-unova
@@ -2561,6 +2601,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
