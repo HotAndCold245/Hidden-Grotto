@@ -249,7 +249,7 @@ body {
     --grotto-graph-controls-background-color: var(--background-primary);
     --grotto-graph-controls-border-color: var(--text-normal);
     --grotto-graph-controls-radius: 0rem;
-    --graph-text: var(--grotto-accent-1);
+    --graph-text: var(--text-faint);
     --graph-line: var(--text-faint);
     --graph-node: var(--grotto-accent-1);
     --graph-node-tag: var(--grotto-night-3);
@@ -772,6 +772,9 @@ th,
 .markdown-rendered table {
     border-collapse: var(--grotto-table-border-style, collapse);
 }
+.cm-line:has(+ .cm-table-widget), .cm-table-widget + .cm-line {
+    line-height: 4px;
+}
 /*Dragging*/
 .drag-ghost {
     color: var(--text-normal);
@@ -839,6 +842,7 @@ th,
     background-color: var(--grotto-calendar-background-color);
     border: 1px solid var(--grotto-calendar-border-color);
     width: 100%;
+    padding: 0px;
     --interactive-hover: var(--grotto-calendar-color-hover);
 }
 #calendar-container .day {
@@ -861,7 +865,7 @@ th,
 #calendar-container .year {
     color: var(--grotto-calendar-year-color);
 }
-#calendar-container .title {
+#calendar-container .is-mobile .title {
     padding-left: 16px;
 }
 #calendar-container .reset-button {
@@ -957,6 +961,9 @@ th,
     border: 1px solid var(--text-normal);
     border-radius: var(--grotto-bases-radius);
 }
+.is-phone .bases-query-container .filter-row .combobox-button {
+    border-bottom: 0px solid var(--text-normal);
+}
 .bases-query-container .filter-expression .filter-row-actions {
     --grotto-icon-color: var(--text-normal);
     background-color: var(--background-primary);
@@ -1037,6 +1044,7 @@ th,
 }
 .is-phone .bases-query-container .filter-group .filter-row .filter-operator {
     border: 1px solid var(--text-normal);
+    border-width: 1px 0px 1px 1px;
 }
 .is-phone .filter-statement .metadata-property-value .metadata-input-text, 
 .is-phone .filter-statement .metadata-property-value .metadata-input-text:focus-within {
@@ -2601,6 +2609,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
