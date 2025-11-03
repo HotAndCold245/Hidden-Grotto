@@ -77,6 +77,8 @@ body {
     --grotto-font-weight: 400;/*Plugin*/
     font-weight: var(--grotto-font-weight);
     --text-error: hsl(0, 50%, 50%);
+    --text-warning: hsl(20, 50%, 50%);
+    --text-success: hsl(100, 50%, 50%);
     --file-line-width: 700px;/*Plugin*/
     /*Bold*/
     --grotto-bold-color: var(--grotto-accent-1);
@@ -123,7 +125,6 @@ body {
     --grotto-button-background-color-hover: var(--grotto-accent-2);
     --grotto-button-border-color: var(--text-normal);
     --grotto-button-radius: 0rem;
-    --grotto-button-error-color: hsl(0, 50%, 50%);
     --grotto-button-error-background: hsl(0, 0%, 16%);
     --grotto-button-error-background-hover: hsl(0, 0%, 20%);
     /*Checkboxes*/
@@ -574,12 +575,12 @@ button:not(.clickable-icon).mobile-tap {
 button.mod-destructive, 
 button.mod-warning, 
 .is-mobile button.mod-warning {
-  color: var(--grotto-button-error-color);
+  color: var(--text-error);
   background-color: var(--grotto-button-error-background);
 }
 button.mod-destructive:hover, 
 button.mod-warning:hover {
-  color: var(--grotto-button-error-color);
+  color: var(--text-error);
   background-color: var(--grotto-button-error-background-hover);
 }
 /*Checkboxes*/
@@ -2609,6 +2610,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
