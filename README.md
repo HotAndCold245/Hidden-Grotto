@@ -89,7 +89,8 @@ settings:
 If there are any problems, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.2.8
+##### V1.2.9
+- Reduced empty space above and below tables
 - Fixed properties view in right sidebar
 - Fixed tag and link visibility within headers
 - Removed scrollbars from mobile settings tabs
