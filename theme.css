@@ -1,4 +1,4 @@
-/* V1.2.7*/
+/* V1.3.0*/
 /*Clobbopus*/
 body, 
 body.preset-clobbopus {
@@ -219,7 +219,8 @@ body {
     --grotto-calendar-border-color: var(--grotto-accent-1);
     --grotto-calendar-year-color: var(--grotto-accent-1);
     --grotto-calendar-dayofweek-color: var(--grotto-night-0);
-    --grotto-calendar-dayofweek-background-color: var(--grotto-calendar-border-color);
+    --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
+    --grotto-calendar-weekend-border-color: transparent;
     /*Bases*/
     --grotto-text-icon-color: var(--text-normal);
     --grotto-text-icon-color-hover: var(--text-normal);
@@ -850,8 +851,14 @@ th,
     pointer-events: var(--grotto-calendar-pointer-events);
     padding: 6px 0px 0px 0px;
     color: var(--grotto-calendar-color);
-    border: 0px solid transparent;
+    border: 1px solid transparent;
     border-radius: 0px;
+}
+#calendar-container .weekend:has(+ .weekend) {
+    border-left: 1px solid var(--grotto-calendar-weekend-border-color);
+}
+#calendar-container .weekend + .weekend {
+    border-right: 1px solid var(--grotto-calendar-weekend-border-color);
 }
 #calendar-container .day.active {
     color: var(--grotto-calendar-color);
@@ -2610,6 +2617,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
