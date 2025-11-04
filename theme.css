@@ -322,7 +322,7 @@ body {
     --tab-switcher-preview-radius: 0rem;
     --tab-switcher-preview-background-shadow: none;
     --tab-switcher-preview-shadow: none;
-    /*Mobile Toolbar*/
+    /**/
     --grotto-toolbar-rows: 2;
     --grotto-toolbar-color: var(--background-primary);
     --grotto-toolbar-background-color: var(--text-normal);
@@ -1425,13 +1425,14 @@ input[type='range']::-webkit-slider-thumb:active {
 }
 /*Mobile Toolbar*/
 .mobile-toolbar {
-    border-radius: 0px;
+    border-radius: var(--grotto-toolbar-radius);
     position: sticky;
     width: auto;
     overflow-y: auto;
     margin: 0px 12px 0px 12px;
     padding: 0px;
     height: calc(var(--grotto-toolbar-rows) * 32px);
+    border: 1px solid var(--grotto-toolbar-border-color);
 }
 .mobile-toolbar::-webkit-scrollbar {
     width: 0 !important;
@@ -2617,6 +2618,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
