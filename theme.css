@@ -380,7 +380,7 @@ body {
     --grotto-settings-background-color-hover: var(--grotto-night-0);
     --grotto-settings-background-color-active: var(--grotto-accent-1);
     /*Modals*/
-    --grotto-modal-border-color: var(--grotto-day-1);
+    --grotto-modal-border-color: var(--text-normal);
     /*Properties*/
     --metadata-property-radius: 0px;
     --metadata-property-radius-hover: 0px;
@@ -2618,6 +2618,7 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
+
 
 
 
