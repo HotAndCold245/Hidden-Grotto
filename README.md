@@ -90,6 +90,7 @@ If there are any problems, you can submit an issue on the repository or try the 
 
 # Changelog
 ##### V1.3.0
+- Added alternate Calendar Plugin style
 - Added option to invert sidebar color
 - Reduced empty space above and below tables
 - Fixed properties view in right sidebar
