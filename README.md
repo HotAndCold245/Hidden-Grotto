@@ -89,7 +89,8 @@ settings:
 If there are any problems, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.2.9
+##### V1.3.0
+- Added option to invert sidebar color
 - Reduced empty space above and below tables
 - Fixed properties view in right sidebar
 - Fixed tag and link visibility within headers
