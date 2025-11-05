@@ -251,6 +251,9 @@ body {
     --grotto-graph-controls-background-color: var(--background-primary);
     --grotto-graph-controls-border-color: var(--text-normal);
     --grotto-graph-controls-radius: 0rem;
+    --grotto-graph-sidebar-controls-color: var(--grotto-day-1);
+    --grotto-graph-sidebar-controls-border-color: var(--grotto-day-1);
+    --grotto-graph-sidebar-controls-background-color: var(--background-secondary);
     --graph-text: var(--text-faint);
     --graph-line: var(--text-faint);
     --graph-node: var(--grotto-accent-1);
@@ -275,6 +278,11 @@ body {
     --tab-curve: 0px;
     --tab-outline-width: 0px;
     --tab-radius-active: 0px;
+    --grotto-tab-header-icon-color: var(--grotto-day-1);
+    --grotto-tab-header-border-color: var(--grotto-night-0);
+    --grotto-tab-header-border-width: 0px;
+    --grotto-split-border-color: var(--background-secondary);
+    --grotto-resize-handle-color: var(--grotto-accent-1);
     /*Clickable Icons*/
     --grotto-icon-color: var(--text-normal);
     --grotto-icon-color-hover: var(--grotto-accent-1);
@@ -322,7 +330,7 @@ body {
     --tab-switcher-preview-radius: 0rem;
     --tab-switcher-preview-background-shadow: none;
     --tab-switcher-preview-shadow: none;
-    /**/
+    /*Mobile Toolbar*/
     --grotto-toolbar-rows: 2;
     --grotto-toolbar-color: var(--background-primary);
     --grotto-toolbar-background-color: var(--text-normal);
@@ -352,6 +360,8 @@ body {
     --border-width: 0px;
     --nav-indentation-guide-width: 0px;
     --vault-profile-color: var(--grotto-nav-title-color);
+    --grotto-rename-color: var(--grotto-night-1);
+    --grotto-rename-background-color: var(--grotto-day-1);
     /*Menus*/
     --grotto-menu-color: var(--text-normal);
     --grotto-menu-color-active: var(--text-normal);
@@ -387,6 +397,13 @@ body {
     --metadata-property-radius-focus: 0px;
     --metadata-property-box-shadow-hover: none;
     --metadata-property-box-shadow-focus: none;
+    /*Mobile Drawer Header*/
+    --grotto-mobile-drawer-header-color: var(--grotto-day-1);
+    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
+    --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
+    /*File Properties - Sidebar*/
+    --grotto-properties-color: var(--grotto-day-1);
+    --grotto-properties-tag-color: var(--grotto-night-0);
 }
 /*Tags*/
 a.tag, 
@@ -555,6 +572,7 @@ img {
     margin-right: auto;
     max-width: auto;
 }
+/*Buttons*/
 button.mod-cta, 
 button:not(.clickable-icon) {
   color: var(--grotto-button-color);
@@ -701,7 +719,7 @@ input[type="color"]::-webkit-color-swatch:hover {
     right: 4px;
 }
 .status-bar-item {
-    color: var(--grotto-statusbar-border-color);
+    color: var(--grotto-statusbar-color);
 }
 .status-bar-item.mod-clickable:hover {
     color: var(--grotto-accent-1);
@@ -1088,10 +1106,10 @@ th,
     box-shadow: none;
 }
 .workspace-split:not(.mod-root) .graph-controls.is-close {
-    color: var(--grotto-day-1);
-    background-color: var(--background-secondary);
-    border-color: var(--grotto-day-1);
-    --grotto-icon-color: var(--grotto-day-1);
+    color: var(--grotto-graph-sidebar-controls-color);
+    background-color: var(--grotto-graph-sidebar-controls-background-color);
+    border-color: var(--grotto-graph-sidebar-controls-border-color);
+    --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
 }
 /*Suggestions*/
 .suggestion-container, 
@@ -1167,15 +1185,15 @@ input.prompt-input:focus-visible,
 .is-phone .workspace-drawer-header, 
 .is-phone .workspace-drawer-header-info, 
 .is-mobile .workspace-drawer-header-name-text {
-    --grotto-icon-color: var(--grotto-day-1);
-    color: var(--grotto-day-1);
-    background-color: var(--background-secondary);
+    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
+    color: var(--grotto-mobile-drawer-header-color);
+    background-color: var(--grotto-mobile-drawer-header-background-color);
 }
 .is-phone .workspace-drawer-active-tab-header {
-    background-color: var(--grotto-day-1);
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
 }
 .is-phone .workspace-drawer-active-tab-header.mobile-tap {
-    background-color: var(--grotto-day-1);
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
 }
 .is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
 .is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
@@ -1203,7 +1221,6 @@ input.prompt-input:focus-visible,
 .is-phone .workspace-drawer-active-tab-container .metadata-property-icon {
     border-width: 1px 0px 1px 1px !important;
 }
-
 .workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill {
     background-color: var(--grotto-day-1);
     color: var(--background-secondary);
@@ -1258,12 +1275,12 @@ input.prompt-input:focus-visible,
     opacity: 0.9;
 }
 .workspace-leaf-resize-handle {
-    border-color: var(--grotto-accent-1);
+    border-color: var(--grotto-resize-handle-color);
     --divider-width: 1px;
 }
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    border-color: var(--background-secondary);
+    border-color: var(--grotto-split-border-color);
 }
 .sidebar-toggle-button.mod-right .clickable-icon,
 .sidebar-toggle-button.mod-left .clickable-icon {
@@ -1287,13 +1304,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .workspace .mod-root .workspace-tab-header {
     padding: 0px;
+    border: var(--grotto-tab-header-border-width) solid var(--grotto-tab-header-border-color);
+    border-width: var(--grotto-tab-header-border-width) var(--grotto-tab-header-border-width) 0px var(--grotto-tab-header-border-width);
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
     background-color: var(--grotto-background-tertiary);
     padding-top: 4px;
     border-top: 8px solid var(--background-secondary);
-    border-bottom: 1px solid var(--background-secondary);
+    border-bottom: 1px solid var(--grotto-tab-header-border-color);
     border-left: 1px solid var(--background-secondary);
     border-right: 1px solid var(--background-secondary);
     width: 300px;
@@ -1329,7 +1348,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 /*Paragraphs*/
 .markdown-rendered p {
-    padding: 0px 0rem;
+    padding: 0rem 0rem;
 }
 /*Dropdowns*/
 select,
@@ -1853,8 +1872,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .tree-item-self.is-being-renamed, 
 .tree-item-self.is-being-renamed:focus-within, 
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
-    color: var(--background-secondary);
-    background-color: var(--grotto-day-1);
+    color: var(--grotto-rename-color);
+    background-color: var(--grotto-rename-background-color);
     border-radius: 0px;
     caret-color: currentColor;
 }
@@ -1959,6 +1978,44 @@ input.metadata-property-key-input:hover,
 .suggestion-container.mod-property-key .suggestion-item:hover {
     background-color: var(--grotto-suggestion-background-color-hover);
     border: 1px solid var(--grotto-suggestion-border-color);
+}
+/*White Sidebars*/
+.sidebar-preset {
+    --background-secondary: var(--background-primary);
+    --grotto-progress-border-color: var(--text-normal);
+    --grotto-progress-background-color: var(--text-normal);
+    --grotto-calendar-color: var(--text-normal);
+    --grotto-calendar-today-background-color: var(--text-normal);
+    --grotto-titlebar-color: var(--text-normal);
+    --grotto-tab-switcher-color: var(--text-normal);/*Needs Verification*/
+    --grotto-nav-tag-color: var(--background-secondary);
+    --grotto-nav-tag-background-color: var(--text-normal);
+    --grotto-nav-title-color: var(--text-normal);
+    --grotto-nav-title-color-active: var(--text-normal);
+    --grotto-nav-title-border-color: var(--text-normal);
+    --tab-text-color-focused: var(--text-normal);
+    --tab-text-color: var(--text-normal);
+    --grotto-search-suggestion-color: var(--text-normal);
+    --grotto-search-suggestion-border-color: var(--text-normal);
+    --grotto-search-suggestion-icon-color: var(--text-normal);
+    --grotto-settings-color: var(--text-normal);
+    --grotto-settings-color-active: var(--text-normal);
+    --grotto-settings-border-color: var(--text-normal);
+    --grotto-settings-background-color: var(--background-primary);
+    --grotto-tab-header-icon-color: var(--text-normal);
+    --grotto-graph-sidebar-controls-color: var(--text-normal);
+    --grotto-graph-sidebar-controls-border-color: var(--text-normal);
+    --grotto-graph-sidebar-controls-background-color: var(--background-secondary);
+    --grotto-mobile-drawer-header-color: var(--text-normal);
+    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
+    --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
+    --grotto-rename-color: var(--text-normal);
+    --grotto-rename-background-color: var(--background-secondary);
+    --grotto-properties-color: var(--text-normal);
+    --grotto-properties-tag-color: var(--background-secondary);
+    --grotto-tab-header-border-width: 1px;
+    --grotto-split-border-color: var(--text-normal);
+    --grotto-resize-handle-color: var(--text-normal);
 }
 /*Presets*/
 /*Absol*/
@@ -2456,6 +2513,10 @@ settings:
             -
                 label: Zacian
                 value: preset-zacian
+    -
+        id: sidebar-preset
+        title: Sidebar Background
+        type: class-toggle
 */
 /* @settings
 name: Text Controls
@@ -2618,19 +2679,3 @@ settings:
                 label: Accent
                 value: var(--color-accent)
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
