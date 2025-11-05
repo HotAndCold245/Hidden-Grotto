@@ -3,7 +3,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 # Features
 - Supports both **light** and **dark** mode
-- 22 colour palettes
+- 23 colour palettes
 	- Available through the Style Settings plugin.
 	- Also available through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -42,6 +42,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Unova](https://github.com/user-attachments/assets/dc194375-3ca1-4f2d-90fa-bc1b0f27e5d0)
 ![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
 ![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
+![Whimsicott](https://github.com/user-attachments/assets/7c18a816-3e85-4871-b79f-9cbfc4da4d13)
 ![Zacian](https://github.com/user-attachments/assets/5001d860-c99d-44ab-8131-30755cf3acde)
 
 # The Plugin
