@@ -93,10 +93,4 @@ If there are any problems, you can submit an issue on the repository or try the 
 ##### V1.3.0
 - Added alternate Calendar Plugin style
 - Added option to invert sidebar color
-- Reduced empty space above and below tables
-- Fixed properties view in right sidebar
-- Fixed tag and link visibility within headers
-- Removed scrollbars from mobile settings tabs
-- Changed tab header appearance
-- Added presets - Absol, Alola, Calyrex, Lucario, Meloetta, Rayquaza, Skeledirge, Swampert, Zacian
-- Removed presets - Rivals, Gardevoir, Wattrel, Zygarde
+- Added preset - Whimsicott
