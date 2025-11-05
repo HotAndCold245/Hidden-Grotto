@@ -221,6 +221,7 @@ body {
     --grotto-calendar-dayofweek-color: var(--grotto-night-0);
     --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
     --grotto-calendar-weekend-border-color: transparent;
+    --grotto-calendar-dayofweek-border-width: 0px;
     /*Bases*/
     --grotto-text-icon-color: var(--text-normal);
     --grotto-text-icon-color-hover: var(--text-normal);
@@ -875,9 +876,6 @@ th,
 #calendar-container .weekend:has(+ .weekend) {
     border-left: 1px solid var(--grotto-calendar-weekend-border-color);
 }
-#calendar-container .weekend + .weekend {
-    border-right: 1px solid var(--grotto-calendar-weekend-border-color);
-}
 #calendar-container .day.active {
     color: var(--grotto-calendar-color);
 }
@@ -901,6 +899,7 @@ th,
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-dayofweek-background-color);
     color: var(--grotto-calendar-dayofweek-color);
+    border-bottom: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
     min-width: 0px;
 }
 /*Bases*/
@@ -2017,6 +2016,14 @@ input.metadata-property-key-input:hover,
     --grotto-split-border-color: var(--text-normal);
     --grotto-resize-handle-color: var(--text-normal);
 }
+/*Alternate Calendar Style*/
+.calendar-preset {
+    --grotto-calendar-border-color: transparent;
+    --grotto-calendar-dayofweek-color: var(--grotto-calendar-color);
+    --grotto-calendar-dayofweek-background-color: transparent;
+    --grotto-calendar-weekend-border-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-border-width: 1px;
+}
 /*Presets*/
 /*Absol*/
 body.preset-absol {
@@ -2678,4 +2685,14 @@ settings:
             -
                 label: Accent
                 value: var(--color-accent)
+*/
+/* @settings
+name: Calendar Plugin Controls
+id: grotto-calendar-plugin-controls
+collapsed: false
+settings:
+    -
+        id: calendar-preset
+        title: Alternate Calendar Style
+        type: class-toggle
 */
