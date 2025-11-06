@@ -90,7 +90,8 @@ settings:
 If there are any problems, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.1
+##### V1.3.2
+- Improved codeblock syntax visibility
 - Improved properties view
 - Added alternate Calendar Plugin style
 - Added option to invert sidebar color
