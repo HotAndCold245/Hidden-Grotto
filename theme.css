@@ -1217,10 +1217,6 @@ input.prompt-input:focus-visible,
 .workspace-drawer-active-tab-container {
     --text-normal: var(--grotto-day-1);
 }
-.workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill {
-    background-color: var(--grotto-day-1);
-    color: var(--background-secondary);
-}
 /*Title Bar*/
 .titlebar-button {
     height: var(--header-height);
@@ -1987,6 +1983,15 @@ input.metadata-property-key-input:focus-within {
     background-color: var(--grotto-suggestion-background-color-hover);
     border: 1px solid var(--grotto-suggestion-border-color);
 }
+body:not(.is-ios):not(.is-android) .metadata-property-value input[type='date']:not([disabled="true"]), 
+body:not(.is-ios):not(.is-android) .metadata-property-value input[type='datetime-local']:not([disabled="true"]) {
+    color: inherit;
+    border: none;
+}
+.workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill {
+    background-color: var(--grotto-tag-background-color);
+    color: var(--grotto-tag-color);
+}
 /*White Sidebars*/
 .sidebar-preset {
     --background-secondary: var(--background-primary);
@@ -2727,5 +2732,6 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
