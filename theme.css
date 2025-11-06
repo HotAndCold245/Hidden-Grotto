@@ -171,6 +171,16 @@ body {
     --grotto-code-radius: 0rem;
     --grotto-code-weight: 800;
     --code-radius: var(--grotto-code-radius);
+    --code-string: hsl(120, 30%, 50%);
+    --code-property: hsl(170, 30%, 50%);
+    --code-operator: hsl(0, 30%, 60%);
+    --code-value: hsl(270, 30%, 70%);
+    --code-function: hsl(50, 30%, 45%);
+    --code-keyword: hsl(330, 30%, 70%);
+    --code-tag: hsl(0, 30%, 60%);
+    --code-important: hsl(30, 30%, 60%);
+    --code-border-width: 1px;
+    --code-border-color: var(--text-normal);
     /*Status Bar*/
     --grotto-statusbar-color: var(--background-primary);
     --grotto-statusbar-background-color: var(--text-normal);
@@ -2295,8 +2305,8 @@ body.preset-rayquaza {
     --accent-s: 50%;
     --accent-l: 50%;
     --grotto-day-1: hsl(262, 0%, 80%);
-    --grotto-day-2: hsl(262, 0%, 64%);
-    --grotto-day-3: hsl(262, 0%, 54%);
+    --grotto-day-2: hsl(262, 0%, 72%);
+    --grotto-day-3: hsl(262, 0%, 64%);
     --grotto-night-0: hsl(262, 25%, 14%);
     --grotto-night-1: hsl(262, 25%, 20%);
     --grotto-night-2: hsl(262, 25%, 40%);
@@ -2338,8 +2348,8 @@ body.preset-rayquaza {
     --grotto-day-3: hsl(34, 20%, 64%);
     --grotto-night-0: hsl(10, 10%, 16%);
     --grotto-night-1: hsl(10, 60%, 40%);
-    --grotto-night-2: hsl(10, 60%, 56%);
-    --grotto-night-3: hsl(10, 60%, 64%);
+    --grotto-night-2: hsl(10, 60%, 48%);
+    --grotto-night-3: hsl(10, 60%, 56%);
     --grotto-accent-1: hsl(34, 50%, 50%);
     --grotto-accent-2: hsl(34, 50%, 54%);
 }
@@ -2732,6 +2742,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
