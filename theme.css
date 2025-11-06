@@ -393,18 +393,22 @@ body {
     /*Modals*/
     --grotto-modal-border-color: var(--text-normal);
     /*Properties*/
+    --grotto-metadata-radius: 0rem;
+    --grotto-metadata-border-color: var(--text-normal);
+    --grotto-metadata-background-color: transparent;
+    --grotto-properties-view-color: var(--text-normal);
+    --grotto-properties-view-caret-color: var(--text-normal);
     --metadata-property-radius: 0px;
     --metadata-property-radius-hover: 0px;
     --metadata-property-radius-focus: 0px;
     --metadata-property-box-shadow-hover: none;
     --metadata-property-box-shadow-focus: none;
+    --grotto-properties-color: var(--grotto-day-1);
+    --grotto-properties-tag-color: var(--grotto-night-0);
     /*Mobile Drawer Header*/
     --grotto-mobile-drawer-header-color: var(--grotto-day-1);
     --grotto-mobile-drawer-header-background-color: var(--background-secondary);
     --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
-    /*File Properties - Sidebar*/
-    --grotto-properties-color: var(--grotto-day-1);
-    --grotto-properties-tag-color: var(--grotto-night-0);
 }
 /*Tags*/
 a.tag, 
@@ -1213,13 +1217,6 @@ input.prompt-input:focus-visible,
 .workspace-drawer-active-tab-container {
     --text-normal: var(--grotto-day-1);
 }
-.is-phone .workspace-drawer-active-tab-container input.metadata-property-key-input, 
-.is-phone .workspace-drawer-active-tab-container input.metadata-property-key-input:hover, 
-.is-phone .workspace-drawer-active-tab-container .metadata-property-value .multi-select-container, 
-.is-phone .workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill, 
-.is-phone .workspace-drawer-active-tab-container .metadata-property-icon {
-    border-width: 1px 0px 1px 1px !important;
-}
 .workspace-drawer-active-tab-container .metadata-property-value .multi-select-pill {
     background-color: var(--grotto-day-1);
     color: var(--background-secondary);
@@ -1880,7 +1877,68 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     border-radius: 0px;
     caret-color: currentColor;
 }
-/* Multiselect Pills */
+/* Properties */
+body:not(.sidebar-preset) .workspace-leaf-content[data-type='file-properties'] .view-content {
+    --grotto-properties-view-color: var(--grotto-day-1);
+    --grotto-metadata-border-color: var(--grotto-day-1);
+    --grotto-tag-color: var(--grotto-night-0);
+    --grotto-tag-background-color: var(--grotto-day-1);
+    --grotto-text-icon-color: var(--grotto-day-1);
+    --grotto-properties-view-caret-color: var(--grotto-day-1);
+}
+@container (width < 250px) {
+    .metadata-property .metadata-property-value {
+        margin-top: 0px;
+        padding-inline-start: 0px;
+    }
+}
+.metadata-properties, 
+.metadata-property, 
+.metadata-property-key {
+    gap: 2px;
+    border: none;
+}
+.metadata-property {
+    border-radius: var(--grotto-metadata-radius);
+}
+.is-phone .metadata-property-icon, 
+.metadata-property-icon {
+    color: var(--grotto-properties-view-color);
+    border: 1px solid var(--grotto-metadata-border-color);
+    padding: 2px 4px;
+    height: 100%;
+}
+input.metadata-property-key-input, 
+input.metadata-property-key-input:hover, 
+input.metadata-property-key-input:focus-within, 
+.is-phone input.metadata-property-key-input, 
+.is-phone input.metadata-property-key-input:hover, 
+.is-phone input.metadata-property-key-input:focus-within {
+    color: var(--grotto-properties-view-color);
+    border: 1px solid var(--grotto-metadata-border-color);
+    background-color: var(--grotto-metadata-background-color);
+    height: 100%;
+}
+input.metadata-property-key-input:focus-within {
+    outline: 2px solid var(--grotto-metadata-border-color);
+    outline-offset: -4px;
+}
+.metadata-property-value, 
+.metadata-property-value:hover, 
+.metadata-property-value:focus-within, 
+.is-phone .metadata-property-value, 
+.is-phone .metadata-property-value:hover, 
+.is-phone .metadata-property-value:focus-within {
+    background-color: var(--grotto-metadata-background-color);
+    height: 100%;
+    border: 1px solid var(--grotto-metadata-border-color);
+}
+.metadata-property-value .metadata-input-number, 
+.metadata-property-value .metadata-input-number:hover {
+    color: var(--grotto-properties-view-color);
+    border: none;
+    caret-color: var(--grotto-properties-view-caret-color);
+}
 .multi-select-pill, 
 .multi-select-pill:hover {
     color: var(--grotto-tag-color);
@@ -1891,85 +1949,32 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .multi-select-pill-remove-button {
     color: var(--text-faint);
 }
-.multi-select-pill-remove-button:hover {
+.multi-select-pill-remove-button:hover, 
+.is-phone .metadata-property-icon.mobile-tap {
     color: var(--grotto-accent-1);
 }
 .multi-select-pill:focus:after {
     border-radius: 0px;
     right: 0px;
-    width: 100%
-}
-body:not(.is-phone).metadata-property-key {
-    border-bottom: none;
-}
-.is-phone .metadata-property-key {
-    border-bottom: 0px solid var(--text-normal);
-}
-input.metadata-property-key-input, 
-input.metadata-property-key-input:hover, 
-.metadata-property-value .multi-select-container {
-    background-color: transparent;
-    border-width: 1px 0px 1px 1px;
-    padding: 4px;
-}
-.is-phone input.metadata-property-key-input, 
-.is-phone input.metadata-property-key-input:hover, 
-.is-phone .metadata-property-value .multi-select-container {
-    background-color: transparent;
-    border-width: 1px 0px 1px 1px;
-    padding: 4px;
-}
-.metadata-property-icon {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
-    height: 100%;
-    padding: 4px;
-}
-.is-phone .metadata-property-icon {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
-    height: 100%;
-    padding: 4px;
-}
-.metadata-property-value {
-    border: 1px solid var(--text-normal);
-    border-width: 1px 1px 1px 1px;
-}
-.metadata-properties {
-    gap: 2px;
+    width: 100%;
     box-shadow: none;
 }
-.metadata-property-value .multi-select-container:focus-within {
-    border-radius: 0px;
-    caret-color: currentColor;
+.metadata-property-value .multi-select-container, 
+.is-phone .metadata-property-value .multi-select-container {
+    background-color: var(--grotto-metadata-background-color);
+    caret-color: var(--grotto-properties-view-caret-color);
+    padding: 4px;
 }
 .metadata-input-longtext:focus, 
-.metadata-properties .metadata-input-longtext {
+.metadata-properties .metadata-input-longtext, 
+.metadata-property-value .multi-select-container:focus-within {
     color: var(--text-normal);
-    caret-color: currentColor;
+    caret-color: var(--grotto-properties-view-caret-color);
 }
-input.metadata-property-key-input, 
-input.metadata-property-key-input:hover, 
-.metadata-property-value .metadata-input-number, 
-.metadata-property-value .metadata-input-number:hover, 
-.metadata-property-value .metadata-input-text, 
-.metadata-property-value .metadata-input-text:hover {
-    color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
-    height: 100%;
-}
-.metadata-property-key {
-    --metadata-divider-width: 0px;
-}
-.workspace-leaf-content[data-type='file-properties'] .view-content {
-    --text-normal: var(--grotto-day-1);
-    --background-modifier-border-focus: var(--grotto-day-1);
-    --grotto-tag-color: var(--grotto-night-0);
-    --grotto-tag-background-color: var(--grotto-day-1);
-    --grotto-text-icon-color: var(--grotto-day-1);
+.metadata-property-value .multi-select-container:focus-within, 
+.metadata-property-value .metadata-input-number:focus-within {
+    outline: 2px solid var(--grotto-metadata-border-color);
+    outline-offset: -3px;
 }
 .suggestion-container.mod-property-key {
     background-color: var(--grotto-suggestion-background-color);
@@ -2722,4 +2727,5 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
