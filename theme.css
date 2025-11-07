@@ -144,6 +144,8 @@ body {
     --blockquote-color: var(--text-normal);
     --blockquote-border-color: var(--text-normal);
     --blockquote-background-color: var(--background-primary);
+    --grotto-blockquote-style: normal;
+    --grotto-blockquote-alignment: start;
     /*Callouts*/
     --grotto-callout-color: var(--text-normal);/*Plugin*/
     --grotto-callout-background-color: var(--background-primary);/*Plugin*/
@@ -644,6 +646,29 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 .markdown-rendered blockquote {
     padding: 0px 8px;
+}
+.cm-s-obsidian span.cm-quote.cm-strong {
+    color: var(--grotto-bold-color);
+}
+.cm-s-obsidian span.cm-quote.cm-em {
+    color: var(--grotto-italic-color);
+}
+.cm-s-obsidian span.cm-quote.cm-comment {
+    color: var(--grotto-comment-color);
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, 
+.markdown-rendered blockquote {
+    font-style: var(--grotto-blockquote-style);
+    justify-self: var(--grotto-blockquote-alignment);
+    text-align: var(--grotto-blockquote-alignment);
+}
+.markdown-rendered blockquote h1, 
+.markdown-rendered blockquote h2, 
+.markdown-rendered blockquote h3, 
+.markdown-rendered blockquote h4, 
+.markdown-rendered blockquote h5, 
+.markdown-rendered blockquote h6 {
+    justify-self: var(--grotto-blockquote-alignment);
 }
 /*Callout*/
 .callout, 
@@ -2080,6 +2105,21 @@ body.preset-aegislash {
     --grotto-accent-1: hsl(260, 20%, 60%);
     --grotto-accent-2: hsl(260, 20%, 64%);
 }
+/*Aggron*/
+body.preset-aggron {
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 58%;
+    --grotto-day-1: hsl(0, 0%, 87%);
+    --grotto-day-2: hsl(0, 0%, 78%);
+    --grotto-day-3: hsl(0, 0%, 68%);
+    --grotto-night-0: hsl(0, 0%, 20%);
+    --grotto-night-1: hsl(0, 0%, 25%);
+    --grotto-night-2: hsl(0, 0%, 45%);
+    --grotto-night-3: hsl(0, 0%, 52%);
+    --grotto-accent-1: hsl(0, 0%, 58%);
+    --grotto-accent-2: hsl(0, 0%, 62%);
+}
 /*Alola*/
 .theme-light.preset-alola {
     --accent-h: 48;
@@ -2504,6 +2544,9 @@ settings:
                 label: Aegislash
                 value: preset-aegislash
             -
+                label: Aggron
+                value: preset-aggron
+            -
                 label: Alola
                 value: preset-alola
             -
@@ -2742,6 +2785,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
