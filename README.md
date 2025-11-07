@@ -3,7 +3,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 # Features
 - Supports both **light** and **dark** mode
-- 23 colour palettes
+- 24 colour palettes
 	- Available through the Style Settings plugin.
 	- Also available through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -23,6 +23,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
 ![Absol](https://github.com/user-attachments/assets/16c87b65-0ab2-4341-b272-96bc0f6b63ee)
 ![Aegislash](https://github.com/user-attachments/assets/489987c0-ef0c-43a8-9fa3-80091a951265)
+![Aggron](https://github.com/user-attachments/assets/2167f4d8-fdf4-438d-9b61-9f542dfbea2f)
 ![Alola](https://github.com/user-attachments/assets/e5ae3e72-020d-46ca-ac9f-813b223e3610)
 ![Calyrex](https://github.com/user-attachments/assets/593c8a2d-f6fe-4aef-97b2-ba822de2733d)
 ![Cheren](https://github.com/user-attachments/assets/d7bd383b-beff-4b03-a8a0-3bb286418ca4)
@@ -87,10 +88,12 @@ settings:
 ```
 
 # Feedback
-If there are any problems, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
+If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
 ##### V1.3.2
+- Added alternate Blockquote style
+- Added preset - Aggron
 - Improved codeblock syntax visibility
 - Improved properties view
 - Added alternate Calendar Plugin style
