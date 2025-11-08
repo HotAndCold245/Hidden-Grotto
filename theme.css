@@ -1422,7 +1422,7 @@ select,
 .dropdown:focus, 
 .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
     color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color-hover);
+    background-color: var(--grotto-dropdown-background-color);
     border-radius: var(--grotto-dropdown-radius);
     box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
     outline: 1px solid var(--grotto-dropdown-border-color);
@@ -2786,6 +2786,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
