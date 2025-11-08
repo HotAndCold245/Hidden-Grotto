@@ -1036,7 +1036,7 @@ th,
     filter:brightness(104%);
 }
 .is-phone .bases-query-container .filter-row .combobox-button {
-    border-bottom: 0px solid var(--text-normal);
+    border: 1px solid var(--text-normal);
 }
 .bases-query-container .filter-expression {
     background-color: transparent;
@@ -1125,11 +1125,13 @@ th,
 }
 .is-phone .bases-query-container .filter-group .filter-row .filter-operator {
     border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
 }
 .is-phone .filter-statement .metadata-property-value .metadata-input-text, 
 .is-phone .filter-statement .metadata-property-value .metadata-input-text:focus-within {
     border: 1px solid var(--text-normal);
+}
+.is-phone .bases-query-container .filter-expression {
+    background-color: transparent;
 }
 .is-phone .bases-query-container .filter-expression .filter-row-actions {
     border: none;
@@ -2775,6 +2777,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
