@@ -92,6 +92,7 @@ If there are any problems or certain community plugins need styling, you can sub
 
 # Changelog
 ##### V1.3.3
+- Minor bases fixes on mobile
 - Removed `--grotto-accent-2` as a variable in favor of `filter: brightness(104%)`
 - Changed button and dropdown menu hover appearance
 - Added alternate blockquote style
