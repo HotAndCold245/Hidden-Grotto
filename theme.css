@@ -992,6 +992,15 @@ th,
     background-color: var(--grotto-bases-cards-background-color-hover);
     --grotto-bases-cards-label-color: var(--grotto-bases-cards-color-hover);
 }
+span.value-list-element a.tag {
+    line-height: 0.8rem;
+}
+.bases-cards-line {
+    overflow: scroll;
+}
+.bases-cards-line::-webkit-scrollbar {
+    display: none;
+}
 .bases-cards-group {
     background-color: var(--background-primary);
 }
@@ -2777,6 +2786,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
