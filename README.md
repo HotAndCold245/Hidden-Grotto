@@ -91,8 +91,10 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.2
-- Added alternate Blockquote style
+##### V1.3.3
+- Removed `--grotto-accent-2` as a variable in favor of `filter: brightness(104%)`
+- Changed button and dropdown menu hover appearance
+- Added alternate blockquote style
 - Added preset - Aggron
 - Improved codeblock syntax visibility
 - Improved properties view
