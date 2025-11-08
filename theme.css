@@ -13,7 +13,6 @@ body.preset-clobbopus {
     --grotto-night-2: hsl(240, 18%, 45%);
     --grotto-night-3: hsl(240, 18%, 52%);
     --grotto-accent-1: hsl(16, 82%, 58%);
-    --grotto-accent-2: hsl(16, 82%, 62%);
 }
 .theme-light {
     --color-accent: var(--grotto-accent-1);
@@ -92,10 +91,8 @@ body {
     --grotto-comment-color: var(--grotto-accent-1);
     /*Links*/
     --grotto-link-color: var(--grotto-accent-1);
-    --grotto-link-color-hover: var(--grotto-accent-2);
     --grotto-link-weight: 400;
     --link-external-color: var(--grotto-link-color);
-    --link-external-color-hover: var(--grotto-link-color-hover);
     /*Headers*/
     --grotto-header-size: 1.5rem;
     --grotto-header-line-height: 2rem;
@@ -122,7 +119,6 @@ body {
     /*Buttons*/
     --grotto-button-color: var(--text-normal);
     --grotto-button-background-color: var(--grotto-accent-1);
-    --grotto-button-background-color-hover: var(--grotto-accent-2);
     --grotto-button-border-color: var(--text-normal);
     --grotto-button-radius: 0rem;
     --grotto-button-error-background: hsl(0, 0%, 16%);
@@ -194,7 +190,6 @@ body {
     --grotto-toggle-background-color: var(--grotto-day-2);
     --grotto-toggle-background-color-hover: var(--grotto-day-3);
     --grotto-toggle-enabled-background-color: var(--grotto-accent-1);
-    --grotto-toggle-enabled-background-color-hover: var(--grotto-accent-2);
     /*Tooltips*/
     --grotto-tooltip-color: var(--text-normal);
     --grotto-tooltip-background-color: var(--grotto-accent-1);
@@ -312,7 +307,6 @@ body {
     /*Dropdowns*/
     --grotto-dropdown-color: var(--text-normal);
     --grotto-dropdown-background-color: var(--grotto-accent-1);
-    --grotto-dropdown-background-color-hover: var(--grotto-accent-2);
     --grotto-dropdown-border-color: var(--text-normal);
     --grotto-dropdown-radius: 0rem;
     /*Sliders*/
@@ -480,8 +474,11 @@ del,
 /*Links*/
 a, 
 .external-link, 
+.cm-s-obsidian span.cm-link, 
 .cm-s-obsidian span.cm-hmd-internal-link, 
 .metadata-property-value .internal-link, 
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url, 
 .markdown-rendered .internal-link, 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline, 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline {
@@ -491,13 +488,17 @@ a,
 a:hover, 
 a.mobile-tap, 
 .external-link:hover, 
-.external-link.mobile-tap,
+.external-link.mobile-tap, 
+.cm-s-obsidian span.cm-link:hover, 
 .cm-s-obsidian span.cm-hmd-internal-link:hover, 
 .metadata-property-value .internal-link:hover, 
+.cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+.cm-s-obsidian span.cm-url:hover, 
 .markdown-rendered .internal-link:hover, 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover, 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: var(--grotto-link-color-hover);
+    color: var(--grotto-link-color);
+    filter: brightness(102%);
     opacity: 1;
 }
 /*Links inside Headers*/
@@ -603,10 +604,12 @@ button:not(.clickable-icon):hover,
 button.mod-cta.mobile-tap, 
 button:not(.clickable-icon).mobile-tap {
   color: var(--grotto-button-color);
-  background-color: var(--grotto-button-background-color-hover);
+  background-color: var(--grotto-button-background-color);
   border: 1px solid var(--grotto-button-border-color);
   border-radius: var(--grotto-button-radius);
-  box-shadow: none;
+  box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
+  outline: 1px solid var(--grotto-button-border-color);
+  outline-offset: 2px;
 }
 button.mod-destructive, 
 button.mod-warning, 
@@ -772,11 +775,9 @@ input[type="color"]::-webkit-color-swatch:hover {
 .checkbox-container:hover {
     background-color: var(--grotto-toggle-background-color-hover);
 }
-.checkbox-container.is-enabled {
-    background-color: var(--grotto-toggle-enabled-background-color);
-}
+.checkbox-container.is-enabled, 
 .checkbox-container.is-enabled:hover {
-    background-color: var(--grotto-toggle-enabled-background-color-hover);
+    background-color: var(--grotto-toggle-enabled-background-color);
 }
 .checkbox-container:before, 
 .checkbox-container:after {
@@ -951,7 +952,6 @@ th,
     border: 1px solid transparent;
     border-radius: var(--grotto-text-icon-radius);
 }
-
 .text-icon-button.is-active:active, 
 .text-icon-button.is-active.has-active-menu, 
 .text-icon-button.is-active, 
@@ -1018,32 +1018,49 @@ th,
 .bases-sort-container .bases-sort-property-container .bases-sort-direction {
     border-left: 1px solid var(--grotto-dropdown-border-color);
 }
-.base-toolbar-sort-item .combobox-button.has-focus, .base-toolbar-sort-item .combobox-button:focus, .base-toolbar-sort-item .combobox-button:hover {
-    background-color: var(--grotto-dropdown-background-color-hover);
+.base-toolbar-sort-item .combobox-button.has-focus, 
+.base-toolbar-sort-item .combobox-button:focus, 
+.base-toolbar-sort-item .combobox-button:hover {
+    background-color: var(--grotto-dropdown-background-color);
+    filter:brightness(104%);
+    outline: none;
+}
+.metadata-property.bases-sort-property-container {
+    gap: 0px;
 }
 .bases-query-container .filter-row .combobox-button {
     border: 1px solid var(--text-normal);
     border-radius: var(--grotto-bases-radius);
 }
+.bases-query-container .filter-row .combobox-button:hover {
+    filter:brightness(104%);
+}
 .is-phone .bases-query-container .filter-row .combobox-button {
     border-bottom: 0px solid var(--text-normal);
+}
+.bases-query-container .filter-expression {
+    background-color: transparent;
+    box-shadow: none;
+}
+.bases-query-container .filter-row .filter-property-select {
+    border-color: var(--grotto-accent-1);
+}
+.bases-query-container .filter-row .filter-property-select:hover {
+    outline: none;
 }
 .bases-query-container .filter-expression .filter-row-actions {
     --grotto-icon-color: var(--text-normal);
     background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    border-width: 0px 1px 0px 0px;
+    border: 0px solid var(--text-normal);
 }
 .bases-query-container .filter-lhs-container {
     border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 0px;
 }
 .bases-query-container .filter-row .combobox-button.has-focus {
     background-color: var(--grotto-accent-1);
 }
 .bases-query-container .filter-row .filter-operator {
     border: 1px solid var(--text-normal);
-    border-width: 1px 0px 1px 1px;
 }
 .filter-statement .metadata-property-value .metadata-input-text, 
 .filter-statement .metadata-property-value .metadata-input-text:hover, 
@@ -1396,7 +1413,9 @@ select,
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color-hover);
     border-radius: var(--grotto-dropdown-radius);
-    box-shadow: none;
+    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
+    outline: 1px solid var(--grotto-dropdown-border-color);
+    outline-offset: 2px;
 }
 .dropdown option {
     color: var(--grotto-dropdown-color);
@@ -2088,7 +2107,6 @@ body.preset-absol {
     --grotto-night-2: hsl(200, 5%, 24%);
     --grotto-night-3: hsl(200, 5%, 32%);
     --grotto-accent-1: hsl(200, 10%, 50%);
-    --grotto-accent-2: hsl(200, 10%, 54%);
 }
 /*Aegislash*/
 body.preset-aegislash {
@@ -2103,7 +2121,6 @@ body.preset-aegislash {
     --grotto-night-2: hsl(260, 10%, 32%);
     --grotto-night-3: hsl(260, 10%, 40%);
     --grotto-accent-1: hsl(260, 20%, 60%);
-    --grotto-accent-2: hsl(260, 20%, 64%);
 }
 /*Aggron*/
 body.preset-aggron {
@@ -2118,7 +2135,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(0, 0%, 45%);
     --grotto-night-3: hsl(0, 0%, 52%);
     --grotto-accent-1: hsl(0, 0%, 58%);
-    --grotto-accent-2: hsl(0, 0%, 62%);
 }
 /*Alola*/
 .theme-light.preset-alola {
@@ -2133,7 +2149,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(0, 0%, 30%);
     --grotto-night-3: hsl(0, 0%, 42%);
     --grotto-accent-1: hsl(48, 60%, 50%);
-    --grotto-accent-2: hsl(48, 60%, 54%);
 }
 .theme-dark.preset-alola, 
 .is-mobile.theme-dark.preset-alola {
@@ -2148,7 +2163,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(260, 50%, 32%);
     --grotto-night-3: hsl(260, 50%, 40%);
     --grotto-accent-1: hsl(48, 40%, 50%);
-    --grotto-accent-2: hsl(48, 40%, 54%);
 }
 /*Calyrex*/
 .theme-light.preset-calyrex {
@@ -2163,7 +2177,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(210, 10%, 36%);
     --grotto-night-3: hsl(210, 10%, 48%);
     --grotto-accent-1: hsl(180, 20%, 60%);
-    --grotto-accent-2: hsl(180, 20%, 64%);
 }
 .theme-dark.preset-calyrex, 
 .is-mobile.theme-dark.preset-calyrex {
@@ -2178,7 +2191,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(260, 0%, 26%);
     --grotto-night-3: hsl(260, 0%, 36%);
     --grotto-accent-1: hsl(260, 50%, 50%);
-    --grotto-accent-2: hsl(260, 50%, 54%);
 }
 /* Cheren */
 .preset-cheren {
@@ -2193,7 +2205,6 @@ body.preset-aggron {
     --grotto-night-2: hsl(196, 60%, 26%);
     --grotto-night-3: hsl(196, 60%, 40%);
     --grotto-accent-1: hsl(0, 30%, 50%);
-    --grotto-accent-2: hsl(0, 30%, 54%);
 }
 /* Darkrai */
 body.preset-darkrai {
@@ -2208,7 +2219,6 @@ body.preset-darkrai {
     --grotto-night-2: hsl(0, 0%, 32%);
     --grotto-night-3: hsl(0, 0%, 40%);
     --grotto-accent-1: hsl(5, 60%, 50%);
-    --grotto-accent-2: hsl(5, 60%, 54%);
 }
 /* Dawn */
 .theme-light.preset-dawn {
@@ -2223,7 +2233,6 @@ body.preset-darkrai {
     --grotto-night-2: hsl(0, 40%, 60%);
     --grotto-night-3: hsl(0, 40%, 72%);
     --grotto-accent-1: hsl(200, 30%, 28%);
-    --grotto-accent-2: hsl(200, 30%, 32%);
 }
 .theme-dark.preset-dawn,
 .is-mobile.theme-dark.preset-dawn {
@@ -2235,9 +2244,7 @@ body.preset-darkrai {
     --grotto-night-2: hsl(200, 30%, 30%);
     --grotto-night-3: hsl(200, 30%, 44%);
     --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsl(0, 40%, 64%);
     --grotto-link-color: var(--grotto-night-0);
-    --grotto-link-color-hover: var(--grotto-night-2);
     --grotto-bold-color: var(--grotto-night-0);
     --grotto-italic-color: var(--grotto-night-0);
     --grotto-comment-color: var(--grotto-night-0);
@@ -2257,7 +2264,6 @@ body.preset-lucario {
     --grotto-night-2: hsl(200, 30%, 40%);
     --grotto-night-3: hsl(200, 30%, 52%);
     --grotto-accent-1: hsl(0, 40%, 60%);
-    --grotto-accent-2: hsl(0, 40%, 68%);
 }
 /*Meloetta*/
 .theme-light.preset-meloetta {
@@ -2272,7 +2278,6 @@ body.preset-lucario {
     --grotto-night-2: hsl(40, 6%, 24%);
     --grotto-night-3: hsl(40,6%, 32%);
     --grotto-accent-1: hsl(160, 40%, 40%);
-    --grotto-accent-2: hsl(160, 40%, 48%);
 }
 .theme-dark.preset-meloetta, 
 .is-mobile.theme-dark.preset-meloetta {
@@ -2287,7 +2292,6 @@ body.preset-lucario {
     --grotto-night-2: hsl(40, 6%, 24%);
     --grotto-night-3: hsl(40,6%, 32%);
     --grotto-accent-1: hsl(10, 50%, 50%);
-    --grotto-accent-2: hsl(10, 50%, 56%);
 }
 /*Noivern*/
 body.preset-noivern {
@@ -2302,7 +2306,6 @@ body.preset-noivern {
     --grotto-night-2: hsl(288, 26%, 40%);
     --grotto-night-3: hsl(288, 26%, 50%);
     --grotto-accent-1: hsl(160, 40%, 50%);
-    --grotto-accent-2: hsl(160, 40%, 54%);
 }
 .theme-light.preset-noivern {
     --text-normal: var(--grotto-night-0);
@@ -2322,7 +2325,6 @@ body.preset-poltchageist {
     --grotto-night-2: hsl(60, 5%, 24%);
     --grotto-night-3: hsl(60, 5%, 32%);
     --grotto-accent-1: hsl(114, 30%, 50%);
-    --grotto-accent-2: hsl(114, 30%, 54%);
 }
 /*Rayquaza*/
 body.preset-rayquaza {
@@ -2337,7 +2339,6 @@ body.preset-rayquaza {
     --grotto-night-2: hsl(160, 30%, 36%);
     --grotto-night-3: hsl(160, 30%, 44%);
     --grotto-accent-1: hsl(350, 50%, 50%);
-    --grotto-accent-2: hsl(350, 50%, 64%);
 }
 /*Revavroom*/
 .preset-revavroom {
@@ -2352,7 +2353,6 @@ body.preset-rayquaza {
     --grotto-night-2: hsl(262, 25%, 40%);
     --grotto-night-3: hsl(262, 25%, 52%);
     --grotto-accent-1: hsl(48, 50%, 50%);
-    --grotto-accent-2: hsl(48, 50%, 54%);
     --grotto-button-color: var(--grotto-night-1);
     --grotto-dropdown-color: var(--grotto-night-1);
     --grotto-suggestion-color-hover: var(--grotto-night-1);
@@ -2376,7 +2376,6 @@ body.preset-rayquaza {
     --grotto-night-2: hsl(340, 10%, 24%);
     --grotto-night-3: hsl(340, 10%, 32%);
     --grotto-accent-1: hsl(340, 50%, 40%);
-    --grotto-accent-2: hsl(340, 50%, 44%);
 }
 /*Skeledirge*/
 .preset-skeledirge {
@@ -2391,7 +2390,6 @@ body.preset-rayquaza {
     --grotto-night-2: hsl(10, 60%, 48%);
     --grotto-night-3: hsl(10, 60%, 56%);
     --grotto-accent-1: hsl(34, 50%, 50%);
-    --grotto-accent-2: hsl(34, 50%, 54%);
 }
 .theme-light.preset-skeledirge {
     --text-normal: var(--grotto-night-0);
@@ -2409,7 +2407,6 @@ body.preset-steelix {
     --grotto-night-2: hsl(0, 0%, 24%);
     --grotto-night-3: hsl(0, 0%, 32%);
     --grotto-accent-1: hsl(180, 20%, 56%);
-    --grotto-accent-2: hsl(180, 20%, 64%);
 }
 /*Swampert*/
 body.preset-swampert {
@@ -2424,7 +2421,6 @@ body.preset-swampert {
     --grotto-night-2: hsl(210, 30%, 36%);
     --grotto-night-3: hsl(210, 30%, 44%);
     --grotto-accent-1: hsl(30, 60%, 50%);
-    --grotto-accent-2: hsl(30, 60%, 64%);
 }
 /*Unova*/
 body.preset-unova {
@@ -2441,7 +2437,6 @@ body.preset-unova {
     --accent-s: 60%;
     --accent-l: 50%;
     --grotto-accent-1: hsl(24, 60%, 50%);
-    --grotto-accent-2: hsl(24, 60%, 54%);
 }
 .theme-dark.preset-unova, 
 .is-mobile.theme-dark.preset-unova {
@@ -2449,7 +2444,6 @@ body.preset-unova {
     --accent-s: 60%;
     --accent-l: 50%;
     --grotto-accent-1: hsl(200, 60%, 50%);
-    --grotto-accent-2: hsl(200, 60%, 54%);
 }
 /* Ursaluna */
 .preset-ursaluna {
@@ -2464,7 +2458,6 @@ body.preset-unova {
     --grotto-night-2: hsl(20, 40%, 32%);
     --grotto-night-3: hsl(20, 40%, 40%);
     --grotto-accent-1: hsl(47, 20%, 50%);
-    --grotto-accent-2: hsl(47, 20%, 54%);
 }
 /*Volcarona*/
 body.preset-volcarona {
@@ -2479,7 +2472,6 @@ body.preset-volcarona {
     --grotto-night-2: hsl(194, 60%, 32%);
     --grotto-night-3: hsl(194, 60%, 40%);
     --grotto-accent-1: hsl(27, 85%, 50%);
-    --grotto-accent-2: hsl(27, 85%, 54%);
 }
 /*Whimsicott*/
 body.preset-whimsicott {
@@ -2494,7 +2486,6 @@ body.preset-whimsicott {
     --grotto-night-2: hsl(30, 40%, 36%);
     --grotto-night-3: hsl(30, 40%, 42%);
     --grotto-accent-1: hsl(120, 40%, 46%);
-    --grotto-accent-2: hsl(120, 40%, 50%);
 }
 /*Zacian*/
 body.preset-zacian {
@@ -2509,7 +2500,6 @@ body.preset-zacian {
     --grotto-night-2: hsl(200, 80%, 44%);
     --grotto-night-3: hsl(200, 80%, 56%);
     --grotto-accent-1: hsl(5, 60%, 64%);
-    --grotto-accent-2: hsl(5, 60%, 68%);
 }
 /* Style Settings Support */
 .style-settings-empty {
@@ -2785,6 +2775,7 @@ settings:
         title: Alternate Calendar Style
         type: class-toggle
 */
+
 
 
 
