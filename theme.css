@@ -62,6 +62,9 @@ body.preset-clobbopus {
     --pdf-thumbnail-shadow: none;
 }
 body {
+    /*Privacy*/
+    --grotto-blur: 0px;
+    filter: blur(var(--grotto-blur));
     /*Tags*/
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-background-color: var(--text-normal);
@@ -2785,6 +2788,25 @@ settings:
         id: calendar-preset
         title: Alternate Calendar Style
         type: class-toggle
+*/
+/* @settings
+name: Privacy Controls
+id: grotto-privacy-controls
+collapsed: false
+settings:
+    -
+        id: grotto-blur
+        title: Blurred View
+        description: Enable to blur everything from prying eyes (This setting will always be at the BOTTOM of this menu)
+        type: variable-select
+        default: 0px
+        options:
+            -
+                label: Enabled
+                value: 4px
+            -
+                label: Disabled
+                value: 0px
 */
 
 
