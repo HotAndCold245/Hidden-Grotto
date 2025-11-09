@@ -91,7 +91,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.4
+##### V1.3.6
+- New settings option to blur everything for privacy
 - Bases tags in cards view are now scrollable on mobile
 - Minor bases improvements on mobile
 - Removed `--grotto-accent-2` as a variable in favor of `filter: brightness(104%)`
