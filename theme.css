@@ -621,7 +621,9 @@ button.mod-warning,
   background-color: var(--grotto-button-error-background);
 }
 button.mod-destructive:hover, 
-button.mod-warning:hover {
+button.mod-warning:hover, 
+button.mod-warning.mobile-tap, 
+button.mod-destructive.mobile-tap {
   color: var(--text-error);
   background-color: var(--grotto-button-error-background-hover);
 }
@@ -2808,6 +2810,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
