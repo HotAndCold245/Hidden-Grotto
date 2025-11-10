@@ -2513,17 +2513,11 @@ settings:
                 label: Calyrex
                 value: preset-calyrex
             -
-                label: Cheren
-                value: preset-cheren
-            -
                 label: Clobbopus
                 value: preset-clobbopus
             -
                 label: Darkrai
                 value: preset-darkrai
-            -
-                label: Dawn
-                value: preset-dawn
             -
                 label: Lucario
                 value: preset-lucario
@@ -2548,9 +2542,6 @@ settings:
             -
                 label: Scolipede
                 value: preset-scolipede
-            -
-                label: Steelix
-                value: preset-steelix
             -
                 label: Swampert
                 value: preset-swampert
@@ -2764,6 +2755,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
