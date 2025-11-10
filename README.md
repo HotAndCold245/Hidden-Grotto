@@ -3,7 +3,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 # Features
 - Supports both **light** and **dark** mode
-- 24 colour palettes
+- 21 colour palettes
 	- Available through the Style Settings plugin.
 	- Also available through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -18,6 +18,8 @@ This theme is primarily designed for personal use. The base color palette is ins
 	- The maximum toolbar height (number of rows visible) can be adjusted by setting `--grotto-toolbar-rows` to the number of rows. If there are more tools than a row can hold while maximum height is set to 1, then the toolbar can be swiped up to access the rest of the tools. This is a change from the default behaviour of swiping to the left because it let's you see more of the tools at once. #Note : Setting the height to more rows than necessary to hold the active number of tools will cause the mobile toolbar to move further up than intended. 
 - Mobile navbar
 	- The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room.
+- Privacy mode
+	- Option to enable blurred view so noone can read notes while they are unattended. #Note : Only enable it if you know how to navigate to the toggle without being able to read. If lost, find the theme folder and remove the theme manually - simply editing the css file might not work. 
 
 # Screenshots
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
@@ -26,10 +28,8 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Aggron](https://github.com/user-attachments/assets/2167f4d8-fdf4-438d-9b61-9f542dfbea2f)
 ![Alola](https://github.com/user-attachments/assets/e5ae3e72-020d-46ca-ac9f-813b223e3610)
 ![Calyrex](https://github.com/user-attachments/assets/593c8a2d-f6fe-4aef-97b2-ba822de2733d)
-![Cheren](https://github.com/user-attachments/assets/d7bd383b-beff-4b03-a8a0-3bb286418ca4)
 ![Clobbopus](https://github.com/user-attachments/assets/2515dcd0-f700-46e7-bbf8-0408bfbc2ff4)
 ![Darkrai](https://github.com/user-attachments/assets/58a00b23-7931-41c4-ab08-b11c90217748)
-![Dawn](https://github.com/user-attachments/assets/20a76729-af39-42b2-abb5-54d0f8fddff6)
 ![Lucario](https://github.com/user-attachments/assets/6156ea3a-e607-4905-851a-99d1a164e517)
 ![Meloetta](https://github.com/user-attachments/assets/c6b8c6df-f21a-4be0-8536-d9468ae4de46)
 ![Noivern](https://github.com/user-attachments/assets/76cb067d-9f6f-456d-b04c-82e80a87c432)
@@ -38,7 +38,6 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Revavroom](https://github.com/user-attachments/assets/ee09d798-3b1a-4449-805a-fe22263eee47)
 ![Scolipede](https://github.com/user-attachments/assets/e852eeaa-f526-46b8-ac5e-5d24dfaa1d39)
 ![Skeledirge](https://github.com/user-attachments/assets/9cd44a27-6d6a-46fd-b20d-eed983640383)
-![Steelix](https://github.com/user-attachments/assets/240c25b4-9cc2-43a0-81ea-0b2fb3d5081a)
 ![Swampert](https://github.com/user-attachments/assets/5c9eff61-53c4-4dfe-b9bb-b1a610dfd6f9)
 ![Unova](https://github.com/user-attachments/assets/dc194375-3ca1-4f2d-90fa-bc1b0f27e5d0)
 ![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
@@ -61,7 +60,6 @@ This theme is primarily designed for personal use. The base color palette is ins
     --grotto-night-2: hsl();
 	--grotto-night-3: hsl();
     --grotto-accent-1: hsl();
-    --grotto-accent-2: hsl();
 }
  ```
 There are more variables to control minor things that can be found in the css file.
@@ -91,7 +89,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.6
+##### V1.3.7
+- Removed presets temporarily - Cheren, Dawn, Steelix
 - New settings option to blur everything for privacy
 - Bases tags in cards view are now scrollable on mobile
 - Minor bases improvements on mobile
