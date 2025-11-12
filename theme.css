@@ -538,7 +538,7 @@ a.mobile-tap,
 }
 /*Headers*/
 .cm-formatting-header {
-    color: inherit;
+    color: var(--grotto-background-tertiary);
 }
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1,
 .markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2,
@@ -846,8 +846,9 @@ th,
 .markdown-rendered table {
     border-collapse: var(--grotto-table-border-style, collapse);
 }
-.cm-line:has(+ .cm-table-widget), .cm-table-widget + .cm-line {
-    line-height: 4px;
+.cm-line:has(+ .cm-table-widget), 
+.cm-table-widget + .cm-line {
+    line-height: 2px;
 }
 /*Dragging*/
 .drag-ghost {
@@ -1475,9 +1476,13 @@ input[type='range']::-webkit-slider-thumb:active {
 }
 /*Scrollbars*/
 .is-android {
-  --scrollbar-border-width: 2px;
-  --scrollbar-width: 8px;
+  --scrollbar-border-width: 3px;
+  --scrollbar-width: 12px;
   --scrollbar-radius: 0;
+}
+body.styled-scrollbars ::-webkit-scrollbar-thumb {
+    outline: 1px solid var(--text-normal);
+    outline-offset: -3px;
 }
 /*Mobile Quick Actions*/
 .pull-action, 
@@ -1614,6 +1619,9 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
     color: var(--grotto-nav-title-color-active);
     background-color: var(--grotto-nav-title-background-color-active);
     border: 1px solid var(--grotto-nav-title-border-color);
+}
+.nav-files-container {
+    --text-normal: var(--grotto-nav-title-border-color);
 }
 /*Menus*/
 body:not(.is-phone) .menu {
@@ -2771,6 +2779,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
