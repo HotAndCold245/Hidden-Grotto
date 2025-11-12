@@ -23,6 +23,10 @@ This theme is primarily designed for personal use. The base color palette is ins
 
 # Screenshots
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
+
+<details>
+	<summary>Color Palettes</summary>
+
 ![Absol](https://github.com/user-attachments/assets/16c87b65-0ab2-4341-b272-96bc0f6b63ee)
 ![Aegislash](https://github.com/user-attachments/assets/489987c0-ef0c-43a8-9fa3-80091a951265)
 ![Aggron](https://github.com/user-attachments/assets/2167f4d8-fdf4-438d-9b61-9f542dfbea2f)
@@ -44,6 +48,8 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
 ![Whimsicott](https://github.com/user-attachments/assets/7c18a816-3e85-4871-b79f-9cbfc4da4d13)
 ![Zacian](https://github.com/user-attachments/assets/5001d860-c99d-44ab-8131-30755cf3acde)
+	
+</details>
 
 # The Plugin
  The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin developed for use with this theme allows for more customization. Color palettes can be easily swapped between using a dedicated ribbon/toolbar/command prompt button. You can also create your own presets using the following format. 
@@ -89,7 +95,10 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.7
+##### V1.3.8
+- Added borders to scrollbars
+- Updated some color palettes
+- Fixes for latest obsidian update
 - Removed presets temporarily - Cheren, Dawn, Steelix
 - New settings option to blur everything for privacy
 - Bases tags in cards view are now scrollable on mobile
