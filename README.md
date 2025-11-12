@@ -51,6 +51,27 @@ This theme is primarily designed for personal use. The base color palette is ins
 	
 </details>
 
+<details>
+	<summary>Mobile Toolbar</summary>
+
+![Toolbar](https://github.com/user-attachments/assets/ffa4cded-2d98-4d47-9300-1062eede1fb6)
+
+</details>
+
+<details>
+	<summary>Mobile Navbar</summary>
+
+![Navbar](https://github.com/user-attachments/assets/f10ca19b-8dbb-405f-84b3-ba1ad9422a42)
+
+</details>
+
+<details>
+	<summary>Privacy</summary>
+
+![Blur](https://github.com/user-attachments/assets/96487b52-7682-425c-92f2-e544f75e49ba)
+
+</details>
+
 # The Plugin
  The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin developed for use with this theme allows for more customization. Color palettes can be easily swapped between using a dedicated ribbon/toolbar/command prompt button. You can also create your own presets using the following format. 
  ```
