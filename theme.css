@@ -537,6 +537,9 @@ a.mobile-tap,
     color: inherit;
 }
 /*Headers*/
+.cm-formatting-header {
+    color: inherit;
+}
 .markdown-rendered h1, .HyperMD-header-1, .cm-s-obsidian .cm-line.HyperMD-header-1,
 .markdown-rendered h2, .HyperMD-header-2, .cm-s-obsidian .cm-line.HyperMD-header-2,
 .markdown-rendered h3, .HyperMD-header-3, .cm-s-obsidian .cm-line.HyperMD-header-3, 
@@ -1155,8 +1158,22 @@ span.value-list-element a.tag {
 .is-phone .bases-query-container .filter-expression .filter-row-actions {
     border: none;
 }
-.is-phone .bases-sort-container .bases-sort-property-container .bases-sort-direction {
-    width: 40%;
+.is-phone .bases-sort-container .bases-sort-property-container .bases-sort-direction, 
+.is-phone .bases-groupby-container .bases-sort-property-container .bases-sort-direction {
+    width: 50%;
+}
+.bases-toolbar-menu .base-toolbar-sort-item, .bases-toolbar-menu .base-toolbar-groupby-item {
+    background-color: transparent;
+}
+.bases-toolbar-menu .bases-sort-container .bases-sort-property-container .bases-sort-direction, 
+.bases-toolbar-menu .bases-groupby-container .bases-sort-property-container .bases-sort-direction {
+    border-left: 1px solid var(--grotto-bases-cards-border-color);
+}
+body:not(.is-phone) .base-toolbar-sort-item {
+    --metadata-property-box-shadow: 0px 0px 0px 0px var(--grotto-bases-cards-border-color);
+}
+.bases-toolbar-menu .base-toolbar-sort-item .metadata-property, .bases-toolbar-menu .base-toolbar-groupby-item .metadata-property {
+    border: 1px solid var(--grotto-bases-cards-border-color);
 }
 /*Notice*/
 .notice, 
@@ -1392,7 +1409,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .is-mobile .clickable-icon {
     color: var(--grotto-icon-color);
     background-color: transparent;
-    opacity: 1;
     border-radius: 0px;
 }
 .clickable-icon:hover, 
@@ -2238,16 +2254,16 @@ body.preset-darkrai {
 /*Lucario*/
 body.preset-lucario {
     --accent-h: 0;
-    --accent-s: 40%;
+    --accent-s: 60%;
     --accent-l: 60%;
-    --grotto-day-1: hsl(40, 20%, 90%);
+    --grotto-day-1: hsl(40, 20%, 86%);
     --grotto-day-2: hsl(40, 20%, 80%);
     --grotto-day-3: hsl(40, 20%, 72%);
-    --grotto-night-0: hsl(200, 20%, 18%);
+    --grotto-night-0: hsl(200, 10%, 18%);
     --grotto-night-1: hsl(200, 30%, 26%);
-    --grotto-night-2: hsl(200, 30%, 40%);
-    --grotto-night-3: hsl(200, 30%, 52%);
-    --grotto-accent-1: hsl(0, 40%, 60%);
+    --grotto-night-2: hsl(200, 30%, 36%);
+    --grotto-night-3: hsl(200, 30%, 44%);
+    --grotto-accent-1: hsl(0, 60%, 60%);
 }
 /*Meloetta*/
 .theme-light.preset-meloetta {
@@ -2755,6 +2771,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
