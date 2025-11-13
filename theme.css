@@ -1,4 +1,4 @@
-/* V1.4.0*/
+/* V 1.4.0 */
 /*Clobbopus*/
 body, 
 body.preset-clobbopus {
@@ -24,11 +24,7 @@ body.preset-clobbopus {
     --text-muted: var(--grotto-night-2);
     --text-faint: var(--grotto-night-3);
     --grotto-background-tertiary: var(--grotto-day-2);
-    --interactive-normal: var(--text-normal);
-    --interactive-hover: var(--text-faint);
-    --text-accent: var(--grotto-accent-1);
     --background-modifier-box-shadow: none;
-    --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
     --input-shadow: none;
     --input-shadow-hover: none;
@@ -48,11 +44,7 @@ body.preset-clobbopus {
     --text-muted: var(--grotto-day-2);
     --text-faint: var(--grotto-day-3);
     --grotto-background-tertiary: var(--grotto-night-2);
-    --interactive-normal: var(--text-normal);
-    --interactive-hover: var(--text-faint);
-    --text-accent: var(--grotto-accent-1);
     --background-modifier-box-shadow: none;
-    --background-modifier-hover: transparent;
     --background-modifier-cover: hsl(0, 0%, 10%, 0.6);
     --input-shadow: none;
     --input-shadow-hover: none;
@@ -62,31 +54,34 @@ body.preset-clobbopus {
     --pdf-thumbnail-shadow: none;
 }
 body {
-    /*Privacy*/
-    --grotto-blur: 0px;
-    filter: blur(var(--grotto-blur));
-    --grotto-redacted: 'Flow Circular';
-    --font-interface: var(--font-interface-override);
-    --font-text: var(--font-text-override);
-    --font-print: var(--font-print-override);
-    --font-monospace: var(--font-monospace-override);
+    /*Common*/
+    --interactive-normal: var(--text-normal);
+    --interactive-hover: var(--text-faint);
+    --text-accent: var(--grotto-accent-1);
+    --background-modifier-hover: transparent;
+    --background-modifier-border: var(--text-faint);
+    --background-modifier-border-focus: var(--text-normal);
     /*Tags*/
     --grotto-tag-color: var(--background-primary);
+    --grotto-tag-border-color: var(--grotto-accent-1);
     --grotto-tag-background-color: var(--text-normal);
+    --grotto-tag-border-width: 0px;
     --grotto-tag-pointer-events: none;
-    --grotto-tag-size: 0.8rem;
-    --grotto-tag-radius: 0rem;
-    --tag-radius: var(--grotto-tag-radius);
-    --tag-size: var(--grotto-tag-size);
     --tag-padding-x: 0.4rem;
     --tag-padding-y: 0.2rem;
+    --grotto-tag-size: 0.8rem;
+    --grotto-tag-radius: 0rem;
+    --tag-size: var(--grotto-tag-size);
+    --tag-radius: var(--grotto-tag-radius);
+    --tag-border-width: var(--grotto-tag-border-width);
+    --tag-border-color: var(--grotto-tag-border-color);
     /*Text*/
-    --grotto-font-weight: 400;/*Plugin*/
+    --grotto-font-weight: 400;
     font-weight: var(--grotto-font-weight);
     --text-error: hsl(0, 50%, 50%);
     --text-warning: hsl(20, 50%, 50%);
     --text-success: hsl(100, 50%, 50%);
-    --file-line-width: 700px;/*Plugin*/
+    --file-line-width: 700px;
     /*Bold*/
     --grotto-bold-color: var(--grotto-accent-1);
     --grotto-bold-font-weight: 800;
@@ -100,7 +95,6 @@ body {
     /*Links*/
     --grotto-link-color: var(--grotto-accent-1);
     --grotto-link-weight: 400;
-    --link-external-color: var(--grotto-link-color);
     /*Headers*/
     --grotto-header-size: 1.5rem;
     --grotto-header-line-height: 2rem;
@@ -124,6 +118,15 @@ body {
     --grotto-header-color-6: var(--text-normal);
     --grotto-header-background-color-6: transparent;
     --grotto-header-border-color-6: transparent;
+    /*Blur*/
+    --grotto-blur: 0px;
+    filter: blur(var(--grotto-blur));
+    /*Redact*/
+    --grotto-redacted: 'Flow Circular';
+    --font-interface: var(--font-interface-override);
+    --font-text: var(--font-text-override);
+    --font-print: var(--font-print-override);
+    --font-monospace: var(--font-monospace-override);
     /*Buttons*/
     --grotto-button-color: var(--text-normal);
     --grotto-button-background-color: var(--grotto-accent-1);
@@ -135,6 +138,20 @@ body {
     --grotto-checkbox-border-color: var(--text-normal);
     --grotto-checkbox-radius: 0rem;
     --checkbox-marker-color: transparent;
+    /*Blockquotes*/
+    --blockquote-border-thickness: 2px;
+    --blockquote-color: var(--text-normal);
+    --blockquote-border-color: var(--text-normal);
+    --blockquote-background-color: var(--background-primary);
+    /*Callouts*/
+    --grotto-callout-color: var(--text-normal);
+    --grotto-callout-background-color: var(--background-primary);
+    --grotto-callout-border-color: var(--text-normal);
+    --grotto-callout-padding: 8px 16px;
+    --grotto-callout-radius: 0rem;
+    --grotto-callout-icon: none;
+    --grotto-title-size: 1.5rem;
+    --callout-default: var(--grotto-callout-color);
     /*Lists*/
     --list-marker-color: var(--text-normal);
     --list-indent: calc(var(--indent-unit) * var(--indent-size));
@@ -143,29 +160,13 @@ body {
     --list-bullet-radius: 0rem;
     --list-bullet-size: 0.4rem;
     --list-spacing: 0.08rem;
-    /*Blockquotes*/
-    --blockquote-border-thickness: 2px;
-    --blockquote-color: var(--text-normal);
-    --blockquote-border-color: var(--text-normal);
-    --blockquote-background-color: var(--background-primary);
-    --grotto-blockquote-style: normal;
-    --grotto-blockquote-alignment: start;
-    /*Callouts*/
-    --grotto-callout-color: var(--text-normal);/*Plugin*/
-    --grotto-callout-background-color: var(--background-primary);/*Plugin*/
-    --grotto-callout-border-color: var(--text-normal);/*Plugin*/
-    --grotto-callout-padding: 8px 16px;
-    --grotto-callout-radius: 0rem;
-    --grotto-callout-icon: none;/*Plugin*/
-    --grotto-title-size: 1.5rem;
-    --callout-default: var(--grotto-callout-color);
     /*Embeds*/
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: var(--background-primary);
-    --grotto-embed-title: block;
     --grotto-embed-link-color: var(--text-normal);
     --grotto-embed-link-color-hover: var(--grotto-accent-1);
     --grotto-embed-link-background-color: var(--grotto-background-tertiary);
+    --grotto-embed-title: block;
     --grotto-embed-radius: 0rem;
     --embed-max-height: 4000px;
     --embed-padding: 8px 16px;
@@ -189,6 +190,7 @@ body {
     --code-border-color: var(--text-normal);
     /*Status Bar*/
     --grotto-statusbar-color: var(--background-primary);
+    --grotto-statusbar-color-hover: var(--grotto-accent-1);
     --grotto-statusbar-background-color: var(--text-normal);
     --grotto-statusbar-border-color: var(--background-primary);
     --grotto-statusbar-radius: 0rem;
@@ -204,9 +206,9 @@ body {
     --grotto-tooltip-border-color: var(--text-normal);
     --grotto-tooltip-radius: 0rem;
     /*Tables*/
-    --grotto-table-cell-width: fit-content;/*Plugin*/
-    --grotto-table-border-style: separate;/*Plugin*/
-    --table-background: transparent;/*Plugin*/
+    --grotto-table-cell-width: fit-content;
+    --grotto-table-border-style: separate;
+    --table-background: transparent;
     --table-border-width: 1px;
     --table-border-color: var(--text-normal);
     --table-header-background-hover: var(--table-background);
@@ -225,44 +227,6 @@ body {
     --grotto-canvas-controls-background-color: var(--background-primary);
     --grotto-canvas-controls-border-color: var(--text-normal);
     --grotto-canvas-controls-radius: 0rem;
-    /*Calendar Plugin*/
-    --grotto-calendar-pointer-events: auto;
-    --grotto-calendar-color: var(--grotto-day-1);
-    --grotto-calendar-color-hover: var(--grotto-accent-1);
-    --grotto-calendar-background-color: var(--background-secondary);
-    --grotto-calendar-today-background-color: var(--grotto-day-1);
-    --grotto-calendar-border-color: var(--grotto-accent-1);
-    --grotto-calendar-year-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-color: var(--grotto-night-0);
-    --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
-    --grotto-calendar-weekend-border-color: transparent;
-    --grotto-calendar-dayofweek-border-width: 0px;
-    /*Bases*/
-    --grotto-text-icon-color: var(--text-normal);
-    --grotto-text-icon-color-hover: var(--text-normal);
-    --grotto-text-icon-background-color: var(--grotto-accent-1);
-    --grotto-text-icon-border-color-hover: var(--text-normal);
-    --grotto-text-icon-radius: 0rem;
-    --grotto-bases-cards-color: var(--text-normal);
-    --grotto-bases-cards-color-hover: var(--text-normal);
-    --grotto-bases-cards-border-color: var(--text-normal);
-    --grotto-bases-cards-background-color: var(--background-primary);
-    --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
-    --grotto-bases-radius: 0rem;
-    --bases-table-row-border-width: 0px;
-    --bases-table-column-border-width: 0px;
-    --bases-header-border-width: 1px;
-    --bases-table-border-color: var(--text-normal);
-    --bases-cards-shadow: none;
-    --bases-cards-shadow-hover: none;
-    --bases-table-cell-shadow-active: none;
-    --grotto-bases-cards-label-color: var(--text-normal);
-    --grotto-bases-cards-label-color-hover: var(--text-normal);
-    /*Notices*/
-    --grotto-notice-color: var(--text-normal);
-    --grotto-notice-background-color: var(--grotto-accent-1);
-    --grotto-notice-border-color: var(--text-normal);
-    --grotto-notice-radius: 0rem;
     /*Graphs*/
     --grotto-graph-controls-background-color: var(--background-primary);
     --grotto-graph-controls-border-color: var(--text-normal);
@@ -275,6 +239,46 @@ body {
     --graph-node: var(--grotto-accent-1);
     --graph-node-tag: var(--grotto-night-3);
     --graph-node-attachment: var(--grotto-day-3);
+    /*Notices*/
+    --grotto-notice-color: var(--text-normal);
+    --grotto-notice-background-color: var(--grotto-accent-1);
+    --grotto-notice-border-color: var(--text-normal);
+    --grotto-notice-radius: 0rem;
+    /*Calendar Plugin*/
+    --grotto-calendar-pointer-events: auto;
+    --grotto-calendar-color: var(--grotto-day-1);
+    --grotto-calendar-color-hover: var(--grotto-accent-1);
+    --grotto-calendar-background-color: var(--background-secondary);
+    --grotto-calendar-today-background-color: var(--grotto-day-1);
+    --grotto-calendar-border-color: var(--grotto-day-1);
+    --grotto-calendar-border-width: 1px;
+    --grotto-calendar-year-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-color: var(--grotto-night-1);
+    --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
+    --grotto-calendar-weekend-border-color: var(--grotto-day-1);
+    --grotto-calendar-weekend-border-width: 0px;
+    --grotto-calendar-dayofweek-border-width: 1px;
+    /*Bases*/
+    --grotto-text-icon-color: var(--text-normal);
+    --grotto-text-icon-color-hover: var(--text-normal);
+    --grotto-text-icon-background-color: var(--grotto-accent-1);
+    --grotto-text-icon-border-color-hover: var(--text-normal);
+    --grotto-text-icon-radius: 0rem;
+    --grotto-bases-cards-color: var(--text-normal);
+    --grotto-bases-cards-color-hover: var(--text-normal);
+    --grotto-bases-cards-border-color: var(--text-normal);
+    --grotto-bases-cards-background-color: var(--background-primary);
+    --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
+    --grotto-bases-cards-label-color: var(--text-normal);
+    --grotto-bases-cards-label-color-hover: var(--text-normal);
+    --grotto-bases-radius: 0rem;
+    --bases-table-row-border-width: 0px;
+    --bases-table-column-border-width: 0px;
+    --bases-header-border-width: 1px;
+    --bases-table-border-color: var(--text-normal);
+    --bases-cards-shadow: none;
+    --bases-cards-shadow-hover: none;
+    --bases-table-cell-shadow-active: none;
     /*Suggestions*/
     --grotto-suggestion-color: var(--text-normal);
     --grotto-suggestion-color-hover: var(--text-normal);
@@ -291,14 +295,17 @@ body {
     --grotto-titlebar-color: var(--grotto-day-1);
     --grotto-titlebar-background-color: var(--background-secondary);
     --grotto-titlebar-background-color-hover: var(--grotto-accent-1);
-    --tab-curve: 0px;
-    --tab-outline-width: 0px;
-    --tab-radius-active: 0px;
     --grotto-tab-header-icon-color: var(--grotto-day-1);
+    --grotto-tab-header-inactive-background-color: var(--grotto-background-tertiary);
     --grotto-tab-header-border-color: var(--grotto-night-0);
     --grotto-tab-header-border-width: 0px;
     --grotto-split-border-color: var(--background-secondary);
     --grotto-resize-handle-color: var(--grotto-accent-1);
+    --tab-curve: 0px;
+    --tab-outline-width: 0px;
+    --tab-radius-active: 0px;
+    --tab-text-color: var(--grotto-day-1);
+    --tab-text-color-focused: var(--grotto-day-1);
     /*Clickable Icons*/
     --grotto-icon-color: var(--text-normal);
     --grotto-icon-color-hover: var(--grotto-accent-1);
@@ -317,9 +324,6 @@ body {
     --grotto-dropdown-background-color: var(--grotto-accent-1);
     --grotto-dropdown-border-color: var(--text-normal);
     --grotto-dropdown-radius: 0rem;
-    /*Sliders*/
-    --grotto-slider-border-color: var(--grotto-night-0);
-    --grotto-slider-background-color: var(--grotto-day-1);
     /*Scrollbars*/
     --scrollbar-width: 12px;
     --scrollbar-radius: 0px;
@@ -362,6 +366,10 @@ body {
     /*Selection*/
     --grotto-selection-color: var(--text-normal);
     --grotto-selection-background-color: var(--background-primary);
+    /*Mobile Drawer Header*/
+    --grotto-mobile-drawer-header-color: var(--grotto-day-1);
+    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
+    --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
     /*Navigate Files*/
     --grotto-nav-tag-color: var(--grotto-night-0);
     --grotto-nav-tag-background-color: var(--grotto-day-1);
@@ -383,12 +391,6 @@ body {
     --grotto-menu-background-color: var(--background-primary);
     --grotto-menu-background-color-active: var(--grotto-accent-1);
     --grotto-menu-border-color: var(--text-normal);
-    /*Miscellaneous*/
-    --background-modifier-hover: transparent;
-    --background-modifier-border: var(--text-faint);
-    --background-modifier-border-focus: var(--text-normal);
-    --tab-text-color-focused: var(--grotto-day-1);
-    --tab-text-color: var(--grotto-day-1);
     /*Search Suggestions*/
     --grotto-search-suggestion-color: var(--grotto-day-1);
     --grotto-search-suggestion-background-color: var(--background-secondary);
@@ -419,10 +421,9 @@ body {
     --metadata-property-box-shadow-focus: none;
     --grotto-properties-color: var(--grotto-day-1);
     --grotto-properties-tag-color: var(--grotto-night-0);
-    /*Mobile Drawer Header*/
-    --grotto-mobile-drawer-header-color: var(--grotto-day-1);
-    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-background-color: var(--grotto-day-1);
+    /*Sliders*/
+    --grotto-slider-border-color: var(--grotto-night-0);
+    --grotto-slider-background-color: var(--grotto-day-1);
 }
 /*Tags*/
 a.tag, 
@@ -653,7 +654,9 @@ input[type="color"]::-webkit-color-swatch {
 }
 input[type="color"]::-webkit-color-swatch:hover {
     box-shadow: 0px 0px 0px 1px var(--text-normal);
-    opacity: 0.9;
+    opacity: 1;
+    outline: 1px solid var(--text-normal);
+    outline-offset: 3px;
 }
 /*Blockquotes*/
 .cm-s-obsidian span.cm-quote, 
@@ -671,20 +674,6 @@ input[type="color"]::-webkit-color-swatch:hover {
 }
 .cm-s-obsidian span.cm-quote.cm-comment {
     color: var(--grotto-comment-color);
-}
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, 
-.markdown-rendered blockquote {
-    font-style: var(--grotto-blockquote-style);
-    justify-self: var(--grotto-blockquote-alignment);
-    text-align: var(--grotto-blockquote-alignment);
-}
-.markdown-rendered blockquote h1, 
-.markdown-rendered blockquote h2, 
-.markdown-rendered blockquote h3, 
-.markdown-rendered blockquote h4, 
-.markdown-rendered blockquote h5, 
-.markdown-rendered blockquote h6 {
-    justify-self: var(--grotto-blockquote-alignment);
 }
 /*Callout*/
 .callout, 
@@ -778,7 +767,7 @@ input[type="color"]::-webkit-color-swatch:hover {
     color: var(--grotto-statusbar-color);
 }
 .status-bar-item.mod-clickable:hover {
-    color: var(--grotto-accent-1);
+    color: var(--grotto-statusbar-color-hover);
 }
 /*Toggles*/
 .checkbox-container, 
@@ -911,11 +900,31 @@ th,
     stroke: var(--grotto-canvas-path-color);
     fill: var(--grotto-canvas-path-color);
 }
+/*Graphs*/
+.graph-view.color-line {
+  color: var(--graph-line);
+  opacity: 0.4;
+}
+.graph-controls, 
+.graph-controls:not(.is-close), 
+.graph-controls.is-close {
+    color: var(--text-normal);
+    background-color: var(--grotto-graph-controls-background-color);
+    border: 1px solid var(--grotto-graph-controls-border-color);
+    border-radius: var(--grotto-graph-controls-radius);
+    box-shadow: none;
+}
+.workspace-split:not(.mod-root) .graph-controls.is-close {
+    color: var(--grotto-graph-sidebar-controls-color);
+    background-color: var(--grotto-graph-sidebar-controls-background-color);
+    border-color: var(--grotto-graph-sidebar-controls-border-color);
+    --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
+}
 /*Calendar Plugin*/
 #calendar-container {
     --color-arrow: var(--grotto-calendar-color);
     background-color: var(--grotto-calendar-background-color);
-    border: 1px solid var(--grotto-calendar-border-color);
+    border: var(--grotto-calendar-border-width) solid var(--grotto-calendar-border-color);
     width: 100%;
     padding: 0px;
     --interactive-hover: var(--grotto-calendar-color-hover);
@@ -928,7 +937,7 @@ th,
     border-radius: 0px;
 }
 #calendar-container .weekend:has(+ .weekend) {
-    border-left: 1px solid var(--grotto-calendar-weekend-border-color);
+    border-left: var(--grotto-calendar-weekend-border-width) solid var(--grotto-calendar-weekend-border-color);
 }
 #calendar-container .day.active {
     color: var(--grotto-calendar-color);
@@ -953,6 +962,7 @@ th,
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-dayofweek-background-color);
     color: var(--grotto-calendar-dayofweek-color);
+    border-top: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
     border-bottom: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
     min-width: 0px;
 }
@@ -1185,26 +1195,6 @@ body:not(.is-phone) .base-toolbar-sort-item {
     border-radius: var(--grotto-notice-radius);
     box-shadow: none;
 }
-/*Graphs*/
-.graph-view.color-line {
-  color: var(--graph-line);
-  opacity: 0.4;
-}
-.graph-controls, 
-.graph-controls:not(.is-close), 
-.graph-controls.is-close {
-    color: var(--text-normal);
-    background-color: var(--grotto-graph-controls-background-color);
-    border: 1px solid var(--grotto-graph-controls-border-color);
-    border-radius: var(--grotto-graph-controls-radius);
-    box-shadow: none;
-}
-.workspace-split:not(.mod-root) .graph-controls.is-close {
-    color: var(--grotto-graph-sidebar-controls-color);
-    background-color: var(--grotto-graph-sidebar-controls-background-color);
-    border-color: var(--grotto-graph-sidebar-controls-border-color);
-    --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
-}
 /*Suggestions*/
 .suggestion-container, 
 .is-mobile .suggestion-container {
@@ -1274,39 +1264,6 @@ input.prompt-input:focus-visible,
 }
 .tree-item-self {
     border-radius: 0px;
-}
-/*Mobile Drawer Header*/
-.is-phone .workspace-drawer-header, 
-.is-phone .workspace-drawer-header-info, 
-.is-mobile .workspace-drawer-header-name-text {
-    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
-    color: var(--grotto-mobile-drawer-header-color);
-    background-color: var(--grotto-mobile-drawer-header-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header.mobile-tap {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
-.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-    --divider-width: 0px;
-}
-.workspace-drawer-active-tab-icon, 
-.workspace-drawer-active-tab-title, 
-.clickable-icon.workspace-drawer-active-tab-chevron {
-    color: var(--grotto-mobile-drawer-header-active-color);
-}
-.mod-right-split .markdown-preview-view, 
-.mod-left-split .markdown-preview-view, 
-.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
-.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-}
-.workspace-drawer-active-tab-container {
-    --text-normal: var(--grotto-day-1);
 }
 /*Title Bar*/
 .titlebar-button {
@@ -1392,7 +1349,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
-    background-color: var(--grotto-background-tertiary);
+    background-color: var(--grotto-tab-header-inactive-background-color);
     padding-top: 4px;
     border-top: 8px solid var(--background-secondary);
     border-bottom: 1px solid var(--grotto-tab-header-border-color);
@@ -1462,18 +1419,6 @@ select,
     border-radius: var(--grotto-dropdown-radius);
     box-shadow: none;
 }
-/*Sliders*/
-input[type='range'] {
-    border-radius: 0px;
-    background-color: var(--grotto-accent-1);
-}
-input[type='range']::-webkit-slider-thumb,
-input[type='range']::-webkit-slider-thumb:hover,
-input[type='range']::-webkit-slider-thumb:active {
-    background-color: var(--grotto-slider-background-color);
-    border: 1px solid var(--grotto-slider-border-color);
-    box-shadow: none;
-}
 /*Scrollbars*/
 .is-android {
   --scrollbar-border-width: 3px;
@@ -1538,7 +1483,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     overflow-y: auto;
     margin: 0px 12px 0px 12px;
     padding: 0px;
-    height: calc(var(--grotto-toolbar-rows) * 32px);
+    height: calc(var(--grotto-toolbar-rows) * 33px);
     border: 1px solid var(--grotto-toolbar-border-color);
 }
 .mobile-toolbar::-webkit-scrollbar {
@@ -1580,12 +1525,38 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     --mobile-sidebar-background: var(--background-secondary);
     --background-modifier-form-field: transparent;
 }
-/*Selection*/
-select,
-select:hover,
-select:focus {
-    color: var(--grotto-selection-color);
-    background-color: var(--grotto-selection-background-color);
+/*Mobile Drawer Header*/
+.is-phone .workspace-drawer-header, 
+.is-phone .workspace-drawer-header-info, 
+.is-mobile .workspace-drawer-header-name-text {
+    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
+    color: var(--grotto-mobile-drawer-header-color);
+    background-color: var(--grotto-mobile-drawer-header-background-color);
+}
+.is-phone .workspace-drawer-active-tab-header {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-drawer-active-tab-header.mobile-tap {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
+.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    --divider-width: 0px;
+}
+.workspace-drawer-active-tab-icon, 
+.workspace-drawer-active-tab-title, 
+.clickable-icon.workspace-drawer-active-tab-chevron {
+    color: var(--grotto-mobile-drawer-header-active-color);
+}
+.mod-right-split .markdown-preview-view, 
+.mod-left-split .markdown-preview-view, 
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+}
+.workspace-drawer-active-tab-container {
+    --text-normal: var(--grotto-day-1);
 }
 /*Navigate Files*/
 .nav-file-tag {
@@ -1702,73 +1673,12 @@ hr {
     border-color: var(--text-normal);
     border-width: 1px;
 }
-/*Inputs*/
-input[type=number],
-input[type=number]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=text],
-input[type=text]:hover {
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.prompt input[type=text],
-.prompt input[type=text]:hover {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=search],
-input[type=search]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.global-search-input-container.search-input-container input, 
-.global-search-input-container.search-input-container input:hover {
-    color: var(--grotto-day-1);
-    background-color: var(--background-secondary);
-    border: 1px solid var(--grotto-day-1);
-    caret-color: currentColor;
-}
-.search-result-file-match {
-    background-color: var(--grotto-background-tertiary);
-}
-.search-result-file-matched-text {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-}
-input[type='date'], 
-input[type='date']:hover, 
-input[type='datetime-local'], 
-input[type='datetime-local']:hover, 
-input[type='email'],
-input[type='email']:hover,
-input[type='password'], 
-input[type='password']:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input.metadata-input-text:hover,
-textarea.webviewer-adblock-lists {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
+/*Selection*/
+select,
+select:hover,
+select:focus {
+    color: var(--grotto-selection-color);
+    background-color: var(--grotto-selection-background-color);
 }
 /*Search Suggestion*/
 .suggestion-container.mod-property-key .suggestion-item {
@@ -2099,52 +2009,87 @@ body:not(.is-ios):not(.is-android) .metadata-property-value input[type='datetime
     background-color: var(--grotto-tag-background-color);
     color: var(--grotto-tag-color);
 }
-/*White Sidebars*/
-.sidebar-preset {
-    --background-secondary: var(--background-primary);
-    --grotto-progress-border-color: var(--text-normal);
-    --grotto-progress-background-color: var(--text-normal);
-    --grotto-calendar-color: var(--text-normal);
-    --grotto-calendar-today-background-color: var(--text-normal);
-    --grotto-titlebar-color: var(--text-normal);
-    --grotto-tab-switcher-color: var(--text-normal);/*Needs Verification*/
-    --grotto-nav-tag-color: var(--background-secondary);
-    --grotto-nav-tag-background-color: var(--text-normal);
-    --grotto-nav-title-color: var(--text-normal);
-    --grotto-nav-title-color-active: var(--text-normal);
-    --grotto-nav-title-border-color: var(--text-normal);
-    --tab-text-color-focused: var(--text-normal);
-    --tab-text-color: var(--text-normal);
-    --grotto-search-suggestion-color: var(--text-normal);
-    --grotto-search-suggestion-border-color: var(--text-normal);
-    --grotto-search-suggestion-icon-color: var(--text-normal);
-    --grotto-settings-color: var(--text-normal);
-    --grotto-settings-color-active: var(--text-normal);
-    --grotto-settings-border-color: var(--text-normal);
-    --grotto-settings-background-color: var(--background-primary);
-    --grotto-tab-header-icon-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-border-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-color: var(--text-normal);
-    --grotto-mobile-drawer-header-background-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-color: var(--background-secondary);
-    --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
-    --grotto-rename-color: var(--text-normal);
-    --grotto-rename-background-color: var(--background-secondary);
-    --grotto-properties-color: var(--text-normal);
-    --grotto-properties-tag-color: var(--background-secondary);
-    --grotto-tab-header-border-width: 1px;
-    --grotto-split-border-color: var(--text-normal);
-    --grotto-resize-handle-color: var(--text-normal);
+/*Inputs*/
+input[type=number],
+input[type=number]:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
 }
-/*Alternate Calendar Style*/
-.calendar-preset {
-    --grotto-calendar-border-color: transparent;
-    --grotto-calendar-dayofweek-color: var(--grotto-calendar-color);
-    --grotto-calendar-dayofweek-background-color: transparent;
-    --grotto-calendar-weekend-border-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-border-width: 1px;
+input[type=text],
+input[type=text]:hover {
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+.prompt input[type=text],
+.prompt input[type=text]:hover {
+    color: var(--background-primary);
+    background-color: var(--text-normal);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input[type=search],
+input[type=search]:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+.global-search-input-container.search-input-container input, 
+.global-search-input-container.search-input-container input:hover {
+    color: var(--grotto-search-suggestion-color);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+    caret-color: currentColor;
+}
+.search-result-file-match {
+    background-color: var(--grotto-background-tertiary);
+}
+.search-result-file-matched-text {
+    color: var(--text-normal);
+    background-color: var(--grotto-accent-1);
+}
+input[type='date'], 
+input[type='date']:hover, 
+input[type='datetime-local'], 
+input[type='datetime-local']:hover, 
+input[type='email'],
+input[type='email']:hover,
+input[type='password'], 
+input[type='password']:hover {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: 0px;
+}
+input.metadata-input-text:hover,
+textarea.webviewer-adblock-lists {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+}
+/*Sliders*/
+input[type='range'] {
+    border-radius: 0px;
+    background-color: var(--grotto-accent-1);
+    border: 1px solid var(--grotto-slider-border-color);
+    height: 4px;
+}
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+    background-color: var(--grotto-slider-background-color);
+    border: 1px solid var(--grotto-slider-border-color);
+    box-shadow: none;
 }
 /*Presets*/
 /*Absol*/
@@ -2495,6 +2440,42 @@ body.preset-zacian {
     --grotto-night-3: hsl(200, 80%, 56%);
     --grotto-accent-1: hsl(5, 60%, 60%);
 }
+/*Alternate Calendar Style*/
+.calendar-preset {
+    --grotto-calendar-border-color: transparent;
+    --grotto-calendar-dayofweek-color: var(--grotto-calendar-color);
+    --grotto-calendar-dayofweek-background-color: transparent;
+    --grotto-calendar-weekend-border-color: var(--grotto-accent-1);
+    --grotto-calendar-dayofweek-border-width: 1px;
+}
+/*Alternate Sidebars*/
+.theme-light.sidebar-preset {
+    --background-secondary: var(--grotto-day-2);
+    --grotto-nav-title-color: var(--grotto-night-1);
+    --grotto-nav-title-border-color: var(--grotto-night-1);
+    --grotto-calendar-color: var(--grotto-night-1);
+    --grotto-calendar-border-color: transparent;
+    --grotto-calendar-today-background-color: var(--grotto-night-1);
+    --grotto-titlebar-color: var(--text-normal);
+    --grotto-tab-header-icon-color: var(--text-normal);
+    --grotto-tab-header-border-color: transparent;
+    --grotto-tab-header-inactive-background-color: var(--grotto-day-3);
+    --grotto-graph-sidebar-controls-color: var(--text-normal);
+    --grotto-graph-sidebar-controls-border-color: var(--text-normal);
+    --grotto-toolbar-color: var(--text-normal);
+    --grotto-toolbar-background-color: var(--background-secondary);
+    --grotto-toolbar-border-color: var(--text-normal);
+    --grotto-navbar-color: var(--text-normal);
+    --grotto-navbar-background-color: var(--background-secondary);
+    --grotto-navbar-border-color: var(--text-normal);
+    --grotto-search-suggestion-color: var(--text-normal);
+    --grotto-search-suggestion-border-color: var(--text-normal);
+    --grotto-settings-color: var(--text-normal);
+    --grotto-settings-border-color: var(--text-normal);
+    --grotto-statusbar-color: var(--text-normal);
+    --grotto-statusbar-background-color: var(--grotto-background-tertiary);
+    --grotto-statusbar-border-color: var(--text-normal);
+}
 /* Style Settings Support */
 .style-settings-empty {
     background-color: var(--background-primary);
@@ -2586,7 +2567,8 @@ settings:
                 value: preset-zacian
     -
         id: sidebar-preset
-        title: Sidebar Background
+        title: Sidebar Style
+        description: Enable to use an alternate sidebar style for light mode
         type: class-toggle
 */
 /* @settings
@@ -2607,8 +2589,12 @@ settings:
         id: file-line-width
         title: File Line Width
         description: Adjust the width of the viewable lines of text
-        type: variable-text
-        default: 700px
+        type: variable-number-slider
+        format: px
+        default: 700
+        min: 200
+        max: 1000
+        step: 50
 */
 /* @settings
 name: Table Controls
@@ -2702,8 +2688,12 @@ settings:
     -
         id: embed-max-height
         title: Embed Max Height
-        type: variable-text
-        default: 4000px
+        type: variable-number-slider
+        format: px
+        default: 4000
+        min: 400
+        max: 8000
+        step: 100
 */
 /* @settings
 name: Tag Controls
@@ -2759,6 +2749,19 @@ settings:
         id: calendar-preset
         title: Alternate Calendar Style
         type: class-toggle
+    -
+        id: grotto-calendar-weekend-border-width
+        title: Calendar Weekend Seprator
+        description: Enable to separate the weekend with a border
+        type: variable-select
+        default: 0px
+        options:
+            -
+                label: Disabled
+                value: 0px
+            -
+                label: Enabled
+                value: 1px
 */
 /* @settings
 name: Privacy Controls
@@ -2767,8 +2770,8 @@ collapsed: false
 settings:
     -
         id: grotto-blur
-        title: Blurred View
-        description: Enable to blur everything from prying eyes (This setting will always be at the BOTTOM of this menu)
+        title: Blur
+        description: Enable to blur everything from prying eyes
         type: variable-select
         default: 0px
         options:
@@ -2779,19 +2782,3 @@ settings:
                 label: Disabled
                 value: 0px
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
