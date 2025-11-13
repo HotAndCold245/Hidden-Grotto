@@ -256,7 +256,7 @@ body {
     --grotto-calendar-dayofweek-color: var(--grotto-night-1);
     --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
     --grotto-calendar-weekend-border-color: var(--grotto-day-1);
-    --grotto-calendar-weekend-border-width: 0px;
+    --grotto-calendar-weekend-border-width: 1px;
     --grotto-calendar-dayofweek-border-width: 1px;
     /*Bases*/
     --grotto-text-icon-color: var(--text-normal);
@@ -962,8 +962,8 @@ th,
 #calendar-container th.svelte-pcimu8 {
     background-color: var(--grotto-calendar-dayofweek-background-color);
     color: var(--grotto-calendar-dayofweek-color);
-    border-top: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
-    border-bottom: var(--grotto-calendar-dayofweek-border-width) solid var(--grotto-calendar-weekend-border-color);
+    border-top: 1px solid var(--grotto-calendar-border-color);
+    border-bottom: 1px solid var(--grotto-calendar-border-color);
     min-width: 0px;
 }
 /*Bases*/
@@ -2440,23 +2440,15 @@ body.preset-zacian {
     --grotto-night-3: hsl(200, 80%, 56%);
     --grotto-accent-1: hsl(5, 60%, 60%);
 }
-/*Alternate Calendar Style*/
-.calendar-preset {
-    --grotto-calendar-border-color: transparent;
-    --grotto-calendar-dayofweek-color: var(--grotto-calendar-color);
-    --grotto-calendar-dayofweek-background-color: transparent;
-    --grotto-calendar-weekend-border-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-border-width: 1px;
-}
 /*Alternate Sidebars*/
 .theme-light.sidebar-preset {
     --background-secondary: var(--grotto-day-2);
-    --grotto-nav-title-color: var(--grotto-night-1);
-    --grotto-nav-title-border-color: var(--grotto-night-1);
-    --grotto-calendar-color: var(--grotto-night-1);
-    --grotto-calendar-border-color: var(--grotto-night-1);
-    --grotto-calendar-today-background-color: var(--grotto-night-1);
-    --grotto-calendar-weekend-border-color: var(--grotto-night-1);
+    --grotto-nav-title-color: var(--text-normal);
+    --grotto-nav-title-border-color: var(--text-normal);
+    --grotto-calendar-color: var(--text-normal);
+    --grotto-calendar-border-color: var(--text-normal);
+    --grotto-calendar-today-background-color: var(--text-normal);
+    --grotto-calendar-weekend-border-color: var(--text-normal);
     --grotto-titlebar-color: var(--text-normal);
     --grotto-tab-header-icon-color: var(--text-normal);
     --grotto-tab-header-border-color: transparent;
@@ -2747,10 +2739,6 @@ id: grotto-calendar-plugin-controls
 collapsed: false
 settings:
     -
-        id: calendar-preset
-        title: Alternate Calendar Style
-        type: class-toggle
-    -
         id: grotto-calendar-weekend-border-width
         title: Calendar Weekend Seprator
         description: Enable to separate the weekend with a border
@@ -2783,5 +2771,3 @@ settings:
                 label: Disabled
                 value: 0px
 */
-
-
