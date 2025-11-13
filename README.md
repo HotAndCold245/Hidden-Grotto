@@ -116,21 +116,7 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.9
+##### V1.4.0
 - Improved inverted sidebar style
-- Added borders to scrollbars
-- Updated some color palettes
-- Fixes for latest obsidian update
-- Removed presets temporarily - Cheren, Dawn, Steelix
-- New settings option to blur everything for privacy
-- Bases tags in cards view are now scrollable on mobile
-- Minor bases improvements on mobile
-- Removed `--grotto-accent-2` as a variable in favor of `filter: brightness(104%)`
-- Changed button and dropdown menu hover appearance
-- Added alternate blockquote style
-- Added preset - Aggron
-- Improved codeblock syntax visibility
-- Improved properties view
-- Added alternate Calendar Plugin style
-- Added option to invert sidebar color
-- Added preset - Whimsicott
+- Added option to separate weekends in the Calendar plugin with a border
+- Updated some of the Style Settings options
