@@ -30,7 +30,6 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Absol](https://github.com/user-attachments/assets/16c87b65-0ab2-4341-b272-96bc0f6b63ee)
 ![Aegislash](https://github.com/user-attachments/assets/489987c0-ef0c-43a8-9fa3-80091a951265)
 ![Aggron](https://github.com/user-attachments/assets/2167f4d8-fdf4-438d-9b61-9f542dfbea2f)
-![Alola](https://github.com/user-attachments/assets/e5ae3e72-020d-46ca-ac9f-813b223e3610)
 ![Calyrex](https://github.com/user-attachments/assets/593c8a2d-f6fe-4aef-97b2-ba822de2733d)
 ![Clobbopus](https://github.com/user-attachments/assets/2515dcd0-f700-46e7-bbf8-0408bfbc2ff4)
 ![Darkrai](https://github.com/user-attachments/assets/58a00b23-7931-41c4-ab08-b11c90217748)
@@ -43,7 +42,6 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Scolipede](https://github.com/user-attachments/assets/e852eeaa-f526-46b8-ac5e-5d24dfaa1d39)
 ![Skeledirge](https://github.com/user-attachments/assets/9cd44a27-6d6a-46fd-b20d-eed983640383)
 ![Swampert](https://github.com/user-attachments/assets/5c9eff61-53c4-4dfe-b9bb-b1a610dfd6f9)
-![Unova](https://github.com/user-attachments/assets/dc194375-3ca1-4f2d-90fa-bc1b0f27e5d0)
 ![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
 ![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
 ![Whimsicott](https://github.com/user-attachments/assets/7c18a816-3e85-4871-b79f-9cbfc4da4d13)
@@ -116,7 +114,9 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.1
+##### V1.4.2
+- Added presets - Ice Rider Calyrex, Pirouette Meloetta, Shadow Rider Calyrex
+- Removed presets - Alola, Calyrex, Unova
 - Improved inverted sidebar style
 - Added option to separate weekends in the Calendar plugin with a border
 - Updated some of the Style Settings options
