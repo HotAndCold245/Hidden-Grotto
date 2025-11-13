@@ -382,6 +382,7 @@ body {
     --divider-width: 0px;
     --border-width: 0px;
     --nav-indentation-guide-width: 0px;
+    --nav-tag-color-active: var(--grotto-nav-tag-color);
     --vault-profile-color: var(--grotto-nav-title-color);
     --grotto-rename-color: var(--grotto-night-1);
     --grotto-rename-background-color: var(--grotto-day-1);
@@ -1543,6 +1544,12 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
     --divider-width: 0px;
 }
+.is-phone .workspace-drawer.mod-right {
+    border-left: 1px solid var(--text-normal);
+}
+.is-phone .workspace-drawer.mod-left {
+    border-right: 1px solid var(--text-normal);
+}
 .workspace-drawer-active-tab-icon, 
 .workspace-drawer-active-tab-title, 
 .clickable-icon.workspace-drawer-active-tab-chevron {
@@ -2134,62 +2141,6 @@ body.preset-aggron {
     --grotto-night-3: hsl(0, 0%, 50%);
     --grotto-accent-1: hsl(0, 0%, 58%);
 }
-/*Alola*/
-.theme-light.preset-alola {
-    --accent-h: 48;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 30%);
-    --grotto-night-3: hsl(0, 0%, 42%);
-    --grotto-accent-1: hsl(48, 60%, 50%);
-}
-.theme-dark.preset-alola, 
-.is-mobile.theme-dark.preset-alola {
-    --accent-h: 48;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(260, 40%, 16%);
-    --grotto-night-1: hsl(260, 40%, 24%);
-    --grotto-night-2: hsl(260, 40%, 32%);
-    --grotto-night-3: hsl(260, 40%, 40%);
-    --grotto-accent-1: hsl(48, 40%, 50%);
-}
-/*Calyrex*/
-.theme-light.preset-calyrex {
-    --accent-h: 210;
-    --accent-s: 20%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(160, 60%, 96%);
-    --grotto-day-2: hsl(160, 60%, 72%);
-    --grotto-day-3: hsl(160, 60%, 60%);
-    --grotto-night-0: hsl(210, 10%, 12%);
-    --grotto-night-1: hsl(210, 10%, 18%);
-    --grotto-night-2: hsl(210, 10%, 36%);
-    --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(180, 20%, 60%);
-}
-.theme-dark.preset-calyrex, 
-.is-mobile.theme-dark.preset-calyrex {
-    --accent-h: 260;
-    --accent-s: 44%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(160, 60%, 96%);
-    --grotto-day-2: hsl(160, 60%, 72%);
-    --grotto-day-3: hsl(160, 60%, 60%);
-    --grotto-night-0: hsl(260, 0%, 12%);
-    --grotto-night-1: hsl(260, 0%, 18%);
-    --grotto-night-2: hsl(260, 0%, 26%);
-    --grotto-night-3: hsl(260, 0%, 36%);
-    --grotto-accent-1: hsl(260, 44%, 50%);
-}
 /* Darkrai */
 body.preset-darkrai {
     --accent-h: 5;
@@ -2203,6 +2154,20 @@ body.preset-darkrai {
     --grotto-night-2: hsl(0, 0%, 32%);
     --grotto-night-3: hsl(0, 0%, 40%);
     --grotto-accent-1: hsl(5, 60%, 50%);
+}
+/*Ice Rider Calyrex*/
+body.preset-ice-rider-calyrex {
+    --accent-h: 160;
+    --accent-s: 50%;
+    --accent-l: 44%;
+    --grotto-day-1: hsl(200, 20%, 96%);
+    --grotto-day-2: hsl(200, 20%, 72%);
+    --grotto-day-3: hsl(200, 20%, 60%);
+    --grotto-night-0: hsl(210, 10%, 14%);
+    --grotto-night-1: hsl(210, 10%, 20%);
+    --grotto-night-2: hsl(210, 10%, 36%);
+    --grotto-night-3: hsl(210, 10%, 48%);
+    --grotto-accent-1: hsl(160, 50%, 50%);
 }
 /*Lucario*/
 body.preset-lucario {
@@ -2219,32 +2184,18 @@ body.preset-lucario {
     --grotto-accent-1: hsl(0, 60%, 60%);
 }
 /*Meloetta*/
-.theme-light.preset-meloetta {
+.preset-meloetta {
     --accent-h: 160;
     --accent-s: 40%;
     --accent-l: 40%;
-    --grotto-day-1: hsl(120, 50%, 96%);
-    --grotto-day-2: hsl(160, 50%, 80%);
-    --grotto-day-3: hsl(160, 40%, 60%);
+    --grotto-day-1: hsl(110, 40%, 92%);
+    --grotto-day-2: hsl(110, 40%, 80%);
+    --grotto-day-3: hsl(110, 40%, 60%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40,6%, 32%);
-    --grotto-accent-1: hsl(160, 40%, 40%);
-}
-.theme-dark.preset-meloetta, 
-.is-mobile.theme-dark.preset-meloetta {
-    --accent-h: 10;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(10, 10%, 90%);
-    --grotto-day-2: hsl(10, 10%, 72%);
-    --grotto-day-3: hsl(10, 10%, 60%);
-    --grotto-night-0: hsl(40, 6%, 12%);
-    --grotto-night-1: hsl(40, 6%, 16%);
-    --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40,6%, 32%);
-    --grotto-accent-1: hsl(10, 50%, 50%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(160, 40%, 44%);
 }
 /*Noivern*/
 body.preset-noivern {
@@ -2264,6 +2215,20 @@ body.preset-noivern {
     --text-normal: var(--grotto-night-0);
     --text-muted: var(--grotto-night-1);
     --text-faint: var(--grotto-night-2);
+}
+/*Pirouette Meloetta*/
+.preset-pirouette-meloetta {
+    --accent-h: 10;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(10, 10%, 90%);
+    --grotto-day-2: hsl(10, 10%, 82%);
+    --grotto-day-3: hsl(10, 10%, 70%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(10, 50%, 50%);
 }
 /*Poltchageist*/
 body.preset-poltchageist {
@@ -2319,8 +2284,8 @@ body.preset-rayquaza {
 /*Scolipede*/
 .preset-scolipede {
     --accent-h: 340;
-    --accent-s: 50%;
-    --accent-l: 40%;
+    --accent-s: 40%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(240, 10%, 84%);
     --grotto-day-2: hsl(240, 10%, 72%);
     --grotto-day-3: hsl(240, 10%, 64%);
@@ -2328,7 +2293,21 @@ body.preset-rayquaza {
     --grotto-night-1: hsl(340, 10%, 18%);
     --grotto-night-2: hsl(340, 10%, 24%);
     --grotto-night-3: hsl(340, 10%, 32%);
-    --grotto-accent-1: hsl(340, 50%, 40%);
+    --grotto-accent-1: hsl(340, 40%, 50%);
+}
+/*Shadow Rider Calyrex*/
+body.preset-shadow-rider-calyrex {
+    --accent-h: 250;
+    --accent-s: 50%;
+    --accent-l: 64%;
+    --grotto-day-1: hsl(250, 20%, 96%);
+    --grotto-day-2: hsl(250, 20%, 72%);
+    --grotto-day-3: hsl(250, 20%, 60%);
+    --grotto-night-0: hsl(250, 10%, 14%);
+    --grotto-night-1: hsl(250, 10%, 20%);
+    --grotto-night-2: hsl(250, 10%, 36%);
+    --grotto-night-3: hsl(250, 10%, 48%);
+    --grotto-accent-1: hsl(250, 50%, 64%);
 }
 /*Skeledirge*/
 .preset-skeledirge {
@@ -2361,29 +2340,6 @@ body.preset-swampert {
     --grotto-night-3: hsl(210, 30%, 44%);
     --grotto-accent-1: hsl(30, 60%, 50%);
 }
-/*Unova*/
-body.preset-unova {
-    --grotto-day-1: hsl(0, 0%, 87%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 24%);
-    --grotto-night-3: hsl(0, 0%, 32%);
-}
-.theme-light.preset-unova {
-    --accent-h: 24;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(24, 60%, 50%);
-}
-.theme-dark.preset-unova, 
-.is-mobile.theme-dark.preset-unova {
-    --accent-h: 200;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-accent-1: hsl(200, 60%, 50%);
-}
 /* Ursaluna */
 .preset-ursaluna {
     --accent-h: 47;
@@ -2414,16 +2370,16 @@ body.preset-volcarona {
 }
 /*Whimsicott*/
 body.preset-whimsicott {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
+    --accent-h: 120;
+    --accent-s: 40%;
+    --accent-l: 46%;
     --grotto-day-1: hsl(40, 30%, 82%);
     --grotto-day-2: hsl(40, 30%, 76%);
     --grotto-day-3: hsl(40, 30%, 70%);
-    --grotto-night-0: hsl(30, 40%, 24%);
-    --grotto-night-1: hsl(30, 40%, 30%);
-    --grotto-night-2: hsl(30, 40%, 36%);
-    --grotto-night-3: hsl(30, 40%, 42%);
+    --grotto-night-0: hsl(30, 40%, 16%);
+    --grotto-night-1: hsl(30, 40%, 24%);
+    --grotto-night-2: hsl(30, 40%, 32%);
+    --grotto-night-3: hsl(30, 40%, 40%);
     --grotto-accent-1: hsl(120, 40%, 46%);
 }
 /*Zacian*/
@@ -2441,8 +2397,7 @@ body.preset-zacian {
     --grotto-accent-1: hsl(5, 60%, 60%);
 }
 /*Alternate Sidebars*/
-.theme-light.sidebar-preset {
-    --background-secondary: var(--grotto-day-2);
+.sidebar-preset {
     --grotto-nav-title-color: var(--text-normal);
     --grotto-nav-title-border-color: var(--text-normal);
     --grotto-calendar-color: var(--text-normal);
@@ -2451,8 +2406,8 @@ body.preset-zacian {
     --grotto-calendar-weekend-border-color: var(--text-normal);
     --grotto-titlebar-color: var(--text-normal);
     --grotto-tab-header-icon-color: var(--text-normal);
-    --grotto-tab-header-border-color: transparent;
-    --grotto-tab-header-inactive-background-color: var(--grotto-day-3);
+    --grotto-tab-header-border-color: var(--grotto-background-tertiary);
+    --grotto-tab-header-inactive-background-color: var(--background-primary);
     --grotto-graph-sidebar-controls-color: var(--text-normal);
     --grotto-graph-sidebar-controls-border-color: var(--text-normal);
     --grotto-toolbar-color: var(--text-normal);
@@ -2470,6 +2425,13 @@ body.preset-zacian {
     --grotto-statusbar-border-color: var(--text-normal);
     --grotto-mobile-drawer-header-color: var(--text-normal);
     --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
+}
+.theme-light.sidebar-preset {
+    --background-secondary: var(--grotto-background-tertiary);
+}
+.theme-dark.sidebar-preset, 
+.is-mobile.theme-dark.sidebar-preset {
+    --background-secondary: var(--grotto-night-0);
 }
 /* Style Settings Support */
 .style-settings-empty {
@@ -2507,17 +2469,14 @@ settings:
                 label: Aggron
                 value: preset-aggron
             -
-                label: Alola
-                value: preset-alola
-            -
-                label: Calyrex
-                value: preset-calyrex
-            -
                 label: Clobbopus
                 value: preset-clobbopus
             -
                 label: Darkrai
                 value: preset-darkrai
+            -
+                label: Ice Rider Calyrex
+                value: preset-ice-rider-calyrex
             -
                 label: Lucario
                 value: preset-lucario
@@ -2528,6 +2487,9 @@ settings:
                 label: Noivern
                 value: preset-noivern
             -
+                label: Pirouette Meloetta
+                value: preset-pirouette-meloetta
+            -
                 label: Poltchageist
                 value: preset-poltchageist
             -
@@ -2537,6 +2499,9 @@ settings:
                 label: Revavroom
                 value: preset-revavroom
             -
+                label: Shadow Rider Calyrex
+                value: preset-shadow-rider-calyrex
+            -
                 label: Skeledirge
                 value: preset-skeledirge
             -
@@ -2545,9 +2510,6 @@ settings:
             -
                 label: Swampert
                 value: preset-swampert
-            -
-                label: Unova
-                value: preset-unova
             -
                 label: Ursaluna
                 value: preset-ursaluna
@@ -2773,4 +2735,5 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
