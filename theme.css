@@ -2468,6 +2468,8 @@ body.preset-zacian {
     --grotto-statusbar-color: var(--text-normal);
     --grotto-statusbar-background-color: var(--grotto-background-tertiary);
     --grotto-statusbar-border-color: var(--text-normal);
+    --grotto-mobile-drawer-header-color: var(--text-normal);
+    --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
 }
 /* Style Settings Support */
 .style-settings-empty {
@@ -2771,3 +2773,4 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
