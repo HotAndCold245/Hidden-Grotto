@@ -2456,6 +2456,7 @@ body.preset-zacian {
     --grotto-calendar-color: var(--grotto-night-1);
     --grotto-calendar-border-color: transparent;
     --grotto-calendar-today-background-color: var(--grotto-night-1);
+    --grotto-calendar-weekend-border-color: transparent;
     --grotto-titlebar-color: var(--text-normal);
     --grotto-tab-header-icon-color: var(--text-normal);
     --grotto-tab-header-border-color: transparent;
@@ -2782,3 +2783,4 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
