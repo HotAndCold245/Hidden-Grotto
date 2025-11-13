@@ -116,7 +116,7 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.0
+##### V1.4.1
 - Improved inverted sidebar style
 - Added option to separate weekends in the Calendar plugin with a border
 - Updated some of the Style Settings options
