@@ -10,9 +10,9 @@ This theme is primarily designed for personal use. The base color palette is ins
 	- Callout titles now come with a border below it.
 	- Callouts icons are hidden but can be enabled again by setting `--grotto-callout-icon: auto`
 - Updated embeds
-	- Titles are hidden but can be enabled again by using `--grotto-embed-title: block` in a snippet.
+	- Titles are hidden but can be enabled again by setting `--grotto-embed-title: block`
 - Updated tables
-	- Cells can now be separated or collapsed by using `--grotto-table-border-style: separate` or `--grotto-table-border-style: collapse`
+	- Cells can now be separated or collapsed by setting `--grotto-table-border-style: separate` or `--grotto-table-border-style: collapse`
 	- Cell wrapping can be adjusted using `--grotto-table-cell-width`. Setting it to `fit-content` allows it to wrap around while `max-content` prevents cell wrapping. Optionally, a specific maximum width in px can be set
 - Mobile toolbar
 	- The maximum toolbar height (number of rows visible) can be adjusted by setting `--grotto-toolbar-rows` to the number of rows. If there are more tools than a row can hold while maximum height is set to 1, then the toolbar can be swiped up to access the rest of the tools. This is a change from the default behaviour of swiping to the left because it let's you see more of the tools at once. #Note : Setting the height to more rows than necessary to hold the active number of tools will cause the mobile toolbar to move further up than intended. 
@@ -116,7 +116,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.3.8
+##### V1.3.9
+- Improved inverted sidebar style
 - Added borders to scrollbars
 - Updated some color palettes
 - Fixes for latest obsidian update
