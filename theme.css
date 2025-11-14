@@ -1815,6 +1815,11 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     text-decoration-thickness: 2px;
     text-decoration-color: var(--grotto-accent-1);
 }
+.is-phone .vertical-tab-header-group-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--grotto-accent-1);
+}
 /*Modals*/
 .is-phone .modal-container.mod-dim .modal {
     border: 0px solid transparent;
@@ -2754,6 +2759,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
