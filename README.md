@@ -66,7 +66,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 <details>
 	<summary>Privacy</summary>
 
-![Blur](https://github.com/user-attachments/assets/96487b52-7682-425c-92f2-e544f75e49ba)
+![Blur](https://github.com/user-attachments/assets/18d4c412-cba2-4f0b-8046-972b4ea0b86d)
 
 </details>
 
@@ -87,10 +87,10 @@ This theme is primarily designed for personal use. The base color palette is ins
     --grotto-accent-1: hsl();
 }
  ```
-There are more variables to control minor things that can be found in the css file.
+There are more variables to control minor things that can be found in the css file. A markdown file with all the available variables is available in the theme's repository.
 
 Self-defined presets will automatically appear in the Hidden Grotto Controls plugin menu after restarting the app. 
-#Note : These will not appear in Style Settings menu since they are not added to the main theme.css. In order to make them appear in the settings, you can add the following section to your snippet and update the `hoenn` parts to the name of your preset.
+#Note : These will not appear in Style Settings menu since they are not added to the main theme.css. In order to make them appear in the Style Settings menu, you can add the following section to your snippet and update the `hoenn` parts to the name of your preset.
 ```
 /* @settings
 name: Personal Presets
@@ -114,7 +114,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.2
+##### V1.4.3
+- More improvements to sidebar
 - Added presets - Ice Rider Calyrex, Pirouette Meloetta, Shadow Rider Calyrex
 - Removed presets - Alola, Calyrex, Unova
 - Improved inverted sidebar style
