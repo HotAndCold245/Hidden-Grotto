@@ -838,7 +838,7 @@ th,
 }
 .cm-line:has(+ .cm-table-widget), 
 .cm-table-widget + .cm-line {
-    line-height: 2px;
+    line-height: 0px;
 }
 /*Dragging*/
 .drag-ghost {
@@ -920,6 +920,13 @@ th,
     background-color: var(--grotto-graph-sidebar-controls-background-color);
     border-color: var(--grotto-graph-sidebar-controls-border-color);
     --grotto-icon-color: var(--grotto-graph-sidebar-controls-color);
+}
+.graph-control-section {
+    border-bottom: 1px solid var(--grotto-graph-controls-border-color);
+}
+.graph-controls input[type='text'] {
+    background-color: var(--grotto-graph-controls-background-color);
+    border: 1px solid var(--grotto-graph-controls-border-color);
 }
 /*Calendar Plugin*/
 #calendar-container {
@@ -1350,6 +1357,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
+    --grotto-tab-header-icon-color: var(--text-normal);
     background-color: var(--grotto-tab-header-inactive-background-color);
     padding-top: 4px;
     border-top: 8px solid var(--background-secondary);
@@ -1727,15 +1735,20 @@ select:focus {
 .clickable-icon.search-results-result-count:hover {
     color: var(--grotto-search-suggestion-icon-color-hover);
 }
-.search-results-info .dropdown {
-    color: var(--grotto-search-suggestion-color);
-    border: 1px solid var(--text-faint);
-}
+.search-results-info .dropdown, 
 .search-results-info .dropdown:hover {
-    background-color: var(--grotto-night-1);
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
 }
 .tree-item-self:hover .tree-item-flair {
     color: var(--grotto-accent-1);
+}
+.suggestion-container.mod-search-suggestion {
+    border: none;
+}
+.suggestion-container.mod-search-suggestion .suggestion {
+    border: 1px solid currentColor;
 }
 /*Community Item*/
 .community-item {
@@ -2027,11 +2040,13 @@ input[type=number]:hover {
 }
 input[type=text],
 input[type=text]:hover {
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
+    background-color: transparent;
+    border: 1px solid currentColor;
     caret-color: currentColor;
     border-radius: 0px;
+}
+.metadata-property-value .multi-select-input {
+    --text-normal: var(--grotto-tag-background-color);
 }
 .prompt input[type=text],
 .prompt input[type=text]:hover {
@@ -2384,9 +2399,9 @@ body.preset-whimsicott {
 }
 /*Zacian*/
 body.preset-zacian {
-    --accent-h: 5;
-    --accent-s: 60%;
-    --accent-l: 60%;
+    --accent-h: 10;
+    --accent-s: 50%;
+    --accent-l: 56%;
     --grotto-day-1: hsl(30, 14%, 82%);
     --grotto-day-2: hsl(30, 14%, 76%);
     --grotto-day-3: hsl(30, 14%, 70%);
@@ -2394,7 +2409,10 @@ body.preset-zacian {
     --grotto-night-1: hsl(200, 80%, 32%);
     --grotto-night-2: hsl(200, 80%, 44%);
     --grotto-night-3: hsl(200, 80%, 56%);
-    --grotto-accent-1: hsl(5, 60%, 60%);
+    --grotto-accent-1: hsl(10, 50%, 56%);
+}
+.theme-light.preset-zacian {
+    --text-normal: var(--grotto-night-0);
 }
 /*Alternate Sidebars*/
 .sidebar-preset {
@@ -2425,6 +2443,7 @@ body.preset-zacian {
     --grotto-statusbar-border-color: var(--text-normal);
     --grotto-mobile-drawer-header-color: var(--text-normal);
     --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
+    --grotto-tab-switcher-color: var(--text-normal);
 }
 .theme-light.sidebar-preset {
     --background-secondary: var(--grotto-background-tertiary);
@@ -2735,5 +2754,6 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
