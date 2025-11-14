@@ -1,6 +1,6 @@
 This is a list of variables specifically defined by the theme. Other built-in variables have been modified but are not included in this list. 
 
-/*Preset*/
+# Preset
 --grotto-day-1
 --grotto-day-2
 --grotto-day-3
@@ -9,9 +9,11 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-night-2
 --grotto-night-3
 --grotto-accent-1
-/*Background*/
+
+# Background
 --grotto-background-tertiary
-/*Tags*/
+
+# Tags
 --grotto-tag-color
 --grotto-tag-border-color
 --grotto-tag-background-color
@@ -19,22 +21,29 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-tag-pointer-events
 --grotto-tag-size
 --grotto-tag-radius
-/*Text*/
+
+# Text
 --grotto-font-weight
-/*Bold*/
+
+# Bold
 --grotto-bold-color
 --grotto-bold-font-weight
-/*Italic*/
+
+# Italic
 --grotto-italic-color
 --grotto-italic-font-weight
-/*Strikethrough*/
+
+# Strikethrough
 --grotto-strikethrough-color
-/*Comment*/
+
+# Comment
 --grotto-comment-color
-/*Links*/
+
+# Links
 --grotto-link-color
 --grotto-link-weight
-/*Headers*/
+
+# Headers
 --grotto-header-size
 --grotto-header-line-height
 --grotto-header-font-weight
@@ -57,21 +66,26 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-header-color-6
 --grotto-header-background-color-6
 --grotto-header-border-color-6
-/*Blur*/
+
+# Blur
 --grotto-blur
-/*Redact*/
+
+# Redact
 --grotto-redacted
-/*Buttons*/
+
+# Buttons
 --grotto-button-color
 --grotto-button-background-color
 --grotto-button-border-color
 --grotto-button-radius
 --grotto-button-error-background
 --grotto-button-error-background-hover
-/*Checkboxes*/
+
+# Checkboxes
 --grotto-checkbox-border-color
 --grotto-checkbox-radius
-/*Callouts*/
+
+# Callouts
 --grotto-callout-color
 --grotto-callout-background-color
 --grotto-callout-border-color
@@ -79,7 +93,8 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-callout-radius
 --grotto-callout-icon
 --grotto-title-size
-/*Embeds*/
+
+# Embeds
 --grotto-embed-color
 --grotto-embed-background-color
 --grotto-embed-link-color
@@ -87,64 +102,69 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-embed-link-background-color
 --grotto-embed-title
 --grotto-embed-radius
-/*Codes*/
+
+# Codes
 --grotto-code-color
 --grotto-code-color-hover
 --grotto-code-background-color
 --grotto-code-border-color
 --grotto-code-radius
 --grotto-code-weight
-/*Status Bar*/
+
+# Status Bar
 --grotto-statusbar-color
 --grotto-statusbar-color-hover
 --grotto-statusbar-background-color
 --grotto-statusbar-border-color
 --grotto-statusbar-radius
-/*Toggles*/
+
+# Toggles
 --grotto-toggle-color
 --grotto-toggle-handle-border-color
 --grotto-toggle-background-color
 --grotto-toggle-background-color-hover
 --grotto-toggle-enabled-background-color
-/*Tooltips*/
+
+# Tooltips
 --grotto-tooltip-color
 --grotto-tooltip-background-color
 --grotto-tooltip-border-color
 --grotto-tooltip-radius
-/*Tables*/
+
+# Tables
 --grotto-table-cell-width
 --grotto-table-border-style
 --grotto-table-color
-/*Progress Bars*/
+
+# Progress Bars
 --grotto-progress-color
 --grotto-progress-border-color
 --grotto-progress-background-color
 --grotto-progress-radius
-/*Canvas*/
+
+# Canvas
 --grotto-canvas-color
 --grotto-canvas-path-color
 --grotto-canvas-background-color
 --grotto-canvas-controls-background-color
 --grotto-canvas-controls-border-color
 --grotto-canvas-controls-radius
-/*Graphs*/
+
+# Graphs
 --grotto-graph-controls-background-color
 --grotto-graph-controls-border-color
 --grotto-graph-controls-radius
 --grotto-graph-sidebar-controls-color
 --grotto-graph-sidebar-controls-border-color
 --grotto-graph-sidebar-controls-background-color
---graph-text
---graph-line
---graph-node
---graph-node-tag
---graph-node-attachment
-/*Notices*/
+
+# Notices
 --grotto-notice-color
 --grotto-notice-background-color
 --grotto-notice-border-color
 --grotto-notice-radius
-/*Calendar Plugin*/
+
+# Calendar Plugin
 --grotto-calendar-pointer-events
 --grotto-calendar-color
 --grotto-calendar-color-hover
@@ -158,7 +178,8 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-calendar-weekend-border-color
 --grotto-calendar-weekend-border-width
 --grotto-calendar-dayofweek-border-width
-/*Bases*/
+
+# Bases
 --grotto-text-icon-color
 --grotto-text-icon-color-hover
 --grotto-text-icon-background-color
@@ -172,19 +193,22 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-bases-cards-label-color
 --grotto-bases-cards-label-color-hover
 --grotto-bases-radius
-/*Suggestions*/
+
+# Suggestions
 --grotto-suggestion-color
 --grotto-suggestion-color-hover
 --grotto-suggestion-border-color
 --grotto-suggestion-background-color
 --grotto-suggestion-background-color-hover
 --grotto-suggestion-radius
-/* Command Prompt */
+
+#  Command Prompt 
 --grotto-prompt-color
 --grotto-prompt-color-hover
 --grotto-prompt-background-color
 --grotto-prompt-background-color-hover
-/*Title Bar*/
+
+# Title Bar
 --grotto-titlebar-color
 --grotto-titlebar-background-color
 --grotto-titlebar-background-color-hover
@@ -194,50 +218,60 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-tab-header-border-width
 --grotto-split-border-color
 --grotto-resize-handle-color
-/*Clickable Icons*/
+
+# Clickable Icons
 --grotto-icon-color
 --grotto-icon-color-hover
-/*Dropdowns*/
+
+# Dropdowns
 --grotto-dropdown-color
 --grotto-dropdown-background-color
 --grotto-dropdown-border-color
 --grotto-dropdown-radius
-/*Scrollbars*/
+
+# Scrollbars
 --scrollbar-width
 --scrollbar-radius
 --scrollbar-bg
 --scrollbar-thumb-bg
 --scrollbar-active-thumb-bg
 --scrollbar-border-width
-/*Mobile Quick Actions*/
+
+# Mobile Quick Actions
 --grotto-pull-color
 --grotto-pull-border-color
 --grotto-pull-background-color
 --grotto-pull-radius
-/*Mobile Navigation Bar*/
+
+# Mobile Navigation Bar
 --grotto-navbar-color
 --grotto-navbar-background-color
 --grotto-navbar-border-color
 --grotto-navbar-radius
---grotto-navbar-new-tab: none;
-/*Mobile Tab Switcher*/
+--grotto-navbar-new-tab
+
+# Mobile Tab Switcher
 --grotto-tab-switcher-color
-/*Mobile Toolbar*/
+
+# Mobile Toolbar
 --grotto-toolbar-rows
 --grotto-toolbar-color
 --grotto-toolbar-background-color
 --grotto-toolbar-border-color
 --grotto-toolbar-radius
-/*System Status*/
+
+# System Status
 --grotto-system-status-color
-/*Selection*/
+
+# Selection
 --grotto-selection-color
 --grotto-selection-background-color
-/*Mobile Drawer Header*/
+
+# Mobile Drawer Header
 --grotto-mobile-drawer-header-color
 --grotto-mobile-drawer-header-background-color
 --grotto-mobile-drawer-header-active-background-color
-/*Navigate Files*/
+# Navigate Files
 --grotto-nav-tag-color
 --grotto-nav-tag-background-color
 --grotto-nav-radius
@@ -248,20 +282,23 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-nav-title-border-color
 --grotto-rename-color
 --grotto-rename-background-color
-/*Menus*/
+
+# Menus
 --grotto-menu-color
 --grotto-menu-color-active
 --grotto-menu-background-color
 --grotto-menu-background-color-active
 --grotto-menu-border-color
-/*Search Suggestions*/
+
+# Search Suggestions
 --grotto-search-suggestion-color
 --grotto-search-suggestion-background-color
 --grotto-search-suggestion-background-color-hover
 --grotto-search-suggestion-border-color
 --grotto-search-suggestion-icon-color
 --grotto-search-suggestion-icon-color-hover
-/*Settings*/
+
+# Settings
 --grotto-settings-color
 --grotto-settings-color-hover
 --grotto-settings-color-active
@@ -269,9 +306,11 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-settings-background-color
 --grotto-settings-background-color-hover
 --grotto-settings-background-color-active
-/*Modals*/
+
+# Modals
 --grotto-modal-border-color
-/*Properties*/
+
+# Properties
 --grotto-metadata-radius
 --grotto-metadata-border-color
 --grotto-metadata-background-color
@@ -279,6 +318,7 @@ This is a list of variables specifically defined by the theme. Other built-in va
 --grotto-properties-view-caret-color
 --grotto-properties-color
 --grotto-properties-tag-color
-/*Sliders*/
+
+# Sliders
 --grotto-slider-border-color
 --grotto-slider-background-color
