@@ -114,7 +114,7 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.3
+##### V1.4.4
 - More improvements to sidebar
 - Added presets - Ice Rider Calyrex, Pirouette Meloetta, Shadow Rider Calyrex
 - Removed presets - Alola, Calyrex, Unova
