@@ -3,7 +3,7 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 # Features
 - Supports both **light** and **dark** mode
-- 21 colour palettes
+- 19 colour palettes
 	- Available through the Style Settings plugin.
 	- Also available through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
 - Updated callouts
@@ -45,7 +45,6 @@ This theme is primarily designed for personal use. The base color palette is ins
 ![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
 ![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
 ![Whimsicott](https://github.com/user-attachments/assets/7c18a816-3e85-4871-b79f-9cbfc4da4d13)
-![Zacian](https://github.com/user-attachments/assets/5001d860-c99d-44ab-8131-30755cf3acde)
 	
 </details>
 
@@ -114,10 +113,12 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.4
+##### V1.4.5
+- Added option to switch to accented tags
+- Search bar background fix
 - More improvements to sidebar
-- Added presets - Ice Rider Calyrex, Pirouette Meloetta, Shadow Rider Calyrex
-- Removed presets - Alola, Calyrex, Unova
+- Added presets - Ice Rider Calyrex, Pirouette Meloetta, Cryogonal
+- Removed presets - Alola, Calyrex, Unova, Zacian
 - Improved inverted sidebar style
 - Added option to separate weekends in the Calendar plugin with a border
 - Updated some of the Style Settings options
