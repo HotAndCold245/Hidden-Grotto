@@ -2832,6 +2832,11 @@ settings:
             -
                 label: Disabled
                 value: none
+    -
+        id: accented-tag
+        title: Tag Style
+        description: Enable to use accented tags
+        type: class-toggle
 */
 /* @settings
 name: Mobile Controls
@@ -2897,3 +2902,4 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
