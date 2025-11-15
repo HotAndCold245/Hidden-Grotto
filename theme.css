@@ -1,7 +1,5 @@
-/* V 1.4.0 */
-/*Clobbopus*/
-body, 
-body.preset-clobbopus {
+/*==== V 1.5.0 ====*/
+body {
     --accent-h: 16;
     --accent-s: 82%;
     --accent-l: 58%;
@@ -33,8 +31,7 @@ body.preset-clobbopus {
     --pdf-shadow: none;
     --pdf-thumbnail-shadow: none;
 }
-.theme-dark, 
-.is-mobile.theme-dark {
+.theme-dark, .is-mobile.theme-dark {
     --color-accent: var(--grotto-accent-1);
     --background-primary: var(--grotto-night-1);
     --background-primary-alt: var(--background-primary);
@@ -54,27 +51,27 @@ body.preset-clobbopus {
     --pdf-thumbnail-shadow: none;
 }
 body {
-    /*Common*/
+    /*==== COMMON ====*/
     --interactive-normal: var(--text-normal);
     --interactive-hover: var(--text-faint);
     --text-accent: var(--grotto-accent-1);
     --background-modifier-hover: transparent;
     --background-modifier-border: var(--text-faint);
     --background-modifier-border-focus: var(--text-normal);
-    /*Tags*/
+    /*==== TAGS ====*/
     --grotto-tag-color: var(--background-primary);
     --grotto-tag-border-color: transparent;
     --grotto-tag-background-color: var(--text-normal);
     --grotto-tag-border-width: 1.5px;
-    --grotto-tag-pointer-events: none;
-    --tag-padding-x: 0.4rem;
-    --tag-padding-y: 0.1rem;
-    --grotto-tag-size: 0.8rem;
     --grotto-tag-radius: 0rem;
-    --tag-size: var(--grotto-tag-size);
-    --tag-radius: var(--grotto-tag-radius);
+    --grotto-tag-size: 0.8rem;
+    --grotto-tag-pointer-events: none;
     --tag-border-width: var(--grotto-tag-border-width);
     --tag-border-color: var(--grotto-tag-border-color);
+    --tag-radius: var(--grotto-tag-radius);
+    --tag-size: var(--grotto-tag-size);
+    --tag-padding-x: 0.4rem;
+    --tag-padding-y: 0.1rem;
     /*Text*/
     --grotto-font-weight: 400;
     font-weight: var(--grotto-font-weight);
@@ -426,12 +423,8 @@ body {
     --grotto-slider-border-color: var(--grotto-night-0);
     --grotto-slider-background-color: var(--grotto-day-1);
 }
-/*Tags*/
-a.tag, 
-a.tag:hover, 
-.cm-hashtag, 
-.cm-hashtag:hover, 
-.cm-s-obsidian span.cm-quote.cm-hashtag {
+/*==== TAGS ====*/
+a.tag, a.tag:hover, .cm-hashtag, .cm-hashtag:hover, .cm-s-obsidian span.cm-quote.cm-hashtag {
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
     pointer-events: var(--grotto-tag-pointer-events);
@@ -439,21 +432,21 @@ a.tag:hover,
     caret-color: currentColor;
     vertical-align: middle;
 }
-/*Tags inside Headers*/
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
-.markdown-rendered h1 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
-.markdown-rendered h2 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
-.markdown-rendered h3 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
-.markdown-rendered h4 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
-.markdown-rendered h5 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag, 
-.markdown-rendered h6 a.tag {
+/*==== TAGS INSIDE HEADERS ====*/
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, .markdown-rendered h1 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, .markdown-rendered h2 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, .markdown-rendered h3 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, .markdown-rendered h4 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, .markdown-rendered h5 a.tag, 
+.cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag, .markdown-rendered h6 a.tag {
     font-size: 0.8rem !important;
     vertical-align: top;
+}
+/*==== ACCENTED TAGS ====*/
+.accented-tag {
+    --grotto-tag-border-color: var(--text-normal);
+    --grotto-tag-color: var(--grotto-day-1);
+    --grotto-tag-background-color: var(--grotto-accent-1);
 }
 /*Bold*/
 strong, 
@@ -2161,6 +2154,20 @@ body.preset-aggron {
     --grotto-night-3: hsl(0, 0%, 50%);
     --grotto-accent-1: hsl(0, 0%, 58%);
 }
+/* Clobbopus */
+.preset-clobbopus {
+    --accent-h: 16;
+    --accent-s: 82%;
+    --accent-l: 58%;
+    --grotto-day-1: hsl(33, 33%, 87%);
+    --grotto-day-2: hsl(33, 33%, 78%);
+    --grotto-day-3: hsl(33, 33%, 68%);
+    --grotto-night-0: hsl(240, 18%, 20%);
+    --grotto-night-1: hsl(240, 18%, 25%);
+    --grotto-night-2: hsl(240, 18%, 45%);
+    --grotto-night-3: hsl(240, 18%, 52%);
+    --grotto-accent-1: hsl(16, 82%, 58%);
+}
 /* Darkrai */
 body.preset-darkrai {
     --accent-h: 5;
@@ -2759,13 +2766,3 @@ settings:
                 label: Disabled
                 value: 0px
 */
-
-/* Accented Tag */
-.accented-tag {
-    --grotto-tag-border-color: var(--text-normal);
-    --grotto-tag-color: var(--grotto-day-1);
-    --grotto-tag-background-color: var(--grotto-accent-1);
-}
-
-
-
