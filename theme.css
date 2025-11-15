@@ -114,7 +114,7 @@ body {
     --grotto-header-border-color-2: var(--text-normal);
     --grotto-header-border-color-3: var(--text-normal);
     --grotto-header-border-color-4: var(--text-normal);
-    --grotto-header-border-color-5: transparent;
+    --grotto-header-border-color-5: var(--grotto-accent-1);
     --grotto-header-border-color-6: transparent;
     --grotto-header-background-color-1: var(--grotto-accent-1);
     --grotto-header-background-color-2: var(--grotto-accent-1);
@@ -669,7 +669,7 @@ a.mobile-tap,
 .cm-s-obsidian .cm-line.HyperMD-header-5 {
     color: var(--grotto-header-color-5);
     background-color: var(--grotto-header-background-color-5);
-    border: 1px solid var(--grotto-header-border-color-5);
+    border: 1px solid transparent;
     border-radius: var(--grotto-header-radius-5);
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -2902,4 +2902,5 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
