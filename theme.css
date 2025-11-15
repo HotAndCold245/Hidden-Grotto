@@ -63,12 +63,12 @@ body {
     --background-modifier-border-focus: var(--text-normal);
     /*Tags*/
     --grotto-tag-color: var(--background-primary);
-    --grotto-tag-border-color: var(--grotto-accent-1);
+    --grotto-tag-border-color: transparent;
     --grotto-tag-background-color: var(--text-normal);
-    --grotto-tag-border-width: 0px;
+    --grotto-tag-border-width: 1.5px;
     --grotto-tag-pointer-events: none;
     --tag-padding-x: 0.4rem;
-    --tag-padding-y: 0.2rem;
+    --tag-padding-y: 0.1rem;
     --grotto-tag-size: 0.8rem;
     --grotto-tag-radius: 0rem;
     --tag-size: var(--grotto-tag-size);
@@ -2760,6 +2760,12 @@ settings:
                 value: 0px
 */
 
+/* Accented Tag */
+.accented-tag {
+    --grotto-tag-border-color: var(--text-normal);
+    --grotto-tag-color: var(--grotto-day-1);
+    --grotto-tag-background-color: var(--grotto-accent-1);
+}
 
 
 
