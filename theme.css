@@ -133,7 +133,7 @@ body {
     --grotto-header-background-color-5: transparent;
     --grotto-header-background-color-6: transparent;
     /*==== BUTTONS ====*/
-    --grotto-button-color: var(--text-normal);
+    --grotto-button-color: var(--grotto-day-1);
     --grotto-button-background-color: var(--grotto-accent-1);
     --grotto-button-border-color: var(--text-normal);
     --grotto-button-radius: 0rem;
@@ -156,13 +156,14 @@ body {
     --grotto-callout-radius: 0rem;
     --grotto-callout-padding: 8px 16px;
     --grotto-callout-icon: none;
-    --grotto-title-size: 1.5rem;
+    --grotto-callout-title-size: var(--grotto-header-size);
     --callout-default: var(--grotto-callout-color);
     /*==== LISTS ====*/
+    --indentation-guide-editing-indent: 1.1rem;
     --list-marker-color: var(--text-normal);
     --list-indent: calc(var(--indent-unit) * var(--indent-size));
-    --list-indent-editing: 0.8rem;
-    --list-indent-source: 0;
+    --list-indent-editing: 1rem;
+    --list-indent-source: 0rem;
     --list-bullet-radius: 0rem;
     --list-bullet-size: 0.4rem;
     --list-spacing: 0.08rem;
@@ -176,6 +177,7 @@ body {
     --grotto-embed-radius: 0rem;
     --embed-max-height: 4000px;
     --embed-padding: 8px 16px;
+    --embed-block-shadow-hover: none;
     /*==== CODE BLOCKS ====*/
     --grotto-code-color: var(--text-normal);
     --grotto-code-color-hover: var(--grotto-accent-1);
@@ -207,7 +209,7 @@ body {
     --grotto-toggle-enabled-background-color: var(--grotto-accent-1);
     --grotto-toggle-handle-border-color: var(--grotto-night-0);
     /*==== TOOLTIPS ====*/
-    --grotto-tooltip-color: var(--text-normal);
+    --grotto-tooltip-color: var(--grotto-day-1);
     --grotto-tooltip-background-color: var(--grotto-accent-1);
     --grotto-tooltip-border-color: var(--text-normal);
     --grotto-tooltip-radius: 0rem;
@@ -246,7 +248,7 @@ body {
     --graph-node-tag: var(--grotto-night-3);
     --graph-node-attachment: var(--grotto-day-3);
     /*==== NOTICES ====*/
-    --grotto-notice-color: var(--text-normal);
+    --grotto-notice-color: var(--grotto-day-1);
     --grotto-notice-background-color: var(--grotto-accent-1);
     --grotto-notice-border-color: var(--text-normal);
     --grotto-notice-radius: 0rem;
@@ -255,11 +257,12 @@ body {
     --grotto-calendar-color: var(--grotto-day-1);
     --grotto-calendar-color-hover: var(--grotto-accent-1);
     --grotto-calendar-background-color: var(--background-secondary);
-    --grotto-calendar-today-background-color: var(--grotto-day-1);
+    --grotto-calendar-today-color: var(--grotto-day-1);
+    --grotto-calendar-today-background-color: var(--grotto-accent-1);
     --grotto-calendar-border-color: var(--grotto-day-1);
     --grotto-calendar-border-width: 1px;
     --grotto-calendar-year-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-color: var(--grotto-night-1);
+    --grotto-calendar-dayofweek-color: var(--background-secondary);
     --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
     --grotto-calendar-dayofweek-border-width: 1px;
     --grotto-calendar-weekend-border-color: var(--grotto-day-1);
@@ -285,9 +288,10 @@ body {
     --bases-cards-shadow: none;
     --bases-cards-shadow-hover: none;
     --bases-table-cell-shadow-active: none;
+    --input-placeholder-color: var(--grotto-day-3);
     /*==== SUGGESTIONS ====*/
     --grotto-suggestion-color: var(--text-normal);
-    --grotto-suggestion-color-hover: var(--text-normal);
+    --grotto-suggestion-color-hover: var(--grotto-day-1);
     --grotto-suggestion-border-color: var(--text-normal);
     --grotto-suggestion-background-color: var(--background-primary);
     --grotto-suggestion-background-color-hover: var(--grotto-accent-1);
@@ -786,7 +790,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 .callout-title {
     color: var(--grotto-callout-color);
     border-bottom: 1px solid var(--grotto-callout-border-color);
-    font-size: var(--grotto-title-size);
+    font-size: var(--grotto-callout-title-size);
     line-height: 2rem;
     gap: 2px;
 }
@@ -806,7 +810,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 .embed-title {
     display: var(--grotto-embed-title);
     border-bottom: 1px solid var(--grotto-embed-color);
-    font-size: var(--grotto-title-size);
+    font-size: var(--grotto-callout-title-size);
 }
 .markdown-embed-link, 
 .file-embed-link, 
@@ -1060,8 +1064,9 @@ th,
     color: var(--grotto-calendar-color);
 }
 #calendar-container .today {
-    color: var(--grotto-calendar-background-color);
+    color: var(--grotto-calendar-today-color);
     background-color: var(--grotto-calendar-today-background-color);
+    border: 1px solid var(--grotto-calendar-border-color);
 }
 #calendar-container .month {
     color: var(--grotto-calendar-color);
@@ -1479,7 +1484,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     background-color: var(--grotto-tab-header-inactive-background-color);
     padding-top: 4px;
     border-top: 8px solid var(--background-secondary);
-    border-bottom: 1px solid var(--grotto-tab-header-border-color);
+    border-bottom: 1px solid var(--background-secondary);
     border-left: 1px solid var(--background-secondary);
     border-right: 1px solid var(--background-secondary);
     width: 300px;
@@ -2563,7 +2568,6 @@ body.preset-whimsicott {
     /*==== CALENDAR PLUGIN ====*/
     --grotto-calendar-color: var(--text-normal);
     --grotto-calendar-border-color: var(--text-normal);
-    --grotto-calendar-today-background-color: var(--text-normal);
     --grotto-calendar-weekend-border-color: var(--text-normal);
     /*==== TITLE BAR ====*/
     --grotto-titlebar-color: var(--text-normal);
@@ -2907,6 +2911,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
