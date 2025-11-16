@@ -60,15 +60,17 @@ body {
     --background-modifier-border-focus: var(--text-normal);
     /*==== TAGS ====*/
     --grotto-tag-color: var(--background-primary);
-    --grotto-tag-border-color: transparent;
     --grotto-tag-background-color: var(--text-normal);
+    --grotto-tag-border-color: transparent;
     --grotto-tag-border-width: 1.5px;
-    --grotto-tag-radius: 0rem;
+    --grotto-tag-border-radius: 0rem;
     --grotto-tag-size: 0.8rem;
+    --grotto-tag-weight: 500;
+    --grotto-tag-height: 2rem;
     --grotto-tag-pointer-events: none;
     --tag-border-width: var(--grotto-tag-border-width);
     --tag-border-color: var(--grotto-tag-border-color);
-    --tag-radius: var(--grotto-tag-radius);
+    --tag-radius: var(--grotto-tag-border-radius);
     --tag-size: var(--grotto-tag-size);
     --tag-padding-x: 0.4rem;
     --tag-padding-y: 0.1rem;
@@ -440,7 +442,8 @@ a.tag:hover,
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
     pointer-events: var(--grotto-tag-pointer-events);
-    line-height: 2rem;
+    font-weight: var(--grotto-tag-weight);
+    line-height: var(--grotto-tag-height);
     caret-color: currentColor;
     vertical-align: middle;
 }
@@ -2902,5 +2905,6 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
