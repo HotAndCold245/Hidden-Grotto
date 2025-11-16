@@ -137,8 +137,9 @@ body {
     --grotto-button-background-color: var(--grotto-accent-1);
     --grotto-button-border-color: var(--text-normal);
     --grotto-button-radius: 0rem;
-    --grotto-button-error-background: hsl(0, 0%, 16%);
-    --grotto-button-error-background-hover: hsl(0, 0%, 20%);
+    --grotto-button-error-color: var(--grotto-day-1);
+    --grotto-button-error-background: var(--grotto-night-1);
+    --grotto-button-error-background-hover: var(--text-error);
     /*==== CHECKBOXES ====*/
     --grotto-checkbox-border-color: var(--text-normal);
     --grotto-checkbox-radius: 0rem;
@@ -720,14 +721,14 @@ button:not(.clickable-icon).mobile-tap {
 button.mod-warning, 
 button.mod-destructive, 
 .is-mobile button.mod-warning {
-  color: var(--text-error);
+  color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background);
 }
 button.mod-warning:hover, 
 button.mod-warning.mobile-tap, 
 button.mod-destructive:hover, 
 button.mod-destructive.mobile-tap {
-  color: var(--text-error);
+  color: var(--grotto-button-error-color);
   background-color: var(--grotto-button-error-background-hover);
 }
 
@@ -2906,6 +2907,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
