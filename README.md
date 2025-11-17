@@ -113,7 +113,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.5
+##### V1.4.7
+- Improvements to readability
 - Added option to switch to accented tags
 - Search bar background fix
 - More improvements to sidebar
