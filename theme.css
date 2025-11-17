@@ -58,6 +58,7 @@ body {
     --background-modifier-hover: transparent;
     --background-modifier-border: var(--text-faint);
     --background-modifier-border-focus: var(--text-normal);
+    --input-border-width-focus: 0px;
     /*==== BLUR ====*/
     --grotto-blur: 0px;
     filter: blur(var(--grotto-blur));
@@ -77,8 +78,8 @@ body {
     --grotto-tag-weight: 500;
     --grotto-tag-height: 2rem;
     --grotto-tag-pointer-events: none;
-    --tag-border-width: var(--grotto-tag-border-width);
     --tag-border-color: var(--grotto-tag-border-color);
+    --tag-border-width: var(--grotto-tag-border-width);
     --tag-radius: var(--grotto-tag-border-radius);
     --tag-size: var(--grotto-tag-size);
     --tag-padding-x: 0.4rem;
@@ -98,7 +99,7 @@ body {
     /*==== TEXT STRIKETHROUGH ====*/
     --grotto-strikethrough-color: var(--text-normal);
     /*==== TEXT COMMENTED ====*/
-    --grotto-comment-color: var(--grotto-accent-1);
+    --grotto-comment-color: var(--text-normal);
     /*==== TEXT LINKED ====*/
     --grotto-link-color: var(--grotto-accent-1);
     --grotto-link-weight: 400;
@@ -225,9 +226,14 @@ body {
     --table-add-button-border-color: var(--table-border-color);
     /*==== PROGRESS BAR ====*/
     --grotto-progress-color: var(--grotto-accent-1);
-    --grotto-progress-background-color: var(--background-primary);
-    --grotto-progress-border-color: var(--background-primary);
+    --grotto-progress-background-color: var(--text-normal);
+    --grotto-progress-border-color: var(--text-normal);
     --grotto-progress-radius: 0rem;
+    /*==== NOTICES ====*/
+    --grotto-notice-color: var(--grotto-day-1);
+    --grotto-notice-background-color: var(--grotto-accent-1);
+    --grotto-notice-border-color: var(--text-normal);
+    --grotto-notice-radius: 0rem;
     /*==== CANVAS ====*/
     --grotto-canvas-color: var(--text-normal);
     --grotto-canvas-path-color: var(--grotto-accent-1);
@@ -247,11 +253,6 @@ body {
     --graph-node: var(--grotto-accent-1);
     --graph-node-tag: var(--grotto-night-3);
     --graph-node-attachment: var(--grotto-day-3);
-    /*==== NOTICES ====*/
-    --grotto-notice-color: var(--grotto-day-1);
-    --grotto-notice-background-color: var(--grotto-accent-1);
-    --grotto-notice-border-color: var(--text-normal);
-    --grotto-notice-radius: 0rem;
     /*==== CALENDAR PLUGIN ====*/
     --grotto-calendar-pointer-events: auto;
     --grotto-calendar-color: var(--grotto-day-1);
@@ -301,6 +302,7 @@ body {
     --grotto-prompt-color-hover: var(--background-primary);
     --grotto-prompt-background-color: var(--background-primary);
     --grotto-prompt-background-color-hover: var(--text-normal);
+    --grotto-prompt-border-radius: 0rem;
     /*==== TITLE BAR ====*/
     --grotto-titlebar-color: var(--grotto-day-1);
     --grotto-titlebar-background-color: var(--background-secondary);
@@ -331,11 +333,12 @@ body {
     --p-spacing: 0rem;
     --file-line-width: 700px;
     /*==== DROPDOWNS ====*/
-    --grotto-dropdown-color: var(--text-normal);
+    --grotto-dropdown-color: var(--grotto-day-1);
     --grotto-dropdown-background-color: var(--grotto-accent-1);
     --grotto-dropdown-border-color: var(--text-normal);
     --grotto-dropdown-radius: 0rem;
     /*==== SCROLL BAR ====*/
+    --grotto-scrollbar-border-color: var(--text-normal);
     --scrollbar-width: 12px;
     --scrollbar-radius: 0px;
     --scrollbar-bg: var(--grotto-accent-1);
@@ -343,7 +346,7 @@ body {
     --scrollbar-active-thumb-bg: var(--grotto-accent-1);
     --scrollbar-border-width: 3px;
     /*==== MOBILE QUICK ACTIONS ====*/
-    --grotto-pull-color: var(--text-normal);
+    --grotto-pull-color: var(--grotto-day-1);
     --grotto-pull-border-color: var(--text-normal);
     --grotto-pull-background-color: var(--grotto-accent-1);
     --grotto-pull-radius: 0rem;
@@ -368,7 +371,9 @@ body {
     --grotto-toolbar-radius: 0rem;
     /*==== MOBILE SYSTEM STATUS BAR ====*/
     --grotto-system-status-color: var(--background-primary);
+    --grotto-workspace-drawer-border-color: var(--grotto-night-0);
     /*==== RADIUS ====*/
+    --grotto-input-radius: 0rem;
     --input-radius: 0px;
     --radius-s: 0px;
     --radius-m: 0px;
@@ -392,6 +397,7 @@ body {
     --grotto-nav-title-border-color: var(--grotto-day-1);
     --grotto-rename-color: var(--grotto-night-1);
     --grotto-rename-background-color: var(--grotto-day-1);
+    --grotto-rename-radius: 0rem;
     --divider-width: 0px;
     --border-width: 0px;
     --nav-indentation-guide-width: 0px;
@@ -399,7 +405,7 @@ body {
     --vault-profile-color: var(--grotto-nav-title-color);
     /*==== MENUS ====*/
     --grotto-menu-color: var(--text-normal);
-    --grotto-menu-color-active: var(--text-normal);
+    --grotto-menu-color-active: var(--grotto-day-1);
     --grotto-menu-background-color: var(--background-primary);
     --grotto-menu-background-color-active: var(--grotto-accent-1);
     --grotto-menu-border-color: var(--text-normal);
@@ -408,7 +414,7 @@ body {
     --grotto-search-suggestion-background-color: var(--background-secondary);
     --grotto-search-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-search-suggestion-border-color: var(--grotto-day-1);
-    --grotto-search-suggestion-icon-color: var(--grotto-night-2);
+    --grotto-search-suggestion-icon-color: var(--grotto-day-1);
     --grotto-search-suggestion-icon-color-hover: var(--grotto-accent-1);
     /*==== SETTINGS ====*/
     --grotto-settings-color: var(--grotto-day-1);
@@ -504,7 +510,7 @@ del,
 /*==== TEXT COMMENTED ====*/
 .cm-comment {
     color: var(--grotto-comment-color);
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 /*==== TEXT LINKED ====*/
@@ -523,18 +529,19 @@ a,
 }
 a:hover, 
 a.mobile-tap, 
+.external-link:hover, 
+.external-link.mobile-tap, 
 .cm-s-obsidian span.cm-url:hover, 
 .cm-s-obsidian span.cm-link:hover, 
 .markdown-rendered .internal-link:hover, 
 .metadata-property-value .internal-link:hover, 
 .cm-s-obsidian span.cm-hmd-internal-link:hover, 
-.external-link:hover, .external-link.mobile-tap, 
 .cm-s-obsidian span.cm-formatting-link.cm-url:hover, 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover, 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
     color: var(--grotto-link-color);
-    filter: brightness(102%);
-    opacity: 1;
+    filter:brightness(105%);
+    opacity: 0.8;
 }
 
 /*==== LINKS INSIDE HEADERS ====*/
@@ -601,7 +608,8 @@ a.mobile-tap,
 .cm-s-obsidian .cm-line.HyperMD-header-5 .cm-link .cm-underline:hover, 
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-link .cm-underline:hover {
     color: inherit;
-    opacity: 0.5;
+    filter:brightness(105%);
+    opacity: 0.8;
 }
 
 /*==== HEADERS ====*/
@@ -980,37 +988,40 @@ th,
     border-radius: var(--grotto-progress-radius);
 }
 
-/*====  CANVAS  ====*/
-.canvas-control-group {
-    border-radius: var(--grotto-canvas-controls-radius);
+/*==== NOTICES ====*/
+.notice, 
+.is-phone .notice {
+    color: var(--grotto-notice-color);
+    background-color: var(--grotto-notice-background-color);
+    border: 1px solid var(--grotto-notice-border-color);
+    border-radius: var(--grotto-notice-radius);
     box-shadow: none;
-    border: 1px solid var(--grotto-canvas-controls-border-color);
 }
-.canvas-control-item {
-    background-color: var(--grotto-canvas-controls-background-color);
-    color: var(--grotto-canvas-color);
-    border: 0px solid transparent;
+
+/*==== SUGGESTIONS ====*/
+.suggestion-container, 
+.is-mobile .suggestion-container {
+    background-color: var(--grotto-suggestion-background-color);
+    border: 1px solid var(--grotto-suggestion-border-color);
+    border-radius: var(--grotto-suggestion-radius);
+    box-shadow: none;
 }
-.canvas-control-item:hover {
-    color: var(--grotto-accent-1);
-    background-color: var(--grotto-canvas-controls-background-color);
+.suggestion-item, 
+.is-mobile .suggestion-item {
+    color: var(--grotto-suggestion-color);
+    background-color: var(--grotto-suggestion-background-color);
+    border: 1px solid transparent;
+    border-radius: var(--grotto-suggestion-radius);
 }
-.canvas-node-container {
-    border: 1px solid var(--grotto-canvas-controls-border-color);
-    border-radius: 0px;
+.suggestion-item.is-selected,
+.suggestion-item.mobile-tap {
+    color: var(--grotto-suggestion-color-hover);
+    background-color: var(--grotto-suggestion-background-color-hover);
+    border: 1px solid var(--grotto-suggestion-border-color);
+    border-radius: var(--grotto-suggestion-radius);
 }
-.canvas-group-label {
-    color: var(--grotto-canvas-color);
-    background-color: var(--grotto-canvas-background-color);
-    border-radius: 0px;
-}
-.canvas-edges path.canvas-display-path {
-    stroke: var(--grotto-canvas-path-color);
-    stroke-width: 1px;
-}
-.canvas-edges polygon.canvas-path-end {
-    stroke: var(--grotto-canvas-path-color);
-    fill: var(--grotto-canvas-path-color);
+.suggestion-flair .svg-icon {
+    color: var(--grotto-suggestion-color);
 }
 
 /*==== GRAPHS ====*/
@@ -1087,6 +1098,850 @@ th,
     border-top: 1px solid var(--grotto-calendar-border-color);
     border-bottom: 1px solid var(--grotto-calendar-border-color);
     min-width: 0px;
+}
+
+/*==== TITLE BAR ====*/
+.titlebar-button {
+    height: var(--header-height);
+    color: var(--grotto-titlebar-color);
+    background-color: var(--background-secondary);
+}
+.titlebar-button:hover {
+    background-color: var(--grotto-titlebar-background-color-hover);
+}
+.workspace-tab-header-inner-title {
+    color: var(--text-normal);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.workspace-tab-header-inner .workspace-tab-header-inner-icon:hover,
+.workspace-tab-header-inner .workspace-tab-header-inner-icon.tappable {
+    color: var(--grotto-accent-1);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--text-normal);
+}
+.mod-active .workspace-tab-header.is-active {
+    border: 2px solid var(--background-secondary);
+    border-width: 1px 0 0 0;
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace .mod-root .workspace-tab-header-inner::after {
+    background-color: transparent;
+}
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container,
+.workspace-drawer-active-tab-content .view-content,
+.workspace-drawer .nav-header {
+    background-color: var(--background-secondary);
+}
+.workspace-drawer-active-tab-header {
+    background-color: var(--grotto-nav-title-color);
+    color: var(--background-secondary);
+}
+.workspace-drawer-active-tab-header.tappable.mobile-tap {
+    opacity: 0.9;
+}
+.workspace-leaf-resize-handle {
+    border-color: var(--grotto-resize-handle-color);
+    --divider-width: 1px;
+}
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    border-color: var(--grotto-split-border-color);
+}
+.sidebar-toggle-button.mod-right .clickable-icon,
+.sidebar-toggle-button.mod-left .clickable-icon {
+    color: var(--grotto-nav-title-color);
+}
+.sidebar-toggle-button.mod-right .clickable-icon:hover,
+.sidebar-toggle-button.mod-left .clickable-icon:hover {
+    color: var(--grotto-nav-title-color-hover);
+}
+.workspace-ribbon.mod-left.is-collapsed {
+    background-color: var(--background-secondary);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
+    color: var(--grotto-nav-title-color);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:hover {
+    color: var(--grotto-accent-1);
+}
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name:hover {
+    color: var(--grotto-accent-1);
+}
+.workspace .mod-root .workspace-tab-header {
+    padding: 0px;
+    border: var(--grotto-tab-header-border-width) solid var(--grotto-tab-header-border-color);
+    border-width: var(--grotto-tab-header-border-width) var(--grotto-tab-header-border-width) 0px var(--grotto-tab-header-border-width);
+}
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
+    --grotto-tab-header-icon-color: var(--text-normal);
+    background-color: var(--grotto-tab-header-inactive-background-color);
+    padding-top: 4px;
+    border-top: 8px solid var(--background-secondary);
+    border-bottom: 1px solid var(--background-secondary);
+    border-left: 1px solid var(--background-secondary);
+    border-right: 1px solid var(--background-secondary);
+}
+.workspace-tab-header-inner .workspace-tab-header-inner-icon, 
+.workspace-tab-header-tab-list .clickable-icon, 
+.workspace-tab-header-new-tab .clickable-icon {
+    color: var(--grotto-tab-header-icon-color);
+}
+
+/*==== PARAGRAPHS ====*/
+.markdown-rendered p {
+    padding: 0rem 0rem;
+}
+
+/*==== DROPDOWNS ====*/
+select,
+.combobox-button,
+.dropdown {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: none;
+}
+.combobox-button:hover,
+.combobox-button:focus,
+.dropdown:hover,
+.dropdown.mobile-tap,
+.dropdown:focus, 
+.bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
+    outline: 1px solid var(--grotto-dropdown-border-color);
+    outline-offset: 2px;
+}
+.dropdown option {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-dropdown-border-color);
+    border-radius: var(--grotto-dropdown-radius);
+    box-shadow: none;
+}
+
+/*==== SCROLL BAR ====*/
+.is-android {
+  --scrollbar-border-width: 3px;
+  --scrollbar-width: 12px;
+  --scrollbar-radius: 0;
+}
+body.styled-scrollbars ::-webkit-scrollbar-thumb {
+    outline: 1px solid var(--grotto-scrollbar-border-color);
+    outline-offset: -3px;
+}
+
+/*==== MOBILE SPECIFIC ====*/
+.is-phone {
+    --border-width: 0px;
+}
+.is-mobile {
+    --icon-l-stroke-width: 1px;
+    --caret-color: currentColor;
+    --checkbox-size: 16px;
+    --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
+    --file-margins: 0px 18px 0px 26px;
+    --mobile-sidebar-radius: 0px;
+    --mobile-sidebar-width: 80vw;
+    --system-status-background: var(--grotto-system-status-color);
+    --mobile-sidebar-background: var(--background-secondary);
+    --background-modifier-form-field: transparent;
+}
+
+/*==== MOBILE QUICK ACTIONS ====*/
+.pull-action, 
+.pull-down-action, 
+.pull-out-action {
+    color: var(--grotto-pull-color);
+    background-color: var(--background-primary);
+    border: 1px solid var(--grotto-pull-border-color);
+    border-radius: var(--grotto-pull-radius);
+    padding: 8px;
+    width: fit-content;
+}
+.pull-action.mod-activated, 
+.pull-down-action.mod-activated, 
+.pull-out-action.mod-activated {
+    color: var(--grotto-pull-color);
+    background-color: var(--grotto-pull-background-color);
+}
+
+/*==== MOBILE NAVIGATION BAR ====*/
+.mobile-navbar {
+    --grotto-icon-color: var(--grotto-navbar-color);
+    border-top: 1px solid var(--grotto-navbar-border-color);
+    background-color: var(--grotto-navbar-background-color);
+    border-radius: var(--grotto-navbar-radius) var(--grotto-navbar-radius) 0rem 0rem;
+    padding: 4px 0px;
+}
+.mobile-navbar-action-new-tab {
+    display: var(--grotto-navbar-new-tab);
+}
+
+/*==== MOBILE TAB SWITCHER ====*/
+.mobile-tab-title {
+    color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-switcher-menu-button.tappable {
+    color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-switcher-menubar {
+    --grotto-icon-color: var(--grotto-tab-switcher-color);
+}
+.mobile-tab-preview-empty, 
+.mobile-tab-preview {
+    border: 1px solid var(--grotto-tab-switcher-color);
+}
+.mobile-tab.is-active .mobile-tab-preview-empty, 
+.mobile-tab.is-active .mobile-tab-preview-embed {
+    border: 0px solid var(--grotto-tab-switcher-color);
+}
+
+/*==== MOBILE TOOLBAR ====*/
+.mobile-toolbar {
+    border-radius: var(--grotto-toolbar-radius);
+    position: sticky;
+    width: auto;
+    overflow-y: auto;
+    margin: 0px 12px 0px 12px;
+    padding: 0px;
+    height: calc(var(--grotto-toolbar-rows) * 33px);
+    border: 1px solid var(--grotto-toolbar-border-color);
+}
+.mobile-toolbar::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+.mobile-toolbar-options-container {
+    background-color: var(--grotto-toolbar-background-color);
+    border: 0px solid var(--grotto-toolbar-border-color);
+    height: auto;
+    padding: 8px 0px;
+    border-radius: var(--grotto-toolbar-radius);
+}
+.mobile-toolbar-options-list {
+    flex-flow: wrap;
+    padding: 0px;
+    gap: 8px 4px;
+    justify-content: center;
+}
+.mobile-toolbar-option {
+    color: var(--grotto-toolbar-color);
+}
+.mobile-toolbar-spacer {
+    display: none;
+}
+
+/*==== CLICKABLE ICONS ====*/
+.clickable-icon, 
+.is-mobile .clickable-icon {
+    color: var(--grotto-icon-color);
+    background-color: transparent;
+    border-radius: 0px;
+}
+.clickable-icon:hover, 
+.clickable-icon.has-active-menu, 
+.clickable-icon:active, 
+.clickable-icon.is-active, 
+.clickable-icon.is-active:hover, 
+.clickable-icon.mobile-tap, 
+.status-bar-item.plugin-editor-status:hover, 
+.status-bar-item.plugin-sync:hover, 
+.clickable-icon.nav-action-button.mobile-tap,
+.clickable-icon.nav-action-button:hover, 
+.clickable-icon.nav-action-button.is-active {
+    color: var(--grotto-icon-color-hover);
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 0px;
+}
+
+/*====  VIEW HEADER  ====*/
+.is-mobile .view-actions {
+    position: fixed;
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 1px 6px 1px 6px;
+    gap: 8px;
+}
+.is-mobile .view-header .clickable-icon {
+    color: var(--grotto-navbar-color);
+    border: 0px solid var(--grotto-navbar-background-color);
+    border-radius: 0px;
+}
+.is-mobile .view-header {
+    height: 0px;
+}
+.is-mobile .view-header-title-container,
+.is-mobile .view-header-left {
+    display: none;
+}
+.is-mobile .view-header .view-action {
+    color: var(--grotto-navbar-color);
+    background-color: var(--grotto-navbar-background-color);
+    border: 1px solid var(--grotto-navbar-border-color);
+}
+.is-mobile .view-header .view-action.mobile-tap {
+    color: var(--grotto-accent-1);
+    background-color: var(--grotto-navbar-background-color);
+    opacity: 1;
+}
+.is-mobile .view-header .view-action[aria-label="More options"] {
+    --icon-stroke: 1.75px;
+}
+.view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
+    display: none;
+}
+
+/*==== MOBILE DRAWER HEADER ====*/
+.is-phone .workspace-drawer-header, 
+.is-phone .workspace-drawer-header-info, 
+.is-mobile .workspace-drawer-header-name-text {
+    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
+    color: var(--grotto-mobile-drawer-header-color);
+    background-color: var(--grotto-mobile-drawer-header-background-color);
+}
+.is-phone .workspace-drawer-active-tab-header {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-drawer-active-tab-header.mobile-tap {
+    background-color: var(--grotto-mobile-drawer-header-active-background-color);
+}
+.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
+.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    --divider-width: 0px;
+}
+.is-phone .workspace-drawer.mod-right {
+    border-left: 1px solid var(--grotto-workspace-drawer-border-color);
+}
+.is-phone .workspace-drawer.mod-left {
+    border-right: 1px solid var(--grotto-workspace-drawer-border-color);
+}
+.workspace-drawer-active-tab-icon, 
+.workspace-drawer-active-tab-title, 
+.clickable-icon.workspace-drawer-active-tab-chevron {
+    color: var(--grotto-mobile-drawer-header-active-color);
+}
+.mod-right-split .markdown-preview-view, 
+.mod-left-split .markdown-preview-view, 
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
+    color: var(--text-normal);
+    background-color: var(--background-primary);
+}
+.workspace-drawer-active-tab-container {
+    --text-normal: var(--grotto-day-1);
+}
+
+/*==== MOBILE MENUS ====*/
+.is-phone .menu {
+    background-color: var(--grotto-menu-background-color);
+    border-top: 1px solid var(--grotto-menu-border-color);
+}
+.is-phone .menu-scroll {
+    background-color: var(--grotto-menu-background-color);
+    border-width: 0px;
+    padding: 8px;
+}
+.is-phone .menu-group .menu-item {
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-group .menu-item:not(:last-child) {
+    background-color: var(--grotto-menu-background-color);
+    border: 1px solid transparent;
+}
+.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
+.is-phone .menu-item .menu-item-icon:not(.is-label), 
+.is-phone .menu-item .menu-item-title:not(.is-label) {
+    color: var(--grotto-menu-color);
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-item.tappable.mobile-tap {
+    --grotto-menu-color: var(--grotto-menu-background-color-active);
+    background-color: var(--grotto-menu-background-color);
+}
+.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.is-phone .menu-item.is-warning .menu-item-title:not(.is-disabled) {
+    color: var(--text-error);
+}
+.menu-item.is-disabled .menu-item-icon:not(.is-label), 
+.menu-item.is-disabled .menu-item-title:not(.is-label) {
+    color: var(--grotto-menu-color);
+}
+.menu-item.is-disabled {
+    background-color: var(--grotto-menu-background-color);
+}
+.menu-item.is-disabled.selected {
+    background-color: var(--grotto-menu-background-color-active);
+}
+.menu-separator {
+    border-bottom: 0px solid var(--grotto-menu-border-color);
+}
+hr {
+    border-color: var(--text-normal);
+    border-width: 1px;
+}
+
+/*==== MENUS ====*/
+body:not(.is-phone) .menu {
+    border: 0px solid var(--grotto-menu-border-color);
+    box-shadow: none;
+}
+body:not(.is-phone) .menu-scroll {
+    background-color: var(--grotto-menu-background-color);
+    border: 1px solid var(--grotto-menu-border-color);
+    padding: 8px;
+}
+body:not(.is-phone) .menu-item-icon, 
+body:not(.is-phone) .menu-item-title {
+    color: var(--grotto-menu-color);
+    background-color: var(--grotto-menu-background-color);
+}
+.menu-item.tappable {
+    border: 1px solid transparent;
+}
+.menu-item.selected .menu-item-icon, 
+.menu-item.selected .menu-item-title {
+    color: var(--grotto-menu-color-active);
+    background-color: var(--grotto-menu-background-color-active);
+}
+.menu-item.selected:not(.is-label):not(.is-disabled) {
+    background-color: var(--grotto-menu-background-color-active);
+    border: 1px solid var(--grotto-menu-border-color);
+}
+.menu-item.is-warning .menu-item-icon:not(.is-disabled), 
+.menu-item.is-warning .menu-item-title:not(.is-disabled) {
+    color: var(--text-error);
+}
+
+/*==== COMMAND PALETTE ====*/
+.theme-dark.is-mobile .prompt,
+.theme-light.is-mobile .prompt,
+.prompt {
+    border: 1px solid var(--grotto-prompt-color);
+    border-radius: var(--grotto-prompt-border-radius);
+    background-color: var(--grotto-prompt-background-color);
+}
+input.prompt-input:hover,
+input.prompt-input:focus,
+input.prompt-input:focus-visible,
+.theme-dark.is-mobile .prompt input.prompt-input,
+.theme-light.is-mobile .prompt input.prompt-input,
+.prompt input.prompt-input {
+    color: var(--grotto-prompt-color-hover);
+    background-color: var(--grotto-prompt-background-color-hover);
+    caret-color: currentColor;
+}
+.prompt-results .suggestion-hotkey {
+    color: var(--grotto-prompt-color-hover);
+    background-color: var(--grotto-prompt-background-color-hover);
+    border-radius: 0px;
+}
+.search-input-clear-button {
+    color: var(--text-faint);
+}
+.search-input-clear-button:hover,
+.search-input-clear-button:active {
+    color: var(--grotto-accent-1);
+}
+.prompt-instructions {
+    color: var(--grotto-prompt-background-color-hover);
+}
+.is-mobile .prompt {
+    border-radius: 0px;
+    position: relative;
+    top: 0%;
+    height: 40vh;
+    width: 94%;
+    background-color: var(--text-normal);
+    padding: 0px;
+}
+
+/*==== SELECTIONS ====*/
+/* I don't remember what this affects */
+select,
+select:hover,
+select:focus {
+    color: var(--grotto-selection-color);
+    background-color: var(--grotto-selection-background-color);
+}
+
+/*==== COMMUNITY ITEMS ====*/
+.community-item {
+    border: 1px solid var(--text-normal);
+}
+.is-phone .community-item {
+    border: 1px solid transparent;
+    width: 96%;
+    justify-self: center;
+}
+.community-item:hover, 
+.community-item.mobile-tap, 
+body:not(.is-phone) .community-item.is-selected, 
+body:not(.is-phone) .community-item.is-selected:hover{
+    border: 1px solid var(--text-normal);
+    background-color: var(--grotto-accent-1);
+}
+.community-item .flair {
+    color: var(--text-normal);
+    background-color: transparent;
+    border: 1px solid var(--text-normal);
+}
+.community-item .flair.mod-pop {
+    background-color: var(--grotto-accent-1);
+}
+
+/*==== SETTINGS ====*/
+.vertical-tab-nav-item {
+    color: var(--grotto-settings-color);
+    border: 1px solid transparent;
+}
+.is-phone .vertical-tab-nav-item {
+    color: var(--text-normal);
+    border: 1px solid transparent;
+}
+.is-phone .vertical-tab-nav-item.mobile-tap {
+    color: var(--grotto-accent-1);
+}
+body:not(.is-phone) .horizontal-tab-nav-item:hover,
+body:not(.is-phone) .vertical-tab-nav-item:hover {
+    color: var(--grotto-settings-background-color-active);
+    border: 1px solid transparent;
+}
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--grotto-settings-color-active);
+    background-color: var(--grotto-settings-background-color-active);
+    border: 1px solid var(--grotto-settings-border-color);
+}
+body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
+body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
+    color: var(--grotto-settings-color-active);
+    background-color: var(--grotto-settings-background-color-active);
+    border: 1px solid var(--grotto-settings-border-color);
+}
+.setting-item {
+    border-width: 0px;
+}
+.is-phone .setting-item {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.is-phone .setting-item-heading {
+    margin-top: 0px;
+}
+.is-phone .modal.mod-settings .vertical-tab-header, 
+.is-phone .modal.mod-settings .vertical-tab-content {
+    --scrollbar-width: 0px;
+}
+.setting-item-heading .setting-item-name {
+    font-size: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--grotto-accent-1);
+}
+.is-phone .vertical-tab-header-group-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--grotto-accent-1);
+}
+
+/*==== SLIDERS ====*/
+input[type='range'] {
+    border-radius: 0px;
+    background-color: var(--grotto-accent-1);
+    outline: 1px solid var(--text-normal);
+    outline-offset: -1px;
+}
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+    background-color: var(--grotto-slider-background-color);
+    border: 1px solid var(--grotto-slider-border-color);
+    box-shadow: none;
+}
+
+/*==== INPUTS ====*/
+input[type=number],
+input[type=text],
+input[type='date'], 
+input[type='datetime-local'], 
+input[type='email'],
+input[type='password'], 
+input[type=search],
+input[type=number]:hover, 
+input[type=text]:hover, 
+input[type='date']:hover, 
+input[type='datetime-local']:hover, 
+input[type='email']:hover,
+input[type='password']:hover, 
+input[type=search]:hover {
+    color: var(--text-normal);
+    background-color: transparent;
+    border: 1px solid var(--text-normal);
+    caret-color: currentColor;
+    border-radius: var(--grotto-input-radius);
+    box-shadow: none;
+}
+.prompt input[type=text],
+.prompt input[type=text]:hover {
+    color: var(--background-primary);
+    background-color: var(--text-normal);
+    border: 0px solid var(--text-normal);
+    border-radius: 0rem;
+    box-shadow: none;
+}
+input[type=number]:hover, 
+input[type=text]:hover, 
+input[type=search]:hover, 
+input[type='datetime-local']:hover, 
+input[type='date']:hover, 
+input[type='email']:hover, 
+input[type='password']:hover {
+    outline: 2px solid var(--text-normal);
+    outline-offset: -4px;
+}
+
+.nav-header textarea:active, 
+.nav-header .multi-select-container:active, 
+.nav-header input.metadata-input-text:active, 
+.nav-header input[type='date']:active, 
+.nav-header input[type='datetime-local']:active, 
+.nav-header input[type='text']:active, 
+.nav-header input[type='email']:active, 
+.nav-header input[type='password']:active, 
+.nav-header input[type='number']:active, 
+.nav-header textarea:focus, 
+.nav-header .multi-select-container:focus, 
+.nav-header input.metadata-input-text:focus, 
+.nav-header input[type='date']:focus, 
+.nav-header input[type='datetime-local']:focus, 
+.nav-header input[type='text']:focus, 
+.nav-header input[type='email']:focus, 
+.nav-header input[type='password']:focus, 
+.nav-header input[type='number']:focus, 
+.nav-header input[type='search'] {
+    color: var(--grotto-search-suggestion-border-color);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+    background-color: transparent;
+    caret-color: currentColor;
+}
+
+.tree-item-self .tree-item-icon {
+    color: var(--grotto-nav-title-color);
+}
+.tree-item-self:hover .tree-item-icon {
+    color: var(--grotto-accent-1);
+}
+/*==== GLOBAL SEARCH ====*/
+.global-search-input-container.search-input-container input, 
+.global-search-input-container.search-input-container input:hover {
+    color: var(--grotto-search-suggestion-color);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+    caret-color: currentColor;
+    box-shadow: none;
+}
+.search-result-file-match {
+    background-color: var(--grotto-background-tertiary);
+}
+.search-result-file-matched-text {
+    color: var(--text-normal);
+    background-color: var(--grotto-accent-1);
+}
+.search-suggest-info-text {
+    color: var(--grotto-search-suggestion-color);
+    background-color: transparent;
+    opacity: 0.8;
+}
+.search-suggest-item.suggestion-item {
+    color: var(--grotto-search-suggestion-color);
+    background-color: var(--grotto-search-suggestion-background-color);
+    border: 1px solid transparent;
+}
+.search-suggest-item.suggestion-item:hover {
+    background-color: var(--grotto-search-suggestion-background-color-hover);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+}
+.search-params .setting-item-name {
+    color: var(--grotto-search-suggestion-color);
+}
+.search-row .clickable-icon {
+    color: var(--grotto-search-suggestion-icon-color);
+}
+.search-row .clickable-icon:hover {
+    color: var(--grotto-search-suggestion-icon-color-hover);
+}
+.search-result:not(.is-collapsed) .search-result-file-title {
+    color:var(--grotto-search-suggestion-color);
+}
+.clickable-icon.search-results-result-count {
+    color: var(--grotto-search-suggestion-icon-color);
+}
+.clickable-icon.search-results-result-count:hover {
+    color: var(--grotto-search-suggestion-icon-color-hover);
+}
+.search-results-info .dropdown, 
+.search-results-info .dropdown:hover {
+    color: var(--grotto-dropdown-color);
+    background-color: var(--grotto-dropdown-background-color);
+    border: 1px solid var(--grotto-search-suggestion-border-color);
+    box-shadow: none;
+}
+.search-results-info .dropdown:hover {
+    outline: 1px solid var(--grotto-search-suggestion-border-color);
+    outline-offset: 2px;
+}
+.tree-item-flair, 
+.search-input-clear-button {
+    color: var(--grotto-search-suggestion-color);
+}
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover, 
+.tree-item-self:hover .tree-item-flair {
+    color: var(--grotto-accent-1);
+}
+.more-options-icon {
+    background-color: var(--grotto-search-suggestion-color);
+}
+.global-search-input-container.search-input-container input:hover {
+    outline: 2px solid var(--grotto-search-suggestion-border-color);
+    outline-offset: -4px;
+    box-shadow: none;
+}
+.tree-item-self {
+    border-radius: 0px;
+}
+
+/*==== FILE NAVIGATION ====*/
+.nav-file-tag {
+    color: var(--grotto-nav-tag-color);
+    background-color: var(--grotto-nav-tag-background-color);
+    border-radius: var(--grotto-nav-radius);
+}
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self.is-clickable,
+.clickable-icon.nav-action-button,
+.side-dock-settings .side-dock-ribbon-action,
+.side-dock-actions .side-dock-ribbon-action {
+    color: var(--grotto-nav-title-color);
+    border: 1px solid transparent;
+}
+.nav-file-title:hover, 
+.tree-item-self.is-clickable.mobile-tap,
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
+body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
+body:not(.is-grabbing) .nav-folder-title:hover, 
+.side-dock-settings .side-dock-ribbon-action:hover,
+.side-dock-actions .side-dock-ribbon-action:hover {
+    color: var(--grotto-nav-title-color-hover);
+    background-color: transparent;
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active, 
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.mobile-tap, 
+body:not(.is-grabbing) .nav-file-title.is-active:hover {
+    color: var(--grotto-nav-title-color-active);
+    background-color: var(--grotto-nav-title-background-color-active);
+    border: 1px solid var(--grotto-nav-title-border-color);
+}
+
+/*==== MODALS ====*/
+.is-phone .modal-container.mod-dim .modal {
+    border: 0px solid transparent;
+}
+.modal-container.mod-dim .modal {
+    box-shadow: none;
+    border: 1px solid var(--grotto-modal-border-color);
+}
+.is-phone .modal.mod-settings .modal-title,
+.is-phone .modal.mod-settings .vertical-tab-header {
+    background-color: var(--background-primary);
+}
+.is-phone .modal.mod-settings .vertical-tab-header,
+.is-phone .modal.mod-settings .vertical-tab-content,
+.is-phone .modal-sidebar,
+.is-phone .community-modal-info {
+    border: 0px solid transparent;
+}
+.modal-setting-nav-bar {
+    border: 1px solid var(--text-normal);
+    border-width: 1px 1px 0px 0px;
+}
+.community-modal-info {
+    border: 1px solid var(--text-normal);
+    border-width: 0px 1px 1px 0px;
+}
+.mod-community-modal .modal-sidebar button.clickable-icon:hover {
+    color: var(--grotto-accent-1);
+}
+.modal-close-button:hover {
+    color: var(--grotto-accent-1);
+}
+.modal.mod-settings .vertical-tab-header {
+    border-inline-end: 0px solid transparent;
+    border: 1px solid var(--grotto-settings-border-color);
+    border-width: 0px;
+}
+.modal-sidebar {
+    border: 1px solid var(--text-normal);
+    background-color: var(--background-primary);
+}
+.is-phone .modal.mod-lg .modal-header, 
+.is-phone .modal.mod-sidebar-layout .modal-header {
+    background-color: var(--background-primary);
+}
+
+/*====  CANVAS  ====*/
+.canvas-control-group {
+    border-radius: var(--grotto-canvas-controls-radius);
+    box-shadow: none;
+    border: 1px solid var(--grotto-canvas-controls-border-color);
+}
+.canvas-control-item {
+    background-color: var(--grotto-canvas-controls-background-color);
+    color: var(--grotto-canvas-color);
+    border: 0px solid transparent;
+}
+.canvas-control-item:hover {
+    color: var(--grotto-accent-1);
+    background-color: var(--grotto-canvas-controls-background-color);
+}
+.canvas-node-container {
+    border: 1px solid var(--grotto-canvas-controls-border-color);
+    border-radius: 0px;
+}
+.canvas-group-label {
+    color: var(--grotto-canvas-color);
+    background-color: var(--grotto-canvas-background-color);
+    border-radius: 0px;
+}
+.canvas-edges path.canvas-display-path {
+    stroke: var(--grotto-canvas-path-color);
+    stroke-width: 1px;
+}
+.canvas-edges polygon.canvas-path-end {
+    stroke: var(--grotto-canvas-path-color);
+    fill: var(--grotto-canvas-path-color);
 }
 
 /*==== BASES ====*/
@@ -1317,757 +2172,13 @@ body:not(.is-phone) .base-toolbar-sort-item {
     border: 1px solid var(--grotto-bases-cards-border-color);
 }
 
-/*==== NOTICES ====*/
-.notice, 
-.is-phone .notice {
-    color: var(--grotto-notice-color);
-    background-color: var(--grotto-notice-background-color);
-    border: 1px solid var(--grotto-notice-border-color);
-    border-radius: var(--grotto-notice-radius);
-    box-shadow: none;
-}
-
-/*==== SUGGESTIONS ====*/
-.suggestion-container, 
-.is-mobile .suggestion-container {
-    background-color: var(--grotto-suggestion-background-color);
-    border: 1px solid var(--grotto-suggestion-border-color);
-    border-radius: var(--grotto-suggestion-radius);
-    box-shadow: none;
-}
-.suggestion-item, 
-.is-mobile .suggestion-item {
-    color: var(--grotto-suggestion-color);
-    background-color: var(--grotto-suggestion-background-color);
-    border: 1px solid transparent;
-    border-radius: var(--grotto-suggestion-radius);
-}
-.suggestion-item.is-selected,
-.suggestion-item.mobile-tap {
-    color: var(--grotto-suggestion-color-hover);
-    background-color: var(--grotto-suggestion-background-color-hover);
-    border: 1px solid var(--grotto-suggestion-border-color);
-    border-radius: var(--grotto-suggestion-radius);
-}
-.suggestion-flair .svg-icon {
-    color: var(--grotto-suggestion-color);
-}
-
-/*==== COMMAND PALETTE ====*/
-.theme-dark.is-mobile .prompt,
-.theme-light.is-mobile .prompt,
-.prompt {
-    border: 1px solid var(--grotto-prompt-color);
-    border-radius: 0px;
-    background-color: var(--grotto-prompt-background-color);
-}
-input.prompt-input:hover,
-input.prompt-input:focus,
-input.prompt-input:focus-visible,
-.theme-dark.is-mobile .prompt input.prompt-input,
-.theme-light.is-mobile .prompt input.prompt-input,
-.prompt input.prompt-input {
-    color: var(--grotto-prompt-color-hover);
-    background-color: var(--grotto-prompt-background-color-hover);
-    caret-color: currentColor;
-}
-.prompt-results .suggestion-hotkey {
-    color: var(--grotto-prompt-color-hover);
-    background-color: var(--grotto-prompt-background-color-hover);
-    border-radius: 0px;
-}
-.search-input-clear-button {
-    color: var(--text-faint);
-}
-.search-input-clear-button:hover,
-.search-input-clear-button:active {
-    color: var(--grotto-accent-1);
-}
-.prompt-instructions {
-    color: var(--grotto-prompt-background-color-hover);
-}
-.is-mobile .prompt {
-    border-radius: 0px;
-    position: relative;
-    top: 0%;
-    height: 40vh;
-    width: 94%;
-    background-color: var(--text-normal);
-    padding: 0px;
-}
-.tree-item-self {
-    border-radius: 0px;
-}
-
-/*==== TITLE BAR ====*/
-.titlebar-button {
-    height: var(--header-height);
-    color: var(--grotto-titlebar-color);
-    background-color: var(--background-secondary);
-}
-.titlebar-button:hover {
-    background-color: var(--grotto-titlebar-background-color-hover);
-}
-.workspace-tab-header-inner-title {
-    color: var(--text-normal);
-}
-.workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.workspace-tab-header-inner .workspace-tab-header-inner-icon:hover,
-.workspace-tab-header-inner .workspace-tab-header-inner-icon.tappable {
-    color: var(--grotto-accent-1);
-}
-.workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-    color: var(--text-normal);
-}
-.mod-active .workspace-tab-header.is-active {
-    border: 2px solid var(--background-secondary);
-    border-width: 1px 0 0 0;
-}
-.workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover {
-    color: var(--grotto-accent-1);
-}
-.workspace .mod-root .workspace-tab-header-inner::after {
-    background-color: transparent;
-}
-.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button:hover {
-    color: var(--grotto-accent-1);
-}
-.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container,
-.workspace-drawer-active-tab-content .view-content,
-.workspace-drawer .nav-header {
-    background-color: var(--background-secondary);
-}
-.workspace-drawer-active-tab-header {
-    background-color: var(--grotto-nav-title-color);
-    color: var(--background-secondary);
-}
-.workspace-drawer-active-tab-header.tappable.mobile-tap {
-    opacity: 0.9;
-}
-.workspace-leaf-resize-handle {
-    border-color: var(--grotto-resize-handle-color);
-    --divider-width: 1px;
-}
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    border-color: var(--grotto-split-border-color);
-}
-.sidebar-toggle-button.mod-right .clickable-icon,
-.sidebar-toggle-button.mod-left .clickable-icon {
-    color: var(--grotto-nav-title-color);
-}
-.sidebar-toggle-button.mod-right .clickable-icon:hover,
-.sidebar-toggle-button.mod-left .clickable-icon:hover {
-    color: var(--grotto-nav-title-color-hover);
-}
-.workspace-ribbon.mod-left.is-collapsed {
-    background-color: var(--background-secondary);
-}
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon {
-    color: var(--grotto-nav-title-color);
-}
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:hover {
-    color: var(--grotto-accent-1);
-}
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name:hover {
-    color: var(--grotto-accent-1);
-}
-.workspace .mod-root .workspace-tab-header {
-    padding: 0px;
-    border: var(--grotto-tab-header-border-width) solid var(--grotto-tab-header-border-color);
-    border-width: var(--grotto-tab-header-border-width) var(--grotto-tab-header-border-width) 0px var(--grotto-tab-header-border-width);
-}
-.workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
-.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
-    --grotto-tab-header-icon-color: var(--text-normal);
-    background-color: var(--grotto-tab-header-inactive-background-color);
-    padding-top: 4px;
-    border-top: 8px solid var(--background-secondary);
-    border-bottom: 1px solid var(--background-secondary);
-    border-left: 1px solid var(--background-secondary);
-    border-right: 1px solid var(--background-secondary);
-    width: 300px;
-}
-.workspace-tab-header-inner .workspace-tab-header-inner-icon, 
-.workspace-tab-header-tab-list .clickable-icon, 
-.workspace-tab-header-new-tab .clickable-icon {
-    color: var(--grotto-tab-header-icon-color);
-}
-
-/*==== CLICKABLE ICONS ====*/
-.clickable-icon, 
-.is-mobile .clickable-icon {
-    color: var(--grotto-icon-color);
-    background-color: transparent;
-    border-radius: 0px;
-}
-.clickable-icon:hover, 
-.clickable-icon.has-active-menu, 
-.clickable-icon:active, 
-.clickable-icon.is-active, 
-.clickable-icon.is-active:hover, 
-.clickable-icon.mobile-tap, 
-.status-bar-item.plugin-editor-status:hover, 
-.status-bar-item.plugin-sync:hover, 
-.clickable-icon.nav-action-button.mobile-tap,
-.clickable-icon.nav-action-button:hover, 
-.clickable-icon.nav-action-button.is-active {
-    color: var(--grotto-icon-color-hover);
-    background-color: transparent;
-    opacity: 1;
-    border-radius: 0px;
-}
-
-/*==== PARAGRAPHS ====*/
-.markdown-rendered p {
-    padding: 0rem 0rem;
-}
-
-/*==== DROPDOWNS ====*/
-select,
-.combobox-button,
-.dropdown {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
-    border-radius: var(--grotto-dropdown-radius);
-    box-shadow: none;
-}
-.combobox-button:hover,
-.combobox-button:focus,
-.dropdown:hover,
-.dropdown.mobile-tap,
-.dropdown:focus, 
-.bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border-radius: var(--grotto-dropdown-radius);
-    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
-    outline: 1px solid var(--grotto-dropdown-border-color);
-    outline-offset: 2px;
-}
-.dropdown option {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
-    border-radius: var(--grotto-dropdown-radius);
-    box-shadow: none;
-}
-
-/*==== SCROLL BAR ====*/
-.is-android {
-  --scrollbar-border-width: 3px;
-  --scrollbar-width: 12px;
-  --scrollbar-radius: 0;
-}
-body.styled-scrollbars ::-webkit-scrollbar-thumb {
-    outline: 1px solid var(--text-normal);
-    outline-offset: -3px;
-}
-
-/*==== MOBILE QUICK ACTIONS ====*/
-.pull-action, 
-.pull-down-action, 
-.pull-out-action {
-    color: var(--grotto-pull-color);
-    background-color: var(--background-primary);
-    border: 1px solid var(--grotto-pull-border-color);
-    border-radius: var(--grotto-pull-radius);
-    padding: 8px;
-    width: fit-content;
-}
-.pull-action.mod-activated, 
-.pull-down-action.mod-activated, 
-.pull-out-action.mod-activated {
-    color: var(--grotto-pull-color);
-    background-color: var(--grotto-pull-background-color);
-}
-
-/*==== MOBILE NAVIGATION BAR ====*/
-.mobile-navbar {
-    --grotto-icon-color: var(--grotto-navbar-color);
-    border-top: 1px solid var(--grotto-navbar-border-color);
-    background-color: var(--grotto-navbar-background-color);
-    border-radius: var(--grotto-navbar-radius) var(--grotto-navbar-radius) 0rem 0rem;
-    padding: 4px 0px;
-}
-.mobile-navbar-action-new-tab {
-    display: var(--grotto-navbar-new-tab);
-}
-
-/*==== MOBILE TAB SWITCHER ====*/
-.mobile-tab-title {
-    color: var(--grotto-tab-switcher-color);
-}
-.mobile-tab-switcher-menu-button.tappable {
-    color: var(--grotto-tab-switcher-color);
-}
-.mobile-tab-switcher-menubar {
-    --grotto-icon-color: var(--grotto-tab-switcher-color);
-}
-.mobile-tab-preview-empty, 
-.mobile-tab-preview {
-    border: 1px solid var(--grotto-tab-switcher-color);
-}
-.mobile-tab.is-active .mobile-tab-preview-empty, 
-.mobile-tab.is-active .mobile-tab-preview-embed {
-    border: 0px solid var(--grotto-tab-switcher-color);
-}
-
-/*==== MOBILE TOOLBAR ====*/
-.mobile-toolbar {
-    border-radius: var(--grotto-toolbar-radius);
-    position: sticky;
-    width: auto;
-    overflow-y: auto;
-    margin: 0px 12px 0px 12px;
-    padding: 0px;
-    height: calc(var(--grotto-toolbar-rows) * 33px);
-    border: 1px solid var(--grotto-toolbar-border-color);
-}
-.mobile-toolbar::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-}
-.mobile-toolbar-options-container {
-    background-color: var(--grotto-toolbar-background-color);
-    border: 0px solid var(--grotto-toolbar-border-color);
-    height: auto;
-    padding: 8px 0px;
-    border-radius: var(--grotto-toolbar-radius);
-}
-.mobile-toolbar-options-list {
-    flex-flow: wrap;
-    padding: 0px;
-    gap: 8px 4px;
-    justify-content: center;
-}
-.mobile-toolbar-option {
-    color: var(--grotto-toolbar-color);
-}
-.mobile-toolbar-spacer {
-    display: none;
-}
-
-/*==== MOBILE SPECIFIC ====*/
-.is-phone {
-    --border-width: 0px;
-}
-.is-mobile {
-    --icon-l-stroke-width: 1px;
-    --caret-color: currentColor;
-    --checkbox-size: 16px;
-    --background-modifier-cover: hsl(0, 0%, 10%, 0.5);
-    --file-margins: 0px 18px 0px 26px;
-    --mobile-sidebar-radius: 0px;
-    --mobile-sidebar-width: 80vw;
-    --system-status-background: var(--grotto-system-status-color);
-    --mobile-sidebar-background: var(--background-secondary);
-    --background-modifier-form-field: transparent;
-}
-
-/*==== MOBILE DRAWER HEADER ====*/
-.is-phone .workspace-drawer-header, 
-.is-phone .workspace-drawer-header-info, 
-.is-mobile .workspace-drawer-header-name-text {
-    --grotto-icon-color: var(--grotto-mobile-drawer-header-color);
-    color: var(--grotto-mobile-drawer-header-color);
-    background-color: var(--grotto-mobile-drawer-header-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-drawer-active-tab-header.mobile-tap {
-    background-color: var(--grotto-mobile-drawer-header-active-background-color);
-}
-.is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
-.is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-    --divider-width: 0px;
-}
-.is-phone .workspace-drawer.mod-right {
-    border-left: 1px solid var(--text-normal);
-}
-.is-phone .workspace-drawer.mod-left {
-    border-right: 1px solid var(--text-normal);
-}
-.workspace-drawer-active-tab-icon, 
-.workspace-drawer-active-tab-title, 
-.clickable-icon.workspace-drawer-active-tab-chevron {
-    color: var(--grotto-mobile-drawer-header-active-color);
-}
-.mod-right-split .markdown-preview-view, 
-.mod-left-split .markdown-preview-view, 
-.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
-.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-}
-.workspace-drawer-active-tab-container {
-    --text-normal: var(--grotto-day-1);
-}
-
-/*==== FILE NAVIGATION ====*/
-.nav-file-tag {
-    color: var(--grotto-nav-tag-color);
-    background-color: var(--grotto-nav-tag-background-color);
-    border-radius: var(--grotto-nav-radius);
-}
-.nav-file-title,
-.nav-folder-title,
-.tree-item-self.is-clickable,
-.clickable-icon.nav-action-button,
-.side-dock-settings .side-dock-ribbon-action,
-.side-dock-actions .side-dock-ribbon-action {
-    color: var(--grotto-nav-title-color);
-    border: 1px solid transparent;
-}
-.nav-file-title:hover, 
-.tree-item-self.is-clickable.mobile-tap,
-body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
-body:not(.is-grabbing) .tree-item-self.tappable.mobile-tap,
-body:not(.is-grabbing) .nav-folder-title:hover, 
-.side-dock-settings .side-dock-ribbon-action:hover,
-.side-dock-actions .side-dock-ribbon-action:hover {
-    color: var(--grotto-nav-title-color-hover);
-    background-color: transparent;
-}
-.nav-file-title.is-active,
-.nav-folder-title.is-active, 
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.mobile-tap, 
-body:not(.is-grabbing) .nav-file-title.is-active:hover {
-    color: var(--grotto-nav-title-color-active);
-    background-color: var(--grotto-nav-title-background-color-active);
-    border: 1px solid var(--grotto-nav-title-border-color);
-}
-.nav-files-container {
-    --text-normal: var(--grotto-nav-title-border-color);
-}
-
-/*==== MENUS ====*/
-body:not(.is-phone) .menu {
-    border: 0px solid var(--grotto-menu-border-color);
-    box-shadow: none;
-}
-body:not(.is-phone) .menu-scroll {
-    background-color: var(--grotto-menu-background-color);
-    border: 1px solid var(--grotto-menu-border-color);
-    padding: 8px;
-}
-body:not(.is-phone) .menu-item-icon, 
-body:not(.is-phone) .menu-item-title {
-    color: var(--grotto-menu-color);
-    background-color: var(--grotto-menu-background-color);
-}
-.menu-item.tappable {
-    border: 1px solid transparent;
-}
-.menu-item.selected .menu-item-icon, 
-.menu-item.selected .menu-item-title {
-    color: var(--grotto-menu-color-active);
-    background-color: var(--grotto-menu-background-color-active);
-}
-.menu-item.selected:not(.is-label):not(.is-disabled) {
-    background-color: var(--grotto-menu-background-color-active);
-    border: 1px solid var(--grotto-menu-border-color);
-}
-.menu-item.is-warning .menu-item-icon:not(.is-disabled), 
-.menu-item.is-warning .menu-item-title:not(.is-disabled) {
-    color: var(--text-error);
-}
-
-/*==== PHONE MENUS ====*/
-.is-phone .menu {
-    background-color: var(--grotto-menu-background-color);
-    border-top: 1px solid var(--grotto-menu-border-color);
-}
-.is-phone .menu-scroll {
-    background-color: var(--grotto-menu-background-color);
-    border-width: 0px;
-    padding: 8px;
-}
-.is-phone .menu-group .menu-item {
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-group .menu-item:not(:last-child) {
-    background-color: var(--grotto-menu-background-color);
-    border: 1px solid transparent;
-}
-.is-phone .menu .suggestion-group .suggestion-item:not(.is-label), 
-.is-phone .menu-item .menu-item-icon:not(.is-label), 
-.is-phone .menu-item .menu-item-title:not(.is-label) {
-    color: var(--grotto-menu-color);
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-item.tappable.mobile-tap {
-    --grotto-menu-color: var(--grotto-menu-background-color-active);
-    background-color: var(--grotto-menu-background-color);
-}
-.is-phone .menu-item.is-warning .menu-item-icon:not(.is-disabled), 
-.is-phone .menu-item.is-warning .menu-item-title:not(.is-disabled) {
-    color: var(--text-error);
-}
-.menu-item.is-disabled .menu-item-icon:not(.is-label), 
-.menu-item.is-disabled .menu-item-title:not(.is-label) {
-    color: var(--grotto-menu-color);
-}
-.menu-item.is-disabled {
-    background-color: var(--grotto-menu-background-color);
-}
-.menu-item.is-disabled.selected {
-    background-color: var(--grotto-menu-background-color-active);
-}
-.menu-separator {
-    border-bottom: 0px solid var(--grotto-menu-border-color);
-}
-hr {
-    border-color: var(--text-normal);
-    border-width: 1px;
-}
-
-/*==== SELECTIONS ====*/
-select,
-select:hover,
-select:focus {
-    color: var(--grotto-selection-color);
-    background-color: var(--grotto-selection-background-color);
-}
-
-/*==== SEARCH SUGGESTIONS ====*/
-.suggestion-container.mod-property-key .suggestion-item {
-    background-color: var(--grotto-accent-1);
-    color: var(--text-normal);
-}
-.search-input-container input {
-    border: 1px solid var(--text-normal);
-}
-.search-suggest-info-text {
-    color: var(--grotto-search-suggestion-color);
-    background-color: transparent;
-    opacity: 0.9;
-}
-.search-suggest-item.suggestion-item {
-    color: var(--grotto-search-suggestion-color);
-    background-color: var(--grotto-search-suggestion-background-color);
-    border: 1px solid transparent;
-}
-.search-suggest-item.suggestion-item:hover {
-    background-color: var(--grotto-search-suggestion-background-color-hover);
-    border: 1px solid var(--grotto-search-suggestion-border-color);
-}
-.search-params .setting-item-name {
-    color: var(--grotto-search-suggestion-color);
-}
-.search-row .clickable-icon {
-    color: var(--grotto-search-suggestion-icon-color);
-}
-.search-row .clickable-icon:hover {
-    color: var(--grotto-search-suggestion-icon-color-hover);
-}
-.search-result:not(.is-collapsed) .search-result-file-title {
-    color:var(--grotto-search-suggestion-color);
-}
-.clickable-icon.search-results-result-count {
-    color: var(--grotto-search-suggestion-icon-color);
-}
-.clickable-icon.search-results-result-count:hover {
-    color: var(--grotto-search-suggestion-icon-color-hover);
-}
-.search-results-info .dropdown, 
-.search-results-info .dropdown:hover {
-    color: var(--grotto-dropdown-color);
-    background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
-}
-.tree-item-self:hover .tree-item-flair {
-    color: var(--grotto-accent-1);
-}
-.suggestion-container.mod-search-suggestion {
-    border: none;
-}
-.suggestion-container.mod-search-suggestion .suggestion {
-    border: 1px solid currentColor;
-}
-
-/*==== COMMUNITY ITEMS ====*/
-.community-item {
-    border: 1px solid var(--text-normal);
-}
-.is-phone .community-item {
-    border: 1px solid transparent;
-    width: 96%;
-    justify-self: center;
-}
-.community-item:hover, 
-.community-item.mobile-tap, 
-body:not(.is-phone) .community-item.is-selected, 
-body:not(.is-phone) .community-item.is-selected:hover{
-    border: 1px solid var(--text-normal);
-    background-color: var(--grotto-accent-1);
-}
-
-/*==== SETTINGS ====*/
-.vertical-tab-nav-item {
-    color: var(--grotto-settings-color);
-    border: 1px solid transparent;
-}
-.is-phone .vertical-tab-nav-item {
-    color: var(--text-normal);
-    border: 1px solid transparent;
-}
-.is-phone .vertical-tab-nav-item.mobile-tap {
-    color: var(--grotto-accent-1);
-}
-body:not(.is-phone) .horizontal-tab-nav-item:hover,
-body:not(.is-phone) .vertical-tab-nav-item:hover {
-    color: var(--grotto-settings-background-color-active);
-    border: 1px solid transparent;
-}
-body:not(.is-phone) .horizontal-tab-nav-item.is-active,
-body:not(.is-phone) .vertical-tab-nav-item.is-active {
-    color: var(--grotto-settings-color-active);
-    background-color: var(--grotto-settings-background-color-active);
-    border: 1px solid var(--grotto-settings-border-color);
-}
-body:not(.is-phone) .horizontal-tab-nav-item.is-active:hover,
-body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
-    color: var(--grotto-settings-color-active);
-    background-color: var(--grotto-settings-background-color-active);
-    border: 1px solid var(--grotto-settings-border-color);
-}
-.setting-item {
-    border-width: 0px;
-}
-.is-phone .setting-item {
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-.is-phone .setting-item-heading {
-    margin-top: 0px;
-}
-.is-phone .modal.mod-settings .vertical-tab-header, 
-.is-phone .modal.mod-settings .vertical-tab-content {
-    --scrollbar-width: 0px;
-}
-.setting-item-heading .setting-item-name {
-    font-size: 1rem;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--grotto-accent-1);
-}
-.is-phone .vertical-tab-header-group-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--grotto-accent-1);
-}
-
-/*==== MODALS ====*/
-.is-phone .modal-container.mod-dim .modal {
-    border: 0px solid transparent;
-}
-.modal-container.mod-dim .modal {
-    box-shadow: none;
-    border: 1px solid var(--grotto-modal-border-color);
-}
-.is-phone .modal.mod-settings .modal-title,
-.is-phone .modal.mod-settings .vertical-tab-header {
-    background-color: var(--background-primary);
-}
-.is-phone .modal.mod-settings .vertical-tab-header,
-.is-phone .modal.mod-settings .vertical-tab-content,
-.is-phone .modal-sidebar,
-.is-phone .community-modal-info {
-    border: 0px solid transparent;
-}
-.modal-setting-nav-bar {
-    border: 1px solid var(--text-normal);
-    border-width: 1px 1px 0px 0px;
-}
-.community-modal-info {
-    border: 1px solid var(--text-normal);
-    border-width: 0px 1px 1px 0px;
-}
-.mod-community-modal .modal-sidebar button.clickable-icon:hover {
-    color: var(--grotto-accent-1);
-}
-.modal-close-button:hover {
-    color: var(--grotto-accent-1);
-}
-.modal.mod-settings .vertical-tab-header {
-    border-inline-end: 0px solid transparent;
-    border: 1px solid var(--grotto-settings-border-color);
-    border-width: 0px;
-}
-.modal-sidebar {
-    border: 1px solid var(--text-normal);
-    background-color: var(--background-primary);
-}
-.is-phone .modal.mod-lg .modal-header, 
-.is-phone .modal.mod-sidebar-layout .modal-header {
-    background-color: var(--background-primary);
-}
-
-/*====  VIEW HEADER  ====*/
-.is-mobile .view-actions {
-    position: fixed;
-    display: flex;
-    width: fit-content;
-    overflow: hidden;
-    bottom: 12px;
-    right: 12px;
-    border-radius: 0px;
-    background-color: transparent;
-    padding: 1px 6px 1px 6px;
-    gap: 8px;
-}
-.is-mobile .view-header .clickable-icon {
-    color: var(--grotto-navbar-color);
-    border: 0px solid var(--grotto-navbar-background-color);
-    border-radius: 0px;
-}
-.is-mobile .view-header {
-    height: 0px;
-}
-.is-mobile .view-header-title-container,
-.is-mobile .view-header-left {
-    display: none;
-}
-.is-mobile .view-header .view-action {
-    color: var(--grotto-navbar-color);
-    background-color: var(--grotto-navbar-background-color);
-    border: 1px solid var(--grotto-navbar-border-color);
-}
-.is-mobile .view-header .view-action.mobile-tap {
-    color: var(--grotto-accent-1);
-    background-color: var(--grotto-navbar-background-color);
-    opacity: 1;
-}
-.is-mobile .view-header .view-action[aria-label="More options"] {
-    --icon-stroke: 1.75px;
-}
-.view-action.clickable-icon.mod-left-split-toggle.mod-tappable {
-    display: none;
-}
-
-/*====  RENAME BAR  ====*/
-.tree-item-self.is-being-renamed, 
-.tree-item-self.is-being-renamed:focus-within, 
-.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
-    color: var(--grotto-rename-color);
-    background-color: var(--grotto-rename-background-color);
-    border-radius: 0px;
-    caret-color: currentColor;
-}
-
 /*====  PROPERTIES  ====*/
 body:not(.sidebar-preset) .workspace-leaf-content[data-type='file-properties'] .view-content {
     --grotto-properties-view-color: var(--grotto-day-1);
     --grotto-metadata-border-color: var(--grotto-day-1);
-    --grotto-tag-color: var(--grotto-night-0);
-    --grotto-tag-background-color: var(--grotto-day-1);
+    --grotto-tag-color: var(--grotto-day-1);
+    --grotto-tag-background-color: var(--grotto-accent-1);
+    --grotto-tag-border-color: var(--grotto-tag-color);
     --grotto-text-icon-color: var(--grotto-day-1);
     --grotto-properties-view-caret-color: var(--grotto-day-1);
 }
@@ -2132,17 +2243,24 @@ input.metadata-property-key-input:focus-within {
     padding: var(--tag-padding-y) var(--tag-padding-x);
 }
 .multi-select-pill-remove-button {
-    color: var(--text-faint);
+    color: var(--text-normal);
 }
 .multi-select-pill-remove-button:hover, 
 .is-phone .metadata-property-icon.mobile-tap {
-    color: var(--grotto-accent-1);
+    color: var(--text-faint);
 }
 .multi-select-pill:focus:after {
     border-radius: 0px;
     right: 0px;
     width: 100%;
     box-shadow: none;
+}
+.metadata-property[data-property-key="tags"] .multi-select-pill, 
+.metadata-property[data-property-key="tags"] .multi-select-pill:hover, 
+.metadata-property-value .multi-select-pill {
+    color: var(--grotto-tag-color);
+    background-color: var(--grotto-tag-background-color);
+    border: var(--grotto-tag-border-width) solid var(--grotto-tag-border-color);
 }
 .metadata-property-value .multi-select-container, 
 .is-phone .metadata-property-value .multi-select-container {
@@ -2181,70 +2299,11 @@ body:not(.is-ios):not(.is-android) .metadata-property-value input[type='datetime
     background-color: var(--grotto-tag-background-color);
     color: var(--grotto-tag-color);
 }
-
-/*==== INPUTS ====*/
-input[type=number],
-input[type=number]:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=text],
-input[type=text]:hover {
-    background-color: transparent;
-    border: 1px solid currentColor;
-    caret-color: currentColor;
-    border-radius: 0px;
-}
 .metadata-property-value .multi-select-input {
     --text-normal: var(--grotto-tag-background-color);
 }
-.prompt input[type=text],
-.prompt input[type=text]:hover {
-    color: var(--background-primary);
-    background-color: var(--text-normal);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-input[type=search],
-input[type=search]:hover {
-    color: var(--text-normal);
-    background-color: transparent;
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
-.global-search-input-container.search-input-container input, 
-.global-search-input-container.search-input-container input:hover {
-    color: var(--grotto-search-suggestion-color);
-    background-color: var(--background-secondary);
-    border: 1px solid var(--grotto-search-suggestion-border-color);
-    caret-color: currentColor;
-}
-.search-result-file-match {
-    background-color: var(--grotto-background-tertiary);
-}
-.search-result-file-matched-text {
-    color: var(--text-normal);
-    background-color: var(--grotto-accent-1);
-}
-input[type='date'], 
-input[type='date']:hover, 
-input[type='datetime-local'], 
-input[type='datetime-local']:hover, 
-input[type='email'],
-input[type='email']:hover,
-input[type='password'], 
-input[type='password']:hover {
-    color: var(--text-normal);
-    background-color: var(--background-primary);
-    border: 1px solid var(--text-normal);
-    caret-color: currentColor;
-    border-radius: 0px;
-}
+
+/*==== MISCELLANEOUS ====*/
 input.metadata-input-text:hover,
 textarea.webviewer-adblock-lists {
     color: var(--text-normal);
@@ -2253,314 +2312,14 @@ textarea.webviewer-adblock-lists {
     caret-color: currentColor;
 }
 
-/*==== SLIDERS ====*/
-input[type='range'] {
-    border-radius: 0px;
-    background-color: var(--grotto-accent-1);
-    border: 1px solid var(--grotto-slider-border-color);
-    height: 4px;
-}
-input[type='range']::-webkit-slider-thumb,
-input[type='range']::-webkit-slider-thumb:hover,
-input[type='range']::-webkit-slider-thumb:active {
-    background-color: var(--grotto-slider-background-color);
-    border: 1px solid var(--grotto-slider-border-color);
-    box-shadow: none;
-}
-
-/*==== PRESETS ====*/
-
-/*==== ABSOL ====*/
-body.preset-absol {
-    --accent-h: 200;
-    --accent-s: 16%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(0, 0%, 80%);
-    --grotto-day-3: hsl(0, 0%, 70%);
-    --grotto-night-0: hsl(200, 5%, 12%);
-    --grotto-night-1: hsl(200, 5%, 18%);
-    --grotto-night-2: hsl(200, 5%, 24%);
-    --grotto-night-3: hsl(200, 5%, 32%);
-    --grotto-accent-1: hsl(200, 16%, 60%);
-}
-
-/*==== AEGISLASH ====*/
-body.preset-aegislash {
-    --accent-h: 260;
-    --accent-s: 20%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(40, 50%, 90%);
-    --grotto-day-2: hsl(40, 50%, 70%);
-    --grotto-day-3: hsl(40, 50%, 64%);
-    --grotto-night-0: hsl(260, 10%, 12%);
-    --grotto-night-1: hsl(260, 10%, 18%);
-    --grotto-night-2: hsl(260, 10%, 32%);
-    --grotto-night-3: hsl(260, 10%, 40%);
-    --grotto-accent-1: hsl(260, 20%, 60%);
-}
-
-/*==== AGGRON ====*/
-body.preset-aggron {
-    --accent-h: 0;
-    --accent-s: 0%;
-    --accent-l: 58%;
-    --grotto-day-1: hsl(0, 0%, 86%);
-    --grotto-day-2: hsl(0, 0%, 78%);
-    --grotto-day-3: hsl(0, 0%, 68%);
-    --grotto-night-0: hsl(0, 0%, 16%);
-    --grotto-night-1: hsl(0, 0%, 20%);
-    --grotto-night-2: hsl(0, 0%, 36%);
-    --grotto-night-3: hsl(0, 0%, 50%);
-    --grotto-accent-1: hsl(0, 0%, 58%);
-}
-
-/*====  CLOBBOPUS  ====*/
-.preset-clobbopus {
-    --accent-h: 16;
-    --accent-s: 82%;
-    --accent-l: 58%;
-    --grotto-day-1: hsl(33, 33%, 87%);
-    --grotto-day-2: hsl(33, 33%, 78%);
-    --grotto-day-3: hsl(33, 33%, 68%);
-    --grotto-night-0: hsl(240, 18%, 20%);
-    --grotto-night-1: hsl(240, 18%, 25%);
-    --grotto-night-2: hsl(240, 18%, 45%);
-    --grotto-night-3: hsl(240, 18%, 52%);
-    --grotto-accent-1: hsl(16, 82%, 58%);
-}
-
-/*==== CRYOGONAL ====*/
-body.preset-cryogonal {
-    --accent-h: 210;
-    --accent-s: 50%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(40, 0%, 82%);
-    --grotto-day-2: hsl(40, 0%, 76%);
-    --grotto-day-3: hsl(40, 0%, 70%);
-    --grotto-night-0: hsl(210, 10%, 16%);
-    --grotto-night-1: hsl(220, 40%, 32%);
-    --grotto-night-2: hsl(220, 40%, 40%);
-    --grotto-night-3: hsl(220, 40%, 48%);
-    --grotto-accent-1: hsl(210, 50%, 60%);
-}
-
-/*====  DARKRAI  ====*/
-body.preset-darkrai {
-    --accent-h: 5;
-    --accent-s: 60%;
-    --accent-l: 52%;
-    --grotto-day-1: hsl(212, 0%, 90%);
-    --grotto-day-2: hsl(212, 0%, 80%);
-    --grotto-day-3: hsl(212, 0%, 72%);
-    --grotto-night-0: hsl(0, 0%, 12%);
-    --grotto-night-1: hsl(0, 0%, 18%);
-    --grotto-night-2: hsl(0, 0%, 32%);
-    --grotto-night-3: hsl(0, 0%, 40%);
-    --grotto-accent-1: hsl(5, 60%, 50%);
-}
-
-/*==== ICE RIDER CALYREX ====*/
-body.preset-ice-rider-calyrex {
-    --accent-h: 160;
-    --accent-s: 50%;
-    --accent-l: 44%;
-    --grotto-day-1: hsl(200, 20%, 96%);
-    --grotto-day-2: hsl(200, 20%, 72%);
-    --grotto-day-3: hsl(200, 20%, 60%);
-    --grotto-night-0: hsl(210, 10%, 14%);
-    --grotto-night-1: hsl(210, 10%, 20%);
-    --grotto-night-2: hsl(210, 10%, 36%);
-    --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(160, 50%, 50%);
-}
-
-/*==== MEGA LUCARIO ====*/
-body.preset-mega-lucario {
-    --accent-h: 0;
-    --accent-s: 60%;
-    --accent-l: 60%;
-    --grotto-day-1: hsl(40, 20%, 86%);
-    --grotto-day-2: hsl(40, 20%, 80%);
-    --grotto-day-3: hsl(40, 20%, 72%);
-    --grotto-night-0: hsl(200, 10%, 18%);
-    --grotto-night-1: hsl(200, 30%, 26%);
-    --grotto-night-2: hsl(200, 30%, 36%);
-    --grotto-night-3: hsl(200, 30%, 44%);
-    --grotto-accent-1: hsl(0, 60%, 60%);
-}
-
-/*==== MELOETTA ====*/
-.preset-meloetta {
-    --accent-h: 160;
-    --accent-s: 40%;
-    --accent-l: 40%;
-    --grotto-day-1: hsl(110, 40%, 92%);
-    --grotto-day-2: hsl(110, 40%, 80%);
-    --grotto-day-3: hsl(110, 40%, 60%);
-    --grotto-night-0: hsl(40, 6%, 12%);
-    --grotto-night-1: hsl(40, 6%, 16%);
-    --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40, 6%, 32%);
-    --grotto-accent-1: hsl(160, 40%, 44%);
-}
-
-/*==== NOIVERN ====*/
-body.preset-noivern {
-    --accent-h: 160;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(40, 10%, 90%);
-    --grotto-day-2: hsl(40, 10%, 80%);
-    --grotto-day-3: hsl(40, 10%, 72%);
-    --grotto-night-0: hsl(225, 10%, 12%);
-    --grotto-night-1: hsl(288, 26%, 32%);
-    --grotto-night-2: hsl(288, 26%, 40%);
-    --grotto-night-3: hsl(288, 26%, 50%);
-    --grotto-accent-1: hsl(160, 40%, 50%);
-}
-.theme-light.preset-noivern {
-    --text-normal: var(--grotto-night-0);
-    --text-muted: var(--grotto-night-1);
-    --text-faint: var(--grotto-night-2);
-}
-
-/*==== PIROUETTE MELOETTA ====*/
-.preset-pirouette-meloetta {
-    --accent-h: 10;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(10, 10%, 90%);
-    --grotto-day-2: hsl(10, 10%, 82%);
-    --grotto-day-3: hsl(10, 10%, 70%);
-    --grotto-night-0: hsl(40, 6%, 12%);
-    --grotto-night-1: hsl(40, 6%, 16%);
-    --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40, 6%, 32%);
-    --grotto-accent-1: hsl(10, 50%, 50%);
-}
-
-/*==== POLTCHAGEIST ====*/
-body.preset-poltchageist {
-    --accent-h: 114;
-    --accent-s: 30%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(30, 14%, 82%);
-    --grotto-day-2: hsl(30, 14%, 76%);
-    --grotto-day-3: hsl(30, 14%, 70%);
-    --grotto-night-0: hsl(60, 10%, 10%);
-    --grotto-night-1: hsl(60, 10%, 14%);
-    --grotto-night-2: hsl(60, 5%, 24%);
-    --grotto-night-3: hsl(60, 5%, 32%);
-    --grotto-accent-1: hsl(114, 30%, 50%);
-}
-
-/*==== MEGA RAYQUAZA ====*/
-body.preset-mega-rayquaza {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(160, 0%, 82%);
-    --grotto-day-2: hsl(160, 0%, 76%);
-    --grotto-day-3: hsl(160, 0%, 70%);
-    --grotto-night-0: hsl(160, 20%, 16%);
-    --grotto-night-1: hsl(160, 30%, 24%);
-    --grotto-night-2: hsl(160, 30%, 32%);
-    --grotto-night-3: hsl(160, 30%, 40%);
-    --grotto-accent-1: hsl(30, 60%, 50%);
-}
-
-/*==== SCOLIPEDE ====*/
-.preset-scolipede {
-    --accent-h: 340;
-    --accent-s: 40%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(240, 10%, 84%);
-    --grotto-day-2: hsl(240, 10%, 72%);
-    --grotto-day-3: hsl(240, 10%, 64%);
-    --grotto-night-0: hsl(340, 10%, 12%);
-    --grotto-night-1: hsl(340, 10%, 18%);
-    --grotto-night-2: hsl(340, 10%, 24%);
-    --grotto-night-3: hsl(340, 10%, 32%);
-    --grotto-accent-1: hsl(340, 40%, 50%);
-}
-
-/*==== SKELEDIRGE ====*/
-.preset-skeledirge {
-    --accent-h: 34;
-    --accent-s: 50%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(34, 20%, 84%);
-    --grotto-day-2: hsl(34, 20%, 72%);
-    --grotto-day-3: hsl(34, 20%, 64%);
-    --grotto-night-0: hsl(10, 10%, 16%);
-    --grotto-night-1: hsl(10, 60%, 40%);
-    --grotto-night-2: hsl(10, 60%, 48%);
-    --grotto-night-3: hsl(10, 60%, 56%);
-    --grotto-accent-1: hsl(34, 50%, 50%);
-}
-.theme-light.preset-skeledirge {
-    --text-normal: var(--grotto-night-0);
-}
-
-/*==== SWAMPERT ====*/
-body.preset-swampert {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(40, 14%, 82%);
-    --grotto-day-2: hsl(40, 14%, 76%);
-    --grotto-day-3: hsl(40, 14%, 70%);
-    --grotto-night-0: hsl(210, 20%, 20%);
-    --grotto-night-1: hsl(210, 30%, 30%);
-    --grotto-night-2: hsl(210, 30%, 36%);
-    --grotto-night-3: hsl(210, 30%, 44%);
-    --grotto-accent-1: hsl(30, 60%, 50%);
-}
-
-/*====  URSALUNA  ====*/
-.preset-ursaluna {
-    --accent-h: 47;
-    --accent-s: 20%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(20, 10%, 80%);
-    --grotto-day-2: hsl(20, 10%, 70%);
-    --grotto-day-3: hsl(20, 10%, 64%);
-    --grotto-night-0: hsl(20, 40%, 14%);
-    --grotto-night-1: hsl(20, 40%, 20%);
-    --grotto-night-2: hsl(20, 40%, 32%);
-    --grotto-night-3: hsl(20, 40%, 40%);
-    --grotto-accent-1: hsl(47, 20%, 50%);
-}
-
-/*==== VOLCARONA ====*/
-body.preset-volcarona {
-    --accent-h: 27;
-    --accent-s: 85%;
-    --accent-l: 50%;
-    --grotto-day-1: hsl(0, 0%, 90%);
-    --grotto-day-2: hsl(165, 30%, 78%);
-    --grotto-day-3: hsl(165, 30%, 64%);
-    --grotto-night-0: hsl(194, 60%, 18%);
-    --grotto-night-1: hsl(194, 60%, 24%);
-    --grotto-night-2: hsl(194, 60%, 32%);
-    --grotto-night-3: hsl(194, 60%, 40%);
-    --grotto-accent-1: hsl(27, 85%, 50%);
-}
-
-/*==== WHIMSICOTT ====*/
-body.preset-whimsicott {
-    --accent-h: 120;
-    --accent-s: 40%;
-    --accent-l: 46%;
-    --grotto-day-1: hsl(40, 30%, 82%);
-    --grotto-day-2: hsl(40, 30%, 76%);
-    --grotto-day-3: hsl(40, 30%, 70%);
-    --grotto-night-0: hsl(30, 40%, 16%);
-    --grotto-night-1: hsl(30, 40%, 24%);
-    --grotto-night-2: hsl(30, 40%, 32%);
-    --grotto-night-3: hsl(30, 40%, 40%);
-    --grotto-accent-1: hsl(120, 40%, 46%);
+/*====  RENAME BAR  ====*/
+.tree-item-self.is-being-renamed, 
+.tree-item-self.is-being-renamed:focus-within, 
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
+    color: var(--grotto-rename-color);
+    background-color: var(--grotto-rename-background-color);
+    border-radius: var(--grotto-rename-radius);
+    caret-color: currentColor;
 }
 
 /*==== ALTERNATE SIDEBAR ====*/
@@ -2580,14 +2339,6 @@ body.preset-whimsicott {
     /*==== GRAPHS ====*/
     --grotto-graph-sidebar-controls-color: var(--text-normal);
     --grotto-graph-sidebar-controls-border-color: var(--text-normal);
-    /*==== MOBILE TOOLBAR ====*/
-    --grotto-toolbar-color: var(--text-normal);
-    --grotto-toolbar-background-color: var(--background-secondary);
-    --grotto-toolbar-border-color: var(--text-normal);
-    /*==== MOBILE NAVIGATION BAR ====*/
-    --grotto-navbar-color: var(--text-normal);
-    --grotto-navbar-background-color: var(--background-secondary);
-    --grotto-navbar-border-color: var(--text-normal);
     /*==== SEARCH SUGGESTIONS ====*/
     --grotto-search-suggestion-color: var(--text-normal);
     --grotto-search-suggestion-border-color: var(--text-normal);
@@ -2603,6 +2354,14 @@ body.preset-whimsicott {
     --grotto-mobile-drawer-header-active-background-color: var(--text-normal);
     /*==== MOBILE TAB SWITCHER ====*/
     --grotto-tab-switcher-color: var(--text-normal);
+    /*==== MOBILE TOOLBAR ====*/
+    --grotto-toolbar-color: var(--text-normal);
+    --grotto-toolbar-background-color: var(--background-secondary);
+    --grotto-toolbar-border-color: var(--text-normal);
+    /*==== MOBILE NAVIGATION BAR ====*/
+    --grotto-navbar-color: var(--text-normal);
+    --grotto-navbar-background-color: var(--background-secondary);
+    --grotto-navbar-border-color: var(--text-normal);
 }
 .theme-light.sidebar-preset {
     --background-secondary: var(--grotto-background-tertiary);
@@ -2664,6 +2423,9 @@ settings:
                 label: Mega Lucario
                 value: preset-mega-lucario
             -
+                label: Mega Rayquaza
+                value: preset-mega-rayquaza
+            -
                 label: Meloetta
                 value: preset-meloetta
             -
@@ -2675,9 +2437,6 @@ settings:
             -
                 label: Poltchageist
                 value: preset-poltchageist
-            -
-                label: MegaRayquaza
-                value: preset-mega-rayquaza
             -
                 label: Skeledirge
                 value: preset-skeledirge
@@ -2915,9 +2674,321 @@ settings:
                 value: 0px
 */
 
+/*==== PRESETS ====*/
 
+/*==== ABSOL ====*/
+body.preset-absol {
+    --accent-h: 200;
+    --accent-s: 16%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(0, 0%, 90%);
+    --grotto-day-2: hsl(0, 0%, 80%);
+    --grotto-day-3: hsl(0, 0%, 70%);
+    --grotto-night-0: hsl(200, 5%, 12%);
+    --grotto-night-1: hsl(200, 5%, 18%);
+    --grotto-night-2: hsl(200, 5%, 24%);
+    --grotto-night-3: hsl(200, 5%, 32%);
+    --grotto-accent-1: hsl(200, 16%, 60%);
+}
 
+/*==== AEGISLASH ====*/
+body.preset-aegislash {
+    --accent-h: 260;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 50%, 90%);
+    --grotto-day-2: hsl(40, 50%, 70%);
+    --grotto-day-3: hsl(40, 50%, 64%);
+    --grotto-night-0: hsl(260, 10%, 12%);
+    --grotto-night-1: hsl(260, 10%, 18%);
+    --grotto-night-2: hsl(260, 10%, 32%);
+    --grotto-night-3: hsl(260, 10%, 40%);
+    --grotto-accent-1: hsl(260, 20%, 60%);
+}
 
+/*==== AGGRON ====*/
+body.preset-aggron {
+    --accent-h: 0;
+    --accent-s: 0%;
+    --accent-l: 58%;
+    --grotto-day-1: hsl(0, 0%, 86%);
+    --grotto-day-2: hsl(0, 0%, 78%);
+    --grotto-day-3: hsl(0, 0%, 68%);
+    --grotto-night-0: hsl(0, 0%, 16%);
+    --grotto-night-1: hsl(0, 0%, 20%);
+    --grotto-night-2: hsl(0, 0%, 36%);
+    --grotto-night-3: hsl(0, 0%, 50%);
+    --grotto-accent-1: hsl(0, 0%, 58%);
+}
 
+/*====  CLOBBOPUS  ====*/
+.preset-clobbopus {
+    --accent-h: 16;
+    --accent-s: 82%;
+    --accent-l: 58%;
+    --grotto-day-1: hsl(33, 33%, 87%);
+    --grotto-day-2: hsl(33, 33%, 78%);
+    --grotto-day-3: hsl(33, 33%, 68%);
+    --grotto-night-0: hsl(240, 18%, 20%);
+    --grotto-night-1: hsl(240, 18%, 25%);
+    --grotto-night-2: hsl(240, 18%, 45%);
+    --grotto-night-3: hsl(240, 18%, 52%);
+    --grotto-accent-1: hsl(16, 82%, 58%);
+}
 
+/*==== CRYOGONAL ====*/
+body.preset-cryogonal {
+    --accent-h: 210;
+    --accent-s: 50%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 0%, 82%);
+    --grotto-day-2: hsl(40, 0%, 76%);
+    --grotto-day-3: hsl(40, 0%, 70%);
+    --grotto-night-0: hsl(210, 10%, 16%);
+    --grotto-night-1: hsl(220, 40%, 32%);
+    --grotto-night-2: hsl(220, 40%, 40%);
+    --grotto-night-3: hsl(220, 40%, 48%);
+    --grotto-accent-1: hsl(210, 50%, 60%);
+}
 
+/*====  DARKRAI  ====*/
+body.preset-darkrai {
+    --accent-h: 5;
+    --accent-s: 64%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(212, 0%, 90%);
+    --grotto-day-2: hsl(212, 0%, 80%);
+    --grotto-day-3: hsl(212, 0%, 72%);
+    --grotto-night-0: hsl(0, 0%, 12%);
+    --grotto-night-1: hsl(0, 0%, 18%);
+    --grotto-night-2: hsl(0, 0%, 32%);
+    --grotto-night-3: hsl(0, 0%, 40%);
+    --grotto-accent-1: hsl(5, 64%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== ICE RIDER CALYREX ====*/
+body.preset-ice-rider-calyrex {
+    --accent-h: 160;
+    --accent-s: 50%;
+    --accent-l: 44%;
+    --grotto-day-1: hsl(200, 20%, 96%);
+    --grotto-day-2: hsl(200, 20%, 72%);
+    --grotto-day-3: hsl(200, 20%, 60%);
+    --grotto-night-0: hsl(210, 10%, 14%);
+    --grotto-night-1: hsl(210, 10%, 20%);
+    --grotto-night-2: hsl(210, 10%, 36%);
+    --grotto-night-3: hsl(210, 10%, 48%);
+    --grotto-accent-1: hsl(160, 50%, 50%);
+}
+
+/*==== MEGA LUCARIO ====*/
+body.preset-mega-lucario {
+    --accent-h: 0;
+    --accent-s: 60%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 20%, 86%);
+    --grotto-day-2: hsl(40, 20%, 80%);
+    --grotto-day-3: hsl(40, 20%, 72%);
+    --grotto-night-0: hsl(200, 10%, 18%);
+    --grotto-night-1: hsl(200, 30%, 26%);
+    --grotto-night-2: hsl(200, 30%, 36%);
+    --grotto-night-3: hsl(200, 30%, 44%);
+    --grotto-accent-1: hsl(0, 60%, 60%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== MEGA RAYQUAZA ====*/
+body.preset-mega-rayquaza {
+    --accent-h: 30;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(160, 0%, 82%);
+    --grotto-day-2: hsl(160, 0%, 76%);
+    --grotto-day-3: hsl(160, 0%, 70%);
+    --grotto-night-0: hsl(160, 20%, 16%);
+    --grotto-night-1: hsl(160, 30%, 24%);
+    --grotto-night-2: hsl(160, 30%, 32%);
+    --grotto-night-3: hsl(160, 30%, 40%);
+    --grotto-accent-1: hsl(30, 60%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== MELOETTA ====*/
+.preset-meloetta {
+    --accent-h: 160;
+    --accent-s: 40%;
+    --accent-l: 40%;
+    --grotto-day-1: hsl(110, 40%, 92%);
+    --grotto-day-2: hsl(110, 40%, 80%);
+    --grotto-day-3: hsl(110, 40%, 60%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(160, 40%, 44%);
+}
+
+/*==== NOIVERN ====*/
+body.preset-noivern {
+    --accent-h: 160;
+    --accent-s: 40%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 10%, 90%);
+    --grotto-day-2: hsl(40, 10%, 80%);
+    --grotto-day-3: hsl(40, 10%, 72%);
+    --grotto-night-0: hsl(225, 10%, 12%);
+    --grotto-night-1: hsl(288, 26%, 32%);
+    --grotto-night-2: hsl(288, 26%, 40%);
+    --grotto-night-3: hsl(288, 26%, 50%);
+    --grotto-accent-1: hsl(160, 40%, 50%);
+}
+.theme-light.preset-noivern {
+    --text-normal: var(--grotto-night-0);
+    --text-muted: var(--grotto-night-1);
+    --text-faint: var(--grotto-night-2);
+}
+
+/*==== PIROUETTE MELOETTA ====*/
+.preset-pirouette-meloetta {
+    --accent-h: 10;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(10, 10%, 90%);
+    --grotto-day-2: hsl(10, 10%, 82%);
+    --grotto-day-3: hsl(10, 10%, 70%);
+    --grotto-night-0: hsl(40, 6%, 12%);
+    --grotto-night-1: hsl(40, 6%, 16%);
+    --grotto-night-2: hsl(40, 6%, 24%);
+    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-accent-1: hsl(10, 50%, 50%);
+}
+
+/*==== POLTCHAGEIST ====*/
+body.preset-poltchageist {
+    --accent-h: 114;
+    --accent-s: 30%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(30, 14%, 82%);
+    --grotto-day-2: hsl(30, 14%, 76%);
+    --grotto-day-3: hsl(30, 14%, 70%);
+    --grotto-night-0: hsl(60, 10%, 10%);
+    --grotto-night-1: hsl(60, 10%, 14%);
+    --grotto-night-2: hsl(60, 5%, 24%);
+    --grotto-night-3: hsl(60, 5%, 32%);
+    --grotto-accent-1: hsl(114, 30%, 50%);
+}
+
+/*==== SCOLIPEDE ====*/
+.preset-scolipede {
+    --accent-h: 340;
+    --accent-s: 40%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(240, 10%, 84%);
+    --grotto-day-2: hsl(240, 10%, 72%);
+    --grotto-day-3: hsl(240, 10%, 64%);
+    --grotto-night-0: hsl(340, 10%, 12%);
+    --grotto-night-1: hsl(340, 10%, 18%);
+    --grotto-night-2: hsl(340, 10%, 24%);
+    --grotto-night-3: hsl(340, 10%, 32%);
+    --grotto-accent-1: hsl(340, 40%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== SKELEDIRGE ====*/
+.preset-skeledirge {
+    --accent-h: 34;
+    --accent-s: 50%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(34, 20%, 84%);
+    --grotto-day-2: hsl(34, 20%, 72%);
+    --grotto-day-3: hsl(34, 20%, 64%);
+    --grotto-night-0: hsl(10, 10%, 16%);
+    --grotto-night-1: hsl(10, 60%, 40%);
+    --grotto-night-2: hsl(10, 60%, 48%);
+    --grotto-night-3: hsl(10, 60%, 56%);
+    --grotto-accent-1: hsl(34, 50%, 50%);
+}
+.theme-light.preset-skeledirge {
+    --text-normal: var(--grotto-night-0);
+}
+
+/*==== SWAMPERT ====*/
+body.preset-swampert {
+    --accent-h: 30;
+    --accent-s: 60%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 14%, 82%);
+    --grotto-day-2: hsl(40, 14%, 76%);
+    --grotto-day-3: hsl(40, 14%, 70%);
+    --grotto-night-0: hsl(210, 20%, 20%);
+    --grotto-night-1: hsl(210, 30%, 30%);
+    --grotto-night-2: hsl(210, 30%, 36%);
+    --grotto-night-3: hsl(210, 30%, 44%);
+    --grotto-accent-1: hsl(30, 60%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*====  URSALUNA  ====*/
+.preset-ursaluna {
+    --accent-h: 47;
+    --accent-s: 20%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(20, 10%, 80%);
+    --grotto-day-2: hsl(20, 10%, 70%);
+    --grotto-day-3: hsl(20, 10%, 64%);
+    --grotto-night-0: hsl(20, 40%, 14%);
+    --grotto-night-1: hsl(20, 40%, 20%);
+    --grotto-night-2: hsl(20, 40%, 32%);
+    --grotto-night-3: hsl(20, 40%, 40%);
+    --grotto-accent-1: hsl(47, 20%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== VOLCARONA ====*/
+body.preset-volcarona {
+    --accent-h: 27;
+    --accent-s: 85%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(0, 0%, 90%);
+    --grotto-day-2: hsl(165, 30%, 78%);
+    --grotto-day-3: hsl(165, 30%, 64%);
+    --grotto-night-0: hsl(194, 60%, 18%);
+    --grotto-night-1: hsl(194, 60%, 24%);
+    --grotto-night-2: hsl(194, 60%, 32%);
+    --grotto-night-3: hsl(194, 60%, 40%);
+    --grotto-accent-1: hsl(27, 85%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== WHIMSICOTT ====*/
+body.preset-whimsicott {
+    --accent-h: 120;
+    --accent-s: 40%;
+    --accent-l: 46%;
+    --grotto-day-1: hsl(40, 30%, 82%);
+    --grotto-day-2: hsl(40, 30%, 76%);
+    --grotto-day-3: hsl(40, 30%, 70%);
+    --grotto-night-0: hsl(30, 40%, 16%);
+    --grotto-night-1: hsl(30, 40%, 24%);
+    --grotto-night-2: hsl(30, 40%, 32%);
+    --grotto-night-3: hsl(30, 40%, 40%);
+    --grotto-accent-1: hsl(120, 40%, 46%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
