@@ -274,7 +274,7 @@ body {
     --grotto-text-icon-border-color-hover: var(--text-normal);
     --grotto-text-icon-radius: 0rem;
     --grotto-bases-cards-color: var(--text-normal);
-    --grotto-bases-cards-color-hover: var(--text-normal);
+    --grotto-bases-cards-color-hover: var(--grotto-day-1);
     --grotto-bases-cards-border-color: var(--text-normal);
     --grotto-bases-cards-background-color: var(--background-primary);
     --grotto-bases-cards-background-color-hover: var(--grotto-accent-1);
@@ -1139,6 +1139,9 @@ th,
     color: var(--grotto-bases-cards-color-hover);
     background-color: var(--grotto-bases-cards-background-color-hover);
     --grotto-bases-cards-label-color: var(--grotto-bases-cards-color-hover);
+    --text-normal: var(--grotto-day-1);
+    --text-faint: var(--grotto-day-3);
+    --grotto-link-color: var(--grotto-day-1);
 }
 span.value-list-element a.tag {
     line-height: 0.8rem;
@@ -2911,6 +2914,7 @@ settings:
                 label: Disabled
                 value: 0px
 */
+
 
 
 
