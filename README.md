@@ -113,13 +113,5 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.9
-- Improvements to readability
-- Added option to switch to accented tags
-- Search bar background fix
-- More improvements to sidebar
-- Added presets - Ice Rider Calyrex, Pirouette Meloetta, Cryogonal
-- Removed presets - Alola, Calyrex, Unova, Zacian
-- Improved inverted sidebar style
-- Added option to separate weekends in the Calendar plugin with a border
-- Updated some of the Style Settings options
+##### V1.5.0
+- Switched default sidebar style. Alternate should be available from settings.
