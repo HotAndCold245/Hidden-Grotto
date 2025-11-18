@@ -2653,6 +2653,19 @@ settings:
                 label: Disabled
                 value: none
     -
+        id: grotto-tag-border-radius
+        title: Tag Border Style
+        description: Toggle rounded tags
+        type: variable-select
+        default: 0rem
+        options:
+            -
+                label: Disabled
+                value: 0rem
+            -
+                label: Enabled
+                value: 2rem
+    -
         id: accented-tag
         title: Tag Style
         description: Enable to use accented tags
@@ -3071,5 +3084,6 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
