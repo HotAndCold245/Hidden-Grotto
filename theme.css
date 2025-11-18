@@ -51,6 +51,8 @@ body {
     --pdf-thumbnail-shadow: none;
 }
 body {
+    --grotto-ui-border-radius: 0rem;
+    --grotto-mobile-ui-border-radius: 0rem;
     /*==== COMMON ====*/
     --interactive-normal: var(--text-normal);
     --interactive-hover: var(--text-faint);
@@ -137,7 +139,7 @@ body {
     --grotto-button-color: var(--grotto-day-1);
     --grotto-button-background-color: var(--grotto-accent-1);
     --grotto-button-border-color: var(--text-normal);
-    --grotto-button-radius: 0rem;
+    --grotto-button-radius: var(--grotto-ui-border-radius);
     --grotto-button-error-color: var(--grotto-day-1);
     --grotto-button-error-background: var(--grotto-night-1);
     --grotto-button-error-background-hover: var(--text-error);
@@ -202,7 +204,7 @@ body {
     --grotto-statusbar-color-hover: var(--grotto-accent-1);
     --grotto-statusbar-background-color: var(--text-normal);
     --grotto-statusbar-border-color: var(--background-primary);
-    --grotto-statusbar-border-radius: 0rem;
+    --grotto-statusbar-border-radius: var(--grotto-ui-border-radius);
     /*==== TOGGLE SWITCHES ====*/
     --grotto-toggle-color: var(--grotto-day-1);
     --grotto-toggle-background-color: var(--grotto-day-2);
@@ -213,7 +215,7 @@ body {
     --grotto-tooltip-color: var(--grotto-day-1);
     --grotto-tooltip-background-color: var(--grotto-accent-1);
     --grotto-tooltip-border-color: var(--text-normal);
-    --grotto-tooltip-radius: 0rem;
+    --grotto-tooltip-radius: var(--grotto-ui-border-radius);
     /*==== TABLES ====*/
     --grotto-table-color: var(--text-normal);
     --grotto-table-cell-width: fit-content;
@@ -228,19 +230,19 @@ body {
     --grotto-progress-color: var(--grotto-accent-1);
     --grotto-progress-background-color: var(--text-normal);
     --grotto-progress-border-color: var(--text-normal);
-    --grotto-progress-radius: 0rem;
+    --grotto-progress-radius: var(--grotto-ui-border-radius);
     /*==== NOTICES ====*/
     --grotto-notice-color: var(--grotto-day-1);
     --grotto-notice-background-color: var(--grotto-accent-1);
     --grotto-notice-border-color: var(--text-normal);
-    --grotto-notice-radius: 0rem;
+    --grotto-notice-radius: var(--grotto-ui-border-radius);
     /*==== CANVAS ====*/
     --grotto-canvas-color: var(--text-normal);
     --grotto-canvas-path-color: var(--grotto-accent-1);
     --grotto-canvas-background-color: var(--grotto-accent-1);
     --grotto-canvas-controls-background-color: var(--background-primary);
     --grotto-canvas-controls-border-color: var(--text-normal);
-    --grotto-canvas-controls-radius: 0rem;
+    --grotto-canvas-controls-radius: var(--grotto-ui-border-radius);
     /*==== GRAPHS ====*/
     --grotto-graph-controls-background-color: var(--background-primary);
     --grotto-graph-controls-border-color: var(--text-normal);
@@ -270,7 +272,7 @@ body {
     --grotto-calendar-weekend-border-width: 1px;
     /*==== BASES ====*/
     --grotto-text-icon-color: var(--text-normal);
-    --grotto-text-icon-color-hover: var(--text-normal);
+    --grotto-text-icon-color-hover: var(--grotto-day-1);
     --grotto-text-icon-background-color: var(--grotto-accent-1);
     --grotto-text-icon-border-color-hover: var(--text-normal);
     --grotto-text-icon-radius: 0rem;
@@ -336,11 +338,11 @@ body {
     --grotto-dropdown-color: var(--grotto-day-1);
     --grotto-dropdown-background-color: var(--grotto-accent-1);
     --grotto-dropdown-border-color: var(--text-normal);
-    --grotto-dropdown-radius: 0rem;
+    --grotto-dropdown-radius: var(--grotto-ui-border-radius);
     /*==== SCROLL BAR ====*/
     --grotto-scrollbar-border-color: var(--text-normal);
     --scrollbar-width: 12px;
-    --scrollbar-radius: 0px;
+    --scrollbar-radius: var(--grotto-ui-border-radius);
     --scrollbar-bg: var(--grotto-accent-1);
     --scrollbar-thumb-bg: var(--grotto-accent-1);
     --scrollbar-active-thumb-bg: var(--grotto-accent-1);
@@ -349,12 +351,12 @@ body {
     --grotto-pull-color: var(--grotto-day-1);
     --grotto-pull-border-color: var(--text-normal);
     --grotto-pull-background-color: var(--grotto-accent-1);
-    --grotto-pull-radius: 0rem;
+    --grotto-pull-radius: var(--grotto-mobile-ui-border-radius);
     /*==== MOBILE NAVIGATION BAR ====*/
     --grotto-navbar-color: var(--background-primary);
     --grotto-navbar-background-color: var(--text-normal);
     --grotto-navbar-border-color: var(--background-primary);
-    --grotto-navbar-radius: 0rem;
+    --grotto-navbar-radius: var(--grotto-mobile-ui-border-radius);
     --grotto-navbar-new-tab: none;
     /*==== MOBILE TAB SWITCHER ====*/
     --grotto-tab-switcher-color: var(--grotto-day-1);
@@ -368,12 +370,12 @@ body {
     --grotto-toolbar-color: var(--background-primary);
     --grotto-toolbar-background-color: var(--text-normal);
     --grotto-toolbar-border-color: var(--background-primary);
-    --grotto-toolbar-radius: 0rem;
+    --grotto-toolbar-radius: var(--grotto-mobile-ui-border-radius);
     /*==== MOBILE SYSTEM STATUS BAR ====*/
     --grotto-system-status-color: var(--background-primary);
     --grotto-workspace-drawer-border-color: var(--grotto-night-0);
     /*==== RADIUS ====*/
-    --grotto-input-radius: 0rem;
+    --grotto-input-radius: var(--grotto-ui-border-radius);
     --input-radius: 0px;
     --radius-s: 0px;
     --radius-m: 0px;
@@ -389,7 +391,7 @@ body {
     /*==== FILE NAVIGATION ====*/
     --grotto-nav-tag-color: var(--grotto-night-0);
     --grotto-nav-tag-background-color: var(--grotto-day-1);
-    --grotto-nav-radius: 0rem;
+    --grotto-nav-radius: var(--grotto-ui-border-radius);
     --grotto-nav-title-color: var(--grotto-day-1);
     --grotto-nav-title-color-hover: var(--grotto-accent-1);
     --grotto-nav-title-color-active: var(--grotto-day-1);
@@ -397,11 +399,12 @@ body {
     --grotto-nav-title-border-color: var(--grotto-day-1);
     --grotto-rename-color: var(--grotto-night-1);
     --grotto-rename-background-color: var(--grotto-day-1);
-    --grotto-rename-radius: 0rem;
+    --grotto-rename-radius: var(--grotto-ui-border-radius);
     --divider-width: 0px;
     --border-width: 0px;
     --nav-indentation-guide-width: 0px;
     --nav-tag-color-active: var(--grotto-nav-tag-color);
+    --nav-tag-color-hover: var(--grotto-nav-tag-color);
     --vault-profile-color: var(--grotto-nav-title-color);
     /*==== MENUS ====*/
     --grotto-menu-color: var(--text-normal);
@@ -442,6 +445,7 @@ body {
     /*==== SLIDERS ====*/
     --grotto-slider-border-color: var(--grotto-night-0);
     --grotto-slider-background-color: var(--grotto-day-1);
+    --grotto-slider-border-radius: var(--grotto-ui-border-radius);
 }
 
 /*==== TAGS ====*/
@@ -1015,12 +1019,20 @@ th,
 }
 .suggestion-item.is-selected,
 .suggestion-item.mobile-tap {
-    color: var(--grotto-suggestion-color-hover);
+    color: var(--grotto-day-1);
     background-color: var(--grotto-suggestion-background-color-hover);
     border: 1px solid var(--grotto-suggestion-border-color);
     border-radius: var(--grotto-suggestion-radius);
 }
+.suggestion-item:hover, 
+.suggestion-item:hover .suggestion-flair .svg-icon, 
+.suggestion-container.mod-property-key .suggestion-item:hover{
+    color: var(--grotto-day-1);
+}
 .suggestion-flair .svg-icon {
+    color: var(--grotto-suggestion-color);
+}
+.suggestion-container.mod-property-key .suggestion-item.is-selected {
     color: var(--grotto-suggestion-color);
 }
 
@@ -1072,9 +1084,18 @@ th,
     border-left: var(--grotto-calendar-weekend-border-width) solid var(--grotto-calendar-weekend-border-color);
 }
 #calendar-container .day.active {
-    color: var(--grotto-calendar-color);
+    color: var(--grotto-accent-1);
+    background-color: transparent;
+    border: 1px solid var(--grotto-calendar-border-color);
+    border-radius: 0rem;
 }
-#calendar-container .today {
+#calendar-container .day.svelte-q3wqg9:hover, 
+#calendar-container .week-num.svelte-egt0yd:hover {
+    border: 1px solid var(--grotto-calendar-border-color);
+}
+#calendar-container .today, 
+#calendar-container .day.active:hover, 
+#calendar-container .week-num.active.svelte-egt0yd {
     color: var(--grotto-calendar-today-color);
     background-color: var(--grotto-calendar-today-background-color);
     border: 1px solid var(--grotto-calendar-border-color);
@@ -1098,6 +1119,13 @@ th,
     border-top: 1px solid var(--grotto-calendar-border-color);
     border-bottom: 1px solid var(--grotto-calendar-border-color);
     min-width: 0px;
+}
+#calendar-container td.svelte-egt0yd {
+    border-right: 1px solid var(--grotto-calendar-border-color);
+}
+#calendar-container .week-num.svelte-egt0yd {
+    border: 1px solid transparent;
+    border-radius: 0rem;
 }
 
 /*==== TITLE BAR ====*/
@@ -1238,11 +1266,12 @@ select,
 .is-android {
   --scrollbar-border-width: 3px;
   --scrollbar-width: 12px;
-  --scrollbar-radius: 0;
+  --scrollbar-radius: 0rem;
 }
 body.styled-scrollbars ::-webkit-scrollbar-thumb {
     outline: 1px solid var(--grotto-scrollbar-border-color);
     outline-offset: -3px;
+    border-radius: var(--grotto-ui-border-radius);
 }
 
 /*==== MOBILE SPECIFIC ====*/
@@ -1305,15 +1334,20 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .mobile-tab-preview-empty, 
 .mobile-tab-preview {
     border: 1px solid var(--grotto-tab-switcher-color);
+    border-radius: var(--grotto-mobile-ui-border-radius);
 }
 .mobile-tab.is-active .mobile-tab-preview-empty, 
 .mobile-tab.is-active .mobile-tab-preview-embed {
     border: 0px solid var(--grotto-tab-switcher-color);
+    border-radius: var(--grotto-mobile-ui-border-radius);
+}
+.mobile-tab .mobile-tab-pin, .mobile-tab .close-button {
+    border-radius: var(--grotto-mobile-ui-border-radius);
 }
 
 /*==== MOBILE TOOLBAR ====*/
 .mobile-toolbar {
-    border-radius: var(--grotto-toolbar-radius);
+    border-radius: var(--grotto-toolbar-radius) var(--grotto-toolbar-radius) 0rem 0rem;
     position: sticky;
     width: auto;
     overflow-y: auto;
@@ -1370,7 +1404,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     border-radius: 0px;
 }
 
-/*====  VIEW HEADER  ====*/
+/*==== VIEW HEADER ====*/
 .is-mobile .view-actions {
     position: fixed;
     display: flex;
@@ -1399,6 +1433,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
     color: var(--grotto-navbar-color);
     background-color: var(--grotto-navbar-background-color);
     border: 1px solid var(--grotto-navbar-border-color);
+    border-radius: calc(var(--grotto-navbar-radius) / 3);
 }
 .is-mobile .view-header .view-action.mobile-tap {
     color: var(--grotto-accent-1);
@@ -1422,6 +1457,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 }
 .is-phone .workspace-drawer-active-tab-header {
     background-color: var(--grotto-mobile-drawer-header-active-background-color);
+    border-radius: var(--grotto-mobile-ui-border-radius);
 }
 .is-phone .workspace-drawer-active-tab-header.mobile-tap {
     background-color: var(--grotto-mobile-drawer-header-active-background-color);
@@ -1606,8 +1642,11 @@ body:not(.is-phone) .community-item.is-selected:hover{
     background-color: transparent;
     border: 1px solid var(--text-normal);
 }
-.community-item .flair.mod-pop {
+.community-item .flair.mod-pop, 
+.community-modal-info-name .flair.mod-pop {
+    color: var(--grotto-day-1);
     background-color: var(--grotto-accent-1);
+    border: 1px solid var(--text-normal);
 }
 
 /*==== SETTINGS ====*/
@@ -1667,7 +1706,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 
 /*==== SLIDERS ====*/
 input[type='range'] {
-    border-radius: 0px;
+    border-radius: var(--grotto-slider-border-radius);
     background-color: var(--grotto-accent-1);
     outline: 1px solid var(--text-normal);
     outline-offset: -1px;
@@ -1811,8 +1850,7 @@ input[type='password']:hover {
     outline: 1px solid var(--grotto-search-suggestion-border-color);
     outline-offset: 2px;
 }
-.tree-item-flair, 
-.search-input-clear-button {
+.tree-item-flair {
     color: var(--grotto-search-suggestion-color);
 }
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover, 
@@ -1836,6 +1874,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
     color: var(--grotto-nav-tag-color);
     background-color: var(--grotto-nav-tag-background-color);
     border-radius: var(--grotto-nav-radius);
+    border: 1px solid var(--grotto-nav-title-border-color);
 }
 .nav-file-title,
 .nav-folder-title,
@@ -1845,6 +1884,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover,
 .side-dock-actions .side-dock-ribbon-action {
     color: var(--grotto-nav-title-color);
     border: 1px solid transparent;
+    border-radius: var(--grotto-nav-radius);
 }
 .nav-file-title:hover, 
 .tree-item-self.is-clickable.mobile-tap,
@@ -1855,6 +1895,7 @@ body:not(.is-grabbing) .nav-folder-title:hover,
 .side-dock-actions .side-dock-ribbon-action:hover {
     color: var(--grotto-nav-title-color-hover);
     background-color: transparent;
+    border-radius: var(--grotto-nav-radius);
 }
 .nav-file-title.is-active,
 .nav-folder-title.is-active, 
@@ -1863,6 +1904,7 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
     color: var(--grotto-nav-title-color-active);
     background-color: var(--grotto-nav-title-background-color-active);
     border: 1px solid var(--grotto-nav-title-border-color);
+    border-radius: var(--grotto-nav-radius);
 }
 
 /*==== MODALS ====*/
@@ -1965,6 +2007,7 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
     color: var(--grotto-text-icon-color-hover);
     background-color:var(--grotto-text-icon-background-color);
     border: 1px solid var(--grotto-text-icon-border-color-hover);
+    border-radius: var(--grotto-ui-border-radius);
 }
 .text-icon-button.is-active.has-active-menu .text-button-icon, 
 .text-icon-button.is-active .text-button-icon, 
@@ -1974,6 +2017,7 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
 .text-icon-button.mobile-tap, 
 .text-icon-button.mobile-tap .text-button-icon {
     color: var(--grotto-text-icon-color-hover);
+    border-radius: var(--grotto-ui-border-radius);
 }
 .bases-table-header {
     border: 1px solid var(--bases-table-border-color);
@@ -2052,6 +2096,7 @@ span.value-list-element a.tag {
 }
 .is-phone .bases-query-container .filter-row .combobox-button {
     border: 1px solid var(--text-normal);
+    border-radius: var(--grotto-ui-border-radius);
 }
 .bases-query-container .filter-expression {
     background-color: transparent;
@@ -2070,12 +2115,14 @@ span.value-list-element a.tag {
 }
 .bases-query-container .filter-lhs-container {
     border: 1px solid var(--text-normal);
+    border-radius: var(--grotto-ui-border-radius);
 }
 .bases-query-container .filter-row .combobox-button.has-focus {
     background-color: var(--grotto-accent-1);
 }
 .bases-query-container .filter-row .filter-operator {
     border: 1px solid var(--text-normal);
+    border-radius: var(--grotto-ui-border-radius);
 }
 .filter-statement .metadata-property-value .metadata-input-text, 
 .filter-statement .metadata-property-value .metadata-input-text:hover, 
@@ -2170,9 +2217,10 @@ body:not(.is-phone) .base-toolbar-sort-item {
 .bases-toolbar-menu .base-toolbar-sort-item .metadata-property, 
 .bases-toolbar-menu .base-toolbar-groupby-item .metadata-property {
     border: 1px solid var(--grotto-bases-cards-border-color);
+    border-radius: var(--grotto-ui-border-radius);
 }
 
-/*====  PROPERTIES  ====*/
+/*==== PROPERTIES ====*/
 body:not(.sidebar-preset) .workspace-leaf-content[data-type='file-properties'] .view-content {
     --grotto-properties-view-color: var(--grotto-day-1);
     --grotto-metadata-border-color: var(--grotto-day-1);
@@ -2214,6 +2262,7 @@ input.metadata-property-key-input:focus-within,
     border: 1px solid var(--grotto-metadata-border-color);
     background-color: var(--grotto-metadata-background-color);
     height: 100%;
+    border-radius: 0rem;
 }
 input.metadata-property-key-input:focus-within {
     outline: 2px solid var(--grotto-metadata-border-color);
@@ -2239,7 +2288,7 @@ input.metadata-property-key-input:focus-within {
 .multi-select-pill:hover {
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
-    border-radius: 0px;
+    border-radius: var(--grotto-tag-border-radius);
     padding: var(--tag-padding-y) var(--tag-padding-x);
 }
 .multi-select-pill-remove-button {
@@ -2992,3 +3041,4 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
