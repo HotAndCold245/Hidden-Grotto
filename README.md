@@ -113,7 +113,8 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.4.7
+##### V1.4.8
+- Partially added option to use a rounded UI
 - Improvements to readability
 - Added option to switch to accented tags
 - Search bar background fix
