@@ -618,6 +618,10 @@ a.mobile-tap,
     filter:brightness(105%);
     opacity: 0.8;
 }
+.external-link {
+    background-image: none;
+    padding-inline-end: 0rem;
+}
 
 /*==== HEADERS ====*/
 .cm-formatting-header {
@@ -1716,6 +1720,10 @@ body:not(.is-phone) .community-item.is-selected:hover{
     background-color: var(--grotto-accent-1);
     border: 1px solid var(--text-normal);
 }
+.community-item:hover {
+    color: var(--grotto-day-1);
+    --text-muted: currentColor;
+}
 
 /*==== SETTINGS ====*/
 .vertical-tab-nav-item {
@@ -2041,8 +2049,9 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
     border-radius: 0px;
 }
 .canvas-group-label {
-    color: var(--grotto-canvas-color);
+    color: var(--grotto-day-1);
     background-color: var(--grotto-canvas-background-color);
+    border: 1px solid var(--grotto-canvas-color);
     border-radius: 0px;
 }
 .canvas-edges path.canvas-display-path {
@@ -3180,6 +3189,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
