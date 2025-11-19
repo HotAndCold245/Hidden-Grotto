@@ -377,7 +377,7 @@ body {
     --grotto-toolbar-radius: 0rem;
     /*==== MOBILE SYSTEM STATUS BAR ====*/
     --grotto-system-status-color: var(--background-primary);
-    --grotto-workspace-drawer-border-color: var(--grotto-night-0);
+    --grotto-workspace-drawer-border-color: var(--text-normal);
     /*==== RADIUS ====*/
     --grotto-input-radius: 0rem;
     --input-radius: 0px;
@@ -764,6 +764,25 @@ input[type=checkbox]:checked:hover {
     border: 1px solid var(--grotto-checkbox-border-color);
     border-radius: var(--grotto-checkbox-radius);
 }
+input[type=checkbox], 
+input[type=checkbox]:hover {
+    background-color: var(--background-primary);
+}
+
+/*==== COLOR SWATCHES ====*/
+.is-mobile input[type="color"] {
+    width: 44px;
+    height: 44px;
+}
+input[type="color"]::-webkit-color-swatch {
+    box-shadow: 0px 0px 0px 1px var(--text-normal);
+}
+input[type="color"]::-webkit-color-swatch:hover {
+    box-shadow: 0px 0px 0px 1px var(--text-normal);
+    opacity: 1;
+    outline: 1px solid var(--text-normal);
+    outline-offset: 3px;
+}
 
 /*==== COLOR SWATCHES ====*/
 .is-mobile input[type="color"] {
@@ -1131,10 +1150,15 @@ th,
 }
 #calendar-container td.svelte-egt0yd {
     border-right: 1px solid var(--grotto-calendar-border-color);
+    padding-right: 1.5px;
 }
 #calendar-container .week-num.svelte-egt0yd {
+    color: var(--grotto-calendar-color);
     border: 1px solid transparent;
     border-radius: 0rem;
+}
+#calendar-container .filled.svelte-1widvzq {
+    fill: var(--grotto-calendar-color);
 }
 
 /*==== TITLE BAR ====*/
@@ -1229,6 +1253,12 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     border-left: 1px solid var(--background-secondary);
     border-right: 1px solid var(--background-secondary);
 }
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover .workspace-tab-header-inner-title {
+    color: var(--grotto-day-1);
+}
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
+    background-color: var(--grotto-accent-1);
+}
 .workspace-tab-header-inner .workspace-tab-header-inner-icon, 
 .workspace-tab-header-tab-list .clickable-icon, 
 .workspace-tab-header-new-tab .clickable-icon {
@@ -1304,7 +1334,7 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .pull-action, 
 .pull-down-action, 
 .pull-out-action {
-    color: var(--grotto-pull-color);
+    color: var(--text-normal);
     background-color: var(--background-primary);
     border: 1px solid var(--grotto-pull-border-color);
     border-radius: var(--grotto-pull-radius);
@@ -1352,6 +1382,9 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 }
 .mobile-tab .mobile-tab-pin, .mobile-tab .close-button {
     border-radius: 0rem;
+}
+.mobile-tab-switcher-menubar {
+    border-top: 1px solid var(--grotto-navbar-border-color);
 }
 
 /*==== MOBILE TOOLBAR ====*/
@@ -1467,9 +1500,13 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 .is-phone .workspace-drawer-active-tab-header {
     background-color: var(--grotto-mobile-drawer-header-active-background-color);
     border-radius: 0rem;
+    margin: 4px 12px;
 }
 .is-phone .workspace-drawer-active-tab-header.mobile-tap {
     background-color: var(--grotto-mobile-drawer-header-active-background-color);
+    opacity: 1;
+    outline: 1px solid var(--grotto-mobile-drawer-header-active-background-color);
+    outline-offset: 2px;
 }
 .is-phone .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
 .is-phone .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
@@ -2144,6 +2181,9 @@ span.value-list-element a.tag {
     border-width: 0px;
     height: 100%;
 }
+.is-phone .bases-query-container .filter-rhs-container {
+    border: 1px solid var(--text-normal);
+}
 .query-toolbar-menu .query-toolbar-section-header:hover {
     color: var(--grotto-accent-1);
 }
@@ -2152,6 +2192,18 @@ span.value-list-element a.tag {
 }
 .combobox-button .combobox-button-icon {
     color: var(--grotto-text-icon-color-hover);
+}
+.combobox-button.filter-property-select.mobile-tap {
+    background-color: var(--grotto-accent-1);
+}
+.formula-editor {
+    background-color: transparent;
+}
+.combobox-button.mobile-tap {
+    background-color: var(--grotto-accent-1);
+}
+.combobox:not(.has-input-focus) .suggestion-item.is-selected {
+    background-color: var(--grotto-accent-1);
 }
 .bases-query-container .filter-group .filter-group-header .conjunction.dropdown {
     background-color: var(--grotto-dropdown-background-color);
@@ -2201,7 +2253,7 @@ span.value-list-element a.tag {
 }
 .is-phone .filter-statement .metadata-property-value .metadata-input-text, 
 .is-phone .filter-statement .metadata-property-value .metadata-input-text:focus-within {
-    border: 1px solid var(--text-normal);
+    border: 0px solid var(--text-normal);
 }
 .is-phone .bases-query-container .filter-expression {
     background-color: transparent;
@@ -2227,6 +2279,13 @@ body:not(.is-phone) .base-toolbar-sort-item {
 .bases-toolbar-menu .base-toolbar-groupby-item .metadata-property {
     border: 1px solid var(--grotto-bases-cards-border-color);
     border-radius: 0rem;
+}
+.is-phone .suggestion-item.bases-toolbar-menu-item.mod-implicit.is-selected, 
+.is-phone .menu .suggestion-group .suggestion-item.mobile-tap:not(.is-disabled), 
+.is-phone .suggestion-item.bases-toolbar-menu-item.mod-formula.is-selected  {
+    color: var(--grotto-bases-cards-color-hover);
+    background-color: var(--grotto-accent-1);
+    border: 1px solid var(--grotto-bases-cards-border-color);
 }
 
 /*==== PROPERTIES ====*/
@@ -2951,10 +3010,10 @@ body.preset-noivern {
     --grotto-day-1: hsl(10, 10%, 90%);
     --grotto-day-2: hsl(10, 10%, 82%);
     --grotto-day-3: hsl(10, 10%, 70%);
-    --grotto-night-0: hsl(40, 6%, 12%);
-    --grotto-night-1: hsl(40, 6%, 16%);
-    --grotto-night-2: hsl(40, 6%, 24%);
-    --grotto-night-3: hsl(40, 6%, 32%);
+    --grotto-night-0: hsl(40, 16%, 12%);
+    --grotto-night-1: hsl(40, 16%, 16%);
+    --grotto-night-2: hsl(40, 16%, 24%);
+    --grotto-night-3: hsl(40, 16%, 32%);
     --grotto-accent-1: hsl(10, 50%, 50%);
 }
 
@@ -3080,6 +3139,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
