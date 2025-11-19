@@ -1067,6 +1067,18 @@ th,
 .suggestion-container.mod-property-key .suggestion-item.is-selected {
     color: var(--grotto-suggestion-color);
 }
+.suggestion-container.mod-search-suggestion .suggestion {
+    border: 1px solid var(--grotto-suggestion-color);
+}
+.search-suggest-item.mod-group:not(:first-child) {
+    padding-inline-start: 8px;
+    padding-inline-end: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+.list-item-part.clickable-icon:hover, .list-item-part.clickable-icon:active {
+    color: var(--grotto-suggestion-color);
+}
 
 /*==== GRAPHS ====*/
 .graph-view.color-line {
@@ -3147,6 +3159,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
