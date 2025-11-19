@@ -2202,6 +2202,9 @@ span.value-list-element a.tag {
 .combobox-button.mobile-tap {
     background-color: var(--grotto-accent-1);
 }
+.is-phone .combobox.suggestion-container {
+    border-width: 1px 0px 0px 0px;
+}
 .combobox:not(.has-input-focus) .suggestion-item.is-selected {
     background-color: var(--grotto-accent-1);
 }
@@ -3139,6 +3142,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
