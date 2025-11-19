@@ -421,7 +421,7 @@ body {
     --grotto-search-suggestion-background-color: var(--background-secondary);
     --grotto-search-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-search-suggestion-border-color: var(--grotto-search-suggestion-color);
-    --grotto-search-suggestion-icon-color: var(--grotto-day-1);
+    --grotto-search-suggestion-icon-color: var(--grotto-search-suggestion-color);
     --grotto-search-suggestion-icon-color-hover: var(--grotto-accent-1);
     /*==== SETTINGS ====*/
     --grotto-settings-color: var(--text-normal);
@@ -1280,6 +1280,11 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .workspace-tab-header-tab-list .clickable-icon, 
 .workspace-tab-header-new-tab .clickable-icon {
     color: var(--grotto-tab-header-icon-color);
+}
+.workspace .mod-root .workspace-tab-header {
+    &:not(.mod-active) + & {
+        border-left: none;
+    }
 }
 
 /*==== PARAGRAPHS ====*/
@@ -2248,7 +2253,10 @@ span.value-list-element a.tag {
 }
 .text-icon-button.has-active-menu .text-button-icon, 
 .text-icon-button:hover .text-button-icon {
-    color: var(--grotto-text-icon-color-active);
+    color: var(--grotto-text-icon-color-hover);
+}
+.text-icon-button:hover .text-button-label {
+    color: var(--grotto-text-icon-color-hover);
 }
 .formula-editor .cm-content {
     caret-color: currentColor;
@@ -2306,6 +2314,19 @@ body:not(.is-phone) .base-toolbar-sort-item {
     color: var(--grotto-bases-cards-color-hover);
     background-color: var(--grotto-accent-1);
     border: 1px solid var(--grotto-bases-cards-border-color);
+}
+.bases-thead .bases-td[data-sort] .bases-table-header {
+    mask-image: none;
+}
+.bases-toolbar-menu-item {
+    border: 1px solid transparent;
+    --icon-color: currentColor;
+}
+.bases-toolbar-menu-item:hover {
+    border: 1px solid var(--text-normal);
+    color: var(--grotto-day-1);
+    background-color: var(--grotto-accent-1);
+    --icon-color: currentColor;
 }
 
 /*==== PROPERTIES ====*/
@@ -3159,6 +3180,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
