@@ -768,6 +768,10 @@ input[type=checkbox],
 input[type=checkbox]:hover {
     background-color: var(--background-primary);
 }
+input[type=checkbox]:checked, 
+input[type=checkbox]:checked:hover {
+    background-color: var(--grotto-accent-1);
+}
 
 /*==== COLOR SWATCHES ====*/
 .is-mobile input[type="color"] {
@@ -3142,6 +3146,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
