@@ -113,6 +113,6 @@ settings:
 If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
 
 # Changelog
-##### V1.5.1
+##### V1.5.3
 - Fixes to bases menus
 - Switched default sidebar style. Alternate should be available from settings.
