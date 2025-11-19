@@ -1257,7 +1257,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     border-left: 1px solid var(--background-secondary);
     border-right: 1px solid var(--background-secondary);
 }
-.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover .workspace-tab-header-inner-title {
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover .workspace-tab-header-inner-title, 
+.workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover .workspace-tab-header-inner-icon {
     color: var(--grotto-day-1);
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
@@ -3146,6 +3147,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
