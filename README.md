@@ -1,25 +1,20 @@
 # Introduction
-This theme is primarily designed for personal use. The base color palette is inspired by the Pokemon, Clobbopus. 
+I made this theme primarily for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus.
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
+
 # Features
-- Supports both **light** and **dark** mode
-- 19 colour palettes
-	- Available through the Style Settings plugin.
-	- Also available through the [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin (Not currently available in the plugin store but can be accessed via the BRAT plugin).
-- Updated callouts
-	- Callout titles now come with a border below it.
-	- Callouts icons are hidden but can be enabled again by setting `--grotto-callout-icon: auto`
-- Updated embeds
-	- Titles are hidden but can be enabled again by setting `--grotto-embed-title: block`
-- Updated tables
-	- Cells can now be separated or collapsed by setting `--grotto-table-border-style: separate` or `--grotto-table-border-style: collapse`
-	- Cell wrapping can be adjusted using `--grotto-table-cell-width`. Setting it to `fit-content` allows it to wrap around while `max-content` prevents cell wrapping. Optionally, a specific maximum width in px can be set
-- Mobile toolbar
-	- The maximum toolbar height (number of rows visible) can be adjusted by setting `--grotto-toolbar-rows` to the number of rows. If there are more tools than a row can hold while maximum height is set to 1, then the toolbar can be swiped up to access the rest of the tools. This is a change from the default behaviour of swiping to the left because it let's you see more of the tools at once. #Note : Setting the height to more rows than necessary to hold the active number of tools will cause the mobile toolbar to move further up than intended. 
-- Mobile navbar
-	- The view actions (reading/editing toggle and more options) have been moved to the bottom for easier reach. Additionally, the file path has been hidden for extra room.
-- Privacy mode
-	- Option to enable blurred view so noone can read notes while they are unattended. #Note : Only enable it if you know how to navigate to the toggle without being able to read. If lost, find the theme folder and remove the theme manually - simply editing the css file might not work. 
+- Support for both **light** and **dark** mode
+- **18** additional color palettes to choose from
+- Updated **mobile toolbar** with adjustable height and vertical scrolling
+	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
+	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
+	- #Note : Setting the height to higher than necessary to hold the tools will cause the toolbar to rise far above the keyboard 
+- Updated **mobile navigation bar** (the bar at the bottom) to include the view actions for easier reach
+- Updated **callouts** with hidden icons which can be reenabled by setting `--grotto-callout-icon: auto`
+- Updated **embeds** with hidden titles which can be reenabled by settings `--grotto-embed-title: block`
+- Option to **blur** or **redact** everything to provide some privacy when notes are left unattended
+	- #Note : Only use this feature if you know how to navigate to the settings to disable it
+- **Customization** is available through Style Settings as well as my personal [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin which can be installed using BRAT
 
 # Screenshots
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
@@ -56,63 +51,59 @@ This theme is primarily designed for personal use. The base color palette is ins
 </details>
 
 <details>
-	<summary>Mobile Navbar</summary>
-
-![Navbar](https://github.com/user-attachments/assets/f10ca19b-8dbb-405f-84b3-ba1ad9422a42)
-
-</details>
-
-<details>
-	<summary>Privacy</summary>
+	<summary>Blur</summary>
 
 ![Blur](https://github.com/user-attachments/assets/18d4c412-cba2-4f0b-8046-972b4ea0b86d)
 
 </details>
 
-# The Plugin
- The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin developed for use with this theme allows for more customization. Color palettes can be easily swapped between using a dedicated ribbon/toolbar/command prompt button. You can also create your own presets using the following format. 
- ```
+# Color Presets
+You can create your own color preset using the following format in a snippet.
+```
 .preset-yourpresetname {
-    --accent-h: ;
-    --accent-s: %;
-    --accent-l: %;
-    --grotto-day-1: hsl();
-    --grotto-day-2: hsl();
+	--accent-h: ;
+	--accent-s: ;
+	--accent-l: ;
+	--grotto-day-1: hsl();
+	--grotto-day-2: hsl();
 	--grotto-day-3: hsl();
-    --grotto-night-0: hsl();
-    --grotto-night-1: hsl();
-    --grotto-night-2: hsl();
+	--grotto-night-0: hsl();
+	--grotto-night-1: hsl();
+	--grotto-night-2: hsl();
 	--grotto-night-3: hsl();
-    --grotto-accent-1: hsl();
+	--grotto-accent-1: hsl();
 }
- ```
-There are more variables to control minor things that can be found in the css file. A markdown file with all the available variables is available in the theme's repository.
-
-Self-defined presets will automatically appear in the Hidden Grotto Controls plugin menu after restarting the app. 
-#Note : These will not appear in Style Settings menu since they are not added to the main theme.css. In order to make them appear in the Style Settings menu, you can add the following section to your snippet and update the `hoenn` parts to the name of your preset.
+```
+If you are using the **Hidden Grotto Controls** plugin, your preset will be automatically added to the list of presets. In the case of **Style Settings**, you will need to add the following format to the snippet as well. 
 ```
 /* @settings
 name: Personal Presets
 id: personal-presets
 collapsed: false
 settings:
-    -
-        id: color-palette
-        title: Presets
-        type: class-select
-        allowEmpty: false
-        default: preset-hoenn
-        options:
-            -
-                label: Hoenn
-                value: preset-hoenn
+    -
+        id: color-palette
+        title: Personal Presets
+        type: class-select
+        allowEmpty: true
+        options:
+            -
+                label: Your Preset Name
+                value: preset-yourpresetname
 */
 ```
+You can include additional changes to your preset using the variables declared by the theme. A full list of variables can be found in the theme.css file and is also available in the theme's repository. 
+#Note : The presets included in the theme are always subject to change. 
+
+# The Plugin
+The **Hidden Grotto Controls** plugin includes all the settings available in **Style Settings** as well as an easy way to cycle through the presets and toggle blur through ribbon commands. There's no need to use it if you don't need the shortcuts. 
 
 # Feedback
-If there are any problems or certain community plugins need styling, you can submit an issue on the repository or try the official Obsidian discord server in the #theme-dev or #appearance channel. 
+If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
-##### V1.5.3
-- Fixes to bases menus
-- Switched default sidebar style. Alternate should be available from settings.
+##### v1.5.4
+- Improved visibility of certain texts on hover
+##### v1.5.3
+- Fixes to menus in bases.
+- Switched default sidebar style. Alternate should be available from settings. 
