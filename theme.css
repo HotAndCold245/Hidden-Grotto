@@ -1059,6 +1059,7 @@ th,
     background-color: var(--grotto-suggestion-background-color-hover);
     border: 1px solid var(--grotto-suggestion-border-color);
     border-radius: var(--grotto-suggestion-radius);
+    --text-muted: currentColor;
 }
 .suggestion-flair .svg-icon, 
 .suggestion-item.mod-complex .suggestion-flair {
@@ -3187,6 +3188,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
