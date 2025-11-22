@@ -2806,36 +2806,6 @@ settings:
                 value: var(--color-accent)
 */
 /* @settings
-name: UI Controls
-id: grotto-ui-controls
-collapsed: false
-settings:
-    -
-        id: grotto-ui-border-radius
-        title: UI Border Style
-        type: variable-select
-        default: 0rem
-        options:
-            -
-                label: Normal
-                value: 0rem
-            -
-                label: Round
-                value: 2rem
-    -
-        id: grotto-mobile-ui-border-radius
-        title: Mobile-specific UI Border Style
-        type: variable-select
-        default: 0rem
-        options:
-            -
-                label: Normal
-                value: 0rem
-            -
-                label: Round
-                value: 2rem
-*/
-/* @settings
 name: Calendar Plugin Controls
 id: grotto-calendar-plugin-controls
 collapsed: false
@@ -3192,6 +3162,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
