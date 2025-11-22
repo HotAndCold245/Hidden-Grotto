@@ -1708,6 +1708,8 @@ body:not(.is-phone) .community-item.is-selected,
 body:not(.is-phone) .community-item.is-selected:hover{
     border: 1px solid var(--text-normal);
     background-color: var(--grotto-accent-1);
+    color: var(--grotto-day-1);
+    --text-muted: currentColor;
 }
 .community-item .flair {
     color: var(--text-normal);
@@ -1719,10 +1721,6 @@ body:not(.is-phone) .community-item.is-selected:hover{
     color: var(--grotto-day-1);
     background-color: var(--grotto-accent-1);
     border: 1px solid var(--text-normal);
-}
-.community-item:hover {
-    color: var(--grotto-day-1);
-    --text-muted: currentColor;
 }
 
 /*==== SETTINGS ====*/
@@ -3189,6 +3187,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
