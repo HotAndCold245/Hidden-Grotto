@@ -4,7 +4,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 
 # Features
 - Support for both **light** and **dark** mode
-- **18** additional color palettes to choose from
+- **19** additional color palettes to choose from
 - Updated **mobile toolbar** with adjustable height and vertical scrolling
 	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
 	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
@@ -17,7 +17,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 - **Customization** is available through Style Settings as well as my personal [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin which can be installed using BRAT
 
 # Screenshots
-#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. 
+#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. It is not included in the theme for flexibility purposes. 
 
 <details>
 	<summary>Color Palettes</summary>
@@ -102,6 +102,9 @@ The **Hidden Grotto Controls** plugin includes all the settings available in **S
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
+##### v1.5.5
+- Adjusted presets - Swampert, Ursaluna
+- New preset - Aromatisse
 ##### v1.5.4
 - Improved visibility of certain texts on hover
 ##### v1.5.3
