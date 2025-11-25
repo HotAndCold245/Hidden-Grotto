@@ -269,7 +269,7 @@ body {
     --grotto-calendar-border-color: var(--grotto-calendar-color);
     --grotto-calendar-border-width: 1px;
     --grotto-calendar-year-color: var(--grotto-accent-1);
-    --grotto-calendar-dayofweek-color: var(--background-secondary);
+    --grotto-calendar-dayofweek-color: var(--grotto-day-1);
     --grotto-calendar-dayofweek-background-color: var(--grotto-accent-1);
     --grotto-calendar-dayofweek-border-width: 1px;
     --grotto-calendar-weekend-border-color: var(--grotto-calendar-color);
@@ -2565,6 +2565,9 @@ settings:
                 label: Aggron
                 value: preset-aggron
             -
+                label: Aromatisse
+                value: preset-aromatisse
+            -
                 label: Clobbopus
                 value: preset-clobbopus
             -
@@ -2891,6 +2894,21 @@ body.preset-aggron {
     --grotto-accent-1: hsl(0, 0%, 58%);
 }
 
+/*==== AROMATISSE ====*/
+.preset-aromatisse {
+    --accent-h: 0;
+    --accent-s: 50%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 0%, 82%);
+    --grotto-day-2: hsl(40, 0%, 76%);
+    --grotto-day-3: hsl(40, 0%, 70%);
+    --grotto-night-0: hsl(300, 40%, 20%);
+    --grotto-night-1: hsl(300, 40%, 28%);
+    --grotto-night-2: hsl(300, 40%, 36%);
+    --grotto-night-3: hsl(300, 40%, 44%);
+    --grotto-accent-1: hsl(0, 50%, 60%);
+}
+
 /*====  CLOBBOPUS  ====*/
 .preset-clobbopus {
     --accent-h: 16;
@@ -2942,8 +2960,8 @@ body.preset-darkrai {
 /*==== ICE RIDER CALYREX ====*/
 body.preset-ice-rider-calyrex {
     --accent-h: 160;
-    --accent-s: 50%;
-    --accent-l: 44%;
+    --accent-s: 40%;
+    --accent-l: 50%;
     --grotto-day-1: hsl(200, 20%, 96%);
     --grotto-day-2: hsl(200, 20%, 72%);
     --grotto-day-3: hsl(200, 20%, 60%);
@@ -2951,7 +2969,7 @@ body.preset-ice-rider-calyrex {
     --grotto-night-1: hsl(210, 10%, 20%);
     --grotto-night-2: hsl(210, 10%, 36%);
     --grotto-night-3: hsl(210, 10%, 48%);
-    --grotto-accent-1: hsl(160, 50%, 50%);
+    --grotto-accent-1: hsl(160, 40%, 50%);
 }
 
 /*==== MEGA LUCARIO ====*/
@@ -3093,9 +3111,9 @@ body.preset-poltchageist {
 
 /*==== SWAMPERT ====*/
 body.preset-swampert {
-    --accent-h: 30;
-    --accent-s: 60%;
-    --accent-l: 50%;
+    --accent-h: 24;
+    --accent-s: 72%;
+    --accent-l: 56%;
     --grotto-day-1: hsl(40, 14%, 82%);
     --grotto-day-2: hsl(40, 14%, 76%);
     --grotto-day-3: hsl(40, 14%, 70%);
@@ -3103,7 +3121,7 @@ body.preset-swampert {
     --grotto-night-1: hsl(210, 30%, 30%);
     --grotto-night-2: hsl(210, 30%, 36%);
     --grotto-night-3: hsl(210, 30%, 44%);
-    --grotto-accent-1: hsl(30, 60%, 50%);
+    --grotto-accent-1: hsl(24, 72%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
@@ -3111,20 +3129,17 @@ body.preset-swampert {
 
 /*====  URSALUNA  ====*/
 .preset-ursaluna {
-    --accent-h: 47;
-    --accent-s: 20%;
-    --accent-l: 50%;
+    --accent-h: 40;
+    --accent-s: 60%;
+    --accent-l: 45%;
     --grotto-day-1: hsl(20, 10%, 80%);
     --grotto-day-2: hsl(20, 10%, 70%);
     --grotto-day-3: hsl(20, 10%, 64%);
-    --grotto-night-0: hsl(20, 40%, 14%);
-    --grotto-night-1: hsl(20, 40%, 20%);
-    --grotto-night-2: hsl(20, 40%, 32%);
-    --grotto-night-3: hsl(20, 40%, 40%);
-    --grotto-accent-1: hsl(47, 20%, 50%);
-    /*==== ADJUSTMENTS ====*/
-    --grotto-header-color-1: var(--grotto-day-1);
-    --grotto-header-color-2: var(--grotto-day-1);
+    --grotto-night-0: hsl(20, 20%, 14%);
+    --grotto-night-1: hsl(20, 20%, 20%);
+    --grotto-night-2: hsl(20, 20%, 32%);
+    --grotto-night-3: hsl(20, 20%, 40%);
+    --grotto-accent-1: hsl(40, 60%, 45%);
 }
 
 /*==== VOLCARONA ====*/
@@ -3162,6 +3177,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
