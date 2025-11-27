@@ -4,7 +4,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 
 # Features
 - Support for both **light** and **dark** mode
-- **19** additional color palettes to choose from
+- **21** additional color palettes to choose from
 - Updated **mobile toolbar** with adjustable height and vertical scrolling
 	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
 	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
