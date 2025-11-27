@@ -102,6 +102,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
+##### v1.5.6
+- Adjusted presets - Aegislash, Meloetta, Pirouette Meloetta
+- New presets - Mareep, Wattrel
 ##### v1.5.5
 - Adjusted presets - Swampert, Ursaluna
 - New preset - Aromatisse
