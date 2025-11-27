@@ -3193,9 +3193,9 @@ body.preset-volcarona {
     --grotto-day-2: hsl(40, 0%, 76%);
     --grotto-day-3: hsl(40, 0%, 64%);
     --grotto-night-0: hsl(200, 0%, 12%);
-    --grotto-night-1: hsl(200, 0%, 32%);
-    --grotto-night-2: hsl(200, 0%, 24%);
-    --grotto-night-3: hsl(200, 0%, 50%);
+    --grotto-night-1: hsl(200, 0%, 24%);
+    --grotto-night-2: hsl(200, 0%, 32%);
+    --grotto-night-3: hsl(200, 0%, 40%);
     --grotto-accent-1: hsl(40, 70%, 50%);
 }
 .theme-light.preset-wattrel {
@@ -3219,6 +3219,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
