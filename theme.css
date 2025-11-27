@@ -2592,6 +2592,9 @@ settings:
                 label: Meloetta
                 value: preset-meloetta
             -
+                label: Necrozma
+                value: preset-necrozma
+            -
                 label: Noivern
                 value: preset-noivern
             -
@@ -2982,7 +2985,7 @@ body.preset-ice-rider-calyrex {
 body.preset-mareep {
     --accent-h: 216;
     --accent-s: 40%;
-    --accent-l: 54%;
+    --accent-l: 48%;
     --grotto-day-1: hsl(40, 40%, 90%);
     --grotto-day-2: hsl(40, 40%, 82%);
     --grotto-day-3: hsl(40, 40%, 70%);
@@ -2990,7 +2993,7 @@ body.preset-mareep {
     --grotto-night-1: hsl(200, 0%, 20%);
     --grotto-night-2: hsl(200, 0%, 32%);
     --grotto-night-3: hsl(200, 0%, 40%);
-    --grotto-accent-1: hsl(216, 40%, 54%);
+    --grotto-accent-1: hsl(216, 40%, 48%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
@@ -3045,6 +3048,24 @@ body.preset-mega-rayquaza {
     --grotto-night-2: hsl(40, 6%, 24%);
     --grotto-night-3: hsl(40, 6%, 32%);
     --grotto-accent-1: hsl(160, 36%, 50%);
+}
+
+/*==== NECROZMA ====*/
+.preset-necrozma {
+    --accent-h: 40;
+    --accent-s: 0%;
+    --accent-l: 32%;
+    --grotto-day-1: hsl(40, 30%, 84%);
+    --grotto-day-2: hsl(40, 30%, 80%);
+    --grotto-day-3: hsl(40, 30%, 76%);
+    --grotto-night-0: hsl(200, 0%, 12%);
+    --grotto-night-1: hsl(200, 0%, 16%);
+    --grotto-night-2: hsl(200, 0%, 24%);
+    --grotto-night-3: hsl(200, 0%, 28%);
+    --grotto-accent-1: hsl(40, 0%, 32%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
 }
 
 /*==== NOIVERN ====*/
@@ -3219,6 +3240,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
