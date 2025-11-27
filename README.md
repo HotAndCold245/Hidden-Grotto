@@ -4,7 +4,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 
 # Features
 - Support for both **light** and **dark** mode
-- **21** additional color palettes to choose from
+- **22** additional color palettes to choose from
 - Updated **mobile toolbar** with adjustable height and vertical scrolling
 	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
 	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
@@ -102,6 +102,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
+##### v1.5.7
+- Adjusted preset - Mareep
+- New preset - Necrozma
 ##### v1.5.6
 - Adjusted presets - Aegislash, Meloetta, Pirouette Meloetta
 - New presets - Mareep, Wattrel
