@@ -1739,6 +1739,7 @@ body:not(.is-phone) .community-item.is-selected:hover{
 }
 .is-phone .vertical-tab-nav-item.mobile-tap {
     color: var(--grotto-accent-1);
+    background-color: transparent;
 }
 body:not(.is-phone) .horizontal-tab-nav-item:hover,
 body:not(.is-phone) .vertical-tab-nav-item:hover {
@@ -3240,6 +3241,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
