@@ -17,7 +17,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 - **Customization** is available through Style Settings as well as my personal [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin which can be installed using BRAT
 
 # Screenshots
-#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. It is not included in the theme for flexibility purposes. 
+#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. It's not part of the theme. 
 
 <details>
 	<summary>Color Palettes</summary>
