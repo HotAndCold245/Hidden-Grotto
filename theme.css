@@ -2580,6 +2580,9 @@ settings:
                 label: Ice Rider Calyrex
                 value: preset-ice-rider-calyrex
             -
+                label: Mareep
+                value: preset-mareep
+            -
                 label: Mega Lucario
                 value: preset-mega-lucario
             -
@@ -2612,6 +2615,9 @@ settings:
             -
                 label: Volcarona
                 value: preset-volcarona
+            -
+                label: Wattrel
+                value: preset-wattrel
             -
                 label: Whimsicott
                 value: preset-whimsicott
@@ -2870,8 +2876,8 @@ body.preset-aegislash {
     --accent-s: 20%;
     --accent-l: 60%;
     --grotto-day-1: hsl(40, 50%, 90%);
-    --grotto-day-2: hsl(40, 50%, 70%);
-    --grotto-day-3: hsl(40, 50%, 64%);
+    --grotto-day-2: hsl(40, 30%, 80%);
+    --grotto-day-3: hsl(40, 50%, 70%);
     --grotto-night-0: hsl(260, 10%, 12%);
     --grotto-night-1: hsl(260, 10%, 18%);
     --grotto-night-2: hsl(260, 10%, 32%);
@@ -2972,6 +2978,24 @@ body.preset-ice-rider-calyrex {
     --grotto-accent-1: hsl(160, 40%, 50%);
 }
 
+/*==== MAREEP ====*/
+body.preset-mareep {
+    --accent-h: 216;
+    --accent-s: 40%;
+    --accent-l: 54%;
+    --grotto-day-1: hsl(36, 40%, 80%);
+    --grotto-day-2: hsl(36, 40%, 72%);
+    --grotto-day-3: hsl(36, 40%, 64%);
+    --grotto-night-0: hsl(200, 0%, 16%);
+    --grotto-night-1: hsl(200, 0%, 20%);
+    --grotto-night-2: hsl(200, 0%, 32%);
+    --grotto-night-3: hsl(200, 0%, 40%);
+    --grotto-accent-1: hsl(216, 40%, 54%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
 /*==== MEGA LUCARIO ====*/
 body.preset-mega-lucario {
     --accent-h: 0;
@@ -3011,16 +3035,16 @@ body.preset-mega-rayquaza {
 /*==== MELOETTA ====*/
 .preset-meloetta {
     --accent-h: 160;
-    --accent-s: 40%;
-    --accent-l: 40%;
-    --grotto-day-1: hsl(110, 40%, 92%);
-    --grotto-day-2: hsl(110, 40%, 80%);
-    --grotto-day-3: hsl(110, 40%, 60%);
+    --accent-s: 36%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(80, 40%, 92%);
+    --grotto-day-2: hsl(80, 40%, 80%);
+    --grotto-day-3: hsl(80, 40%, 60%);
     --grotto-night-0: hsl(40, 6%, 12%);
     --grotto-night-1: hsl(40, 6%, 16%);
     --grotto-night-2: hsl(40, 6%, 24%);
     --grotto-night-3: hsl(40, 6%, 32%);
-    --grotto-accent-1: hsl(160, 40%, 44%);
+    --grotto-accent-1: hsl(160, 36%, 50%);
 }
 
 /*==== NOIVERN ====*/
@@ -3048,9 +3072,9 @@ body.preset-noivern {
     --accent-h: 10;
     --accent-s: 50%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(10, 10%, 90%);
-    --grotto-day-2: hsl(10, 10%, 82%);
-    --grotto-day-3: hsl(10, 10%, 70%);
+    --grotto-day-1: hsl(40, 40%, 90%);
+    --grotto-day-2: hsl(40, 40%, 82%);
+    --grotto-day-3: hsl(40, 40%, 70%);
     --grotto-night-0: hsl(40, 16%, 12%);
     --grotto-night-1: hsl(40, 16%, 16%);
     --grotto-night-2: hsl(40, 16%, 24%);
@@ -3063,9 +3087,9 @@ body.preset-poltchageist {
     --accent-h: 114;
     --accent-s: 30%;
     --accent-l: 50%;
-    --grotto-day-1: hsl(30, 14%, 82%);
-    --grotto-day-2: hsl(30, 14%, 76%);
-    --grotto-day-3: hsl(30, 14%, 70%);
+    --grotto-day-1: hsl(30, 20%, 82%);
+    --grotto-day-2: hsl(30, 20%, 76%);
+    --grotto-day-3: hsl(30, 20%, 70%);
     --grotto-night-0: hsl(60, 10%, 10%);
     --grotto-night-1: hsl(60, 10%, 14%);
     --grotto-night-2: hsl(60, 5%, 24%);
@@ -3160,6 +3184,24 @@ body.preset-volcarona {
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
+/*==== WATTREL ====*/
+.preset-wattrel {
+    --accent-h: 40;
+    --accent-s: 70%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 0%, 90%);
+    --grotto-day-2: hsl(40, 0%, 76%);
+    --grotto-day-3: hsl(40, 0%, 64%);
+    --grotto-night-0: hsl(200, 0%, 12%);
+    --grotto-night-1: hsl(200, 0%, 32%);
+    --grotto-night-2: hsl(200, 0%, 24%);
+    --grotto-night-3: hsl(200, 0%, 50%);
+    --grotto-accent-1: hsl(40, 70%, 50%);
+}
+.theme-light.preset-wattrel {
+    --grotto-night-1: var(--grotto-night-0);
+}
+
 /*==== WHIMSICOTT ====*/
 body.preset-whimsicott {
     --accent-h: 120;
@@ -3177,6 +3219,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
