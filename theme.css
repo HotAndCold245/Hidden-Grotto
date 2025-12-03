@@ -730,6 +730,7 @@ button:not(.clickable-icon).mobile-tap {
     border-radius: var(--grotto-button-radius);
     outline: 1px solid var(--grotto-button-border-color);
     outline-offset: 2px;
+    box-shadow: none;
 }
 button.mod-warning, 
 button.mod-destructive, 
@@ -1292,6 +1293,7 @@ select,
     border-radius: var(--grotto-dropdown-radius);
     outline: 1px solid var(--grotto-dropdown-border-color);
     outline-offset: 2px;
+    box-shadow: none;
 }
 .dropdown option {
     color: var(--grotto-dropdown-color);
@@ -3214,4 +3216,5 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
