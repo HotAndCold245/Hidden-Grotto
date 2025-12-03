@@ -522,6 +522,7 @@ del,
 /*==== TEXT COMMENTED ====*/
 .cm-comment {
     color: var(--grotto-comment-color);
+    caret-color: currentColor;
     opacity: 0.4;
 }
 
@@ -3238,4 +3239,5 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
