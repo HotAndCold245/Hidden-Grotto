@@ -102,6 +102,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
+##### v1.5.9
+- Improved search highlight visibility for text on headers
+- Adjusted presets - Aromatisse, Cryogonal, Necrozma
 ##### v1.5.7
 - Adjusted preset - Mareep
 - New preset - Necrozma
