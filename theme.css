@@ -558,18 +558,8 @@ a.mobile-tap,
 }
 
 /*==== LINKS INSIDE HEADERS ====*/
-.markdown-rendered h1 .external-link, 
-.markdown-rendered h2 .external-link, 
-.markdown-rendered h3 .external-link, 
-.markdown-rendered h4 .external-link, 
-.markdown-rendered h5 .external-link, 
-.markdown-rendered h6 .external-link, 
-.markdown-rendered h1 .internal-link, 
-.markdown-rendered h2 .internal-link, 
-.markdown-rendered h3 .internal-link, 
-.markdown-rendered h4 .internal-link, 
-.markdown-rendered h5 .internal-link, 
-.markdown-rendered h6 .internal-link, 
+.markdown-rendered .external-link, 
+.markdown-rendered .internal-link, 
 .cm-header.cm-header-1.cm-hmd-internal-link, 
 .cm-header.cm-header-2.cm-hmd-internal-link, 
 .cm-header.cm-header-3.cm-hmd-internal-link, 
@@ -596,18 +586,8 @@ a.mobile-tap,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-underline {
     color: inherit;
 }
-.markdown-rendered h1 .external-link:hover, 
-.markdown-rendered h2 .external-link:hover, 
-.markdown-rendered h3 .external-link:hover, 
-.markdown-rendered h4 .external-link:hover, 
-.markdown-rendered h5 .external-link:hover, 
-.markdown-rendered h6 .external-link:hover, 
-.markdown-rendered h1 .internal-link:hover, 
-.markdown-rendered h2 .internal-link:hover, 
-.markdown-rendered h3 .internal-link:hover, 
-.markdown-rendered h4 .internal-link:hover, 
-.markdown-rendered h5 .internal-link:hover, 
-.markdown-rendered h6 .internal-link:hover, 
+.markdown-rendered .external-link:hover, 
+.markdown-rendered .internal-link:hover, 
 .cm-header.cm-header-1.cm-hmd-internal-link:hover, 
 .cm-header.cm-header-2.cm-hmd-internal-link:hover, 
 .cm-header.cm-header-3.cm-hmd-internal-link:hover, 
@@ -748,7 +728,6 @@ button:not(.clickable-icon).mobile-tap {
     background-color: var(--grotto-button-background-color);
     border: 1px solid var(--grotto-button-border-color);
     border-radius: var(--grotto-button-radius);
-    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
     outline: 1px solid var(--grotto-button-border-color);
     outline-offset: 2px;
 }
@@ -781,21 +760,6 @@ input[type=checkbox]:hover {
 input[type=checkbox]:checked, 
 input[type=checkbox]:checked:hover {
     background-color: var(--grotto-accent-1);
-}
-
-/*==== COLOR SWATCHES ====*/
-.is-mobile input[type="color"] {
-    width: 44px;
-    height: 44px;
-}
-input[type="color"]::-webkit-color-swatch {
-    box-shadow: 0px 0px 0px 1px var(--text-normal);
-}
-input[type="color"]::-webkit-color-swatch:hover {
-    box-shadow: 0px 0px 0px 1px var(--text-normal);
-    opacity: 1;
-    outline: 1px solid var(--text-normal);
-    outline-offset: 3px;
 }
 
 /*==== COLOR SWATCHES ====*/
@@ -1326,7 +1290,6 @@ select,
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color);
     border-radius: var(--grotto-dropdown-radius);
-    box-shadow: 0px 0px 0px 2px var(--grotto-background-tertiary);
     outline: 1px solid var(--grotto-dropdown-border-color);
     outline-offset: 2px;
 }
@@ -1702,6 +1665,15 @@ select:hover,
 select:focus {
     color: var(--grotto-selection-color);
     background-color: var(--grotto-selection-background-color);
+}
+
+/*==== SEARCH HIGHLIGHT ====*/
+.cm-s-obsidian span.obsidian-search-match-highlight {
+    box-shadow: 0px 0px 0px 4px var(--text-normal);
+    border-radius: 0rem;
+    mix-blend-mode: initial;
+    color: var(--text-normal);
+    background-color: var(--background-primary);
 }
 
 /*==== COMMUNITY ITEMS ====*/
@@ -2910,10 +2882,10 @@ body.preset-aggron {
     --grotto-day-1: hsl(40, 0%, 82%);
     --grotto-day-2: hsl(40, 0%, 76%);
     --grotto-day-3: hsl(40, 0%, 70%);
-    --grotto-night-0: hsl(300, 40%, 20%);
-    --grotto-night-1: hsl(300, 40%, 28%);
-    --grotto-night-2: hsl(300, 40%, 36%);
-    --grotto-night-3: hsl(300, 40%, 44%);
+    --grotto-night-0: hsl(300, 20%, 20%);
+    --grotto-night-1: hsl(300, 20%, 28%);
+    --grotto-night-2: hsl(300, 20%, 36%);
+    --grotto-night-3: hsl(300, 20%, 44%);
     --grotto-accent-1: hsl(0, 50%, 60%);
 }
 
@@ -2941,10 +2913,13 @@ body.preset-cryogonal {
     --grotto-day-2: hsl(40, 0%, 76%);
     --grotto-day-3: hsl(40, 0%, 70%);
     --grotto-night-0: hsl(210, 10%, 16%);
-    --grotto-night-1: hsl(220, 40%, 32%);
-    --grotto-night-2: hsl(220, 40%, 40%);
-    --grotto-night-3: hsl(220, 40%, 48%);
+    --grotto-night-1: hsl(220, 30%, 32%);
+    --grotto-night-2: hsl(220, 30%, 40%);
+    --grotto-night-3: hsl(220, 30%, 48%);
     --grotto-accent-1: hsl(210, 50%, 60%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
 }
 
 /*====  DARKRAI  ====*/
@@ -3239,5 +3214,3 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
-
-
