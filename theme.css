@@ -479,15 +479,20 @@ a.tag:hover,
 .cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
 .cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag {
-    font-size: 0.8rem !important;
+    font-size: var(--grotto-tag-size) !important;
     vertical-align: top;
 }
 
 /*==== ACCENTED TAGS ====*/
 .accented-tag {
-    --grotto-tag-border-color: var(--text-normal);
     --grotto-tag-color: var(--grotto-day-1);
+    --grotto-tag-border-color: var(--text-normal);
     --grotto-tag-background-color: var(--grotto-accent-1);
+}
+
+/*==== ROUNDED TAGS ====*/
+.rounded-tag {
+    --grotto-tag-border-radius: 1rem;
 }
 
 /*==== TEXT BOLD ====*/
@@ -2761,6 +2766,16 @@ id: grotto-tag-controls
 collapsed: false
 settings:
     -
+        id: accented-tag
+        title: Tag Accent
+        description: Enable to use accented tags
+        type: class-toggle
+    -
+        id: rounded-tag
+        title: Tag Shape
+        description: Enable to use rounded tags
+        type: class-toggle
+    -
         id: grotto-tag-pointer-events
         title: Tag Interaction
         description: Toggle tag search directly from clicking tags
@@ -2773,24 +2788,6 @@ settings:
             -
                 label: Disabled
                 value: none
-    -
-        id: grotto-tag-border-radius
-        title: Tag Border Style
-        description: Toggle rounded tags
-        type: variable-select
-        default: 0rem
-        options:
-            -
-                label: Disabled
-                value: 0rem
-            -
-                label: Enabled
-                value: 2rem
-    -
-        id: accented-tag
-        title: Tag Style
-        description: Enable to use accented tags
-        type: class-toggle
 */
 /* @settings
 name: Mobile Controls
@@ -3241,29 +3238,4 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
