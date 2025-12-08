@@ -3030,7 +3030,7 @@ body.preset-mega-rayquaza {
 .preset-necrozma {
     --accent-h: 40;
     --accent-s: 0%;
-    --accent-l: 32%;
+    --accent-l: 40%;
     --grotto-day-1: hsl(40, 20%, 84%);
     --grotto-day-2: hsl(40, 20%, 80%);
     --grotto-day-3: hsl(40, 20%, 76%);
@@ -3038,7 +3038,7 @@ body.preset-mega-rayquaza {
     --grotto-night-1: hsl(200, 0%, 16%);
     --grotto-night-2: hsl(200, 0%, 24%);
     --grotto-night-3: hsl(200, 0%, 28%);
-    --grotto-accent-1: hsl(40, 0%, 32%);
+    --grotto-accent-1: hsl(40, 0%, 40%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
