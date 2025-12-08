@@ -303,6 +303,7 @@ body {
     --grotto-suggestion-background-color: var(--background-primary);
     --grotto-suggestion-background-color-hover: var(--grotto-accent-1);
     --grotto-suggestion-radius: 0rem;
+    --grotto-instruction-color: var(--text-normal);
     /*==== COMMAND PALETTE ====*/
     --grotto-prompt-color: var(--text-normal);
     --grotto-prompt-color-hover: var(--background-primary);
@@ -1056,6 +1057,7 @@ th,
     color: var(--grotto-suggestion-color);
 }
 .prompt-instructions {
+    color: var(--grotto-instruction-color);
     border-top: 1px solid var(--grotto-suggestion-color);
     background-color: var(--background-secondary);
 }
@@ -1646,9 +1648,6 @@ input.prompt-input:focus-visible,
 .search-input-clear-button:hover,
 .search-input-clear-button:active {
     color: var(--grotto-accent-1);
-}
-.prompt-instructions {
-    color: var(--grotto-prompt-background-color-hover);
 }
 .is-mobile .prompt {
     border-radius: 0px;
@@ -2485,6 +2484,7 @@ textarea.webviewer-adblock-lists {
     --grotto-graph-sidebar-controls-color: var(--grotto-day-1);
     /*==== SEARCH SUGGESTIONS ====*/
     --grotto-search-suggestion-color: var(--grotto-day-1);
+    --grotto-instruction-color: var(--grotto-day-1);
     /*==== SETTINGS ====*/
     --grotto-settings-color: var(--grotto-day-1);
     /*==== STATUS BAR ====*/
@@ -2557,6 +2557,9 @@ settings:
             -
                 label: Darkrai
                 value: preset-darkrai
+            -
+                label: Hisuian Typhlosion
+                value: preset-hisuian-typhlosion
             -
                 label: Ice Rider Calyrex
                 value: preset-ice-rider-calyrex
@@ -2942,6 +2945,24 @@ body.preset-darkrai {
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
+/*==== HISUIAN TYPHLOSION ====*/
+body.preset-hisuian-typhlosion {
+    --accent-h: 310;
+    --accent-s: 16%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(40, 32%, 82%);
+    --grotto-day-2: hsl(40, 32%, 76%);
+    --grotto-day-3: hsl(40, 32%, 70%);
+    --grotto-night-0: hsl(240, 16%, 20%);
+    --grotto-night-1: hsl(240, 16%, 28%);
+    --grotto-night-2: hsl(240, 16%, 36%);
+    --grotto-night-3: hsl(240, 16%, 54%);
+    --grotto-accent-1: hsl(310, 16%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
 /*==== ICE RIDER CALYREX ====*/
 body.preset-ice-rider-calyrex {
     --accent-h: 160;
@@ -3216,5 +3237,6 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
