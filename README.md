@@ -98,7 +98,7 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
 
 # Changelog
-##### v1.5.11
+##### v1.5.12
 - Fixed external link color
 - Removed presets - Mega Rayquaza, Necrozma, Noivern, Skeledirge, Wattrel, Whimsicott
 - New presets - Diancie, Hisuian Typhlosion
