@@ -4,7 +4,7 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 
 # Features
 - Support for both **light** and **dark** mode
-- **24** additional color palettes to choose from
+- **19** color palettes to choose from
 - Updated **mobile toolbar** with adjustable height and vertical scrolling
 	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
 	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
@@ -30,16 +30,12 @@ I made this theme primarily for personal use. It focuses on a clean and sharp de
 ![Darkrai](https://github.com/user-attachments/assets/58a00b23-7931-41c4-ab08-b11c90217748)
 ![Lucario](https://github.com/user-attachments/assets/6156ea3a-e607-4905-851a-99d1a164e517)
 ![Meloetta](https://github.com/user-attachments/assets/c6b8c6df-f21a-4be0-8536-d9468ae4de46)
-![Noivern](https://github.com/user-attachments/assets/76cb067d-9f6f-456d-b04c-82e80a87c432)
 ![Poltchageist](https://github.com/user-attachments/assets/27540fce-8627-483a-9b5e-f681edb2c051)
 ![Rayquaza](https://github.com/user-attachments/assets/f05234d7-6b13-4f48-aca8-809f1ac5306d)
-![Revavroom](https://github.com/user-attachments/assets/ee09d798-3b1a-4449-805a-fe22263eee47)
 ![Scolipede](https://github.com/user-attachments/assets/e852eeaa-f526-46b8-ac5e-5d24dfaa1d39)
-![Skeledirge](https://github.com/user-attachments/assets/9cd44a27-6d6a-46fd-b20d-eed983640383)
 ![Swampert](https://github.com/user-attachments/assets/5c9eff61-53c4-4dfe-b9bb-b1a610dfd6f9)
 ![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
 ![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
-![Whimsicott](https://github.com/user-attachments/assets/7c18a816-3e85-4871-b79f-9cbfc4da4d13)
 	
 </details>
 
@@ -104,22 +100,5 @@ If there are any problems with the theme, you can submit an issue on the reposit
 # Changelog
 ##### v1.5.11
 - Fixed external link color
-- Adjusted presets - Cryogonal, Meloetta, 
-- New preset - Diancie, Hisuian Typhlosion
-##### v1.5.9
-- Improved search highlight visibility for text on headers
-- Adjusted presets - Aromatisse, Cryogonal, Necrozma
-##### v1.5.7
-- Adjusted preset - Mareep
-- New preset - Necrozma
-##### v1.5.6
-- Adjusted presets - Aegislash, Meloetta, Pirouette Meloetta
-- New presets - Mareep, Wattrel
-##### v1.5.5
-- Adjusted presets - Swampert, Ursaluna
-- New preset - Aromatisse
-##### v1.5.4
-- Improved visibility of certain texts on hover
-##### v1.5.3
-- Fixes to menus in bases.
-- Switched default sidebar style. Alternate should be available from settings. 
+- Removed presets - Mega Rayquaza, Necrozma, Noivern, Skeledirge, Wattrel, Whimsicott
+- New presets - Diancie, Hisuian Typhlosion
