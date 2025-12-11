@@ -2599,6 +2599,9 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
+                label: Diancie
+                value: preset-diancie
+            -
                 label: Hisuian Typhlosion
                 value: preset-hisuian-typhlosion
             -
@@ -2876,7 +2879,7 @@ settings:
 /*==== PRESETS ====*/
 
 /*==== ABSOL ====*/
-body.preset-absol {
+.preset-absol {
     --accent-h: 200;
     --accent-s: 16%;
     --accent-l: 60%;
@@ -2891,7 +2894,7 @@ body.preset-absol {
 }
 
 /*==== AEGISLASH ====*/
-body.preset-aegislash {
+.preset-aegislash {
     --accent-h: 260;
     --accent-s: 20%;
     --accent-l: 60%;
@@ -2906,7 +2909,7 @@ body.preset-aegislash {
 }
 
 /*==== AGGRON ====*/
-body.preset-aggron {
+.preset-aggron {
     --accent-h: 0;
     --accent-s: 0%;
     --accent-l: 58%;
@@ -2934,6 +2937,12 @@ body.preset-aggron {
     --grotto-night-3: hsl(300, 20%, 44%);
     --grotto-accent-1: hsl(0, 50%, 60%);
 }
+.theme-light.preset-aromatisse {
+    --grotto-night-0: hsl(300, 20%, 12%);
+    --grotto-night-1: hsl(300, 20%, 20%);
+    --grotto-night-2: hsl(300, 20%, 32%);
+    --grotto-night-3: hsl(300, 20%, 40%);
+}
 
 /*====  CLOBBOPUS  ====*/
 .preset-clobbopus {
@@ -2951,7 +2960,7 @@ body.preset-aggron {
 }
 
 /*==== CRYOGONAL ====*/
-body.preset-cryogonal {
+.preset-cryogonal {
     --accent-h: 210;
     --accent-s: 50%;
     --accent-l: 60%;
@@ -2967,9 +2976,15 @@ body.preset-cryogonal {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+.theme-light.preset-cryogonal {
+    --grotto-night-0: hsl(210, 10%, 12%);
+    --grotto-night-1: hsl(220, 30%, 24%);
+    --grotto-night-2: hsl(220, 30%, 36%);
+    --grotto-night-3: hsl(220, 30%, 44%);
+}
 
 /*====  DARKRAI  ====*/
-body.preset-darkrai {
+.preset-darkrai {
     --accent-h: 5;
     --accent-s: 64%;
     --accent-l: 50%;
@@ -2986,8 +3001,23 @@ body.preset-darkrai {
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
+/*==== DIANCIE ====*/
+.preset-diancie {
+    --accent-h: 320;
+    --accent-s: 20%;
+    --accent-l: 60%;
+    --grotto-day-1: hsl(40, 0%, 84%);
+    --grotto-day-2: hsl(40, 0%, 76%);
+    --grotto-day-3: hsl(40, 0%, 68%);
+    --grotto-night-0: hsl(30, 0%, 12%);
+    --grotto-night-1: hsl(30, 0%, 20%);
+    --grotto-night-2: hsl(30, 0%, 28%);
+    --grotto-night-3: hsl(30, 0%, 36%);
+    --grotto-accent-1: hsl(320, 20%, 60%);
+}
+
 /*==== HISUIAN TYPHLOSION ====*/
-body.preset-hisuian-typhlosion {
+.preset-hisuian-typhlosion {
     --accent-h: 310;
     --accent-s: 16%;
     --accent-l: 50%;
@@ -3005,7 +3035,7 @@ body.preset-hisuian-typhlosion {
 }
 
 /*==== ICE RIDER CALYREX ====*/
-body.preset-ice-rider-calyrex {
+.preset-ice-rider-calyrex {
     --accent-h: 160;
     --accent-s: 40%;
     --accent-l: 50%;
@@ -3020,7 +3050,7 @@ body.preset-ice-rider-calyrex {
 }
 
 /*==== MAREEP ====*/
-body.preset-mareep {
+.preset-mareep {
     --accent-h: 216;
     --accent-s: 40%;
     --accent-l: 48%;
@@ -3038,7 +3068,7 @@ body.preset-mareep {
 }
 
 /*==== MEGA LUCARIO ====*/
-body.preset-mega-lucario {
+.preset-mega-lucario {
     --accent-h: 0;
     --accent-s: 60%;
     --accent-l: 60%;
@@ -3056,7 +3086,7 @@ body.preset-mega-lucario {
 }
 
 /*==== MEGA RAYQUAZA ====*/
-body.preset-mega-rayquaza {
+.preset-mega-rayquaza {
     --accent-h: 30;
     --accent-s: 60%;
     --accent-l: 50%;
@@ -3071,6 +3101,12 @@ body.preset-mega-rayquaza {
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
+}
+.theme-light.preset-mega-rayquaza {
+    --grotto-night-0: hsl(160, 20%, 12%);
+    --grotto-night-1: hsl(160, 30%, 20%);
+    --grotto-night-2: hsl(160, 30%, 28%);
+    --grotto-night-3: hsl(160, 30%, 40%);
 }
 
 /*==== MELOETTA ====*/
@@ -3115,9 +3151,9 @@ body.preset-noivern {
     --grotto-day-2: hsl(40, 10%, 80%);
     --grotto-day-3: hsl(40, 10%, 72%);
     --grotto-night-0: hsl(225, 10%, 12%);
-    --grotto-night-1: hsl(288, 26%, 32%);
-    --grotto-night-2: hsl(288, 26%, 40%);
-    --grotto-night-3: hsl(288, 26%, 50%);
+    --grotto-night-1: hsl(288, 26%, 28%);
+    --grotto-night-2: hsl(288, 26%, 38%);
+    --grotto-night-3: hsl(288, 26%, 48%);
     --grotto-accent-1: hsl(160, 40%, 50%);
 }
 .theme-light.preset-noivern {
@@ -3142,7 +3178,7 @@ body.preset-noivern {
 }
 
 /*==== POLTCHAGEIST ====*/
-body.preset-poltchageist {
+.preset-poltchageist {
     --accent-h: 114;
     --accent-s: 30%;
     --accent-l: 50%;
@@ -3193,7 +3229,7 @@ body.preset-poltchageist {
 }
 
 /*==== SWAMPERT ====*/
-body.preset-swampert {
+.preset-swampert {
     --accent-h: 24;
     --accent-s: 72%;
     --accent-l: 56%;
@@ -3262,7 +3298,7 @@ body.preset-volcarona {
 }
 
 /*==== WHIMSICOTT ====*/
-body.preset-whimsicott {
+.preset-whimsicott {
     --accent-h: 120;
     --accent-s: 40%;
     --accent-l: 46%;
@@ -3278,7 +3314,9 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
-
-
-
-
+.theme-light.preset-whimsicott {
+    --grotto-night-0: hsl(30, 40%, 12%);
+    --grotto-night-1: hsl(30, 40%, 20%);
+    --grotto-night-2: hsl(30, 40%, 28%);
+    --grotto-night-3: hsl(30, 40%, 40%);
+}
