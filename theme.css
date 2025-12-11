@@ -453,10 +453,10 @@ body {
 }
 
 /*==== TAGS ====*/
-a.tag, 
-a.tag:hover, 
-.cm-hashtag, 
-.cm-hashtag:hover, 
+a.tag,
+a.tag:hover,
+.cm-hashtag,
+.cm-hashtag:hover,
 .cm-s-obsidian span.cm-quote.cm-hashtag {
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background-color);
@@ -468,17 +468,17 @@ a.tag:hover,
 }
 
 /*==== TAGS INSIDE HEADERS ====*/
-.markdown-rendered h1 a.tag, 
-.markdown-rendered h2 a.tag, 
-.markdown-rendered h3 a.tag, 
-.markdown-rendered h4 a.tag, 
-.markdown-rendered h5 a.tag, 
-.markdown-rendered h6 a.tag, 
-.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag, 
-.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag, 
+.markdown-rendered h1 a.tag,
+.markdown-rendered h2 a.tag,
+.markdown-rendered h3 a.tag,
+.markdown-rendered h4 a.tag,
+.markdown-rendered h5 a.tag,
+.markdown-rendered h6 a.tag,
+.cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-4 .cm-hashtag,
+.cm-s-obsidian .cm-line.HyperMD-header-5 .cm-hashtag,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-hashtag {
     font-size: var(--grotto-tag-size) !important;
     vertical-align: top;
@@ -3237,6 +3237,7 @@ body.preset-whimsicott {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
