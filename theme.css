@@ -2944,7 +2944,7 @@ settings:
 /*====  CLOBBOPUS  ====*/
 .preset-clobbopus {
     --accent-h: 16;
-    --accent-s: 82%;
+    --accent-s: 64%;
     --accent-l: 58%;
     --grotto-day-1: hsl(33, 33%, 87%);
     --grotto-day-2: hsl(33, 33%, 78%);
@@ -2953,7 +2953,7 @@ settings:
     --grotto-night-1: hsl(240, 18%, 25%);
     --grotto-night-2: hsl(240, 18%, 45%);
     --grotto-night-3: hsl(240, 18%, 52%);
-    --grotto-accent-1: hsl(16, 82%, 58%);
+    --grotto-accent-1: hsl(16, 64%, 58%);
 }
 
 /*==== CRYOGONAL ====*/
@@ -3177,5 +3177,6 @@ body.preset-volcarona {
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
