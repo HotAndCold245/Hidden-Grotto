@@ -621,7 +621,7 @@ a.mobile-tap,
 .cm-s-obsidian .cm-line.HyperMD-header-4 .cm-link .cm-underline:hover,
 .cm-s-obsidian .cm-line.HyperMD-header-5 .cm-link .cm-underline:hover,
 .cm-s-obsidian .cm-line.HyperMD-header-6 .cm-link .cm-underline:hover {
-    color: red;
+    color: inherit;
     filter:brightness(105%);
     opacity: 0.8;
 }
@@ -3320,3 +3320,4 @@ body.preset-volcarona {
     --grotto-night-2: hsl(30, 40%, 28%);
     --grotto-night-3: hsl(30, 40%, 40%);
 }
+
