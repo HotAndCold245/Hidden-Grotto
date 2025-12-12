@@ -2602,8 +2602,20 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
+                label: Dewpider
+                value: preset-dewpider
+            -
+                label: Dhelmise
+                value: preset-dhelmise
+            -
                 label: Diancie
                 value: preset-diancie
+            -
+                label: Eldegoss
+                value: preset-eldegoss
+            -
+                label: Gmax Butterfree
+                value: preset-gmax-butterfree
             -
                 label: Hisuian Typhlosion
                 value: preset-hisuian-typhlosion
@@ -2628,6 +2640,9 @@ settings:
             -
                 label: Swampert
                 value: preset-swampert
+            -
+                label: Tsareena
+                value: preset-tsareena
             -
                 label: Ursaluna
                 value: preset-ursaluna
@@ -2998,6 +3013,24 @@ settings:
     --grotto-header-color-2: var(--grotto-day-1);
 }
 
+/*==== DEWPIDER ====*/
+body.preset-dewpider {
+    --accent-h: 80;
+    --accent-s: 50%;
+    --accent-l: 44%;
+    --grotto-day-1: hsl(44, 0%, 86%);
+    --grotto-day-2: hsl(44, 0%, 76%);
+    --grotto-day-3: hsl(44, 0%, 56%);
+    --grotto-night-0: hsl(196, 24%, 20%);
+    --grotto-night-1: hsl(196, 24%, 28%);
+    --grotto-night-2: hsl(196, 24%, 36%);
+    --grotto-night-3: hsl(196, 24%, 48%);
+    --grotto-accent-1: hsl(80, 50%, 44%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
 /*==== DIANCIE ====*/
 .preset-diancie {
     --accent-h: 320;
@@ -3011,6 +3044,42 @@ settings:
     --grotto-night-2: hsl(30, 0%, 28%);
     --grotto-night-3: hsl(30, 0%, 36%);
     --grotto-accent-1: hsl(320, 20%, 60%);
+}
+
+/*==== ELDEGOSS ====*/
+body.preset-eldegoss {
+    --accent-h: 44;
+    --accent-s: 56%;
+    --accent-l: 50%;
+    --grotto-day-1: hsl(44, 40%, 86%);
+    --grotto-day-2: hsl(44, 40%, 76%);
+    --grotto-day-3: hsl(44, 40%, 56%);
+    --grotto-night-0: hsl(86, 40%, 20%);
+    --grotto-night-1: hsl(86, 40%, 28%);
+    --grotto-night-2: hsl(86, 40%, 36%);
+    --grotto-night-3: hsl(86, 40%, 48%);
+    --grotto-accent-1: hsl(44, 56%, 50%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== GMAX BUTTERFREE ====*/
+body.preset-gmax-butterfree {
+    --accent-h: 80;
+    --accent-s: 30%;
+    --accent-l: 56%;
+    --grotto-day-1: hsl(80, 30%, 96%);
+    --grotto-day-2: hsl(80, 30%, 86%);
+    --grotto-day-3: hsl(80, 30%, 72%);
+    --grotto-night-0: hsl(180, 30%, 24%);
+    --grotto-night-1: hsl(180, 30%, 32%);
+    --grotto-night-2: hsl(280, 20%, 36%);
+    --grotto-night-3: hsl(180, 30%, 44%);
+    --grotto-accent-1: hsl(80, 30%, 56%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
 }
 
 /*==== HISUIAN TYPHLOSION ====*/
@@ -3127,6 +3196,24 @@ settings:
     --grotto-accent-1: hsl(340, 40%, 56%);
 }
 
+/*==== SKIDDO ====*/
+body.preset-skiddo {
+    --accent-h: 145;
+    --accent-s: 64%;
+    --accent-l: 40%;
+    --grotto-day-1: hsl(40, 20%, 96%);
+    --grotto-day-2: hsl(40, 20%, 86%);
+    --grotto-day-3: hsl(40, 20%, 72%);
+    --grotto-night-0: hsl(20, 20%, 20%);
+    --grotto-night-1: hsl(20, 20%, 28%);
+    --grotto-night-2: hsl(20, 20%, 36%);
+    --grotto-night-3: hsl(20, 20%, 48%);
+    --grotto-accent-1: hsl(145, 64%, 40%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
 /*==== SWAMPERT ====*/
 .preset-swampert {
     --accent-h: 24;
@@ -3140,6 +3227,24 @@ settings:
     --grotto-night-2: hsl(210, 30%, 36%);
     --grotto-night-3: hsl(210, 30%, 44%);
     --grotto-accent-1: hsl(24, 64%, 56%);
+    /*==== ADJUSTMENTS ====*/
+    --grotto-header-color-1: var(--grotto-day-1);
+    --grotto-header-color-2: var(--grotto-day-1);
+}
+
+/*==== TSAREENA ====*/
+body.preset-tsareena {
+    --accent-h: 100;
+    --accent-s: 36%;
+    --accent-l: 56%;
+    --grotto-day-1: hsl(20, 24%, 92%);
+    --grotto-day-2: hsl(20, 24%, 86%);
+    --grotto-day-3: hsl(20, 24%, 76%);
+    --grotto-night-0: hsl(340, 32%, 30%);
+    --grotto-night-1: hsl(340, 32%, 38%);
+    --grotto-night-2: hsl(340, 32%, 48%);
+    --grotto-night-3: hsl(340, 32%, 64%);
+    --grotto-accent-1: hsl(100, 36%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
@@ -3165,18 +3270,19 @@ body.preset-volcarona {
     --accent-h: 20;
     --accent-s: 64%;
     --accent-l: 54%;
-    --grotto-day-1: hsl(165, 0%, 90%);
-    --grotto-day-2: hsl(165, 30%, 78%);
-    --grotto-day-3: hsl(165, 30%, 64%);
-    --grotto-night-0: hsl(194, 30%, 18%);
-    --grotto-night-1: hsl(194, 40%, 24%);
-    --grotto-night-2: hsl(194, 50%, 32%);
-    --grotto-night-3: hsl(194, 60%, 40%);
-    --grotto-accent-1: hsl(20, 64%, 54%);
+    --grotto-day-1: hsl(165, 0%, 96%);
+    --grotto-day-2: hsl(165, 30%, 84%);
+    --grotto-day-3: hsl(165, 30%, 72%);
+    --grotto-night-0: hsl(190, 30%, 24%);
+    --grotto-night-1: hsl(190, 40%, 32%);
+    --grotto-night-2: hsl(190, 50%, 32%);
+    --grotto-night-3: hsl(190, 60%, 40%);
+    --grotto-accent-1: hsl(20, 64%, 56%);
     /*==== ADJUSTMENTS ====*/
     --grotto-header-color-1: var(--grotto-day-1);
     --grotto-header-color-2: var(--grotto-day-1);
 }
+
 
 
 
