@@ -1,3 +1,7 @@
+
+#WARNING - Do not download this theme if you are on the latest update for obsidian (The widget update). The theme currently breaks the UI on mobile. I will update the theme in a day or two. It should, however, be fine on desktop. 
+
+
 # Introduction
 I made this theme primarily for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus.
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
