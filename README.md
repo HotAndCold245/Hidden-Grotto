@@ -1,5 +1,5 @@
 
-#WARNING - Do not download this theme if you are on the latest update for obsidian (The widget update). The theme currently breaks the UI on mobile. I will update the theme in a day or two, or three. It should, however, be fine on desktop. 
+#WARNING - Do not download this theme if you are on the latest update for obsidian (The widget update). The theme currently breaks the UI on mobile. I will update the theme ~~in a day or two, or three~~ after the next obsidian update that makes some fixes and changes to the UI again. It should, however, be fine on desktop. 
 
 
 # Introduction
