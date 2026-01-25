@@ -1,6 +1,11 @@
+<details>
+	<summary>Changelog</summary>
 
-#WARNING - Do not download this theme if you are on the latest update for obsidian (The widget update). The theme currently breaks the UI on mobile. I will update the theme ~~in a day or two, or three~~ after the next obsidian update that makes some fixes and changes to the UI again. It should, however, be fine on desktop. 
+- The theme is now (almost) fully updated for the latest version of Obsidian. Mobile toolbar changes, properties view, and bases improvements are not implemented because something seems to breaks with the positioning of things. 
+- Other things may be missing which will be added later.
+- Style settings options are temporarily removed except for the color presets.
 
+</details>
 
 # Introduction
 I made this theme primarily for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus.
@@ -100,9 +105,3 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 
 # Feedback
 If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
-
-# Changelog
-##### v1.5.12
-- Fixed external link color
-- Removed presets - Mega Rayquaza, Necrozma, Noivern, Skeledirge, Wattrel, Whimsicott
-- New presets - Diancie, Hisuian Typhlosion
