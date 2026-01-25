@@ -1,12 +1,13 @@
 Don't you just hate translucency?
 <details>
-	<summary>Changelog</summary>
+	<summary>Changelog and Notes</summary>
 
 - The theme is now (almost) fully updated for the latest version of Obsidian. Mobile toolbar changes, properties view, and bases improvements are not implemented because something seems to breaks with the positioning of things. 
 - Other things may be missing which will be added later.
 - Style settings options are temporarily removed except for the color presets.
 - Probably better to avoid light mode for now.
 - If you have any issues, best to keep it to yourself until v2.0.0 of this theme; inconsistencies will be fixed by then.
+- If something is horribly wrong, just close your eyes. What you can't see isn't there. 
 
 </details>
 
