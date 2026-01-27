@@ -6,8 +6,7 @@ Don't you just hate translucency?
 - Other things may be missing which will be added later.
 - Style settings options are temporarily removed except for the color presets.
 - Probably better to avoid light mode for now.
-- If you have any issues, best to keep it to yourself until v2.0.0 of this theme; inconsistencies will be fixed by then.
-- If something is horribly wrong, just close your eyes. What you can't see isn't there. 
+- Fixed uneditable file title on mobile
 
 </details>
 
