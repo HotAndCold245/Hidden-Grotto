@@ -1765,8 +1765,6 @@ body {
 }
 /* Mobile Specific */
 .is-phone {
-    --view-top-spacing: 0px;
-    --view-top-spacing-markdown: 52px;
     --border-width: 0px;
 }
 .is-mobile, 
@@ -2333,6 +2331,7 @@ settings:
                 label: Volcarona
                 value: preset-volcarona
 */
+
 
 
 
