@@ -3,7 +3,7 @@
 body {
     --grotto-accent-h: 16;
     --grotto-accent-s: 80%;
-    --grotto-accent-l: 60%;
+    --grotto-accent-l: 64%;
     --grotto-light-1: hsl(33, 33%, 92%);
     --grotto-light-2: hsl(33, 33%, 82%);
     --grotto-light-3: hsl(33, 33%, 72%);
@@ -1320,7 +1320,12 @@ body {
   display: none;
 }
 .is-phone .view-header {
-    padding-left: 48px;
+    width: fit-content;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: fixed;
+    left: 310px;
+    padding: 0px;
 }
 .is-phone .view-header .view-action {
     border-radius: 0rem;
@@ -1367,6 +1372,9 @@ body {
 /* Inline Title */
 .is-phone .inline-title {
   width: 74vw;
+}
+.inline-title {
+    z-index: 100000;
 }
 /* Clickable Icons */
 body {
