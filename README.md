@@ -1,12 +1,10 @@
-Don't you just hate translucency?
+# Changelog
 <details>
-	<summary>Changelog and Notes</summary>
+	<summary>v.1.5.95</summary>
 
-- The theme is now (almost) fully updated for the latest version of Obsidian. Mobile toolbar changes, properties view, and bases improvements are not implemented because something seems to breaks with the positioning of things. 
-- Other things may be missing which will be added later.
+- The theme is now (almost) fully updated for the latest version of Obsidian. 
 - Style settings options are temporarily removed except for the color presets.
-- Probably better to avoid light mode for now.
-- Fixed uneditable file title on mobile
+- Changes for bases view are not implemented. Everything else should be fine. 
 
 </details>
 
