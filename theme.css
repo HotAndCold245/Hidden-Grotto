@@ -1972,6 +1972,9 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .modal.mod-sidebar-layout {
     border: 1px solid var(--grotto-settings-border-color);
 }
+.is-phone .modal.mod-sidebar-layout {
+    border-width: 1px 0px 0px 0px;
+}
 .is-phone .modal.mod-settings .vertical-tab-header, .is-phone .modal.mod-settings .vertical-tab-content {
     background-color: var(--background-primary);
 }
@@ -2071,7 +2074,8 @@ body {
 .is-phone .mod-community-theme .community-item {
     border: 1px solid var(--grotto-modal-border-color);
 }
-.is-phone .modal.mod-lg, .is-phone .modal.mod-sidebar-layout {
+.is-phone .modal.mod-lg, 
+.is-phone .modal.mod-sidebar-layout {
     background-color: var(--grotto-modal-background-color);
     border-top: 1px solid var(--grotto-modal-border-color);
 }
@@ -2590,7 +2594,9 @@ body {
 }
 .grotto-redact {
     --font-interface: var(--grotto-redacted);
+    --font-interface-override: var(--grotto-redacted);
     --font-text: var(--grotto-redacted);
+    --font-text-override: var(--grotto-redacted);
     --font-print: var(--grotto-redacted);
     --font-monospace: var(--grotto-redacted);
 }
@@ -2719,24 +2725,4 @@ settings:
         min: 0
         max: 50
         step: 0
-*/
-
-/* @settings
-
-name: Privacy Controls
-id: hidden-grotto-style
-collapsed: false
-settings:
-    -
-        id: grotto-redact
-        title: Epstein
-        description: Redact all the text. Only use this if you are guilty of something. 
-        type: class-toggle
-        default: false
-    -
-        id: grotto-blur
-        title: Obscure
-        description: Blur the screen. Only use this if you can navigate back to this setting. Otherwise, you will need to remove the theme manually to reset.
-        type: class-toggle
-        default: false
 */
