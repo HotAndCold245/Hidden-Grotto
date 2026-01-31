@@ -312,6 +312,7 @@ body.preset-eldegoss {
     --grotto-accent: hsl(20, 64%, 56%);
 }
 /* Common Variables */
+body, 
 .theme-light, 
 .is-mobile.theme-light, 
 .theme-dark, 
@@ -369,6 +370,8 @@ body.preset-eldegoss {
     --font-monospace: var(--font-monospace-override);
     --divider-width: 0px;
     --divider-width-hover: 2px;
+    --grotto-font-weight: 500;
+    font-weight: var(--grotto-font-weight);
 }
 /* Light Theme */
 .theme-light, 
@@ -793,7 +796,7 @@ a.tag:hover,
     --grotto-tag-color: var(--text-normal);
     --grotto-tag-background: var(--grotto-accent);
     --grotto-tag-border-color: var(--text-normal);
-    --grotto-tag-border-width: 1px;
+    --grotto-tag-border-width: 1.5px;
 }
 /* Rounded Tag */
 .grotto-tag-rounded {
@@ -1496,7 +1499,7 @@ body {
 #calendar-container .weekend:has(+ .weekend) {
     border-left: var(--grotto-calendar-weekend-border-width) solid var(--grotto-calendar-weekend-border-color);
 }
-.workspace-leaf-content[data-type = "calendar"] {
+.is-phone .workspace-leaf-content[data-type = "calendar"] {
     bottom: calc(var(--grotto-calendar-view-height) * (-1));
     position: absolute;
 }
@@ -2572,7 +2575,7 @@ body {
     color: var(--grotto-filenav-color);
 }
 /* Alternate Sidebar Accent */
-.alternate-sidebar {
+.grotto-alternate-sidebar {
     --grotto-filenav-color: var(--grotto-light-1);
     --grotto-filenav-background-color: var(--grotto-dark-2);
     --grotto-filenav-tag-color: var(--grotto-light-1);
@@ -2581,7 +2584,16 @@ body {
     --background-secondary: var(--grotto-dark-2) !important;
     --grotto-filenav-button-background-color: var(--grotto-dark-0);
 }
-
+/* Limited Privacy */
+.grotto-blur {
+    --grotto-blur: 4px;
+}
+.grotto-redact {
+    --font-interface: var(--grotto-redacted);
+    --font-text: var(--grotto-redacted);
+    --font-print: var(--grotto-redacted);
+    --font-monospace: var(--grotto-redacted);
+}
 /* @settings
 
 name: Color Controls
@@ -2654,11 +2666,77 @@ settings:
                 value: preset-volcarona
 */
 
-/* 
-    - 
-        id: alternate-sidebar
-        title: Alternate Sidebar Style
-        description: Enable to use the dark mdoe version of the sidebars even in light mode
+/* @settings
+
+name: Tag Controls
+id: hidden-grotto-tag
+collapsed: false
+settings:
+    -
+        id: grotto-tag-rounded
+        title: Tag Shape
+        description: Enable to use rounded tags
+        type: class-toggle
+        default: false
+    -
+        id: grotto-tag-accented
+        title: Tag Accent
+        description: Enable to use accented tags
+        type: class-toggle
+        default: false
+*/
+
+/* @settings
+
+name: Text Controls
+id: hidden-grotto-text
+collapsed: false
+settings:
+    -
+        id: grotto-font-weight
+        title: Font Weight
+        description: Adjust the font weight
+        type: variable-number-slider
+        default: 500
+        min: 200
+        max: 800
+        step: 100
+*/
+
+/* @settings
+
+name: Calendar Plugin Controls
+id: hidden-grotto-calendar
+collapsed: false
+settings:
+    -
+        id: grotto-calendar-view-height
+        title: Calendar Position
+        description: Adjust calendar position in the sidebar. This is for mobile only.
+        type: variable-number-slider
+        format: vh
+        default: 0
+        min: 0
+        max: 50
+        step: 0
+*/
+
+/* @settings
+
+name: Privacy Controls
+id: hidden-grotto-style
+collapsed: false
+settings:
+    -
+        id: grotto-redact
+        title: Epstein
+        description: Redact all the text. Only use this if you are guilty of something. 
+        type: class-toggle
+        default: false
+    -
+        id: grotto-blur
+        title: Obscure
+        description: Blur the screen. Only use this if you can navigate back to this setting. Otherwise, you will need to remove the theme manually to reset.
         type: class-toggle
         default: false
 */
