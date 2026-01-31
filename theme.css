@@ -761,12 +761,14 @@ body {
     --tag-weight: var(--grotto-tag-weight);
     --tag-padding-y: 0.1rem;
     --tag-padding-x: 0.4rem;
+    --grotto-tag-pointer-events: none;
 }
 a.tag, 
 a.tag:hover, 
 .cm-hashtag, 
 .cm-hashtag:hover,
 .cm-s-obsidian span.cm-quote.cm-hashtag {
+    pointer-events: var(--grotto-tag-pointer-events);
     color: var(--grotto-tag-color);
     background-color: var(--grotto-tag-background);
     font-size: var(--grotto-tag-size);
@@ -793,7 +795,7 @@ a.tag:hover,
 }
 /* Accented Tag */
 .grotto-tag-accented {
-    --grotto-tag-color: var(--text-normal);
+    --grotto-tag-color: var(--grotto-light-1);
     --grotto-tag-background: var(--grotto-accent);
     --grotto-tag-border-color: var(--text-normal);
     --grotto-tag-border-width: 1.5px;
@@ -1012,7 +1014,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 /* Status Bar */
 body {
     --grotto-statusbar-color: var(--text-normal);
-    --grotto-statusbar-background-color: var(--background-secondary);
+    --grotto-statusbar-background-color: var(--grotto-background-tertiary);
     --grotto-statusbar-border-color: var(--text-normal);
     --grotto-statusbar-border-radius: 0rem;
 }
@@ -1311,11 +1313,11 @@ body {
     --graph-node-tag: var(--grotto-accent);
     --graph-node-attachment: var(--text-success);
     --grotto-graph-controls-color: var(--text-normal);
-    --grotto-graph-controls-background-color: var(--background-secondary);
+    --grotto-graph-controls-background-color: var(--grotto-background-tertiary);
     --grotto-graph-controls-border-color: var(--text-normal);
     --grotto-graph-controls-border-radius: 0rem;
     --grotto-graph-sidebar-controls-color: var(--text-normal);
-    --grotto-graph-sidebar-controls-background-color: var(--background-secondary);
+    --grotto-graph-sidebar-controls-background-color: var(--grotto-background-tertiary);
     --grotto-graph-sidebar-controls-border-color: var(--text-normal);
 }
 .graph-view.color-line {
@@ -2579,13 +2581,13 @@ body {
     color: var(--grotto-filenav-color);
 }
 /* Alternate Sidebar Accent */
+/* Doesnt work right now */
 .grotto-alternate-sidebar {
     --grotto-filenav-color: var(--grotto-light-1);
     --grotto-filenav-background-color: var(--grotto-dark-2);
     --grotto-filenav-tag-color: var(--grotto-light-1);
     --grotto-filenav-tag-background-color: var(--grotto-dark-2);
     --grotto-filenav-border-color: var(--grotto-light-1);
-    --background-secondary: var(--grotto-dark-2) !important;
     --grotto-filenav-button-background-color: var(--grotto-dark-0);
 }
 /* Limited Privacy */
@@ -2599,6 +2601,10 @@ body {
     --font-text-override: var(--grotto-redacted);
     --font-print: var(--grotto-redacted);
     --font-monospace: var(--grotto-redacted);
+}
+/* Simplified Headers */
+.grotto-header-rounded {
+    --grotto-header-border-radius: 2rem;
 }
 /* @settings
 
