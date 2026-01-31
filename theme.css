@@ -2580,6 +2580,9 @@ body {
 .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings {
     color: var(--grotto-filenav-color);
 }
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    border-top: 1px solid var(--grotto-filenav-border-color);
+}
 /* Alternate Sidebar Accent */
 /* Doesnt work right now */
 .grotto-alternate-sidebar {
