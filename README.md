@@ -1,10 +1,10 @@
 # Changelog
 <details>
-	<summary>v.1.5.95</summary>
+	<summary>v.1.5.96</summary>
 
 - The theme is now (almost) fully updated for the latest version of Obsidian. 
 - Style settings options are temporarily removed except for the color presets.
-- Changes for bases view are not implemented. Everything else should be fine. 
+- Changes for bases view are partially implemented.
 
 </details>
 
