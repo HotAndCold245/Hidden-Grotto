@@ -11,6 +11,8 @@ body {
     --grotto-dark-1: hsl(240, 18%, 24%);
     --grotto-dark-2: hsl(240, 18%, 20%);
     --grotto-accent: hsl(16, 80%, 60%);
+    --grotto-global-border-radius: 0rem;
+    --grotto-global-border-width: 1px;
 }
 /* Other Palettes */
 .preset-absol {
@@ -600,6 +602,10 @@ body {
 .cm-header.cm-header-6.cm-em {
     color: inherit;
 }
+/* Rounded Headers */
+.grotto-header-rounded {
+    --grotto-header-border-radius: 2rem;
+}
 /* Text Formatting */
 body {
     --grotto-bold-color: var(--grotto-accent);
@@ -856,7 +862,7 @@ body {
     --grotto-callout-color: var(--text-normal);
     --grotto-callout-background-color: var(--background-primary);
     --grotto-callout-border-color: var(--text-normal);
-    --grotto-callout-radius: 0rem;
+    --grotto-callout-radius: var(--grotto-global-border-radius);
     --grotto-callout-padding: 8px 16px;
     --grotto-callout-icon: none;
     --grotto-callout-title-size: var(--grotto-header-size);
@@ -888,7 +894,7 @@ body {
     --grotto-embed-color: var(--text-normal);
     --grotto-embed-background-color: transparent;
     --grotto-embed-border-color: var(--text-normal);
-    --grotto-embed-border-radius: 0rem;
+    --grotto-embed-border-radius: var(--grotto-global-border-radius);
     --grotto-embed-title-visibility: block;
     --grotto-embed-title-color: var(--text-normal);
     --grotto-embed-title-size: 1.5rem;
@@ -934,7 +940,7 @@ body {
 /* Checkboxes */
 body {
     --grotto-checkbox-border-color: var(--text-normal);
-    --grotto-checkbox-border-radius: 0rem;
+    --grotto-checkbox-border-radius: var(--grotto-global-border-radius);
     --checkbox-marker-color: transparent;
 }
 input[type=checkbox], 
@@ -948,7 +954,7 @@ body {
     --list-marker-color: var(--grotto-list-marker-color);
     --list-marker-color-hover: var(--grotto-list-marker-color);
     --list-marker-color-collapsed: var(--grotto-list-marker-color);
-    --list-bullet-radius: 0rem;
+    --list-bullet-radius: var(--grotto-global-border-radius);
 }
 /* Sliders */
 body {
@@ -960,8 +966,8 @@ input[type='range']::-webkit-slider-thumb,
 input[type='range']::-webkit-slider-thumb:hover,
 input[type='range']::-webkit-slider-thumb:active {
     background-color: var(--grotto-slider-background-color);
-    border: 1px solid var(--grotto-slider-border-color);
-    outline: 1px solid var(--grotto-slider-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-slider-border-color);
+    outline: var(--grotto-global-border-width) solid var(--grotto-slider-border-color);
     outline-offset: -1px;
     box-shadow: none;
 }
@@ -975,7 +981,7 @@ body:not(.is-mobile) input[type=range]:focus-visible::-webkit-slider-thumb {
 }
 input[type='range']::-webkit-slider-runnable-track {
     background-color: var(--grotto-accent);
-    outline: 1px solid var(--text-normal);
+    outline: var(--grotto-global-border-width) solid var(--text-normal);
     height: 4px;
 }
 /* Toggles */
@@ -1016,7 +1022,7 @@ body {
     --grotto-statusbar-color: var(--text-normal);
     --grotto-statusbar-background-color: var(--grotto-background-tertiary);
     --grotto-statusbar-border-color: var(--text-normal);
-    --grotto-statusbar-border-radius: 0rem;
+    --grotto-statusbar-border-radius: var(--grotto-global-border-radius);
 }
 .status-bar {
     color: var(--grotto-statusbar-color);
@@ -1038,7 +1044,7 @@ body {
     --grotto-tooltip-color: var(--text-normal);
     --grotto-tooltip-background-color: var(--grotto-background-tertiary);
     --grotto-tooltip-border-color: var(--text-normal);
-    --grotto-tooltip-border-radius: 0rem;
+    --grotto-tooltip-border-radius: var(--grotto-global-border-radius);
 }
 .tooltip {
     color: var(--grotto-tooltip-color);
@@ -1068,7 +1074,7 @@ body {
     --grotto-dragging-color: var(--grotto-light-1);
     --grotto-dragging-background-color: var(--grotto-accent);
     --grotto-dragging-border-color: var(--text-normal);
-    --grotto-dragging-border-radius: 0rem;
+    --grotto-dragging-border-radius: var(--grotto-global-border-radius);
 }
 .drag-ghost {
     color: var(--grotto-dragging-color);
@@ -1082,7 +1088,7 @@ body{
     --grotto-notice-color: var(--grotto-light-1);
     --grotto-notice-background-color: var(--grotto-accent);
     --grotto-notice-border-color: var(--text-normal);
-    --grotto-notice-border-radius: 0rem;
+    --grotto-notice-border-radius: var(--grotto-global-border-radius);
 }
 .notice,
 .is-phone .notice {
@@ -1097,7 +1103,7 @@ body {
     --grotto-progress-color: var(--grotto-accent);
     --grotto-progress-background-color: var(--text-normal);
     --grotto-progress-border-color: var(--text-normal);
-    --grotto-progress-radius: 0rem;
+    --grotto-progress-radius: var(--grotto-global-border-radius);
 }
 .notice progress[value]::-webkit-progress-bar,
 .markdown-rendered progress[value]::-webkit-progress-bar,
@@ -1125,7 +1131,7 @@ body {
     --grotto-button-color: var(--grotto-light-1);
     --grotto-button-background-color: var(--grotto-accent);
     --grotto-button-border-color: var(--text-normal);
-    --grotto-button-border-radius: 0rem;
+    --grotto-button-border-radius: var(--grotto-global-border-radius);
 }
 button:not(.clickable-icon), 
 button.mod-cta {
@@ -1155,7 +1161,7 @@ body {
     --grotto-dropdown-color: var(--grotto-light-1);
     --grotto-dropdown-background-color: var(--grotto-accent);
     --grotto-dropdown-border-color: var(--text-normal);
-    --grotto-dropdown-border-radius: 0rem;
+    --grotto-dropdown-border-radius: var(--grotto-global-border-radius);
     --grotto-dropdown-option-color: var(--text-normal);
     --grotto-dropdown-option-background-color: var(--background-primary);
 }
@@ -1237,7 +1243,7 @@ th,
 body {
     --grotto-scrollbar-border-color: var(--text-normal);
     --scrollbar-width: 12px;
-    --scrollbar-radius: 0rem;
+    --scrollbar-radius: var(--grotto-global-border-radius);
     --scrollbar-bg: var(--grotto-accent);
     --scrollbar-thumb-bg: var(--grotto-accent);
     --scrollbar-active-thumb-bg: var(--grotto-accent);
@@ -1246,19 +1252,19 @@ body {
 .is-android {
   --scrollbar-border-width: 3px;
   --scrollbar-width: 12px;
-  --scrollbar-radius: 0rem;
+  --scrollbar-radius: var(--grotto-global-border-radius);
 }
 body.styled-scrollbars ::-webkit-scrollbar-thumb {
     outline: 1px solid var(--grotto-scrollbar-border-color);
     outline-offset: -3px;
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
 }
 /* Canvas */
 body {
     --grotto-canvas-color: var(--text-normal);
     --grotto-canvas-background-color: var(--background-primary);
     --grotto-canvas-border-color: var(--text-normal);
-    --grotto-canvas-border-radius: 0rem;
+    --grotto-canvas-border-radius: var(--grotto-global-border-radius);
     --grotto-canvas-controls-color: var(--text-normal);
     --grotto-canvas-controls-background-color: var(--grotto-background-tertiary);
     --grotto-canvas-path-color: var(--text-normal);
@@ -1315,7 +1321,7 @@ body {
     --grotto-graph-controls-color: var(--text-normal);
     --grotto-graph-controls-background-color: var(--grotto-background-tertiary);
     --grotto-graph-controls-border-color: var(--text-normal);
-    --grotto-graph-controls-border-radius: 0rem;
+    --grotto-graph-controls-border-radius: var(--grotto-global-border-radius);
     --grotto-graph-sidebar-controls-color: var(--text-normal);
     --grotto-graph-sidebar-controls-background-color: var(--grotto-background-tertiary);
     --grotto-graph-sidebar-controls-border-color: var(--text-normal);
@@ -1396,12 +1402,12 @@ body {
     --grotto-calendar-color: var(--text-normal);
     --grotto-calendar-background-color: transparent;
     --grotto-calendar-border-color: var(--text-normal);
-    --grotto-calendar-border-radius: 0rem;
+    --grotto-calendar-border-radius: var(--grotto-global-border-radius);
     --grotto-calendar-border-width: 1px;
     --grotto-calendar-pointer-events: auto;
     --grotto-calendar-day-color: var(--text-normal);
     --grotto-calendar-day-border-color: transparent;
-    --grotto-calendar-day-border-radius: 0rem;
+    --grotto-calendar-day-border-radius: var(--grotto-global-border-radius);
     --grotto-calendar-today-color: var(--grotto-light-1);
     --grotto-calendar-today-background-color: var(--grotto-accent);
     --grotto-calendar-today-border-color: var(--text-normal);
@@ -1410,7 +1416,7 @@ body {
     --grotto-calendar-dayofweek-color: var(--text-normal);
     --grotto-calendar-dayofweek-background-color: transparent;
     --grotto-calendar-dayofweek-border-color: var(--text-normal);
-    --grotto-calendar-dayofweek-border-radius: 0rem;
+    --grotto-calendar-dayofweek-border-radius: var(--grotto-global-border-radius);
     --grotto-calendar-dayofweek-outline-color: transparent;
     --grotto-calendar-weekend-border-width: 1px;
     --grotto-calendar-weekend-border-color: var(--text-normal);
@@ -1510,7 +1516,7 @@ body {
     --grotto-navbar-color: var(--text-normal);
     --grotto-navbar-background-color: var(--grotto-background-tertiary);
     --grotto-navbar-border-color: var(--text-normal);
-    --grotto-navbar-border-radius: 0rem;
+    --grotto-navbar-border-radius: var(--grotto-global-border-radius);
     --grotto-navbar-position-offset: 16px;
     --grotto-navbar-new-tab-display: auto;
     --grotto-navbar-background-color: var(--grotto-background-tertiary);
@@ -1537,7 +1543,7 @@ body {
     --grotto-drawer-color: var(--grotto-light-1);
     --grotto-drawer-background-color: var(--grotto-accent);
     --grotto-drawer-border-color: var(--text-normal);
-    --grotto-drawer-border-radius: 0rem;
+    --grotto-drawer-border-radius: calc(var(--grotto-global-border-radius) * 2);
 }
 .workspace-drawer-tab-select .workspace-tab-header-inner {
     color: var(--grotto-drawer-color);
@@ -1598,11 +1604,12 @@ body {
 }
 .mobile-tab {
     border: 1px solid var(--grotto-tab-switcher-border-color);
+    border-radius: var(--grotto-tab-switcher-border-radius);
     background-color: var(--grotto-tab-switcher-menu-background-color);
     padding: 0px;
 }
 .mobile-tab-preview {
-  height: var(--grotto-tab-switcher-tab-height);
+    height: var(--grotto-tab-switcher-tab-height);
 }
 .mobile-tab-wrapper .mobile-tab.mobile-tap {
     background-color: var(--grotto-tab-switcher-selected-tab-background-color);
@@ -1618,7 +1625,7 @@ body {
 }
 .mobile-tab.is-active .mobile-tab-preview-empty,
 .mobile-tab.is-active .mobile-tab-preview-embed {
-  box-shadow: none;
+    box-shadow: none;
 }
 .mobile-tab .mobile-tab-pin, 
 .mobile-tab .close-button {
@@ -1627,6 +1634,7 @@ body {
 /* View Actions */
 body {
     --grotto-view-header-sidebar-toggle-display: none;
+    --grotto-view-header-border-radius: var(--grotto-global-border-radius);
 }
 .is-mobile .view-header-left {
     display: var(--grotto-view-header-sidebar-toggle-display);
@@ -1643,6 +1651,7 @@ body {
     border-radius: 0rem;
     background-color: var(--grotto-navbar-background-color);
     border: 1px solid var(--grotto-navbar-border-color);
+    border-radius: var(--grotto-view-header-border-radius);
     height: 36px;
     width: 36px;
 }
@@ -1661,7 +1670,7 @@ body {
     --grotto-pull-color: var(--grotto-light-1);
     --grotto-pull-background-color: var(--grotto-accent);
     --grotto-pull-border-color: var(--text-normal);
-    --grotto-pull-border-radius: 0rem;
+    --grotto-pull-border-radius: var(--grotto-global-border-radius);
 }
 .pull-action,
 .pull-down-action,
@@ -1696,7 +1705,7 @@ body {
 .is-mobile .clickable-icon {
     color: var(--grotto-icon-color);
     background-color: transparent;
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
 }
 .clickable-icon:hover,
 .clickable-icon.has-active-menu,
@@ -1719,7 +1728,7 @@ body {
     --grotto-suggestion-color: var(--text-normal);
     --grotto-suggestion-background-color: var(--grotto-background-tertiary);
     --grotto-suggestion-border-color: var(--text-normal);
-    --grotto-suggestion-border-radius: 0rem;
+    --grotto-suggestion-border-radius: var(--grotto-global-border-radius);
     --grotto-suggestion-selected-color: var(--grotto-light-1);
     --grotto-suggestion-selected-background-color: var(--grotto-accent);
 }
@@ -1773,7 +1782,7 @@ body {
     --grotto-prompt-color: var(--text-normal);
     --grotto-prompt-background-color: var(--background-primary);
     --grotto-prompt-border-color: var(--text-normal);
-    --grotto-prompt-border-radius: 0rem;
+    --grotto-prompt-border-radius: var(--grotto-global-border-radius);
 }
 .is-mobile.theme-dark .prompt, 
 .is-mobile.theme-light .prompt,
@@ -1825,13 +1834,13 @@ body {
     --grotto-menu-color: var(--text-normal);
     --grotto-menu-background-color: var(--background-secondary);
     --grotto-menu-border-color: var(--text-normal);
-    --grotto-menu-border-radius: 0rem;
+    --grotto-menu-border-radius: var(--grotto-global-border-radius);
 }
 .is-phone .menu {
     color: var(--grotto-menu-color);
     background-color: var(--grotto-menu-background-color);
     border-top: 1px solid var(--grotto-menu-border-color);
-    border-radius: var(--grotto-menu-border-radius);
+    border-radius: var(--grotto-menu-border-radius) var(--grotto-global-border-radius) 0rem 0rem;
 }
 .is-phone .menu-scroll {
     background-color: transparent;
@@ -1886,6 +1895,7 @@ body:not(.is-phone) .menu {
 body:not(.is-phone) .menu-scroll {
     background-color: var(--grotto-menu-background-color);
     border: 1px solid var(--grotto-menu-border-color);
+    border-radius: var(--grotto-global-border-radius);
     padding: 8px;
 }
 body:not(.is-phone) .menu-item-icon,
@@ -1914,7 +1924,7 @@ body {
     --grotto-settings-color: var(--text-normal);
     --grotto-settings-background-color: var(--grotto-background-tertiary);
     --grotto-settings-border-color: var(--text-normal);
-    --grotto-settings-border-radius: 0rem;
+    --grotto-settings-border-radius: var(--grotto-global-border-radius);
 }
 .vertical-tab-header-group-title {
     text-decoration: underline;
@@ -1960,9 +1970,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .is-phone .modal.mod-settings .vertical-tab-content {
     --scrollbar-width: 0px;
 }
-.is-phone .modal.mod-settings .vertical-tab-header-group-items {
-    border: 1px solid var(--grotto-settings-border-color);
-    border-radius: var(--grotto-settings-border-radius);
+.is-phone .modal.mod-settings .vertical-tab-header-group-items, 
+.vertical-tab-header-group-items {
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
+    border-radius: calc(var(--grotto-global-border-radius) * 0.9);
 }
 .is-phone .vertical-tab-nav-item.mobile-tap {
     color: var(--grotto-accent);
@@ -1972,27 +1983,28 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
     --modal-header-height: 64px;
 }
 .modal.mod-sidebar-layout {
-    border: 1px solid var(--grotto-settings-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
+    border-radius: var(--grotto-global-border-radius);
 }
 .is-phone .modal.mod-sidebar-layout {
-    border-width: 1px 0px 0px 0px;
+    border-width: var(--grotto-global-border-width) 0px 0px 0px;
 }
 .is-phone .modal.mod-settings .vertical-tab-header, .is-phone .modal.mod-settings .vertical-tab-content {
     background-color: var(--background-primary);
 }
 .setting-group .setting-items {
     background-color: var(--grotto-background-tertiary);
-    border: 1px solid var(--grotto-settings-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
     border-radius: var(--grotto-settings-border-radius);
 }
 .setting-group .setting-group-search {
     background-color: var(--grotto-background-tertiary);
-    border: 1px solid var(--grotto-settings-border-color);
-    border-radius: var(--grotto-settings-border-radius);
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
+    border-radius: var(--grotto-settings-border-radius) var(--grotto-settings-border-radius) 0rem 0rem;
     border-bottom-width: 0px;
 }
 .setting-hotkey {
-    border: 1px solid var(--grotto-settings-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
     border-radius: var(--grotto-settings-border-radius);
 }
 /* Rename */
@@ -2001,7 +2013,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus.is-being-renamed {
     color: var(--text-normal);
     background-color: var(--background-primary);
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
     caret-color: currentColor;
 }
 .is-phone .modal-container.mod-dim .modal.mod-file-rename {
@@ -2013,6 +2025,9 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus,
     outline: 1px solid var(--text-normal);
 }
 /* Inputs */
+body {
+    --grotto-input-radius: var(--grotto-global-border-radius);
+}
 input[type=number],
 input[type=text],
 input[type='date'],
@@ -2051,17 +2066,19 @@ input[type='email']:hover,
 input[type='password']:hover {
     outline: 2px solid var(--text-normal);
     outline-offset: -4px;
+    box-shadow: none;
 }
 /* Community Modals */
 body {
     --grotto-modal-color: var(--text-normal);
     --grotto-modal-background-color: var(--background-primary);
     --grotto-modal-border-color: var(--text-normal);
-    --grotto-modal-border-radius: 0rem;
+    --grotto-modal-border-radius: var(--grotto-global-border-radius);
 }
 .modal-container.mod-dim .modal {
     box-shadow: none;
     border: 1px solid var(--grotto-modal-border-color);
+    border-radius: var(--grotto-global-border-radius);
 }
 .is-phone .modal-container.mod-dim .modal {
     border: 0px solid transparent;
@@ -2069,6 +2086,7 @@ body {
 .modal-sidebar {
     border: 1px solid var(--grotto-modal-border-color);
     background-color: var(--grotto-modal-background-color);
+    border-radius: var(--grotto-global-border-radius);
 }
 .is-phone .modal-sidebar {
     border: 0px solid transparent;
@@ -2087,7 +2105,7 @@ body {
 .community-item, 
 .is-phone .community-item {
     background-color: var(--grotto-background-tertiary);
-    border: 1px solid var(--grotto-modal-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-modal-border-color);
     border-radius: var(--grotto-modal-border-radius);
 }
 .community-item:hover, 
@@ -2095,7 +2113,7 @@ body {
 body:not(.is-phone) .community-item.is-selected, 
 body:not(.is-phone) .community-item.is-selected:hover, 
 .is-mobile .community-item.tappable:hover {
-    border: 1px solid var(--grotto-modal-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-modal-border-color);
     background-color: var(--grotto-accent);
     color: var(--grotto-light-1);
     --text-muted: currentColor;
@@ -2125,7 +2143,7 @@ body {
     --grotto-filenav-active-color: var(--grotto-light-1);
     --grotto-filenav-active-background-color: var(--grotto-accent);
     --grotto-filenav-border-color: var(--text-normal);
-    --grotto-filenav-border-radius: 0rem;
+    --grotto-filenav-border-radius: var(--grotto-global-border-radius);
     --grotto-filenav-tag-color: var(--background-secondary);
     --grotto-filenav-tag-background-color: var(--text-normal);
     --grotto-filenav-button-background-color: var(--grotto-background-tertiary);
@@ -2197,10 +2215,10 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
     background-color: var(--grotto-filenav-active-background-color);
 }
 .is-phone .workspace-drawer.mod-right {
-    border-left: 1px solid var(--grotto-filenav-border-color);
+    border-left: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
 }
 .is-phone .workspace-drawer.mod-left {
-    border-right: 1px solid var(--grotto-filenav-border-color);
+    border-right: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
 }
 .workspace-drawer .nav-buttons-container .nav-action-button {
     color: var(--grotto-filenav-color);
@@ -2244,11 +2262,11 @@ body {
     --grotto-bases-background-color: var(--background-primary);
     --grotto-bases-header-background-color: var(--grotto-background-tertiary);
     --grotto-bases-border-color: var(--text-normal);
-    --grotto-bases-border-radius: 0rem;
+    --grotto-bases-border-radius: var(--grotto-global-border-radius);
 }
 .bases-header {
     background-color: var(--grotto-bases-header-background-color);
-    border: 1px solid var(--grotto-bases-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-bases-border-color);
     border-radius: var(--grotto-bases-border-radius);
     margin: 4px;
 }
@@ -2263,13 +2281,13 @@ body {
 }
 .bases-cards-item {
     color: var(--grotto-bases-color);
-    border: 1px solid var(--grotto-bases-border-color);
-    border-radius: 0rem;
+    border: var(--grotto-global-border-width) solid var(--grotto-bases-border-color);
+    border-radius: var(--grotto-global-border-radius);
     box-shadow: none;
 }
 .bases-cards-cover {
-    border-bottom: 1px solid var(--grotto-bases-border-color);
-    border-radius: 0rem;
+    border-bottom: var(--grotto-global-border-width) solid var(--grotto-bases-border-color);
+    border-radius: var(--grotto-global-border-radius);
     box-shadow: none;
 }
 .bases-cards-item:hover {
@@ -2293,22 +2311,22 @@ span.value-list-element a.tag {
 /* Title Bar */
 body {
     --grotto-titlebar-color: var(--text-normal);
-    --grotto-titlebar-border-radius: 0rem;
+    --grotto-titlebar-border-radius: var(--grotto-global-border-radius);
 }
 .titlebar-button {
     height: var(--header-height);
     color: var(--grotto-titlebar-color);
     background-color: var(--background-secondary);
-    border-bottom: 1px solid var(--text-normal);
+    border-bottom: var(--grotto-global-border-width) solid var(--text-normal);
 }
 .titlebar-button:hover {
     background-color: var(--grotto-accent);
 }
 .workspace-tab-header-container {
-    border-bottom: 1px solid var(--text-normal);
+    border-bottom: var(--grotto-global-border-width) solid var(--text-normal);
 }
 .workspace-ribbon .sidebar-toggle-button {
-    border-bottom: 1px solid var(--text-normal);
+    border-bottom: var(--grotto-global-border-width) solid var(--text-normal);
     height: 40px;
 }
 .workspace .mod-root .workspace-tab-header-inner::after {
@@ -2326,14 +2344,14 @@ body {
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable:hover {
     margin-top: 8px;
     padding-top: 4px;
-    border: 1px solid var(--text-normal);
-    border-radius: var(--grotto-titlebar-border-radius);
+    border: var(--grotto-global-border-width) solid var(--text-normal);
+    border-radius: var(--grotto-global-border-radius) var(--grotto-global-border-radius) 0rem 0rem;
     transition: linear margin-top 0.1s;
 }
 .workspace .mod-root .workspace-tab-header, 
 .workspace .mod-root .workspace-tab-header-container .workspace-tab-header {
-    border: 1px solid var(--text-normal);
-    border-radius: 0rem;
+    border: var(--grotto-global-border-width) solid var(--text-normal);
+    border-radius: var(--grotto-global-border-radius) var(--grotto-global-border-radius) 0rem 0rem;
     border-bottom: none;
     --tab-outline-width: 0px;
 }
@@ -2342,11 +2360,11 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
     color: var(--grotto-light-1);
     background-color: var(--grotto-accent);
     filter:brightness(100%);
-    border: 1px solid var(--text-normal);
-    border-radius: 0rem;
+    border: var(--grotto-global-border-width) solid var(--text-normal);
+    border-radius: var(--grotto-global-border-radius) var(--grotto-global-border-radius) 0rem 0rem;
 }
 .mod-root .workspace-tab-header-container-inner {
-    border-bottom: 1px solid var(--text-normal);
+    border-bottom: var(--grotto-global-border-width) solid var(--text-normal);
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable .workspace-tab-header-inner-icon, 
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable .workspace-tab-header-inner-icon:hover {
@@ -2354,7 +2372,7 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 }
 .workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
     background-color: transparent;
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
 }
 
 /* Side tab buttons */
@@ -2374,13 +2392,13 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 .mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active {
     background-color: var(--grotto-accent);
     border: 1px solid var(--text-normal);
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
 }
 .mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active:hover, 
 .mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active:hover {
     background-color: var(--grotto-accent);
     border: 1px solid var(--text-normal);
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
     outline: 1px solid var(--text-normal);
     outline-offset: -2px;
     transition: linear outline-offset 0.1s;
@@ -2429,11 +2447,11 @@ body {
     --grotto-ribbon-border-radius: 0rem;
 }
 .workspace-ribbon {
-    border-right: 1px solid var(--grotto-ribbon-border-color);
+    border-right: var(--grotto-global-border-width) solid var(--grotto-ribbon-border-color);
     border-radius: var(--grotto-ribbon-border-radius);
 }
 .workspace-ribbon.mod-left.is-collapsed {
-    border-right: 1px solid var(--grotto-ribbon-border-color);
+    border-right: var(--grotto-global-border-width) solid var(--grotto-ribbon-border-color);
     border-radius: var(--grotto-ribbon-border-radius);
     background-color: var(--background-secondary);
 }
@@ -2442,7 +2460,7 @@ body {
     --grotto-properties-color: var(--text-normal);
     --grotto-properties-background-color: var(--background-primary);
     --grotto-properties-border-color: var(--text-normal);
-    --grotto-properties-border-radius: 0rem;
+    --grotto-properties-border-radius: var(--grotto-global-border-radius);
 }
 .metadata-property, 
 .metadata-property:hover, 
@@ -2513,12 +2531,12 @@ body {
     --grotto-mobile-toolbar-color: var(--text-normal);
     --grotto-mobile-toolbar-background-color: var(--grotto-background-tertiary);
     --grotto-mobile-toolbar-border-color: var(--text-normal);
-    --grotto-mobile-toolbar-border-radius: 0rem;
+    --grotto-mobile-toolbar-border-radius: var(--grotto-global-border-radius);
 }
 .mobile-toolbar {
     background-color: var(--grotto-mobile-toolbar-background-color);
     box-shadow: none;
-    border: 1px solid var(--grotto-mobile-toolbar-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-mobile-toolbar-border-color);
     border-radius: var(--grotto-mobile-toolbar-border-radius);
     padding: 0px;
     margin-left: 4px;
@@ -2536,7 +2554,7 @@ body {
     width: 100%;
 }
 .mobile-toolbar-options-list-container {
-    border-radius: 0rem;
+    border-radius: var(--grotto-global-border-radius);
 }
 .mobile-toolbar-options-list {
     display: flex;
@@ -2544,7 +2562,7 @@ body {
     flex-flow: wrap;
     overflow-y: auto;
     border: 0px solid transparent;
-    border-radius: 0px;
+    border-radius: var(--grotto-global-border-radius);
     justify-content: center;
     justify-self: center;
 }
@@ -2561,7 +2579,7 @@ body {
 /*====  STYLE SETTINGS PLUGIN  ====*/
 .style-settings-empty {
     background-color: var(--background-secondary);
-    border: 1px solid var(--text-normal);
+    border: var(--grotto-global-border-width) solid var(--text-normal);
 }
 .style-settings-container, 
 .style-settings-heading {
@@ -2584,7 +2602,7 @@ body {
     color: var(--grotto-filenav-color);
 }
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-    border-top: 1px solid var(--grotto-filenav-border-color);
+    border-top: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
 }
 
 /* Limited Privacy */
@@ -2599,9 +2617,14 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     --font-print: var(--grotto-redacted);
     --font-monospace: var(--grotto-redacted);
 }
-/* Simplified Headers */
-.grotto-header-rounded {
-    --grotto-header-border-radius: 2rem;
+
+/* Rounded UI */
+.grotto-rounded-ui {
+    --grotto-global-border-radius: 1rem;
+}
+/* Hidden Borders 1922*/
+.grotto-hidden-border {
+    --grotto-global-border-width: 0px;
 }
 /* @settings
 
@@ -2730,33 +2753,16 @@ settings:
         step: 0
 */
 
+/* @settings
 
-/* Alternate Sidebar Accent */
-/* Doesnt work right now *//*
-body {
-    --grotto-filenav-color: var(--grotto-light-1);
-    --grotto-filenav-background-color: var(--grotto-dark-2);
-    --grotto-filenav-tag-color: var(--grotto-light-1);
-    --grotto-filenav-tag-background-color: var(--grotto-dark-2);
-    --grotto-filenav-border-color: var(--grotto-light-1);
-    --grotto-filenav-button-background-color: var(--grotto-dark-0);
-    --grotto-calendar-color: var(--grotto-light-1);
-    --grotto-calendar-border-color: var(--grotto-light-1);
-    --grotto-calendar-day-color: var(--grotto-light-1);
-    --grotto-calendar-today-border-color: var(--grotto-light-1);
-    --grotto-calendar-month-color: var(--grotto-light-1);
-    --grotto-calendar-dayofweek-color: var(--grotto-light-1);
-    --grotto-calendar-dayofweek-border-color: var(--grotto-light-1);
-    --grotto-calendar-weekend-border-color: var(--grotto-light-1);
-    --grotto-calendar-day-active-color: var(--grotto-light-1);
-}
-.is-phone {
-    --mobile-sidebar-background: var(--grotto-dark-2);
-}
-.nav-files-container, .nav-header, .workspace-ribbon, .workspace-split.mod-left-split .view-content, .workspace-split.mod-right-split .view-content,
-.workspace-ribbon .sidebar-toggle-button, .workspace-tab-header-container, .titlebar-button, 
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile, 
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle, 
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle  {
-    background-color: var(--grotto-dark-1);
-}*/
+name: UI Design Controls
+id: hidden-grotto-ui
+collapsed: false
+settings:
+    -
+        id: grotto-rounded-ui
+        title: UI Shape
+        description: Enable to use rounded UI elements
+        type: class-toggle
+        default: false
+*/
