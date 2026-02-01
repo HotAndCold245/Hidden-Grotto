@@ -1,31 +1,24 @@
 # Changelog
 <details>
-	<summary>v.1.5.96</summary>
+	<summary>v.1.5.99</summary>
 
-- The theme is now (almost) fully updated for the latest version of Obsidian. 
-- Style settings options are temporarily removed except for the color presets.
-- Changes for bases view are partially implemented.
+- The theme is now fully updated for the latest version of Obsidian
+- Upcoming additions (and a reminder to myself) - Option to remove most borders, Hidden UI elements, more color presets, add font directly to the theme
 
 </details>
 
 
 # Introduction
-I made this theme primarily for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus.
+This is a theme I primarily made for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus. 
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 
 # Features
 - Support for both **light** and **dark** mode
-- **19** color palettes to choose from
-- Updated **mobile toolbar** with adjustable height and vertical scrolling
-	- Can be adjusted by setting `--grotto-toolbar-row` to the desired number of rows
-	- If number of rows is less than the what is needed to hold the tools, vertical scrolling will be enabled
-	- #Note : Setting the height to higher than necessary to hold the tools will cause the toolbar to rise far above the keyboard 
-- Updated **mobile navigation bar** (the bar at the bottom) to include the view actions for easier reach
+- **24** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
+- Updated **mobile toolbar** with vertical scrolling
 - Updated **callouts** with hidden icons which can be reenabled by setting `--grotto-callout-icon: auto`
-- Updated **embeds** with hidden titles which can be reenabled by settings `--grotto-embed-title: block`
 - Option to **blur** or **redact** everything to provide some privacy when notes are left unattended
 	- #Note : Only use this feature if you know how to navigate to the settings to disable it
-- **Customization** is available through Style Settings as well as my personal [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin which can be installed using BRAT
 
 # Screenshots
 #Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. It's not part of the theme. 
@@ -71,14 +64,13 @@ You can create your own color preset using the following format in a snippet.
 	--accent-h: ;
 	--accent-s: ;
 	--accent-l: ;
-	--grotto-day-1: hsl();
-	--grotto-day-2: hsl();
-	--grotto-day-3: hsl();
-	--grotto-night-0: hsl();
-	--grotto-night-1: hsl();
-	--grotto-night-2: hsl();
-	--grotto-night-3: hsl();
-	--grotto-accent-1: hsl();
+	--grotto-light-1: hsl();
+	--grotto-light-2: hsl();
+	--grotto-light-3: hsl();
+	--grotto-dark-0: hsl();
+	--grotto-dark-1: hsl();
+	--grotto-dark-2: hsl();
+	--grotto-accent: hsl();
 }
 ```
 If you are using the **Hidden Grotto Controls** plugin, your preset will be automatically added to the list of presets. In the case of **Style Settings**, you will need to add the following format to the snippet as well. 
@@ -99,7 +91,7 @@ settings:
                 value: preset-yourpresetname
 */
 ```
-You can include additional changes to your preset using the variables declared by the theme. A full list of variables can be found in the theme.css file and is also available in the theme's repository. 
+You can include additional changes to your preset using the variables declared by the theme. A full list of variables can be found in the theme.css file.
 #Note : The presets included in the theme are always subject to change. 
 
 # The Plugin
