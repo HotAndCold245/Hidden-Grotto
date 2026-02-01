@@ -2192,7 +2192,7 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover,
 body:not(.is-grabbing) .nav-folder-title.is-active:hover {
     color: var(--grotto-filenav-active-color);
     border-radius: var(--grotto-filenav-border-radius);
-    border: 1px solid var(--text-normal);
+    border: 1px solid var(--grotto-filenav-border-color);
     font-weight: var(--grotto-font-weight);
     background-color: var(--grotto-filenav-active-background-color);
 }
@@ -2234,6 +2234,9 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 }
 .workspace-drawer-active-tab-container {
     background-color: var(--grotto-filenav-backgorund-color);
+}
+.workspace-drawer-active-tab-content {
+    --nav-item-color: var(--grotto-filenav-color);
 }
 /* Bases */
 body {
@@ -2583,16 +2586,7 @@ body {
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
     border-top: 1px solid var(--grotto-filenav-border-color);
 }
-/* Alternate Sidebar Accent */
-/* Doesnt work right now */
-.grotto-alternate-sidebar {
-    --grotto-filenav-color: var(--grotto-light-1);
-    --grotto-filenav-background-color: var(--grotto-dark-2);
-    --grotto-filenav-tag-color: var(--grotto-light-1);
-    --grotto-filenav-tag-background-color: var(--grotto-dark-2);
-    --grotto-filenav-border-color: var(--grotto-light-1);
-    --grotto-filenav-button-background-color: var(--grotto-dark-0);
-}
+
 /* Limited Privacy */
 .grotto-blur {
     --grotto-blur: 4px;
@@ -2735,3 +2729,34 @@ settings:
         max: 50
         step: 0
 */
+
+
+/* Alternate Sidebar Accent */
+/* Doesnt work right now *//*
+body {
+    --grotto-filenav-color: var(--grotto-light-1);
+    --grotto-filenav-background-color: var(--grotto-dark-2);
+    --grotto-filenav-tag-color: var(--grotto-light-1);
+    --grotto-filenav-tag-background-color: var(--grotto-dark-2);
+    --grotto-filenav-border-color: var(--grotto-light-1);
+    --grotto-filenav-button-background-color: var(--grotto-dark-0);
+    --grotto-calendar-color: var(--grotto-light-1);
+    --grotto-calendar-border-color: var(--grotto-light-1);
+    --grotto-calendar-day-color: var(--grotto-light-1);
+    --grotto-calendar-today-border-color: var(--grotto-light-1);
+    --grotto-calendar-month-color: var(--grotto-light-1);
+    --grotto-calendar-dayofweek-color: var(--grotto-light-1);
+    --grotto-calendar-dayofweek-border-color: var(--grotto-light-1);
+    --grotto-calendar-weekend-border-color: var(--grotto-light-1);
+    --grotto-calendar-day-active-color: var(--grotto-light-1);
+}
+.is-phone {
+    --mobile-sidebar-background: var(--grotto-dark-2);
+}
+.nav-files-container, .nav-header, .workspace-ribbon, .workspace-split.mod-left-split .view-content, .workspace-split.mod-right-split .view-content,
+.workspace-ribbon .sidebar-toggle-button, .workspace-tab-header-container, .titlebar-button, 
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile, 
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle  {
+    background-color: var(--grotto-dark-1);
+}*/
