@@ -1543,7 +1543,7 @@ body {
     --grotto-drawer-color: var(--grotto-light-1);
     --grotto-drawer-background-color: var(--grotto-accent);
     --grotto-drawer-border-color: var(--text-normal);
-    --grotto-drawer-border-radius: calc(var(--grotto-global-border-radius) * 2);
+    --grotto-drawer-border-radius: var(--grotto-global-border-radius);
 }
 .workspace-drawer-tab-select .workspace-tab-header-inner {
     color: var(--grotto-drawer-color);
@@ -2766,3 +2766,4 @@ settings:
         type: class-toggle
         default: false
 */
+
