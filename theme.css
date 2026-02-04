@@ -12,7 +12,7 @@ body {
     --grotto-dark-2: hsl(240, 18%, 20%);
     --grotto-accent: hsl(16, 80%, 60%);
     --grotto-global-border-radius: 0rem;
-    --grotto-global-border-width: 0px;
+    --grotto-global-border-width: 1px;
 }
 /* Other Palettes */
 .preset-absol {
@@ -1520,6 +1520,7 @@ body {
     --grotto-navbar-position-offset: 16px;
     --grotto-navbar-new-tab-display: auto;
     --grotto-navbar-background-color: var(--grotto-background-tertiary);
+    --grotto-navbar-visibility: auto;
 }
 .mobile-navbar.mod-raised {
     background-color: var(--grotto-navbar-background-color);
@@ -1530,6 +1531,7 @@ body {
     box-shadow: none;
     backdrop-filter: none;
     height: 36px;
+    display: var(--grotto-navbar-visibility);
 }
 .mobile-navbar-action {
     height: 36px;
@@ -2627,6 +2629,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .grotto-hidden-border {
     --grotto-global-border-width: 0px;
 }
+/* Hidden Navigation Bar */
+.grotto-hidden-navbar {
+    --grotto-navbar-visibility: none;
+}
 /* @settings
 
 name: Color Controls
@@ -2763,13 +2769,19 @@ settings:
     -
         id: grotto-rounded-ui
         title: UI Shape
-        description: Enable to use rounded UI elements
+        description: Toggle between square and rounded UI elements
         type: class-toggle
         default: false
     -
         id: grotto-hidden-border
         title: UI Border Visibility
-        description: Enable to add borders to most UI elements
+        description: Toggle borders for most UI elements
+        type: class-toggle
+        default: false
+    -
+        id: grotto-hidden-navbar
+        title: Mobile Navigation Bar Visibility
+        description: Toggle visbility of the navigation bar at the bottom on mobile
         type: class-toggle
         default: false
 */
