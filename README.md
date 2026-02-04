@@ -1,9 +1,9 @@
 # Changelog
 <details>
-	<summary>v.1.5.99</summary>
-
+	<summary>v.1.5.100</summary>
+- #New - Added option to hide most borders via Style Settings
 - The theme is now fully updated for the latest version of Obsidian
-- Upcoming additions (and a reminder to myself) - Option to remove most borders, Hidden UI elements, more color presets, add font directly to the theme
+- Upcoming additions (and a reminder to myself) - Hidden UI elements, more color presets, add font directly to the theme
 
 </details>
 
