@@ -1,6 +1,6 @@
 # Changelog
 <details>
-	<summary>v.1.5.100</summary>
+	<summary>v.1.5.991</summary>
 - #New : Added option to hide most borders via Style Settings
 - #New : Added option to hide the mobile navigation bar Via Style Settings
 - The theme is now fully updated for the latest version of Obsidian
