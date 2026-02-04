@@ -12,7 +12,7 @@ body {
     --grotto-dark-2: hsl(240, 18%, 20%);
     --grotto-accent: hsl(16, 80%, 60%);
     --grotto-global-border-radius: 0rem;
-    --grotto-global-border-width: 1px;
+    --grotto-global-border-width: 0px;
 }
 /* Other Palettes */
 .preset-absol {
@@ -991,7 +991,7 @@ body {
 }
 .checkbox-container {
     background-color: var(--grotto-toggle-background-color);
-    outline: 1px solid var(--grotto-toggle-border-color);
+    outline: var(--grotto-global-border-width) solid var(--grotto-toggle-border-color);
     box-shadow: none;
 }
 @media (hover: hover) {
@@ -1027,7 +1027,7 @@ body {
 .status-bar {
     color: var(--grotto-statusbar-color);
     background-color: var(--grotto-statusbar-background-color);
-    border: 1px solid var(--grotto-statusbar-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-statusbar-border-color);
     border-radius: var(--grotto-statusbar-border-radius);
     bottom: 12px;
     right: 12px;
@@ -1049,7 +1049,7 @@ body {
 .tooltip {
     color: var(--grotto-tooltip-color);
     background-color: var(--grotto-tooltip-background-color);
-    border: 1px solid var(--grotto-tooltip-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-tooltip-border-color);
     border-radius: var(--grotto-tooltip-border-radius);
     box-shadow: none;
 }
@@ -1079,7 +1079,7 @@ body {
 .drag-ghost {
     color: var(--grotto-dragging-color);
     background-color: var(--grotto-dragging-background-color);
-    border: 1px solid var(--grotto-dragging-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-dragging-border-color);
     border-radius: var(--grotto-dragging-border-radius);
     box-shadow: none;
 }
@@ -1094,7 +1094,7 @@ body{
 .is-phone .notice {
     color: var(--grotto-notice-color);
     background-color: var(--grotto-notice-background-color);
-    border: 1px solid var(--grotto-notice-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-notice-border-color);
     border-radius: var(--grotto-notice-border-radius);
     box-shadow: none;
 }
@@ -1111,7 +1111,7 @@ body {
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar,
 .theme-light .notice progress[value]::-webkit-progress-bar {
     background-color: var(--grotto-progress-background-color);
-    border: 1px solid var(--grotto-progress-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-progress-border-color);
     border-radius: var(--grotto-progress-radius);
     box-shadow: none;
 }
@@ -1123,7 +1123,7 @@ body {
 }
 .progress-bar-indicator {
     background-color: var(--grotto-progress-background-color);
-    border: 1px solid var(--grotto-progress-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-progress-border-color);
     border-radius: var(--grotto-progress-radius);
 }
 /* Buttons */
@@ -1137,7 +1137,7 @@ button:not(.clickable-icon),
 button.mod-cta {
     color: var(--grotto-button-color);
     background-color: var(--grotto-button-background-color);
-    border: 1px solid var(--grotto-button-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-button-border-color);
     border-radius: var(--grotto-button-border-radius);
     box-shadow: none;
 }
@@ -1170,7 +1170,7 @@ select,
 .dropdown {
     color: var(--grotto-dropdown-color);
     background-color: var(--grotto-dropdown-background-color);
-    border: 1px solid var(--grotto-dropdown-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-dropdown-border-color);
     border-radius: var(--grotto-dropdown-border-radius);
 }
 select:hover, 
@@ -1255,7 +1255,7 @@ body {
   --scrollbar-radius: var(--grotto-global-border-radius);
 }
 body.styled-scrollbars ::-webkit-scrollbar-thumb {
-    outline: 1px solid var(--grotto-scrollbar-border-color);
+    outline: var(--grotto-global-border-width) solid var(--grotto-scrollbar-border-color);
     outline-offset: -3px;
     border-radius: var(--grotto-global-border-radius);
 }
@@ -1272,13 +1272,13 @@ body {
 }
 .canvas-node-container {
     background-color:var(--grotto-canvas-controls-background-color);
-    border: 1px solid var(--grotto-canvas-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-canvas-border-color);
     border-radius: var(--grotto-canvas-border-radius);
 }
 .canvas-group-label {
     color: var(--grotto-light-1);
     background-color: var(--grotto-accent);
-    border: 1px solid var(--grotto-canvas-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-canvas-border-color);
     border-radius: var(--grotto-canvas-border-radius);
 }
 .canvas-edges path.canvas-display-path {
@@ -1291,7 +1291,7 @@ body {
 }
 .canvas-control-group {
     background-color: var(--grotto-canvas-controls-background-color);
-    border: 1px solid var(--grotto-canvas-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-canvas-border-color);
     border-radius: var(--grotto-canvas-border-radius);
     box-shadow: none;
 }
@@ -1306,7 +1306,7 @@ body {
 }
 .canvas-menu {
     background-color: var(--grotto-canvas-controls-background-color);
-    border: 1px solid var(--grotto-canvas-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-canvas-border-color);
     border-radius: var(--grotto-canvas-border-radius);
 }
 /* Graphs */
@@ -1335,12 +1335,12 @@ body {
 .graph-controls.is-close {
     color: var(--grotto-graph-controls-color);
     background-color: var(--grotto-graph-controls-background-color);
-    border: 1px solid var(--grotto-graph-controls-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-graph-controls-border-color);
     border-radius: var(--grotto-graph-controls-border-radius);
     box-shadow: none;
 }
 .graph-control-section {
-    border-bottom: 1px solid var(--grotto-graph-controls-border-color);
+    border-bottom: var(--grotto-global-border-width) solid var(--grotto-graph-controls-border-color);
 }
 .workspace-split:not(.mod-root) .graph-controls.is-close {
     color: var(--grotto-graph-sidebar-controls-color);
@@ -1365,7 +1365,7 @@ body {
     --code-operator: hsl(0, 30%, 60%);
     --code-value: hsl(270, 30%, 60%);
     --code-tag: hsl(0, 30%, 60%);
-    --code-border-width: 1px;
+    --code-border-width: var(--grotto-global-border-width);
 }
 .markdown-rendered pre,
 .markdown-rendered code,
@@ -1493,12 +1493,12 @@ body {
     outline-offset: -4px;
 }
 #calendar-container td.svelte-egt0yd {
-    border-right: 1px solid var(--grotto-calendar-border-color);
+    border-right: var(--grotto-global-border-width) solid var(--grotto-calendar-border-color);
     padding-right: 1.5px;
 }
 #calendar-container .week-num.svelte-egt0yd {
     color: var(--grotto-calendar-color);
-    border: 1px solid transparent;
+    border: var(--grotto-global-border-width) solid transparent;
     border-radius: 0rem;
 }
 #calendar-container .filled.svelte-1widvzq {
@@ -1523,7 +1523,7 @@ body {
 }
 .mobile-navbar.mod-raised {
     background-color: var(--grotto-navbar-background-color);
-    border: 1px solid var(--grotto-navbar-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-navbar-border-color);
     border-radius: var(--grotto-navbar-border-radius);
     bottom: var(--grotto-navbar-position-offset);
     padding: 0px;
@@ -1548,13 +1548,13 @@ body {
 .workspace-drawer-tab-select .workspace-tab-header-inner {
     color: var(--grotto-drawer-color);
     background-color: var(--grotto-drawer-background-color);
-    border: 1px solid var(--grotto-filenav-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
     border-radius: var(--grotto-drawer-border-radius);
 }
 .is-phone .workspace-drawer-tab-options-list {
     color: var(--grotto-filenav-color);
     background-color: var(--grotto-filenav-button-background-color);
-    border: 1px solid var(--grotto-filenav-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-filenav-border-color);
     border-radius: var(--grotto-drawer-border-radius);
 }
 .is-phone .workspace-drawer-tab-options-list .workspace-tab-header-inner-title, 
@@ -1567,7 +1567,7 @@ body {
 .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner, 
 .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner:hover, 
 .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner.mobile-tap {
-    border: 1px solid transparent;
+    border: var(--grotto-global-border-width) solid transparent;
     border-radius: var(--grotto-drawer-border-radius);
 }
 .is-phone .workspace-drawer-tab-options-list {
@@ -1575,7 +1575,7 @@ body {
     padding-right: 0px;
 }
 .workspace-drawer .search-input-container input {
-    border: 1px solid var(--grotto-drawer-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-drawer-border-color);
 }
 /* Mobile Tab Switcher */
 body {
@@ -1593,17 +1593,17 @@ body {
 }
 .mobile-tab-switcher-menubar {
     background-color: var(--grotto-tab-switcher-menu-background-color);
-    border-top: 1px solid var(--grotto-tab-switcher-border-color);
+    border-top: var(--grotto-global-border-width) solid var(--grotto-tab-switcher-border-color);
 }
 .mobile-tab-preview-empty, 
 .mobile-tab-preview-embed {
     color: var(--grotto-tab-switcher-color);
     background-color: var(--grotto-tab-switcher-background-color);
-    border-bottom: 1px solid var(--grotto-tab-switcher-border-color);
+    border-bottom: var(--grotto-global-border-width) solid var(--grotto-tab-switcher-border-color);
     border-radius: var(--grotto-tab-switcher-border-radius);
 }
 .mobile-tab {
-    border: 1px solid var(--grotto-tab-switcher-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-tab-switcher-border-color);
     border-radius: var(--grotto-tab-switcher-border-radius);
     background-color: var(--grotto-tab-switcher-menu-background-color);
     padding: 0px;
@@ -1650,7 +1650,7 @@ body {
 .is-phone .view-header .view-action {
     border-radius: 0rem;
     background-color: var(--grotto-navbar-background-color);
-    border: 1px solid var(--grotto-navbar-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-navbar-border-color);
     border-radius: var(--grotto-view-header-border-radius);
     height: 36px;
     width: 36px;
@@ -1678,7 +1678,7 @@ body {
     color: var(--grotto-pull-color);
     background-color: var(--grotto-pull-background-color);
     background: var(--grotto-pull-background-color);
-    border: 1px solid var(--grotto-pull-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-pull-border-color);
     border-radius: var(--grotto-pull-border-radius);
     width: fit-content;
     height: fit-content;
@@ -1736,7 +1736,7 @@ body {
 .is-mobile .suggestion-container {
     color: var(--grotto-suggestion-color);
     background-color: var(--grotto-suggestion-background-color);
-    border: 1px solid var(--grotto-suggestion-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-suggestion-border-color);
     border-radius: var(--grotto-suggestion-border-radius);
     box-shadow: none;
 }
@@ -1752,7 +1752,7 @@ body {
     color: var(--grotto-suggestion-color);
 }
 .suggestion-container.mod-search-suggestion .suggestion {
-    border: 1px solid var(--grotto-suggestion-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-suggestion-color);
 }
 .search-suggest-item.mod-group:not(:first-child) {
     padding-inline-start: 8px;
@@ -1788,7 +1788,7 @@ body {
 .is-mobile.theme-light .prompt,
 .prompt {
     background-color: var(--grotto-prompt-background-color);
-    border: 1px solid var(--grotto-prompt-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-prompt-border-color);
     border-radius: var(--grotto-prompt-border-radius);
 }
 input.prompt-input:hover,
@@ -1800,13 +1800,13 @@ input.prompt-input:focus-visible,
     color: var(--grotto-prompt-color);
     background-color: var(--grotto-background-tertiary);
     caret-color: currentColor;
-    border: 1px solid var(--grotto-prompt-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-prompt-border-color);
     border-radius: var(--grotto-prompt-border-radius);
 }
 .prompt-results .suggestion-hotkey {
     color: var(--grotto-light-1);
     background-color: var(--grotto-accent);
-    border: 1px solid var(--grotto-prompt-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-prompt-border-color);
     border-radius: var(--grotto-prompt-border-radius);
 }
 .search-input-clear-button {
@@ -1933,7 +1933,7 @@ body {
 }
 .vertical-tab-header-group-items {
     background-color: var(--grotto-settings-background-color);
-    border: 1px solid var(--grotto-settings-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
 }
 .vertical-tab-nav-item, 
 .is-phone .vertical-tab-nav-item {
@@ -2077,7 +2077,7 @@ body {
 }
 .modal-container.mod-dim .modal {
     box-shadow: none;
-    border: 1px solid var(--grotto-modal-border-color);
+    border: var(--grotto-global-border-width) solid var(--grotto-modal-border-color);
     border-radius: var(--grotto-global-border-radius);
 }
 .is-phone .modal-container.mod-dim .modal {
@@ -2422,6 +2422,7 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 /* Window Resize Handle */
 body {
     --grotto-resize-handle-color: var(--text-normal);
+    --grotto-resize-handle-border-color: var(--text-normal);
 }
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
     background-color: var(--background-secondary);
@@ -2434,8 +2435,8 @@ body {
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
     background-color: var(--background-secondary);
-    border-width: 1px;
-    border-color: var(--text-normal);
+    border-width: var(--grotto-global-border-width);
+    border-color: var(--grotto-resize-handle-border-color);
 }
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover, 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
@@ -2765,5 +2766,10 @@ settings:
         description: Enable to use rounded UI elements
         type: class-toggle
         default: false
+    -
+        id: grotto-hidden-border
+        title: UI Border Visibility
+        description: Enable to add borders to most UI elements
+        type: class-toggle
+        default: false
 */
-
