@@ -1,10 +1,9 @@
 # Changelog
 <details>
-	<summary>v.1.5.991</summary>
+	<summary>v 2.0</summary>
 - #New : Added option to hide most borders via Style Settings
 - #New : Added option to hide the mobile navigation bar Via Style Settings
 - The theme is now fully updated for the latest version of Obsidian
-- Upcoming additions (and a reminder to myself) - Hidden UI elements, more color presets, add font directly to the theme
 
 </details>
 
@@ -62,15 +61,17 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 You can create your own color preset using the following format in a snippet.
 ```
 .preset-yourpresetname {
-	--accent-h: ;
-	--accent-s: ;
-	--accent-l: ;
+	--grotto-accent-h: ;
+	--grotto-accent-s: ;
+	--grotto-accent-l: ;
+	--grotto-light-0: hsl();
 	--grotto-light-1: hsl();
 	--grotto-light-2: hsl();
 	--grotto-light-3: hsl();
 	--grotto-dark-0: hsl();
 	--grotto-dark-1: hsl();
 	--grotto-dark-2: hsl();
+	--grotto-dark-3: hsl();
 	--grotto-accent: hsl();
 }
 ```
