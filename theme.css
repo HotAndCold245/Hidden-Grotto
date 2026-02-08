@@ -7,11 +7,9 @@ body {
   --grotto-dark-0: hsl(240, 18%, 20%);
   --grotto-dark-1: hsl(240, 18%, 24%);
   --grotto-dark-2: hsl(240, 18%, 36%);
-  --grotto-dark-3: hsl(240, 18%, 44%);
   --grotto-light-0: hsl(33, 33%, 86%);
   --grotto-light-1: hsl(33, 33%, 92%);
   --grotto-light-2: hsl(33, 33%, 84%);
-  --grotto-light-3: hsl(33, 33%, 80%);
   --grotto-accent: hsl(16, 80%, 60%);
 }
 
@@ -23,11 +21,9 @@ body {
   --grotto-dark-0: hsl(200, 5%, 12%);
   --grotto-dark-1: hsl(200, 5%, 18%);
   --grotto-dark-2: hsl(200, 5%, 24%);
-  --grotto-dark-3: hsl(200, 5%, 32%);
   --grotto-light-0: hsl(0, 0%, 84%);
   --grotto-light-1: hsl(0, 0%, 90%);
   --grotto-light-2: hsl(0, 0%, 80%);
-  --grotto-light-3: hsl(0, 0%, 72%);
   --grotto-accent: hsl(200, 16%, 60%);
 }
 
@@ -38,11 +34,9 @@ body {
   --grotto-dark-0: hsl(260, 10%, 12%);
   --grotto-dark-1: hsl(260, 10%, 18%);
   --grotto-dark-2: hsl(260, 10%, 28%);
-  --grotto-dark-3: hsl(260, 10%, 32%);
   --grotto-light-0: hsl(40, 50%, 84%);
   --grotto-light-1: hsl(40, 50%, 90%);
   --grotto-light-2: hsl(40, 30%, 80%);
-  --grotto-light-3: hsl(40, 50%, 72%);
   --grotto-accent: hsl(260, 20%, 60%);
 }
 
@@ -53,11 +47,9 @@ body {
   --grotto-dark-0: hsl(0, 0%, 16%);
   --grotto-dark-1: hsl(0, 0%, 20%);
   --grotto-dark-2: hsl(0, 0%, 28%);
-  --grotto-dark-3: hsl(0, 0%, 36%);
   --grotto-light-0: hsl(0, 0%, 82%);
   --grotto-light-1: hsl(0, 0%, 88%);
   --grotto-light-2: hsl(0, 0%, 78%);
-  --grotto-light-3: hsl(0, 0%, 68%);
   --grotto-accent: hsl(0, 0%, 58%);
 }
 
@@ -68,11 +60,9 @@ body {
   --grotto-dark-0: hsl(300, 20%, 20%);
   --grotto-dark-1: hsl(300, 20%, 28%);
   --grotto-dark-2: hsl(300, 20%, 36%);
-  --grotto-dark-3: hsl(300, 20%, 44%);
   --grotto-light-0: hsl(40, 0%, 82%);
   --grotto-light-1: hsl(40, 0%, 86%);
   --grotto-light-2: hsl(40, 0%, 76%);
-  --grotto-light-3: hsl(40, 0%, 70%);
   --grotto-accent: hsl(0, 50%, 60%);
 }
 
@@ -80,7 +70,6 @@ body {
   --grotto-dark-0: hsl(300, 20%, 12%);
   --grotto-dark-1: hsl(300, 20%, 20%);
   --grotto-dark-2: hsl(300, 20%, 32%);
-  --grotto-dark-3: hsl(300, 20%, 36%);
 }
 
 .preset-calyrex {
@@ -90,11 +79,9 @@ body {
   --grotto-dark-0: hsl(160, 20%, 12%);
   --grotto-dark-1: hsl(160, 20%, 20%);
   --grotto-dark-2: hsl(160, 20%, 28%);
-  --grotto-dark-3: hsl(160, 20%, 32%);
   --grotto-light-0: hsl(50, 12%, 80%);
   --grotto-light-1: hsl(50, 12%, 86%);
   --grotto-light-2: hsl(50, 12%, 76%);
-  --grotto-light-3: hsl(50, 12%, 60%);
   --grotto-accent: hsl(160, 24%, 50%);
 }
 
@@ -105,11 +92,9 @@ body {
   --grotto-dark-0: hsl(240, 18%, 20%);
   --grotto-dark-1: hsl(240, 18%, 24%);
   --grotto-dark-2: hsl(240, 18%, 36%);
-  --grotto-dark-3: hsl(240, 18%, 44%);
   --grotto-light-0: hsl(33, 33%, 86%);
   --grotto-light-1: hsl(33, 33%, 92%);
   --grotto-light-2: hsl(33, 33%, 84%);
-  --grotto-light-3: hsl(33, 33%, 80%);
   --grotto-accent: hsl(16, 80%, 60%);
 }
 
@@ -120,11 +105,9 @@ body {
   --grotto-dark-0: hsl(210, 10%, 16%);
   --grotto-dark-1: hsl(220, 30%, 32%);
   --grotto-dark-2: hsl(220, 30%, 40%);
-  --grotto-dark-3: hsl(220, 30%, 44%);
   --grotto-light-0: hsl(40, 0%, 80%);
   --grotto-light-1: hsl(40, 0%, 86%);
   --grotto-light-2: hsl(40, 0%, 76%);
-  --grotto-light-3: hsl(40, 0%, 70%);
   --grotto-accent: hsl(210, 50%, 60%);
 }
 
@@ -132,7 +115,6 @@ body {
   --grotto-dark-0: hsl(210, 10%, 12%);
   --grotto-dark-1: hsl(220, 30%, 28%);
   --grotto-dark-2: hsl(220, 30%, 36%);
-  --grotto-dark-3: hsl(220, 30%, 40%);
 }
 
 .preset-darkrai {
@@ -142,11 +124,9 @@ body {
   --grotto-dark-0: hsl(0, 0%, 12%);
   --grotto-dark-1: hsl(0, 0%, 18%);
   --grotto-dark-2: hsl(0, 0%, 32%);
-  --grotto-dark-3: hsl(0, 0%, 36%);
   --grotto-light-0: hsl(212, 0%, 84%);
   --grotto-light-1: hsl(212, 0%, 90%);
   --grotto-light-2: hsl(212, 0%, 80%);
-  --grotto-light-3: hsl(212, 0%, 72%);
   --grotto-accent: hsl(5, 50%, 50%);
 }
 
@@ -157,11 +137,9 @@ body {
   --grotto-dark-0: hsl(196, 24%, 20%);
   --grotto-dark-1: hsl(196, 24%, 28%);
   --grotto-dark-2: hsl(196, 24%, 36%);
-  --grotto-dark-3: hsl(196, 24%, 40%);
   --grotto-light-0: hsl(44, 0%, 82%);
   --grotto-light-1: hsl(44, 0%, 86%);
   --grotto-light-2: hsl(44, 0%, 76%);
-  --grotto-light-3: hsl(44, 0%, 56%);
   --grotto-accent: hsl(80, 50%, 44%);
 }
 
@@ -172,11 +150,9 @@ body {
   --grotto-dark-0: hsl(30, 0%, 12%);
   --grotto-dark-1: hsl(30, 0%, 20%);
   --grotto-dark-2: hsl(30, 0%, 28%);
-  --grotto-dark-3: hsl(30, 0%, 32%);
   --grotto-light-0: hsl(40, 0%, 76%);
   --grotto-light-1: hsl(40, 0%, 80%);
   --grotto-light-2: hsl(40, 0%, 72%);
-  --grotto-light-3: hsl(40, 0%, 64%);
   --grotto-accent: hsl(320, 20%, 60%);
 }
 
@@ -187,11 +163,9 @@ body {
   --grotto-dark-0: hsl(86, 40%, 20%);
   --grotto-dark-1: hsl(86, 40%, 28%);
   --grotto-dark-2: hsl(86, 40%, 36%);
-  --grotto-dark-3: hsl(86, 40%, 42%);
   --grotto-light-0: hsl(44, 40%, 80%);
   --grotto-light-1: hsl(44, 40%, 86%);
   --grotto-light-2: hsl(44, 40%, 76%);
-  --grotto-light-3: hsl(44, 40%, 64%);
   --grotto-accent: hsl(44, 56%, 50%);
 }
 
@@ -202,11 +176,9 @@ body {
   --grotto-dark-0: hsl(180, 30%, 24%);
   --grotto-dark-1: hsl(180, 30%, 32%);
   --grotto-dark-2: hsl(280, 20%, 36%);
-  --grotto-dark-3: hsl(280, 20%, 44%);
   --grotto-light-0: hsl(80, 30%, 90%);
   --grotto-light-1: hsl(80, 30%, 96%);
   --grotto-light-2: hsl(80, 30%, 86%);
-  --grotto-light-3: hsl(80, 30%, 72%);
   --grotto-accent: hsl(80, 30%, 56%);
 }
 
@@ -217,11 +189,9 @@ body {
   --grotto-dark-0: hsl(240, 16%, 20%);
   --grotto-dark-1: hsl(240, 16%, 28%);
   --grotto-dark-2: hsl(240, 16%, 36%);
-  --grotto-dark-3: hsl(240, 16%, 40%);
   --grotto-light-0: hsl(40, 16%, 82%);
   --grotto-light-1: hsl(40, 16%, 86%);
   --grotto-light-2: hsl(40, 16%, 76%);
-  --grotto-light-3: hsl(40, 16%, 70%);
   --grotto-accent: hsl(310, 16%, 50%);
 }
 
@@ -232,11 +202,9 @@ body {
   --grotto-dark-0: hsl(200, 0%, 16%);
   --grotto-dark-1: hsl(200, 0%, 24%);
   --grotto-dark-2: hsl(200, 0%, 32%);
-  --grotto-dark-3: hsl(200, 0%, 36%);
   --grotto-light-0: hsl(40, 36%, 86%);
   --grotto-light-1: hsl(40, 36%, 90%);
   --grotto-light-2: hsl(40, 36%, 82%);
-  --grotto-light-3: hsl(40, 36%, 70%);
   --grotto-accent: hsl(216, 30%, 48%);
 }
 
@@ -247,11 +215,9 @@ body {
   --grotto-dark-0: hsl(200, 30%, 18%);
   --grotto-dark-1: hsl(200, 30%, 26%);
   --grotto-dark-2: hsl(200, 10%, 36%);
-  --grotto-dark-3: hsl(200, 10%, 40%);
   --grotto-light-0: hsl(40, 20%, 86%);
   --grotto-light-1: hsl(40, 20%, 90%);
   --grotto-light-2: hsl(40, 20%, 80%);
-  --grotto-light-3: hsl(40, 20%, 72%);
   --grotto-accent: hsl(0, 40%, 56%);
 }
 
@@ -262,11 +228,9 @@ body {
   --grotto-dark-0: hsl(40, 6%, 12%);
   --grotto-dark-1: hsl(40, 6%, 16%);
   --grotto-dark-2: hsl(40, 6%, 24%);
-  --grotto-dark-3: hsl(40, 6%, 28%);
   --grotto-light-0: hsl(80, 40%, 86%);
   --grotto-light-1: hsl(80, 40%, 92%);
   --grotto-light-2: hsl(80, 40%, 80%);
-  --grotto-light-3: hsl(80, 40%, 72%);
   --grotto-accent: hsl(160, 36%, 56%);
 }
 
@@ -277,11 +241,9 @@ body {
   --grotto-dark-0: hsl(40, 16%, 12%);
   --grotto-dark-1: hsl(40, 16%, 16%);
   --grotto-dark-2: hsl(40, 16%, 24%);
-  --grotto-dark-3: hsl(40, 16%, 28%);
   --grotto-light-0: hsl(40, 40%, 86%);
   --grotto-light-1: hsl(40, 40%, 90%);
   --grotto-light-2: hsl(40, 40%, 80%);
-  --grotto-light-3: hsl(40, 40%, 70%);
   --grotto-accent: hsl(10, 50%, 54%);
 }
 
@@ -292,11 +254,9 @@ body {
   --grotto-dark-0: hsl(60, 5%, 10%);
   --grotto-dark-1: hsl(60, 10%, 14%);
   --grotto-dark-2: hsl(60, 10%, 24%);
-  --grotto-dark-3: hsl(60, 10%, 28%);
   --grotto-light-0: hsl(30, 20%, 78%);
   --grotto-light-1: hsl(30, 20%, 82%);
   --grotto-light-2: hsl(30, 20%, 76%);
-  --grotto-light-3: hsl(30, 20%, 70%);
   --grotto-accent: hsl(114, 24%, 50%);
 }
 
@@ -307,11 +267,9 @@ body {
   --grotto-dark-0: hsl(340, 10%, 12%);
   --grotto-dark-1: hsl(340, 10%, 18%);
   --grotto-dark-2: hsl(340, 10%, 24%);
-  --grotto-dark-3: hsl(340, 10%, 32%);
   --grotto-light-0: hsl(240, 10%, 78%);
   --grotto-light-1: hsl(240, 10%, 84%);
   --grotto-light-2: hsl(240, 10%, 72%);
-  --grotto-light-3: hsl(240, 10%, 64%);
   --grotto-accent: hsl(340, 40%, 56%);
 }
 
@@ -322,11 +280,9 @@ body {
   --grotto-dark-0: hsl(20, 20%, 20%);
   --grotto-dark-1: hsl(20, 20%, 28%);
   --grotto-dark-2: hsl(20, 20%, 36%);
-  --grotto-dark-3: hsl(20, 20%, 40%);
   --grotto-light-0: hsl(40, 20%, 90%);
   --grotto-light-1: hsl(40, 20%, 96%);
   --grotto-light-2: hsl(40, 20%, 86%);
-  --grotto-light-3: hsl(40, 20%, 72%);
   --grotto-accent: hsl(145, 64%, 40%);
 }
 
@@ -337,11 +293,9 @@ body {
   --grotto-dark-0: hsl(210, 20%, 20%);
   --grotto-dark-1: hsl(210, 30%, 30%);
   --grotto-dark-2: hsl(210, 30%, 36%);
-  --grotto-dark-3: hsl(210, 30%, 40%);
   --grotto-light-0: hsl(40, 14%, 82%);
   --grotto-light-1: hsl(40, 14%, 86%);
   --grotto-light-2: hsl(40, 14%, 76%);
-  --grotto-light-3: hsl(40, 14%, 70%);
   --grotto-accent: hsl(24, 64%, 56%);
 }
 
@@ -352,11 +306,9 @@ body {
   --grotto-dark-0: hsl(340, 32%, 30%);
   --grotto-dark-1: hsl(340, 32%, 38%);
   --grotto-dark-2: hsl(340, 32%, 48%);
-  --grotto-dark-3: hsl(340, 32%, 52%);
   --grotto-light-0: hsl(20, 24%, 86%);
   --grotto-light-1: hsl(20, 24%, 92%);
   --grotto-light-2: hsl(20, 24%, 82%);
-  --grotto-light-3: hsl(20, 24%, 76%);
   --grotto-accent: hsl(100, 36%, 56%);
 }
 
@@ -367,11 +319,9 @@ body {
   --grotto-dark-0: hsl(20, 20%, 14%);
   --grotto-dark-1: hsl(20, 20%, 20%);
   --grotto-dark-2: hsl(20, 20%, 32%);
-  --grotto-dark-3: hsl(20, 20%, 36%);
   --grotto-light-0: hsl(20, 10%, 74%);
   --grotto-light-1: hsl(20, 10%, 80%);
   --grotto-light-2: hsl(20, 10%, 70%);
-  --grotto-light-3: hsl(20, 10%, 64%);
   --grotto-accent: hsl(40, 40%, 50%);
 }
 
@@ -382,11 +332,9 @@ body {
   --grotto-dark-0: hsl(190, 50%, 24%);
   --grotto-dark-1: hsl(190, 40%, 32%);
   --grotto-dark-2: hsl(190, 30%, 36%);
-  --grotto-dark-3: hsl(190, 30%, 40%);
   --grotto-light-0: hsl(165, 0%, 90%);
   --grotto-light-1: hsl(165, 0%, 96%);
   --grotto-light-2: hsl(165, 30%, 84%);
-  --grotto-light-3: hsl(165, 30%, 72%);
   --grotto-accent: hsl(20, 64%, 56%);
 }
 
@@ -490,10 +438,10 @@ body,
 .is-mobile.theme-light {
   --text-normal: var(--grotto-dark-1);
   --text-muted: var(--grotto-dark-2);
-  --text-faint: var(--grotto-dark-3);
+  --text-faint: var(--grotto-dark-2);
   --background-primary: var(--grotto-light-1);
   --background-secondary: var(--grotto-light-0);
-  --grotto-background-tertiary: var(--grotto-light-3);
+  --grotto-background-tertiary: var(--grotto-light-2);
 }
 
 /* Dark Theme */
@@ -501,10 +449,10 @@ body,
 .is-mobile.theme-dark {
   --text-normal: var(--grotto-light-1);
   --text-muted: var(--grotto-light-2);
-  --text-faint: var(--grotto-light-3);
+  --text-faint: var(--grotto-light-2);
   --background-primary: var(--grotto-dark-1);
   --background-secondary: var(--grotto-dark-0);
-  --grotto-background-tertiary: var(--grotto-dark-3);
+  --grotto-background-tertiary: var(--grotto-dark-2);
 }
 
 /* Tags */
@@ -2837,7 +2785,7 @@ body {
   background-color: var(--grotto-bases-cards-background-color-hover);
   --grotto-bases-cards-label-color: var(--grotto-accent);
   --text-normal: var(--grotto-light-1);
-  --text-faint: var(--grotto-light-3);
+  --text-faint: var(--grotto-light-2);
   --grotto-link-color: var(--grotto-light-1);
 }
 
@@ -3317,3 +3265,4 @@ settings:
         type: class-toggle
         default: false
 */
+
