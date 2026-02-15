@@ -101,4 +101,4 @@ You can include additional changes to your preset using the variables declared b
 The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin includes all the settings available in **Style Settings** as well as an easy way to cycle through the presets and toggle blur through ribbon commands. There's no need to use it if you don't need the shortcuts. 
 
 # Feedback
-If there are any problems with the theme, you can submit an issue on the repository or try the official Obsidian discord server in the #appearance channel.
+If there are any problems with the theme, you can submit an issue on the repository.
