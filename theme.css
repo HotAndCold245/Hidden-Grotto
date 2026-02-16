@@ -3138,7 +3138,7 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 }
 
 .is-phone.is-floating-nav .modal.mod-settings.mod-sidebar-layout .modal-close-button {
-  top: 55px;
+  top: 43px;
 }
 
 .is-phone .modal.mod-settings.mod-sidebar-layout .modal-close-button.mobile-tap,
@@ -3287,3 +3287,4 @@ settings:
         type: class-toggle
         default: false
 */
+
