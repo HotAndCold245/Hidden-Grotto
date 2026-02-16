@@ -1,10 +1,10 @@
 # Changelog
 <details>
-	<summary>v2.0</summary>
+	<summary>v2.0.2</summary>
 	
-- #New : Added option to hide most borders via Style Settings
-- #New : Added option to hide the mobile navigation bar Via Style Settings
-- The theme is now fully updated for the latest version of Obsidian
+- Removed borders from the main workspace on desktop due to ugly in dark mode. Still there for mobile. 
+- Slight colour adjustment for the default palette. 
+- Fixed annoying close button alignment issue in the settings menu. 
 	
 </details>
 
@@ -68,11 +68,9 @@ You can create your own color preset using the following format in a snippet.
 	--grotto-light-0: hsl();
 	--grotto-light-1: hsl();
 	--grotto-light-2: hsl();
-	--grotto-light-3: hsl();
 	--grotto-dark-0: hsl();
 	--grotto-dark-1: hsl();
 	--grotto-dark-2: hsl();
-	--grotto-dark-3: hsl();
 	--grotto-accent: hsl();
 }
 ```
