@@ -1052,6 +1052,10 @@ body {
   opacity: 1;
 }
 
+.markdown-source-view.mod-cm6 .edit-block-button {
+  opacity: 0;
+}
+
 .markdown-embed-link:hover,
 .file-embed-link:hover,
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
@@ -2829,6 +2833,11 @@ body {
   height: 36px;
 }
 
+.is-mobile.is-floating-nav .mod-raised.prompt-input-container {
+  height: auto;
+  bottom: 0px;
+}
+
 .is-phone:not(.is-floating-nav) .mobile-navbar {
   color: var(--grotto-navbar-color);
   background-color: var(--grotto-navbar-background-color);
@@ -3287,4 +3296,5 @@ settings:
         type: class-toggle
         default: false
 */
+
 
