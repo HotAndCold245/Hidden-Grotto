@@ -21,7 +21,7 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 	- #Note : Only use this feature if you know how to navigate to the settings to disable it
 
 # Screenshots
-#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is also available in the theme's repository. It's not part of the theme. 
+#Note : The font used in the images for this theme is called Quicksand and can be found through Google Fonts. A snippet for the font is available in the theme's repository. It's not part of the theme because I wanted to keep the font usable without needing the theme. 
 
 <details>
 	<summary>Color Palettes</summary>
