@@ -1,8 +1,8 @@
 # Changelog
 <details>
 	<summary>v2.0.4</summary>
+	
 - Minor fix for command palette search close button
-
 - Removed edit button from images
 	
 </details>
