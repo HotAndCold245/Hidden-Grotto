@@ -1056,6 +1056,10 @@ body {
   opacity: 0;
 }
 
+body:not(.is-mobile) .image-embed:focus-within .edit-block-button {
+  background-color: var(--grotto-accent);
+}
+
 .markdown-embed-link:hover,
 .file-embed-link:hover,
 .markdown-source-view.mod-cm6 .edit-block-button:hover {
@@ -3296,5 +3300,6 @@ settings:
         type: class-toggle
         default: false
 */
+
 
 
