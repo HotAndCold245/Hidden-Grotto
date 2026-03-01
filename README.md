@@ -1,10 +1,9 @@
 # Changelog
 <details>
-	<summary>v2.0.2</summary>
+	<summary>v2.0.4</summary>
 	
-- Removed borders from the main workspace on desktop due to ugly in dark mode. Still there for mobile. 
-- Slight colour adjustment for the default palette. 
-- Fixed annoying close button alignment issue in the settings menu. 
+- Minor fix for command palette search close button
+- Removed edit button from images
 	
 </details>
 
@@ -93,7 +92,7 @@ settings:
 */
 ```
 You can include additional changes to your preset using the variables declared by the theme. A full list of variables can be found in the theme.css file.
-#Note : The presets included in the theme are always subject to change. 
+#Note : The presets included in the theme are always subject to change. '
 
 # The Plugin
 The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin includes all the settings available in **Style Settings** as well as an easy way to cycle through the presets and toggle blur through ribbon commands. There's no need to use it if you don't need the shortcuts. 
