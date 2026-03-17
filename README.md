@@ -4,8 +4,10 @@
 
 - Added new colour presets
 	- Krookodile
+
  	- Manectric
-    - Necrozma (Darker version of Aggron)
+
+    - Necrozma
 
 - Minor adjustment to existing colour presets
 	- Meloetta
