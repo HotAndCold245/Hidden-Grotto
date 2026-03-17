@@ -2,10 +2,16 @@
 <details>
 	<summary>v2.0.4</summary>
 
-- Minor fix for command palette search close button
+- Added new colour presets
+	- Krookodile
+ 	- Manectric
+  	- Necrozma (Darker version of Aggron preset)
 
-- Removed edit button from images
-	
+- Minor adjustment to existing colour presets
+	- Meloetta
+ 	- Volcarona
+
+- Added changes for Deadline Countdown plugin
 </details>
 
 
@@ -15,7 +21,7 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 
 # Features
 - Support for both **light** and **dark** mode
-- **24** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
+- **27** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
 - Updated **mobile toolbar** with vertical scrolling
 - Updated **callouts** with hidden icons which can be reenabled by setting `--grotto-callout-icon: auto`
 - Option to **blur** or **redact** everything to provide some privacy when notes are left unattended
