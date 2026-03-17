@@ -1,6 +1,6 @@
 # Changelog
 <details>
-	<summary>v2.0.4</summary>
+	<summary>v2.0.5</summary>
 
 - Added new colour presets
 	- Krookodile
