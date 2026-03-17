@@ -195,6 +195,32 @@ body {
   --grotto-accent: hsl(310, 16%, 50%);
 }
 
+.preset-krookodile {
+  --grotto-accent-h: 0;
+  --grotto-accent-s: 24%;
+  --grotto-accent-l: 48%;
+  --grotto-dark-0: hsl(0, 24%, 20%);
+  --grotto-dark-1: hsl(0, 24%, 28%);
+  --grotto-dark-2: hsl(0, 24%, 36%);
+  --grotto-light-0: hsl(44, 0%, 82%);
+  --grotto-light-1: hsl(44, 0%, 86%);
+  --grotto-light-2: hsl(44, 0%, 76%);
+  --grotto-accent: hsl(0, 24%, 48%);
+}
+
+.preset-manectric {
+  --grotto-accent-h: 48;
+  --grotto-accent-s: 56%;
+  --grotto-accent-l: 56%;
+  --grotto-dark-0: hsl(200, 38%, 32%);
+  --grotto-dark-1: hsl(200, 34%, 36%);
+  --grotto-dark-2: hsl(200, 24%, 28%);
+  --grotto-light-0: hsl(210, 0%, 90%);
+  --grotto-light-1: hsl(210, 20%, 96%);
+  --grotto-light-2: hsl(210, 40%, 84%);
+  --grotto-accent: hsl(48, 56%, 56%);
+}
+
 .preset-mareep {
   --grotto-accent-h: 216;
   --grotto-accent-s: 30%;
@@ -228,10 +254,29 @@ body {
   --grotto-dark-0: hsl(40, 6%, 12%);
   --grotto-dark-1: hsl(40, 6%, 16%);
   --grotto-dark-2: hsl(40, 6%, 24%);
-  --grotto-light-0: hsl(80, 40%, 86%);
-  --grotto-light-1: hsl(80, 40%, 92%);
-  --grotto-light-2: hsl(80, 40%, 80%);
+  --grotto-light-0: hsl(70, 30%, 86%);
+  --grotto-light-1: hsl(70, 30%, 92%);
+  --grotto-light-2: hsl(70, 30%, 80%);
   --grotto-accent: hsl(160, 36%, 56%);
+}
+
+.preset-necrozma {
+  --grotto-accent-h: 0;
+  --grotto-accent-s: 0%;
+  --grotto-accent-l: 44%;
+  --grotto-dark-0: hsl(0, 0%, 8%);
+  --grotto-dark-1: hsl(0, 0%, 10%);
+  --grotto-dark-2: hsl(0, 0%, 16%);
+  --grotto-light-0: hsl(0, 0%, 90%);
+  --grotto-light-1: hsl(0, 0%, 96%);
+  --grotto-light-2: hsl(0, 0%, 84%);
+  --grotto-accent: hsl(0, 0%, 32%);
+}
+.theme-light.preset-necrozma {
+  --grotto-accent: hsl(0, 0%, 20%);
+}
+.theme-dark.preset-necrozma {
+  --grotto-accent: hsl(0, 0%, 32%);
 }
 
 .preset-pirouette-meloetta {
@@ -329,13 +374,13 @@ body {
   --grotto-accent-h: 20;
   --grotto-accent-s: 64%;
   --grotto-accent-l: 54%;
-  --grotto-dark-0: hsl(190, 50%, 24%);
-  --grotto-dark-1: hsl(190, 40%, 32%);
-  --grotto-dark-2: hsl(190, 30%, 36%);
-  --grotto-light-0: hsl(165, 0%, 90%);
-  --grotto-light-1: hsl(165, 0%, 96%);
-  --grotto-light-2: hsl(165, 30%, 84%);
-  --grotto-accent: hsl(20, 64%, 56%);
+  --grotto-dark-0: hsl(190, 40%, 24%);
+  --grotto-dark-1: hsl(190, 30%, 32%);
+  --grotto-dark-2: hsl(190, 16%, 24%);
+  --grotto-light-0: hsl(165, 20%, 90%);
+  --grotto-light-1: hsl(165, 20%, 96%);
+  --grotto-light-2: hsl(165, 10%, 84%);
+  --grotto-accent: hsl(20, 56%, 56%);
 }
 
 /* UI variables */
@@ -3159,6 +3204,19 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
   color: var(--grotto-accent);
 }
 
+/* Deadline Countdown Plugin */
+.grotto-category-section h3 {
+  color: var(--grotto-light-1);
+  background-color: var(--grotto-accent);
+  border-radius: var(--grotto-ui-border-radius) var(--grotto-ui-border-radius) 0rem 0rem;
+}
+.grotto-deadline-categories {
+  border-radius: 0rem 0rem var(--grotto-ui-border-radius) var(--grotto-ui-border-radius);
+}
+.grotto-deadline-card.grotto-deadline-warning {
+  border-radius: calc(var(--grotto-ui-border-radius) * 0.6);
+}
+
 
 /* @settings
 
@@ -3204,6 +3262,12 @@ settings:
                 label: Hisuian Typhlosion
                 value: preset-hisuian-typhlosion
             -
+                label: Krookodile
+                value: preset-krookodile
+            -
+                label: Manectric
+                value: preset-manectric
+            -
                 label: Mareep
                 value: preset-mareep
             -
@@ -3212,6 +3276,9 @@ settings:
             -
                 label: Meloetta
                 value: preset-meloetta
+            -
+                label: Necrozma
+                value: preset-necrozma
             -
                 label: Pirouette Meloetta
                 value: preset-pirouette-meloetta
@@ -3300,6 +3367,3 @@ settings:
         type: class-toggle
         default: false
 */
-
-
-
