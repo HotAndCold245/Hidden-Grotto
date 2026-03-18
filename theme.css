@@ -11,6 +11,7 @@ body {
   --grotto-light-1: hsl(33, 33%, 94%);
   --grotto-light-2: hsl(33, 33%, 86%);
   --grotto-accent: hsl(16, 80%, 60%);
+  --grotto-text-color-on-accent: var(--grotto-light-1);
 }
 
 /* Other Palettes */
@@ -51,6 +52,27 @@ body {
   --grotto-light-1: hsl(0, 0%, 88%);
   --grotto-light-2: hsl(0, 0%, 78%);
   --grotto-accent: hsl(0, 0%, 58%);
+}
+
+.preset-arcanine {
+  --grotto-accent-h: 36;
+  --grotto-accent-s: 44%;
+  --grotto-accent-l: 56%;
+  --grotto-dark-0: hsl(24, 55%, 25%);
+  --grotto-dark-1: hsl(24, 55%, 35%);
+  --grotto-dark-2: hsl(24, 55%, 45%);
+  --grotto-light-0: hsl(30, 40%, 84%);
+  --grotto-light-1: hsl(30, 40%, 90%);
+  --grotto-light-2: hsl(30, 40%, 80%);
+  --grotto-accent: hsl(36, 44%, 56%);
+}
+
+.theme-light.preset-arcanine {
+  --grotto-accent-h: 24;
+  --grotto-accent-s: 55%;
+  --grotto-accent-l: 50%;
+  --grotto-dark-1: hsl(24, 55%, 15%);
+  --grotto-accent: hsl(24, 55%, 50%);
 }
 
 .preset-aromatisse {
@@ -202,23 +224,33 @@ body {
   --grotto-dark-0: hsl(0, 24%, 20%);
   --grotto-dark-1: hsl(0, 24%, 28%);
   --grotto-dark-2: hsl(0, 24%, 36%);
-  --grotto-light-0: hsl(44, 0%, 82%);
-  --grotto-light-1: hsl(44, 0%, 86%);
-  --grotto-light-2: hsl(44, 0%, 76%);
+  --grotto-light-0: hsl(0, 12%, 82%);
+  --grotto-light-1: hsl(0, 12%, 86%);
+  --grotto-light-2: hsl(0, 12%, 76%);
   --grotto-accent: hsl(0, 24%, 48%);
 }
 
 .preset-manectric {
   --grotto-accent-h: 48;
-  --grotto-accent-s: 56%;
-  --grotto-accent-l: 56%;
-  --grotto-dark-0: hsl(200, 38%, 32%);
-  --grotto-dark-1: hsl(200, 34%, 36%);
-  --grotto-dark-2: hsl(200, 24%, 28%);
-  --grotto-light-0: hsl(210, 0%, 90%);
-  --grotto-light-1: hsl(210, 20%, 96%);
-  --grotto-light-2: hsl(210, 40%, 84%);
-  --grotto-accent: hsl(48, 56%, 56%);
+  --grotto-accent-s: 52%;
+  --grotto-accent-l: 52%;
+  --grotto-dark-0: hsl(200, 38%, 26%);
+  --grotto-dark-1: hsl(200, 34%, 30%);
+  --grotto-dark-2: hsl(200, 24%, 22%);
+  --grotto-light-0: hsl(48, 20%, 90%);
+  --grotto-light-1: hsl(48, 20%, 96%);
+  --grotto-light-2: hsl(48, 40%, 84%);
+  --grotto-accent: hsl(48, 52%, 52%);
+}
+
+.theme-light.preset-manectric {
+  --grotto-accent-h: 200;
+  --grotto-accent-s: 34%;
+  --grotto-accent-l: 36%;
+  --grotto-light-0: hsl(48, 30%, 86%);
+  --grotto-light-1: hsl(48, 30%, 92%);
+  --grotto-light-2: hsl(48, 30%, 80%);
+  --grotto-accent: hsl(200, 34%, 36%);
 }
 
 .preset-mareep {
@@ -263,7 +295,7 @@ body {
 .preset-necrozma {
   --grotto-accent-h: 0;
   --grotto-accent-s: 0%;
-  --grotto-accent-l: 44%;
+  --grotto-accent-l: 32%;
   --grotto-dark-0: hsl(0, 0%, 8%);
   --grotto-dark-1: hsl(0, 0%, 10%);
   --grotto-dark-2: hsl(0, 0%, 16%);
@@ -272,10 +304,18 @@ body {
   --grotto-light-2: hsl(0, 0%, 84%);
   --grotto-accent: hsl(0, 0%, 32%);
 }
+
 .theme-light.preset-necrozma {
+  --grotto-accent-h: 0;
+  --grotto-accent-s: 0%;
+  --grotto-accent-l: 20%;
   --grotto-accent: hsl(0, 0%, 20%);
 }
+
 .theme-dark.preset-necrozma {
+  --grotto-accent-h: 0;
+  --grotto-accent-s: 0%;
+  --grotto-accent-l: 32%;
   --grotto-accent: hsl(0, 0%, 32%);
 }
 
@@ -509,26 +549,44 @@ body {
   --grotto-tag-border-color: var(--text-normal);
   --grotto-tag-border-width: 1.5px;
   --grotto-tag-border-radius: 0rem;
+  --grotto-tag-padding-y: 0.1rem;
+  --grotto-tag-padding-x: 0.4rem;
   --grotto-tag-pointer-events: none;
-  --tag-padding-y: 0.1rem;
-  --tag-padding-x: 0.4rem;
-  --tag-radius: var(--grotto-tag-border-radius);
-  --tag-border-color: var(--grotto-tag-border-color);
-  --tag-border-width: var(--grotto-tag-border-width);
 }
-
 a.tag,
 a.tag:hover,
 .cm-hashtag,
 .cm-s-obsidian span.cm-quote.cm-hashtag {
   color: var(--grotto-tag-color);
   background-color: var(--grotto-tag-background-color);
-  pointer-events: var(--grotto-tag-pointer-events);
   font-size: var(--grotto-tag-size);
+  font-weight: var(--grotto-tag-weight);
+  pointer-events: var(--grotto-tag-pointer-events);
   vertical-align: middle;
   caret-color: currentColor;
 }
-
+a.tag,
+a.tag:hover {
+  padding: var(--grotto-tag-padding-y) var(--grotto-tag-padding-x);
+  border: var(--grotto-tag-border-width) solid var(--grotto-tag-border-color);
+  border-radius: var(--grotto-tag-border-radius);
+}
+.cm-hashtag {
+  padding: var(--grotto-tag-padding-y) 0px;
+  border: var(--grotto-tag-border-width) solid var(--grotto-tag-border-color);
+}
+.cm-hashtag.cm-hashtag-begin {
+  border-inline-start: var(--grotto-tag-border-width) solid var(--grotto-tag-border-color);
+  padding-inline-start: var(--grotto-tag-padding-x);
+  border-start-start-radius: var(--grotto-tag-border-radius);
+  border-end-start-radius: var(--grotto-tag-border-radius);
+}
+.cm-hashtag.cm-hashtag-end {
+  border-inline-end: var(--grotto-tag-border-width) solid var(--grotto-tag-border-color);
+  padding-inline-end: var(--grotto-tag-padding-x);
+  border-start-end-radius: var(--grotto-tag-border-radius);
+  border-end-end-radius: var(--grotto-tag-border-radius);
+}
 .cm-s-obsidian .cm-line.HyperMD-header-1 .cm-hashtag,
 .cm-s-obsidian .cm-line.HyperMD-header-2 .cm-hashtag,
 .cm-s-obsidian .cm-line.HyperMD-header-3 .cm-hashtag,
@@ -538,7 +596,6 @@ a.tag:hover,
   font-size: var(--grotto-tag-size) !important;
   vertical-align: top;
 }
-
 .markdown-rendered h1 a.tag,
 .markdown-rendered h2 a.tag,
 .markdown-rendered h3 a.tag,
@@ -548,15 +605,12 @@ a.tag:hover,
   position: relative;
   top: -2px;
 }
-
 /* Accented Tag */
 .grotto-tag-accented {
-  --grotto-tag-color: var(--grotto-light-1);
+  --grotto-tag-color: var(--grotto-text-color-on-accent);
   --grotto-tag-background-color: var(--grotto-accent);
   --grotto-tag-border-color: var(--text-normal);
-  --grotto-tag-border-width: 1.5px;
 }
-
 /* Rounded Tag */
 .grotto-tag-rounded {
   --grotto-tag-border-radius: 2rem;
@@ -3210,9 +3264,11 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
   background-color: var(--grotto-accent);
   border-radius: var(--grotto-ui-border-radius) var(--grotto-ui-border-radius) 0rem 0rem;
 }
+
 .grotto-deadline-categories {
   border-radius: 0rem 0rem var(--grotto-ui-border-radius) var(--grotto-ui-border-radius);
 }
+
 .grotto-deadline-card.grotto-deadline-warning {
   border-radius: calc(var(--grotto-ui-border-radius) * 0.6);
 }
@@ -3240,6 +3296,9 @@ settings:
             -
                 label: Aggron
                 value: preset-aggron
+            -
+                label: Arcanine
+                value: preset-arcanine
             -
                 label: Aromatisse
                 value: preset-aromatisse
