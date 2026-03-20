@@ -1,19 +1,13 @@
 # Changelog
 <details>
-	<summary>v2.0.5</summary>
+	<summary>v2.0.6</summary>
 
 - Added new colour presets
-	- Krookodile
- 	- Manectric
- 	- Necrozma
+	- Larvesta
 
-- Minor adjustment to existing colour presets
-	- Meloetta
- 	- Volcarona
+- Fixed border issue in the community plugins menu
 
-- Added changes for Deadline Countdown plugin
 </details>
-
 
 # Introduction
 This is a theme I primarily made for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus. 
@@ -21,7 +15,7 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 
 # Features
 - Support for both **light** and **dark** mode
-- **27** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
+- **28** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
 - Updated **mobile toolbar** with vertical scrolling
 - Updated **callouts** with hidden icons which can be reenabled by setting `--grotto-callout-icon: auto`
 - Option to **blur** or **redact** everything to provide some privacy when notes are left unattended
@@ -33,28 +27,35 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 <details>
 	<summary>Color Palettes</summary>
 
-![Absol](https://github.com/user-attachments/assets/16c87b65-0ab2-4341-b272-96bc0f6b63ee)
-![Aegislash](https://github.com/user-attachments/assets/489987c0-ef0c-43a8-9fa3-80091a951265)
-![Aggron](https://github.com/user-attachments/assets/2167f4d8-fdf4-438d-9b61-9f542dfbea2f)
-![Calyrex](https://github.com/user-attachments/assets/593c8a2d-f6fe-4aef-97b2-ba822de2733d)
-![Clobbopus](https://github.com/user-attachments/assets/2515dcd0-f700-46e7-bbf8-0408bfbc2ff4)
-![Darkrai](https://github.com/user-attachments/assets/58a00b23-7931-41c4-ab08-b11c90217748)
-![Lucario](https://github.com/user-attachments/assets/6156ea3a-e607-4905-851a-99d1a164e517)
-![Meloetta](https://github.com/user-attachments/assets/c6b8c6df-f21a-4be0-8536-d9468ae4de46)
-![Poltchageist](https://github.com/user-attachments/assets/27540fce-8627-483a-9b5e-f681edb2c051)
-![Rayquaza](https://github.com/user-attachments/assets/f05234d7-6b13-4f48-aca8-809f1ac5306d)
-![Scolipede](https://github.com/user-attachments/assets/e852eeaa-f526-46b8-ac5e-5d24dfaa1d39)
-![Swampert](https://github.com/user-attachments/assets/5c9eff61-53c4-4dfe-b9bb-b1a610dfd6f9)
-![Ursaluna](https://github.com/user-attachments/assets/66721c31-93ac-4eed-827d-ba567630e191)
-![Volcarona](https://github.com/user-attachments/assets/1a276767-cbb7-4d56-bd4b-8053becdf60d)
+![Absol](https://github.com/user-attachments/assets/20445341-5074-4fbe-8721-65e4624ca397)
+![Aegislash](https://github.com/user-attachments/assets/f67e4754-703b-4836-8610-bebc0fba585f)
+![Aggron](https://github.com/user-attachments/assets/feb2359f-06ca-4eb0-8dab-a2b581052427)
+![Aromatisse](https://github.com/user-attachments/assets/58d77442-418e-4aee-856c-c05934b31f9f)
+![Butterfree](https://github.com/user-attachments/assets/cab5814a-0539-4262-be47-ec814fac5f07)
+![Calyrex](https://github.com/user-attachments/assets/70702c70-a359-478b-93cc-cbccd92425ba)
+![Clobbopus](https://github.com/user-attachments/assets/95fe1146-d493-4709-b29e-22fe2cf3344f)
+![Cryogonal](https://github.com/user-attachments/assets/9f2a1e0a-9d60-4900-8e9e-bbeeafc0aacc)
+![Darkrai](https://github.com/user-attachments/assets/5999cfeb-57e1-40e8-b7eb-aa4430dbe888)
+![Dewpider](https://github.com/user-attachments/assets/8ea9c37c-cdd3-4a6a-bad8-f875d495ba46)
+![Diancie](https://github.com/user-attachments/assets/4fe4604b-f3bc-47c2-8222-a1772608d161)
+![Eldegoss](https://github.com/user-attachments/assets/306b4365-970d-4988-ad63-c6366c38d68a)
+![Hisuian Typhlosion](https://github.com/user-attachments/assets/1d2271e6-450a-4391-8f57-03dbcf221d2b)
+![Krookodile](https://github.com/user-attachments/assets/87009757-a168-4e11-8fca-0c16f520c219)
+![Larvesta](https://github.com/user-attachments/assets/86b5206e-e389-4882-a7fc-77198ba2defb)
+![Manectric](https://github.com/user-attachments/assets/c0f14758-55a3-4871-a679-772b254c4395)
+![Mareep](https://github.com/user-attachments/assets/86f96a13-52b6-4113-a9f0-e9d9baa66165)
+![Mega Lucario](https://github.com/user-attachments/assets/e7a1b5d2-45a4-426a-bd59-5ab7f3a3cfc9)
+![Meloetta](https://github.com/user-attachments/assets/78eb671f-8803-4d67-be32-7d4babbc16b8)
+![Necrozma](https://github.com/user-attachments/assets/efa670bf-8965-45d9-b9e9-ed2797c18868)
+![Pirouette Meloetta](https://github.com/user-attachments/assets/c23b3df9-4c03-42f0-8f71-8ff547d3d72c)
+![Poltchageist](https://github.com/user-attachments/assets/03d93f7a-76f9-4997-9a53-dff139093fff)
+![Scolipede](https://github.com/user-attachments/assets/8851d93a-2b79-435b-850f-bfb7ea9a7219)
+![Skiddo](https://github.com/user-attachments/assets/59a2b51f-cf04-4d37-bee3-1c725a44e646)
+![Swampert](https://github.com/user-attachments/assets/615f0422-ea2c-43c2-98b4-03c9ea9e8da2)
+![Tsareena](https://github.com/user-attachments/assets/f41bc506-61ab-4549-9cc5-37ab2b8cf1e6)
+![Ursaluna](https://github.com/user-attachments/assets/53768412-60fb-4318-a554-fc71dd264050)
+![Volcarona](https://github.com/user-attachments/assets/5573bbe0-3006-4175-aee6-71b644cb7378)
 	
-</details>
-
-<details>
-	<summary>Mobile Toolbar</summary>
-
-![Toolbar](https://github.com/user-attachments/assets/ffa4cded-2d98-4d47-9300-1062eede1fb6)
-
 </details>
 
 <details>
