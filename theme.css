@@ -2435,6 +2435,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
   border: var(--grotto-global-border-width) solid var(--grotto-settings-border-color);
   border-radius: var(--grotto-settings-border-radius);
 }
+.modal-setting-nav-bar,
+.community-modal-search-summary {
+  border-bottom: var(--grotto-global-border-width) solid var(--text-normal);
+}
 
 /* Progress bar */
 body {
@@ -2911,6 +2915,9 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 .is-phone .modal.mod-settings.mod-sidebar-layout .modal-close-button.mobile-tap,
 .is-phone .modal .modal-setting-back-button.mobile-tap {
   color: var(--grotto-accent);
+}
+.workspace-drawer-ribbon {
+  border-inline-end: 0px solid var(--text-normal);
 }
 
 /* Deadline Countdown Plugin */
