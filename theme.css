@@ -2849,7 +2849,7 @@ body {
   background-color: transparent;
 }
 .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover {
-  color: var(--grotto-accent);
+  color: var(--grotto-text-color-on-accent);
   background-color: transparent;
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active).tappable,
