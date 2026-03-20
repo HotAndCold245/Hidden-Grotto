@@ -2,7 +2,7 @@
 <details>
 	<summary>v2.0.6</summary>
 
-- Added new colour presets
+- Added new colour preset
 	- Larvesta
 
 - Fixed border issue in the community plugins menu
