@@ -1,4 +1,4 @@
-/* Version 2.0.7 */
+/* Version 2.0.6 */
 /* Default Palette */
 body {
   --grotto-accent-h: 16;
@@ -1743,7 +1743,7 @@ input[type='email']:hover,
 input[type='password']:hover,
 input[type=search]:hover {
   color: var(--text-normal);
-  background-color: var(--background-primary);
+  background-color: transparent;
   border: var(--grotto-global-border-width) solid var(--text-normal);
   caret-color: currentColor;
   border-radius: var(--grotto-input-radius);
