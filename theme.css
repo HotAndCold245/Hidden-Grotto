@@ -3122,16 +3122,6 @@ settings:
         description: Toggle between square and rounded UI elements
         type: class-toggle
         default: false
-    -
-        id: grotto-global-border-width
-        title: UI Border Width
-        description: Adjust the border width of UI elements
-        type: variable-number-slider
-        format: px
-        default: 1
-        min: 0
-        max: 2
-        step: 1
 */
 
 /* @settings
