@@ -1264,7 +1264,7 @@ input[type='range']::-webkit-slider-runnable-track {
 
 /* Toggles */
 body {
-  --grotto-toggle-background-color: var(--background-secondary);
+  --grotto-toggle-background-color: var(--background-primary);
   --grotto-toggle-enabled-background-color: var(--grotto-accent);
   --grotto-toggle-border-color: var(--text-normal);
   --grotto-toggle-border-width: var(--grotto-global-border-width);
@@ -1743,7 +1743,7 @@ input[type='email']:hover,
 input[type='password']:hover,
 input[type=search]:hover {
   color: var(--text-normal);
-  background-color: transparent;
+  background-color: var(--background-primary);
   border: var(--grotto-global-border-width) solid var(--text-normal);
   caret-color: currentColor;
   border-radius: var(--grotto-input-radius);
@@ -1767,6 +1767,23 @@ input[type='password']:hover {
   outline: 2px solid var(--text-normal);
   outline-offset: -4px;
   box-shadow: none;
+}
+
+input[type=number]:focus,
+input[type=text]:focus,
+input[type=search]:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type=number]:focus-visible,
+input[type=text]:focus-visible,
+input[type=search]:focus-visible,
+input[type='datetime-local']:focus-visible,
+input[type='date']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--text-normal);
 }
 
 /* Suggestion Container */
