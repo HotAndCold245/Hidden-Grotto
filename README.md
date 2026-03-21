@@ -1,11 +1,10 @@
 # Changelog
 <details>
-	<summary>v2.0.6</summary>
+	<summary>v2.0.7</summary>
 
-- Added new colour preset
-	- Larvesta
-
-- Fixed border issue in the community plugins menu
+- Added the option to blur the screen through Style Settings
+- Visual improvements to toggles and input fields in the settings menu
+- Something else I can't remember
 
 </details>
 
