@@ -2,9 +2,9 @@
 <details>
 	<summary>v2.0.7</summary>
 
-- Added the option to blur the screen through Style Settings
+- Added the option to blur the screen through Style Settings (Only works on PC for some reason)
 - Visual improvements to toggles and input fields in the settings menu
-- Something else I can't remember
+- Added the option to adjust UI border width through Style Settings
 
 </details>
 
