@@ -1,10 +1,9 @@
 # Changelog
 <details>
-	<summary>v2.0.7</summary>
+	<summary>v2.0.8</summary>
 
-- Added the option to blur the screen through Style Settings (Only works on PC for some reason)
-- Visual improvements to toggles and input fields in the settings menu
-- Added the option to adjust UI border width through Style Settings
+- Added automatic detection for the Quicksand font so it is no longer necessary to manually set it from appearance. Simply enable the font snippet. Only works for any font nicknamed 'Quicksand'. 
+- Increased the font-size for RTL languages. Arabic is now easier to read. Only works while in editing mode.
 
 </details>
 
