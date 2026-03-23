@@ -2830,7 +2830,6 @@ body {
 /* View Actions */
 body {
   --grotto-view-header-sidebar-toggle-display: none;
-  --grotto-view-header-border-radius: var(--grotto-global-border-radius);
   --grotto-view-header-color: var(--text-normal);
   --grotto-view-header-background-color: var(--grotto-background-tertiary);
 }
@@ -2858,7 +2857,7 @@ body {
 .is-phone .view-header .view-action {
   background-color: var(--grotto-view-header-background-color);
   border: var(--grotto-global-border-width) solid var(--grotto-view-header-color);
-  border-radius: var(--grotto-view-header-border-radius);
+  border-radius: var(--grotto-global-border-radius);
 }
 .is-mobile .view-header .view-action[aria-label="More options"] {
   --icon-stroke: 1px;
@@ -2986,6 +2985,23 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
 }
 .grotto-deadline-card.grotto-deadline-warning {
   border-radius: calc(var(--grotto-global-border-radius) * 0.6);
+}
+
+/* Arabic Text */
+.cm-line[dir = 'rtl'] {
+  font-size: 1.75rem;
+}
+
+/* Quicksand Font Detection */
+.theme-dark,
+.theme-light {
+  --grotto-font-main: 'Quicksand';
+  --font-interface: var(--grotto-font-main);
+  --font-interface-override: var(--grotto-font-main);
+  --font-text: var(--grotto-font-main);
+  --font-text-override: var(--grotto-font-main);
+  --font-print: var(--grotto-font-main);
+  --font-monospace: var(--grotto-font-main);
 }
 
 /* @settings
