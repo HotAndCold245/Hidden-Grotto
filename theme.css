@@ -3001,7 +3001,9 @@ body:not(.is-focused) .mod-root .workspace-tab-header-container-inner .workspace
   --font-text: var(--grotto-font-main);
   --font-text-override: var(--grotto-font-main);
   --font-print: var(--grotto-font-main);
+  --font-print-override: var(--grotto-font-main);
   --font-monospace: var(--grotto-font-main);
+  --font-monospace-override: var(--grotto-font-main);
 }
 
 /* @settings
