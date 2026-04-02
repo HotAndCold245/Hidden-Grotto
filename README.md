@@ -1,9 +1,8 @@
 # Changelog
 <details>
-	<summary>v2.0.8</summary>
+	<summary>v2.0.9</summary>
 
-- Added automatic detection for the Quicksand font so it is no longer necessary to manually set it from appearance. Simply enable the font snippet. Only works for any font nicknamed 'Quicksand'. 
-- Increased the font-size for RTL text specifically. Arabic is now easier to read. Only works while in editing mode.
+- Removed colour palettes - Krookodile, Larvesta, Volcarona (Reason: Ugly colour combinations)
 
 </details>
 
@@ -13,7 +12,7 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 
 # Features
 - Support for both **light** and **dark** mode
-- **28** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
+- **25** color palettes to choose from through **Style Settings** or from [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) (Available through BRAT)
 - Updated **mobile toolbar** with vertical scrolling
 - Updated **callouts** with hidden icons which can be reenabled by setting `--grotto-callout-icon: auto`
 - Option to **blur** or **redact** everything to provide some privacy when notes are left unattended
@@ -38,8 +37,6 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 ![Diancie](https://github.com/user-attachments/assets/4fe4604b-f3bc-47c2-8222-a1772608d161)
 ![Eldegoss](https://github.com/user-attachments/assets/306b4365-970d-4988-ad63-c6366c38d68a)
 ![Hisuian Typhlosion](https://github.com/user-attachments/assets/1d2271e6-450a-4391-8f57-03dbcf221d2b)
-![Krookodile](https://github.com/user-attachments/assets/87009757-a168-4e11-8fca-0c16f520c219)
-![Larvesta](https://github.com/user-attachments/assets/86b5206e-e389-4882-a7fc-77198ba2defb)
 ![Manectric](https://github.com/user-attachments/assets/c0f14758-55a3-4871-a679-772b254c4395)
 ![Mareep](https://github.com/user-attachments/assets/86f96a13-52b6-4113-a9f0-e9d9baa66165)
 ![Mega Lucario](https://github.com/user-attachments/assets/e7a1b5d2-45a4-426a-bd59-5ab7f3a3cfc9)
@@ -52,7 +49,6 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 ![Swampert](https://github.com/user-attachments/assets/615f0422-ea2c-43c2-98b4-03c9ea9e8da2)
 ![Tsareena](https://github.com/user-attachments/assets/f41bc506-61ab-4549-9cc5-37ab2b8cf1e6)
 ![Ursaluna](https://github.com/user-attachments/assets/53768412-60fb-4318-a554-fc71dd264050)
-![Volcarona](https://github.com/user-attachments/assets/5573bbe0-3006-4175-aee6-71b644cb7378)
 	
 </details>
 
