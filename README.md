@@ -93,9 +93,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 
 # Changelog
 <details>
-	<summary>v2.0.10</summary>
+	<summary>v2.0.12</summary>
 
-- Cleaned up some code
+- Reverted some code cleanup because it somehow messes with the mobile UI
 
 </details>
 
