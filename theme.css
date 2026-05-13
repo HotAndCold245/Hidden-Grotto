@@ -404,6 +404,8 @@ body,
   --grotto-font-weight: 500;
   font-weight: var(--grotto-font-weight);
   --blur-background: none;
+}
+body {
   /* UI Variables */
   --grotto-global-border-radius: 0rem;
   --grotto-global-border-width: 1px;
