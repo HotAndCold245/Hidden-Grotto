@@ -405,6 +405,26 @@ body,
   font-weight: var(--grotto-font-weight);
   --blur-background: none;
 }
+/* UI controls */
+/* Rounded UI */
+.grotto-rounded-ui {
+  --grotto-global-border-radius: 1rem;
+}
+
+/* Limited Privacy */
+.grotto-blur {
+  --grotto-blur: 4px;
+}
+
+.grotto-redact {
+  --font-interface: var(--grotto-redacted);
+  --font-interface-override: var(--grotto-redacted);
+  --font-text: var(--grotto-redacted);
+  --font-text-override: var(--grotto-redacted);
+  --font-print: var(--grotto-redacted);
+  --font-monospace: var(--grotto-redacted);
+}
+
 body {
   /* UI Variables */
   --grotto-global-border-radius: 0rem;
@@ -2717,26 +2737,6 @@ span.value-list-element a.tag {
   background-color: transparent;
   border: 0px solid transparent;
   border-radius: var(--grotto-mobile-toolbar-border-radius);
-}
-
-/* UI controls */
-/* Rounded UI */
-.grotto-rounded-ui {
-  --grotto-global-border-radius: 1rem;
-}
-
-/* Limited Privacy */
-.grotto-blur {
-  --grotto-blur: 4px;
-}
-
-.grotto-redact {
-  --font-interface: var(--grotto-redacted);
-  --font-interface-override: var(--grotto-redacted);
-  --font-text: var(--grotto-redacted);
-  --font-text-override: var(--grotto-redacted);
-  --font-print: var(--grotto-redacted);
-  --font-monospace: var(--grotto-redacted);
 }
 
 /* View Actions */
