@@ -93,9 +93,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 
 # Changelog
 <details>
-	<summary>v2.0.9</summary>
+	<summary>v2.0.10</summary>
 
-- Removed colour palettes - Krookodile, Larvesta, Volcarona (Reason: Ugly colour combinations)
+- Cleaned up some code
 
 </details>
 
