@@ -1,12 +1,4 @@
-# Changelog
-<details>
-	<summary>v2.0.9</summary>
-
-- Removed colour palettes - Krookodile, Larvesta, Volcarona (Reason: Ugly colour combinations)
-
-</details>
-
-# Introduction
+# Hidden Grotto
 This is a theme I primarily made for personal use. It focuses on a clean and sharp design with some modifications to the default UI, especially on mobile, for a better experience. The base color palette is inspired by the Pokemon, Clobbopus. 
 ![IMG_1](https://github.com/user-attachments/assets/6a667c1f-cd96-45b4-acce-3020b211a49f)
 
@@ -98,6 +90,14 @@ You can include additional changes to your preset using the variables declared b
 
 # The Plugin
 The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Controls) plugin includes all the settings available in **Style Settings** as well as an easy way to cycle through the presets and toggle blur through ribbon commands. There's no need to use it if you don't need the shortcuts. 
+
+# Changelog
+<details>
+	<summary>v2.0.9</summary>
+
+- Removed colour palettes - Krookodile, Larvesta, Volcarona (Reason: Ugly colour combinations)
+
+</details>
 
 # Feedback
 If there are any problems with the theme, you can submit an issue on the repository.
