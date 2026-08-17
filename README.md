@@ -93,10 +93,9 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 
 # Changelog
 <details>
-	<summary>v2.0.13</summary>
+	<summary>v2.1.0</summary>
 
-- Reverted some code cleanup because it somehow messes with the mobile UI
-- Made small adjustments to some of the brighter colour palettes
+- UI fixes for the latest version of Obsidian (mostly for the new settings search and filtering)
 
 </details>
 
