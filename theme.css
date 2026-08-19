@@ -916,6 +916,7 @@ input[type="color"]::-webkit-color-swatch:hover {
 .pull-out-action {
   color: var(--grotto-text-color-on-accent);
   background-color: var(--grotto-accent);
+  background: var(--grotto-accent);
   border: var(--grotto-global-border);
   border-radius: var(--grotto-global-border-radius);
   width: fit-content;
