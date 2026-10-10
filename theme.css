@@ -1,4 +1,4 @@
-/* Version 2.1.1 */
+/* Version 2.2.0 */
 /* DEFAULT */
 body {
   /* Palette */
@@ -916,7 +916,6 @@ input[type="color"]::-webkit-color-swatch:hover {
 .pull-out-action {
   color: var(--grotto-text-color-on-accent);
   background-color: var(--grotto-accent);
-  background: var(--grotto-accent);
   border: var(--grotto-global-border);
   border-radius: var(--grotto-global-border-radius);
   width: fit-content;
@@ -2027,6 +2026,12 @@ body:not(.is-phone) .vertical-tab-nav-item:only-child:hover {
 }
 .is-phone .modal.mod-settings.mod-sidebar-layout .modal-header-button {
   --size-4-3: 16px;
+  top: 8px;
+}
+.is-phone .modal.mod-settings .vertical-tab-nav-item-chevron, 
+.is-phone .modal.mod-settings .vertical-tab-nav-item-title, 
+.is-phone .modal.mod-settings .setting-search-result-tab-text {
+  border-bottom: none;
 }
 .is-phone .modal.mod-settings .vertical-tab-header-group-items, 
 .is-phone .modal.mod-settings .setting-search-result-group,
@@ -2429,11 +2434,11 @@ settings:
                 label: Aggron
                 value: preset-aggron
             -
-                label: Arcanine
-                value: preset-arcanine
-            -
                 label: Aromatisse
                 value: preset-aromatisse
+            -
+                label: butterfree
+                value: preset-butterfree
             -
                 label: Calyrex
                 value: preset-calyrex
@@ -2447,8 +2452,14 @@ settings:
                 label: Darkrai
                 value: preset-darkrai
             -
+                label: Dewpider
+                value: preset-dewpider
+            -
                 label: Diancie
                 value: preset-diancie
+            -
+                label: Eldegoss
+                value: preset-eldegoss
             -
                 label: Hisuian Typhlosion
                 value: preset-hisuian-typhlosion
@@ -2476,6 +2487,9 @@ settings:
             -
                 label: Scolipede
                 value: preset-scolipede
+            -
+                label: Skiddo
+                value: preset-skiddo
             -
                 label: Swampert
                 value: preset-swampert
@@ -2884,18 +2898,6 @@ settings:
   --grotto-light-1: hsl(40, 14%, 86%);
   --grotto-light-2: hsl(40, 14%, 76%);
   --grotto-accent: hsl(24, 64%, 56%);
-}
-.preset-tsareena {
-  --grotto-accent-h: 100;
-  --grotto-accent-s: 36%;
-  --grotto-accent-l: 56%;
-  --grotto-dark-0: hsl(340, 32%, 28%);
-  --grotto-dark-1: hsl(340, 32%, 36%);
-  --grotto-dark-2: hsl(340, 32%, 48%);
-  --grotto-light-0: hsl(20, 24%, 86%);
-  --grotto-light-1: hsl(20, 24%, 92%);
-  --grotto-light-2: hsl(20, 24%, 82%);
-  --grotto-accent: hsl(100, 36%, 50%);
 }
 .preset-ursaluna {
   --grotto-accent-h: 40;
