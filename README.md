@@ -39,7 +39,6 @@ This is a theme I primarily made for personal use. It focuses on a clean and sha
 ![Scolipede](https://github.com/user-attachments/assets/8851d93a-2b79-435b-850f-bfb7ea9a7219)
 ![Skiddo](https://github.com/user-attachments/assets/59a2b51f-cf04-4d37-bee3-1c725a44e646)
 ![Swampert](https://github.com/user-attachments/assets/615f0422-ea2c-43c2-98b4-03c9ea9e8da2)
-![Tsareena](https://github.com/user-attachments/assets/f41bc506-61ab-4549-9cc5-37ab2b8cf1e6)
 ![Ursaluna](https://github.com/user-attachments/assets/53768412-60fb-4318-a554-fc71dd264050)
 	
 </details>
@@ -93,9 +92,10 @@ The [Hidden Grotto Controls](https://github.com/HotAndCold245/Hidden-Grotto-Cont
 
 # Changelog
 <details>
-	<summary>v2.1.0</summary>
+	<summary>v2.2.0</summary>
 
-- UI fixes for the latest version of Obsidian (mostly for the new settings search and filtering)
+- UI fixes for the latest version of Obsidian
+- Removed preset - Tsareena (Reason: Ugly)
 
 </details>
 
